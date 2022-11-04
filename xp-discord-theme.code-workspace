@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/Users/Salt/AppData/Roaming/BetterDiscord/themes"
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "compressed",
+				"extensionName": ".min.css",
+				"savePath": "/"
+			},
+			{
+				"format": "expanded",
+				"extensionName": ".theme.css",
+				"savePath": "/"
+			}
+		],
+		"liveSassCompile.settings.generateMap": false,
+		"liveSassCompile.settings.showOutputWindowOn": "Debug",
+		"liveSassCompile.settings.watchOnLaunch": true,
+	}
+}

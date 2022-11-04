@@ -1,0 +1,116 @@
+@function makeLabels() {
+
+    $labels: (
+        "Vis medlemsliste",
+        "Skjul medlemsliste",
+        "Mitgliederliste ausblenden",
+        "Mitgliederliste anzeigen",
+        "Show Member List",
+        "Hide Member List",
+        "Mostrar lista de miembros",
+        "Ocultar lista de miembros",
+        "Masquer la liste des membres",
+        "Afficher la liste des membres",
+        "Prikaži popis članova",
+        "Sakrij popis članova",
+        "Nascondi lista dei membri",
+        "Mostra lista dei membri",
+        "Rodyti narių sąrašą",
+        "Nerodyti narių sąrašo",
+        "Taglista elrejtése",
+        "Taglista megjelenítése",
+        "Ledenlijst tonen",
+        "Ledenlijst verbergen",
+        "Skjul medlemsliste",
+        "Vis medlemsliste",
+        "Pokaż listę członków",
+        "Ukryj listę członków",
+        "Ocultar lista de membros",
+        "Mostrar lista de membros",
+        "Arată lista membrilor",
+        "Ascunde lista membrilor",
+        "Piilota jäsenluettelo",
+        "Näytä jäsenluettelo",
+        "Visa medlemslista",
+        "Dölj medlemslista",
+        // "Ẩn Danh sách thành viên",
+        // "Hiện Danh sách thành viên",
+        // "Üye Listesini Göster",
+        // "Üye Listesini Gizle",
+        // "Skrýt seznam členů",
+        // "Zobrazit seznam členů",
+        // "Εμφάνιση λίστας μελών",
+        // "Απόκρυψη λίστας μελών",
+        // "Скриване на списъка с членове",
+        // "Показване на списъка с членове",
+        // "Показать список участников",
+        // "Скрыть список участников",
+        // "Сховати список учасників",
+        // "Показати список учасників",
+        // "मेम्बर लिस्ट को दिखाएं",
+        // "मेम्बर लिस्ट को छिपाएं",
+        // "ซ่อนรายชื่อสมาชิก",
+        // "แสดงรายชื่อสมาชิก",
+        // "显示成员名单",
+        // "隐藏成员名单",
+        // "メンバーリストを非表示",
+        // "メンバーリストを表示",
+        // "顯示成員名單",
+        // "隱藏成員名單",
+        // "멤버 목록 숨기기",
+        // "멤버 목록 표시하기"
+    );
+
+    $aria-labels: ();
+
+    @each $label in $labels {
+        $aria-labels: append($aria-labels, "[aria-label='#{$label}']", comma);
+    }
+
+    @return $aria-labels
+};
+
+.title-31SJ6t {
+    // Move show/hide member list button
+    .toolbar-3_r2xA {
+        .iconWrapper-2awDjA:is(#{makeLabels()}) { 
+            position: fixed;
+            height: auto;
+            margin: 0;
+            right: 50px;
+        
+            .icon-2xnN2Y {
+                background: linear-gradient(rgb(12, 168, 12), green);
+                border-radius: 4px;
+                padding: 5px;
+                margin: 5px;
+                height: 36px;
+                width: 36px;
+            } 
+
+            &::before {
+                content: attr(aria-label);
+                display: block;
+                position: absolute;
+                top: 46px;
+                width: 46px;
+                font-size: 12px;
+                line-height: 12px;
+                text-shadow: 2px 2px 2px black;
+                text-align: center;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 9px;
+                width: 9px;
+                border: 1px solid black;
+                bottom: 0;
+                left: 0;
+                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
+            }
+        }
+    }   
+}
