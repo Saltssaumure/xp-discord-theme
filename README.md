@@ -23,8 +23,9 @@
 - **Default value:** `url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)`.
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)
+- **Whole theme:** [GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)  
 <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+- **[HorizontalServerList](https://github.com/DiscordStyles/HorizontalServerList):** [MIT License](https://github.com/DiscordStyles/HorizontalServerList/blob/master/LICENSE.md)
 
 ## Questions or suggestions?
 - Post [an issue](https://github.com/Saltssaumure/xp-discord-theme/issues) on GitHub.
