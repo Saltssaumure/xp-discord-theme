@@ -65,7 +65,7 @@ body #app-mount {
 
 // Image background
 .bg-1QIAus {
-    background: url(https://ia601705.us.archive.org/16/items/windows-xp-bliss-wallpaper/windows-xp-bliss-4k-lu-1920x1080.jpg) center/cover;
+    background: var(--background-image, url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)) center/cover;
 }
 
 // Main view
