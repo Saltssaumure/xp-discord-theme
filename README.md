@@ -4,7 +4,7 @@
 
 ***A Windows XP style theme built for BetterDiscord.***
 
-![Screenshot of Exponent Discord Theme applied to Discord desktop client]()
+![Screenshot of Exponent Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/200100486-a816673f-1b8d-4739-a9c6-b8fb14bd67b5.png)
 
 ## Installation
 1. Install [BetterDiscord](https://betterdiscord.app/).
