@@ -1,0 +1,111 @@
+@mixin windowBorder() {
+    border: 2px solid $blue-select;
+    border-top: 0;
+}
+
+@mixin mainWindow() {
+    margin: $window-top $window-right $window-bottom $window-left;
+    overflow: hidden;
+    @include windowBorder();
+    @include window-shadow(3px);
+}
+
+@mixin gradient($direction, $shadow, $color-dark, $color-light) {
+    background: linear-gradient(
+        to #{$direction},
+        $color-dark,    
+        $color-dark 12%,
+        $color-light
+    );
+    box-shadow: (
+        inset 0 0 3px 2px $color-dark,
+        inset #{$shadow} 2px 1px $white-overlay
+    );
+}
+
+@mixin taskbar($rotate, $color-dark, $color-light) {
+    $direction: bottom;
+    $shadow: 0 2px;
+    @if ($rotate) {
+        $direction: left;
+        $shadow: -2px 0;
+    }
+    @include gradient($direction, $shadow, $color-dark, $color-light);
+}
+
+@mixin titlebar() {
+    @include taskbar(false, $blue-max, $blue-vivid);
+    border-radius: 8px 8px 0 0;
+    height: $title-height;
+}
+
+@mixin winButton() {
+    top: 0;
+    height: 20px;
+    width: 20px;
+    margin: 4px;
+    margin-left: 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: radial-gradient(circle at 4px 4px, $white-overlay, $blue-vivid, $blue-max);
+    color: white;
+}
+
+@mixin winButtonRed() {
+    background: radial-gradient(circle at 4px 4px, $white-overlay, $red-bright, $red-max);
+}
+
+@mixin windowHasPseudoTitle($content) {
+    @include windowBorder();
+    @include window-shadow(0);
+    &::before {
+        content: $content;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: calc(100% + 4px);
+        top: -$title-height;
+        font-size: 14px;
+        line-height: $title-height;
+        font-weight: 600;
+        font-family: Tahoma, sans-serif;
+        text-shadow: 0 1px 1px black;
+        color: white;
+        text-indent: 9px;
+        @include titlebar(); 
+    }
+}
+
+@mixin startMenuTop() {
+    border-radius: 8px 8px 0 0;
+    @include gradient(bottom, 1px 2px, $blue-max, $blue-vivid);
+}
+
+@mixin startMenuList() {
+    background: white;
+    border: 1px solid $blue-max;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, orange, transparent);
+    }
+}
+
+@mixin startMenuDivider($offset) {
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: $offset;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent 10%, lightgrey, transparent 90%);
+    }
+}
+
+@mixin window-shadow($vertical-offset) {
+    box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0,0%,0%,0.4);
+}

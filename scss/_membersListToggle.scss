@@ -1,4 +1,4 @@
-@function makeLabels() {
+@function makeSelectors() {
 
     $labels: (
         "Vis medlemsliste",
@@ -11,28 +11,28 @@
         "Ocultar lista de miembros",
         "Masquer la liste des membres",
         "Afficher la liste des membres",
-        "Prikaži popis članova",
-        "Sakrij popis članova",
-        "Nascondi lista dei membri",
-        "Mostra lista dei membri",
-        "Rodyti narių sąrašą",
-        "Nerodyti narių sąrašo",
-        "Taglista elrejtése",
-        "Taglista megjelenítése",
-        "Ledenlijst tonen",
-        "Ledenlijst verbergen",
-        "Skjul medlemsliste",
-        "Vis medlemsliste",
-        "Pokaż listę członków",
-        "Ukryj listę członków",
-        "Ocultar lista de membros",
-        "Mostrar lista de membros",
-        "Arată lista membrilor",
-        "Ascunde lista membrilor",
-        "Piilota jäsenluettelo",
-        "Näytä jäsenluettelo",
-        "Visa medlemslista",
-        "Dölj medlemslista",
+        // "Prikaži popis članova",
+        // "Sakrij popis članova",
+        // "Nascondi lista dei membri",
+        // "Mostra lista dei membri",
+        // "Rodyti narių sąrašą",
+        // "Nerodyti narių sąrašo",
+        // "Taglista elrejtése",
+        // "Taglista megjelenítése",
+        // "Ledenlijst tonen",
+        // "Ledenlijst verbergen",
+        // "Skjul medlemsliste",
+        // "Vis medlemsliste",
+        // "Pokaż listę członków",
+        // "Ukryj listę członków",
+        // "Ocultar lista de membros",
+        // "Mostrar lista de membros",
+        // "Arată lista membrilor",
+        // "Ascunde lista membrilor",
+        // "Piilota jäsenluettelo",
+        // "Näytä jäsenluettelo",
+        // "Visa medlemslista",
+        // "Dölj medlemslista",
         // "Ẩn Danh sách thành viên",
         // "Hiện Danh sách thành viên",
         // "Üye Listesini Göster",
@@ -61,23 +61,25 @@
         // "멤버 목록 표시하기"
     );
 
-    $aria-labels: ();
+    $selectors: ();
 
     @each $label in $labels {
-        $aria-labels: append($aria-labels, "[aria-label='#{$label}']", comma);
+        $selectors: append($selectors, "[aria-label='#{$label}']", comma);
     }
 
-    @return $aria-labels
+    @return $selectors
 };
 
 .title-31SJ6t {
     // Move show/hide member list button
     .toolbar-3_r2xA {
-        .iconWrapper-2awDjA:is(#{makeLabels()}) { 
+        .iconWrapper-2awDjA:is(#{makeSelectors()}) { 
             position: fixed;
             height: auto;
             margin: 0;
             right: 50px;
+            display: flex;
+            justify-content: center;
         
             .icon-2xnN2Y {
                 background: linear-gradient(rgb(12, 168, 12), green);
@@ -86,6 +88,7 @@
                 margin: 5px;
                 height: 36px;
                 width: 36px;
+                box-shadow: 1px 1px 2px black;
             } 
 
             &::before {
@@ -93,10 +96,11 @@
                 display: block;
                 position: absolute;
                 top: 46px;
-                width: 46px;
+                width: fit-content;
                 font-size: 12px;
                 line-height: 12px;
-                text-shadow: 2px 2px 2px black;
+                color: white;
+                text-shadow: 1px 1px 2px black, 1px 1px 1px black;
                 text-align: center;
             }
 
