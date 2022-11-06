@@ -7,6 +7,7 @@
 
 @import "_shortcutIcon.scss";
 @import "_mixins.scss";
+@import "_buttons.scss";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
@@ -88,9 +89,9 @@ body #app-mount {
 
         // Min / Max / Close buttons
         .winButton-3UMjdg {
-            @include winButton();
+            @include winButton(20px);
             &.winButtonClose-3Q8ZH5 {
-                @include winButtonRed();
+                @include winButtonRed(20px);
             }
         }
     }
@@ -548,7 +549,12 @@ body #app-mount {
 
         // Inbox etc window
         .messagesPopoutWrap-3zryHW {
+            border-radius: 8px 8px 0 0;
             max-height: calc(100vh - $window-top - 120px)!important;
+            // No "protips" please
+            .footer-5ji8u1 {
+                display: none;
+            }
         }
 
         // Tooltips
@@ -667,28 +673,16 @@ body #app-mount {
                     }
                 }
             }
-            @mixin inboxHeaderButton() {
-                border-radius: 3px;
-                border: 1px solid white;
-                color: white;
-                $size: 26px; 
-                min-height: $size;
-                min-width: $size;
-                height: $size;
-                width: $size;
-            }
             // Mark all as read button
             &.container-2ebMPP {
                 .header-145e10 .button-1_oXub {
-                    @include winButtonRed;
-                    @include inboxHeaderButton;
+                    @include winButtonRed(26px);
                 }
             }
             // Filter mentions button
             &.messagesPopoutWrap-3zryHW {
                 .header-145e10 .button-1_oXub {
-                    @include winButton;
-                    @include inboxHeaderButton;
+                    @include winButton(26px);
                 }
             }
 
@@ -708,14 +702,7 @@ body #app-mount {
                         background: $beige;
                         // Buttons
                         .button-1_oXub {
-                            border-radius: 3px;
-                            border: 1px solid black;
-                            background: $beige-light;
-                            color: black;
-                            box-shadow: (
-                                inset -1px -1px 2px 0 grey,
-                                inset 2px 2px 2px 0 white
-                            );
+                            @include beigeButton();
                         }
                     }
                     // Message group
@@ -729,11 +716,48 @@ body #app-mount {
 
         // Threads
         .browser-mnQ1T7 {
+            border-radius: 8px 8px 0 0;
+
+            // Top bar
             .header-3_zmOb {
                 @include titlebar;
+
+                // #
+                .threadIcon-rd1kqG {
+                    color:white;
+                }
+
+                // Search bar
+                .searchBox-3IjAC1 {
+                    @include beigeButton;
+                    box-shadow: (
+                        inset 1px 1px 2px 0 grey,
+                        inset -2px -2px 2px 0 white
+                    );
+                }
+
+                // Close button
+                .closeIcon-11tHJX {
+                    @include winButtonRed(26px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                // Create thread button
+                .createButton-oruGBs {
+                    @include beigeButton;
+                }
             }
+
+            // Content
             .list-3YHPPb {
                 @include startMenuList;
+                background: beige;
+                // Thread
+                .container-2rzKKA {
+                    @include indentMessage;
+                }
             }
         }
 
@@ -772,9 +796,9 @@ body #app-mount {
         }
 
         .button {
-            @include winButton();
+            @include winButton(20px);
             &.close-button {
-                @include winButtonRed;
+                @include winButtonRed(20px);
             }
         }
     }

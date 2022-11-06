@@ -1,0 +1,29 @@
+@mixin beigeButton() {
+    border-radius: 3px;
+    border: 1px solid black;
+    background: $beige-light;
+    color: black;
+    box-shadow: (
+        inset -1px -1px 2px 0 grey,
+        inset 2px 2px 2px 0 white
+    );
+}
+
+@mixin winButton($size) {
+    top: 0;
+    min-height: $size;
+    min-width: $size;
+    height: $size;
+    width: $size;
+    margin: 4px;
+    margin-left: 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: radial-gradient(circle at 20% 20%, $white-overlay, $blue-vivid, $blue-max);
+    color: white;
+}
+
+@mixin winButtonRed($size) {
+    @include winButton($size);
+    background: radial-gradient(circle at 20% 20%, $white-overlay, $red-bright, $red-max);
+}

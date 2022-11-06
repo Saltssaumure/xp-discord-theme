@@ -37,22 +37,9 @@
     @include taskbar(false, $blue-max, $blue-vivid);
     border-radius: 8px 8px 0 0;
     height: $title-height;
-}
-
-@mixin winButton() {
-    top: 0;
-    height: 20px;
-    width: 20px;
-    margin: 4px;
-    margin-left: 0;
-    border: 1px solid white;
-    border-radius: 3px;
-    background: radial-gradient(circle at 4px 4px, $white-overlay, $blue-vivid, $blue-max);
-    color: white;
-}
-
-@mixin winButtonRed() {
-    background: radial-gradient(circle at 4px 4px, $white-overlay, $red-bright, $red-max);
+    --font-display: Tahoma, sans-serif;
+    --header-primary: white;
+    text-shadow: 0 1px 1px black;
 }
 
 @mixin windowHasPseudoTitle($content) {

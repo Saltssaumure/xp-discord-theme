@@ -30,6 +30,9 @@ body #app-mount .titleBar-1it3bQ {
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
 }
 body #app-mount .titleBar-1it3bQ .wordmarkWindows-2dq6rw {
   color: white;
@@ -50,17 +53,30 @@ body #app-mount .titleBar-1it3bQ .wordmarkWindows-2dq6rw svg {
 }
 body #app-mount .titleBar-1it3bQ .winButton-3UMjdg {
   top: 0;
+  min-height: 20px;
+  min-width: 20px;
   height: 20px;
   width: 20px;
   margin: 4px;
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
 }
 body #app-mount .titleBar-1it3bQ .winButton-3UMjdg.winButtonClose-3Q8ZH5 {
-  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  top: 0;
+  min-height: 20px;
+  min-width: 20px;
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+  margin-left: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
 }
 body #app-mount .bg-1QIAus {
   background: var(--background-image, url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)) center/cover;
@@ -644,6 +660,9 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t:
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .membersGroup-2eiWxl:not(:nth-child(2)) {
   position: relative;
@@ -671,7 +690,11 @@ body #app-mount .layer-86YKbF .standardSidebarView-E9Pc3j {
   box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
 body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW {
+  border-radius: 8px 8px 0 0;
   max-height: calc(100vh - 50px - 120px) !important;
+}
+body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .footer-5ji8u1 {
+  display: none;
 }
 body #app-mount .layerContainer-2v_Sit .tooltip-14MtrL {
   background: rgb(235, 232, 215);
@@ -745,6 +768,9 @@ body #app-mount .layerContainer-2v_Sit .accountProfilePopoutWrapper-3GskID::befo
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
 }
 body #app-mount .layerContainer-2v_Sit .accountProfilePopoutWrapper-3GskID::before {
   left: -2px;
@@ -757,6 +783,9 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
   --interactive-normal: black;
   --interactive-active: black;
 }
@@ -779,32 +808,31 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e
   background: linear-gradient(to bottom, orange, white 10%, rgb(235, 232, 215) 80%);
 }
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.container-2ebMPP .header-145e10 .button-1_oXub {
-  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
-  border-radius: 3px;
-  border: 1px solid white;
-  color: white;
+  top: 0;
   min-height: 26px;
   min-width: 26px;
   height: 26px;
   width: 26px;
-}
-body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopoutWrap-3zryHW .header-145e10 .button-1_oXub {
-  top: 0;
-  height: 20px;
-  width: 20px;
   margin: 4px;
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
-  border-radius: 3px;
-  border: 1px solid white;
-  color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopoutWrap-3zryHW .header-145e10 .button-1_oXub {
+  top: 0;
   min-height: 26px;
   min-width: 26px;
   height: 26px;
   width: 26px;
+  margin: 4px;
+  margin-left: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  color: white;
 }
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI,
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c {
@@ -864,11 +892,52 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-14
   border-radius: 0;
   box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
 }
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 {
+  border-radius: 8px 8px 0 0;
+}
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
+}
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .threadIcon-rd1kqG {
+  color: white;
+}
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .searchBox-3IjAC1 {
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgb(240, 239, 237);
+  color: black;
+  box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
+  box-shadow: inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .closeIcon-11tHJX {
+  top: 0;
+  min-height: 26px;
+  min-width: 26px;
+  height: 26px;
+  width: 26px;
+  margin: 4px;
+  margin-left: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .createButton-oruGBs {
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgb(240, 239, 237);
+  color: black;
+  box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
 }
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb {
   --background-secondary: white;
@@ -885,6 +954,7 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb {
   font-family: var(--font-primary);
   background: white;
   border: 1px solid rgb(0, 90, 231);
+  background: beige;
 }
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb::after {
   content: "";
@@ -895,11 +965,19 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb::after {
   height: 2px;
   background: linear-gradient(to right, transparent, orange, transparent);
 }
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .container-2rzKKA {
+  font-family: "Whitney", var(--i18n-fallbacks);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
+}
 body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .header-1w9Q93 {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
 }
 body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI {
   --background-secondary: white;
@@ -945,6 +1023,9 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
 }
 #floating-editor-window .floating-window-titlebar .title {
   font-size: 14px;
@@ -955,17 +1036,30 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
 }
 #floating-editor-window .floating-window-titlebar .button {
   top: 0;
+  min-height: 20px;
+  min-width: 20px;
   height: 20px;
   width: 20px;
   margin: 4px;
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
 }
 #floating-editor-window .floating-window-titlebar .button.close-button {
-  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  top: 0;
+  min-height: 20px;
+  min-width: 20px;
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+  margin-left: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
 }
 
 .wrapper-1VLyxH::before {
