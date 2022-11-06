@@ -89,9 +89,9 @@ body #app-mount {
 
         // Min / Max / Close buttons
         .winButton-3UMjdg {
-            @include winButton(20px);
+            @include winButton(20px, false);
             &.winButtonClose-3Q8ZH5 {
-                @include winButtonRed(20px);
+                @include winButton(20px, true);
             }
         }
     }
@@ -691,13 +691,13 @@ body #app-mount {
             // Mark all as read button
             &.container-2ebMPP {
                 .header-145e10 .button-1_oXub {
-                    @include winButtonRed(26px);
+                    @include winButton(26px, false);
                 }
             }
             // Filter mentions button
             &.messagesPopoutWrap-3zryHW {
                 .header-145e10 .button-1_oXub {
-                    @include winButton(26px);
+                    @include winButton(26px, false);
                 }
             }
 
@@ -756,7 +756,7 @@ body #app-mount {
 
                 // Close button
                 .closeIcon-11tHJX {
-                    @include winButtonRed(26px);
+                    @include winButton(26px, true);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -806,7 +806,75 @@ body #app-mount {
             }
         }
 
+        // User profile
+        .userPopoutOuter-3AVBmJ {
+            border-radius: 0;
+            @include windowHasPseudoTitle("User info");
+            &::before {
+                width: 100%;
+                left: 0;
+            }
+            .avatarWrapper-3y0KZ1 {
+                left: 24px;
+            }
 
+            // All profiles
+            .userPopoutInner-1hXSeY {
+
+                // Edit profile button
+                .pencilContainer-11Kuga {
+                    @include beigeButton;
+                    .pencilIcon-1MUmnO {
+                        color: black;
+                    }
+                }
+
+                // Hypesquad etc badges
+                .profileBadges-31rDHI {
+                    @include beigeButton;
+                }
+
+                // Inner box
+                .overlayBackground-1KgwVi {
+                    border-radius: 0;
+                    --font-primary: Tahoma, sans-serif;
+                    --font-display: Tahoma, sans-serif;
+                    @include indentBox;
+                    
+                    // Roles
+                    .rolePill-2IJ1vo {
+                        @include beigeButton;
+                    }
+                    
+                    // User note
+                    .note-6O4w9y {
+                        @include indentBox;
+                    }
+
+                    // Message user
+                    .messageInputContainer-2rGDH8 {
+                        @include indentBox;
+                    }
+                }
+            }
+
+            // Unstyled profile
+            .userProfileInnerThemedNonPremium-1gT-zY {
+                background: $beige;
+
+                --interactive-active: black;
+                --header-primary: black;
+                --header-secondary: grey;
+                --text-normal: black;
+                --background-secondary: beige;
+                --interactive-muted: beige;
+
+                // Inner box
+                .overlayBackground-1KgwVi {
+                    background: white;
+                }
+            }
+        }
     }
 }
 
@@ -825,9 +893,9 @@ body #app-mount {
         }
 
         .button {
-            @include winButton(20px);
+            @include winButton(20px, false);
             &.close-button {
-                @include winButtonRed(20px);
+                @include winButton(20px, true);
             }
         }
     }

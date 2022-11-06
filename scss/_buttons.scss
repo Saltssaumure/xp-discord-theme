@@ -9,7 +9,7 @@
     );
 }
 
-@mixin winButton($size) {
+@mixin winButton($size, $isRed) {
     top: 0;
     min-height: $size;
     min-width: $size;
@@ -19,11 +19,9 @@
     margin-left: 0;
     border: 1px solid white;
     border-radius: 3px;
-    background: radial-gradient(circle at 20% 20%, $white-overlay, $blue-vivid, $blue-max);
     color: white;
-}
-
-@mixin winButtonRed($size) {
-    @include winButton($size);
-    background: radial-gradient(circle at 20% 20%, $white-overlay, $red-bright, $red-max);
+    background: radial-gradient(circle at 20% 20%, $white-overlay, $blue-vivid, $blue-max);
+    @if ($isRed) {
+        background: radial-gradient(circle at 20% 20%, $white-overlay, $red-bright, $red-max);
+    }
 }

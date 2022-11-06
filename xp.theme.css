@@ -61,8 +61,8 @@ body #app-mount .titleBar-1it3bQ .winButton-3UMjdg {
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 body #app-mount .titleBar-1it3bQ .winButton-3UMjdg.winButtonClose-3Q8ZH5 {
   top: 0;
@@ -74,8 +74,8 @@ body #app-mount .titleBar-1it3bQ .winButton-3UMjdg.winButtonClose-3Q8ZH5 {
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
 }
 body #app-mount .bg-1QIAus {
@@ -840,9 +840,8 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.container-2e
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopoutWrap-3zryHW .header-145e10 .button-1_oXub {
   top: 0;
@@ -854,8 +853,8 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopo
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI,
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c {
@@ -950,8 +949,8 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .closeIcon
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
   display: flex;
   align-items: center;
@@ -1042,6 +1041,95 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
   box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
   border: 0;
 }
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ {
+  border-radius: 0;
+  border: 2px solid rgb(22, 101, 202);
+  border-top: 0;
+  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ::before {
+  content: "User info";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: calc(100% + 4px);
+  top: -30px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: Tahoma, sans-serif;
+  text-shadow: 0 1px 1px black;
+  color: white;
+  text-indent: 9px;
+  background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  border-radius: 8px 8px 0 0;
+  height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ::before {
+  width: 100%;
+  left: 0;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 {
+  left: 24px;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .pencilContainer-11Kuga {
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgb(240, 239, 237);
+  color: black;
+  box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .pencilContainer-11Kuga .pencilIcon-1MUmnO {
+  color: black;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .profileBadges-31rDHI {
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgb(240, 239, 237);
+  color: black;
+  box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi {
+  border-radius: 0;
+  --font-primary: Tahoma, sans-serif;
+  --font-display: Tahoma, sans-serif;
+  font-family: "Whitney", var(--i18n-fallbacks);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi .rolePill-2IJ1vo {
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgb(240, 239, 237);
+  color: black;
+  box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi .note-6O4w9y {
+  font-family: "Whitney", var(--i18n-fallbacks);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi .messageInputContainer-2rGDH8 {
+  font-family: "Whitney", var(--i18n-fallbacks);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY {
+  background: rgb(235, 232, 215);
+  --interactive-active: black;
+  --header-primary: black;
+  --header-secondary: grey;
+  --text-normal: black;
+  --background-secondary: beige;
+  --interactive-muted: beige;
+}
+body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .overlayBackground-1KgwVi {
+  background: white;
+}
 
 #floating-editor-window {
   border-radius: 10px 10px 0 0;
@@ -1075,8 +1163,8 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 #floating-editor-window .floating-window-titlebar .button.close-button {
   top: 0;
@@ -1088,8 +1176,8 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
   margin-left: 0;
   border: 1px solid white;
   border-radius: 3px;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   color: white;
+  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
   background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
 }
 
