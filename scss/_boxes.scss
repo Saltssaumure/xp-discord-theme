@@ -1,16 +1,22 @@
-@mixin windowBorder() {
+@mixin windowBox($vertical-offset) {
     border: 2px solid $blue-select;
     border-top: 0;
+    box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0,0%,0%,0.4);
 }
 
 @mixin mainWindow() {
     margin: $window-top $window-right $window-bottom $window-left;
     overflow: hidden;
-    @include windowBorder();
-    @include window-shadow(3px);
+    @include windowBox(3px);
 }
 
-@mixin gradient($direction, $shadow, $color-dark, $color-light) {
+@mixin barGradient($isRotate, $color-dark, $color-light) {
+    $direction: bottom;
+    $shadow: 0 2px;
+    @if ($isRotate) {
+        $direction: left;
+        $shadow: -2px 0;
+    }
     background: linear-gradient(
         to #{$direction},
         $color-dark,    
@@ -23,18 +29,8 @@
     );
 }
 
-@mixin taskbar($rotate, $color-dark, $color-light) {
-    $direction: bottom;
-    $shadow: 0 2px;
-    @if ($rotate) {
-        $direction: left;
-        $shadow: -2px 0;
-    }
-    @include gradient($direction, $shadow, $color-dark, $color-light);
-}
-
-@mixin titlebar() {
-    @include taskbar(false, $blue-max, $blue-vivid);
+@mixin windowTitle() {
+    @include barGradient(false, $blue-max, $blue-vivid);
     border-radius: 8px 8px 0 0;
     height: $title-height;
     --font-display: Tahoma, sans-serif;
@@ -42,11 +38,10 @@
     text-shadow: 0 1px 1px black;
 }
 
-@mixin windowHasPseudoTitle($content) {
-    @include windowBorder();
-    @include window-shadow(0);
+@mixin windowHasPseudoTitle($title) {
+    @include windowBox(0px);
     &::before {
-        content: $content;
+        content: $title;
         display: block;
         position: absolute;
         z-index: 1;
@@ -59,17 +54,11 @@
         text-shadow: 0 1px 1px black;
         color: white;
         text-indent: 9px;
-        @include titlebar(); 
+        @include windowTitle; 
     }
 }
 
-@mixin startMenuTop() {
-    border-radius: 8px 8px 0 0;
-    @include gradient(bottom, 1px 2px, $blue-max, $blue-vivid);
-}
-
 @mixin startMenuList() {
-    --background-secondary: white;
     --background-modifier-selected: #{$blue-select};
     --background-modifier-hover: lightgrey;
     --channels-default: black;
@@ -109,11 +98,7 @@
     }
 }
 
-@mixin window-shadow($vertical-offset) {
-    box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0,0%,0%,0.4);
-}
-
-@mixin indentMessage() {
+@mixin indentBox() {
     font-family: "Whitney", var(--i18n-fallbacks);
     border-radius: 0;
     box-shadow: (

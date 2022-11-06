@@ -2,7 +2,7 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.0.1
+ * @version 1.0.2
 */
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
@@ -242,16 +242,23 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu {
   bottom: 0;
   max-height: 60vh;
   background: transparent;
-  border-radius: 3px 3px 0 0;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid rgb(22, 101, 202);
+  border-top: 0;
   box-shadow: 2px 15px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd {
   background: transparent;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .header-3OsQeK {
-  border-radius: 8px 8px 0 0;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 1px 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  border-radius: 8px 8px 0 0;
+  height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
+  height: 48px;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .header-3OsQeK .headerContent-2SNbie {
   color: white;
@@ -268,7 +275,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
   display: none;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -335,9 +341,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
   background: transparent;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .searchBar-3TnChZ {
-  border-radius: 8px 8px 0 0;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 1px 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  border-radius: 8px 8px 0 0;
+  height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .searchBar-3TnChZ .searchBarComponent-3N7dCG {
   background: transparent;
@@ -349,7 +359,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
   color: white;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .scroller-WSmht3 {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -389,7 +398,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
   border-radius: 0;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -419,9 +427,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_
   display: none;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .discoverHeader-1vsvZ0 {
-  border-radius: 8px 8px 0 0;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 1px 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  border-radius: 8px 8px 0 0;
+  height: 30px;
+  --font-display: Tahoma, sans-serif;
+  --header-primary: white;
+  text-shadow: 0 1px 1px black;
   margin: 0;
   padding: 12px 0;
   text-indent: 16px;
@@ -610,7 +622,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .list-3FIpnh > div:f
   min-width: 0;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -631,7 +642,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t 
   max-height: calc(100vh - 400px);
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t::after {
   content: "";
@@ -664,10 +675,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t:
   --header-primary: white;
   text-shadow: 0 1px 1px black;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .membersGroup-2eiWxl:not(:nth-child(2)) {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx {
+  background: white;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2)) {
   position: relative;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .membersGroup-2eiWxl:not(:nth-child(2))::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2))::before {
   content: "";
   display: block;
   position: absolute;
@@ -676,7 +690,10 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t 
   height: 2px;
   background: linear-gradient(to right, transparent 10%, lightgrey, transparent 90%);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .layout-1qmrhw {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l {
+  background: white;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l .layout-1qmrhw {
   border-radius: 0;
 }
 body #app-mount .layer-86YKbF {
@@ -705,6 +722,9 @@ body #app-mount .layerContainer-2v_Sit .tooltip-14MtrL {
 body #app-mount .layerContainer-2v_Sit .tooltip-14MtrL .guildNameText-jBFbNC {
   color: black;
 }
+body #app-mount .layerContainer-2v_Sit .tooltip-14MtrL .tooltipPointer-3L49xb {
+  border-top-color: black;
+}
 body #app-mount .layerContainer-2v_Sit .menu-1QACrS {
   --interactive-normal: black;
   background: rgb(235, 232, 215);
@@ -715,7 +735,7 @@ body #app-mount .layerContainer-2v_Sit .menu-1QACrS .colorDefault-CDqZdO.focused
   background: rgb(22, 101, 202);
   border-radius: 0;
 }
-body #app-mount .layerContainer-2v_Sit .menu-1QACrS .colorDefault-CDqZdO .icon-E4cW1l path:only-of-type {
+body #app-mount .layerContainer-2v_Sit .menu-1QACrS .colorDefault-CDqZdO .icon-E4cW1l path[d^="M12 20C16.4183"] {
   d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
 }
 body #app-mount .layerContainer-2v_Sit .menu-1QACrS .colorDefault-CDqZdO .icon-E4cW1l .radioSelection-1UHp0b {
@@ -748,7 +768,7 @@ body #app-mount .layerContainer-2v_Sit .menu-1QACrS .grabber-2GQyvM {
 body #app-mount .layerContainer-2v_Sit .accountProfilePopoutWrapper-3GskID {
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
 body #app-mount .layerContainer-2v_Sit .accountProfilePopoutWrapper-3GskID::before {
   content: "User Profile";
@@ -807,6 +827,9 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e
   height: 25px;
   background: linear-gradient(to bottom, orange, white 10%, rgb(235, 232, 215) 80%);
 }
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e10 .topPill-3DJJNV .tab-TRrPC8:hover {
+  color: black;
+}
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.container-2ebMPP .header-145e10 .button-1_oXub {
   top: 0;
   min-height: 26px;
@@ -836,7 +859,6 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopo
 }
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI,
 body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -915,6 +937,9 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .searchBox
   box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
   box-shadow: inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white;
 }
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .searchBox-3IjAC1 .input-2m5SfJ {
+  color: black;
+}
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .closeIcon-11tHJX {
   top: 0;
   min-height: 26px;
@@ -940,7 +965,6 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb .createBut
   box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
 }
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -954,7 +978,7 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb {
   font-family: var(--font-primary);
   background: white;
   border: 1px solid rgb(0, 90, 231);
-  background: beige;
+  background: rgb(235, 232, 215);
 }
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb::after {
   content: "";
@@ -965,10 +989,18 @@ body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb::after {
   height: 2px;
   background: linear-gradient(to right, transparent, orange, transparent);
 }
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .sectionHeader-QsOv68 {
+  color: black !important;
+}
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .container-2rzKKA {
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
   box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
+  border: 0;
+}
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .container-2c4_8A .defaultColor-HXu-5n,
+body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .container-2c4_8A .text-md-normal-304U3g {
+  color: black !important;
 }
 body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .header-1w9Q93 {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
@@ -980,7 +1012,6 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .header-1w9Q93
   text-shadow: 0 1px 1px black;
 }
 body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI {
-  --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;

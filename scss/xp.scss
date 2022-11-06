@@ -2,11 +2,11 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.0.1
+ * @version 1.0.2
 */
 
 @import "_shortcutIcon.scss";
-@import "_mixins.scss";
+@import "_boxes.scss";
 @import "_buttons.scss";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
@@ -66,7 +66,7 @@ body #app-mount {
         right: $window-right;
         top: calc($window-top - $title-height);
         z-index: 2;
-        @include titlebar();
+        @include windowTitle();
 
         // Discord logo
         .wordmarkWindows-2dq6rw {
@@ -128,12 +128,12 @@ body #app-mount {
             }
 
             .scroller-3X7KbA {
-                @include taskbar(true, $blue-max, $blue-vivid);
+                @include barGradient(true, $blue-max, $blue-vivid);
                 padding-top: 0!important;
 
                 // DMs icon / Start button
                 .tutorialContainer-1pL9QS {
-                    @include taskbar(true, $green-max, $green-bright);
+                    @include barGradient(true, $green-max, $green-bright);
                     position: relative;
                     padding: 5px 0 30px 0;
                     &::after {
@@ -214,16 +214,17 @@ body #app-mount {
                 bottom: 0;
                 max-height: 60vh;
                 background: transparent;
-                border-radius: 3px 3px 0 0;
-                @include window-shadow(15px);
-
+                border-radius: 8px 8px 0 0;
+                @include windowBox(15px);
+                
                 // Title and channels
                 .container-1NXEtd {
                     background: transparent;
 
                     // Title
                     .header-3OsQeK {
-                        @include startMenuTop();
+                        @include windowTitle();
+                        height: 48px;
                         .headerContent-2SNbie {
                             color: white;
                             .flowerStar-2tNFCR {
@@ -305,7 +306,7 @@ body #app-mount {
 
                     // Find conversation
                     .searchBar-3TnChZ {
-                        @include startMenuTop();
+                        @include windowTitle;
                         .searchBarComponent-3N7dCG {
                             background: transparent;
                             font-size: 14px;
@@ -345,7 +346,7 @@ body #app-mount {
                     }
                     // Header
                     .discoverHeader-1vsvZ0 {
-                        @include startMenuTop();
+                        @include windowTitle;
                         margin: 0;
                         padding: 12px 0;
                         text-indent: 16px;
@@ -380,7 +381,7 @@ body #app-mount {
                     position: fixed;
                     top: calc(100% - var(--server-container));
                     left: calc(100vw - $panel-width);
-                    @include taskbar(false, $blue-bright, $blue-mild);
+                    @include barGradient(false, $blue-bright, $blue-mild);
 
                     .container-YkUktl {
                         height: inherit;
@@ -464,8 +465,7 @@ body #app-mount {
                 right: $window-right;
                 border-radius: 0;
                 max-width: 100%;
-                @include windowBorder();
-                @include window-shadow(3px);
+                @include windowBox(3px);
             }
             .chatTarget-3H6mpC {
                 display: none;
@@ -513,7 +513,7 @@ body #app-mount {
                 // Members list
                 .membersWrap-3NUR2t {
                     @include startMenuList();
-
+                    
                     position: fixed;
                     right: 30px;
                     top: 180px;
@@ -521,15 +521,23 @@ body #app-mount {
                     max-height: calc(100vh - 400px);
                     @include windowHasPseudoTitle("Members");
 
-                    // Member group
-                    .membersGroup-2eiWxl:not(:nth-child(2)) {
-                        position: relative;
-                        @include startMenuDivider(7px);
-                    }
+                    .members-3WRCEx {
+                        background: white;
 
-                    // Member
-                    .layout-1qmrhw {
-                        border-radius: 0;
+                        // Member group
+                        .membersGroup-2eiWxl:not(:nth-child(2)) {
+                            position: relative;
+                            @include startMenuDivider(7px);
+                        }
+
+                        // Member
+                        .member-48YF_l {
+                            background: white;
+                            .layout-1qmrhw {
+                                border-radius: 0;
+                            }
+                        }
+
                     }
                 }
             }
@@ -566,6 +574,9 @@ body #app-mount {
             .guildNameText-jBFbNC {
                 color: black;
             }
+            .tooltipPointer-3L49xb {
+                border-top-color: black;
+            }
         }
 
         // Small menus
@@ -586,7 +597,7 @@ body #app-mount {
 
                 .icon-E4cW1l {
                     // Radio button
-                    path:only-of-type {
+                    path[d^="M12 20C16.4183"] {
                         d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
                     }
                     // circle
@@ -648,7 +659,7 @@ body #app-mount {
 
             // Top bar
             .header-145e10 {
-                @include titlebar;
+                @include windowTitle;
                 --interactive-normal: black;
                 --interactive-active: black;
 
@@ -669,6 +680,10 @@ body #app-mount {
                             padding-top: 1px;
                             height: 25px;
                             background: linear-gradient(to bottom, orange, white 10%, $beige 80%);
+                        }
+                        // Hovered tab 
+                        &:hover {
+                            color: black;
                         }
                     }
                 }
@@ -708,7 +723,7 @@ body #app-mount {
                     // Message group
                     .messages-23can0,
                     .messageContainer-3VTXBC {
-                        @include indentMessage;
+                        @include indentBox;
                     }
                 }
             }
@@ -720,7 +735,7 @@ body #app-mount {
 
             // Top bar
             .header-3_zmOb {
-                @include titlebar;
+                @include windowTitle;
 
                 // #
                 .threadIcon-rd1kqG {
@@ -734,6 +749,9 @@ body #app-mount {
                         inset 1px 1px 2px 0 grey,
                         inset -2px -2px 2px 0 white
                     );
+                    .input-2m5SfJ {
+                        color: black;
+                    }
                 }
 
                 // Close button
@@ -753,10 +771,22 @@ body #app-mount {
             // Content
             .list-3YHPPb {
                 @include startMenuList;
-                background: beige;
+                background: $beige;
+                // Thread age
+                .sectionHeader-QsOv68 {
+                    color: black!important;
+                }
                 // Thread
                 .container-2rzKKA {
-                    @include indentMessage;
+                    @include indentBox;
+                    border: 0;
+                }
+                // No threads
+                .container-2c4_8A {
+                    .defaultColor-HXu-5n,
+                    .text-md-normal-304U3g {
+                        color: black!important;
+                    }
                 }
             }
         }
@@ -764,13 +794,13 @@ body #app-mount {
         // Pinned messages
         .messagesPopoutWrap-3zryHW {
             .header-1w9Q93 {
-                @include titlebar;
+                @include windowTitle;
             }
             .messagesPopout-eVzQcI {
                 @include startMenuList;
                 background: $beige;
                 .messageGroupWrapper-1jf_7C {
-                    @include indentMessage;
+                    @include indentBox;
                     border: 0;
                 }
             }
@@ -782,10 +812,9 @@ body #app-mount {
 
 #floating-editor-window {
     border-radius: 10px 10px 0 0;
-    @include windowBorder();
-    @include window-shadow(5px);
+    @include windowBox(5px);
     .floating-window-titlebar {
-        @include titlebar();
+        @include windowTitle();
 
         .title {
             font-size: 14px;
