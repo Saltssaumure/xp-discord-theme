@@ -2,10 +2,14 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.0.2
+ * @version 1.1.0
 */
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+:root {
+  --bsod-text-original: "A problem has been detected and Windows has been shut down to prevent damage to your computer. \a \a A clock interrupt was not received on a secondary processor within the allocated time interval. \a \aIf this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \a \a Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \a \aIf problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \a \aTechnical information: \a \a*** STOP: USING_DISCORD \a \a***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \a \a \a \a \a \a \a \a \a \a Collecting data for crash dump ... \aInitializing disk for crash dump ... \a Beginning dump of all your belongings ... \a Dumping physical memory to disk: 100% \aPhysical memory dump complete. \a Contact your system administrator or technical support group for further assistance." ;
+}
+
 :root {
   --HSL-server-icon-size: 25px; /* Size of the server icons | DEFAULT: 40px */
   --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
@@ -1129,6 +1133,28 @@ body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userProfileInner
 }
 body #app-mount .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .overlayBackground-1KgwVi {
   background: white;
+}
+body #app-mount .layerContainer-2v_Sit .backdrop-2ByYRN {
+  background: var(--bsod-color, navy) !important;
+  opacity: 1 !important;
+}
+body #app-mount .layerContainer-2v_Sit .backdrop-2ByYRN::before {
+  content: var(--bsod-text, var(--bsod-text-original));
+  white-space: pre-wrap;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: white;
+  margin: 40px;
+}
+body #app-mount .layerContainer-2v_Sit .layer-1Ixpg3 {
+  align-items: flex-end;
+  padding-right: 10vw;
+}
+body #app-mount .layerContainer-2v_Sit .layer-1Ixpg3 .focusLock-2tveLW {
+  border: 2px solid white;
+  padding: 5px;
+  background: var(--bsod-color, rgba(0, 0, 128, 0.8));
 }
 
 #floating-editor-window {

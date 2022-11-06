@@ -22,6 +22,14 @@
 - **Theme setting:** change the value of `--background-image` to an image link encased in `url()`.
 - **Default value:** `url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)`.
 
+### BSOD background colour
+- **Theme setting:** change the value of `--bsod-color` to a CSS-recognised colour.
+- **Default value:** `navy`.
+
+### BSOD text
+- **Theme setting:** change the value of `--bsod-text` to any quoted text. Use `\A` for new lines.
+- **Default value:** [read here](https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/_bsod.scss)
+
 ## License
 - **Whole theme:** [GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)  
 <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
