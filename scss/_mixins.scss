@@ -125,3 +125,12 @@
 @mixin window-shadow($vertical-offset) {
     box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0,0%,0%,0.4);
 }
+
+@mixin indentMessage() {
+    font-family: "Whitney", var(--i18n-fallbacks);
+    border-radius: 0;
+    box-shadow: (
+        inset 1px 1px 2px 0 $black-overlay,
+        inset -2px -2px 2px 0 white
+    );
+}

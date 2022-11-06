@@ -6,49 +6,6 @@
 */
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
-.title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) {
-  position: fixed;
-  height: auto;
-  margin: 0;
-  right: 50px;
-  display: flex;
-  justify-content: center;
-}
-.title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) .icon-2xnN2Y {
-  background: linear-gradient(rgb(12, 168, 12), green);
-  border-radius: 4px;
-  padding: 5px;
-  margin: 5px;
-  height: 36px;
-  width: 36px;
-  box-shadow: 1px 1px 2px black;
-}
-.title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::before {
-  content: attr(aria-label);
-  display: block;
-  position: absolute;
-  top: 46px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 12px;
-  line-height: 12px;
-  color: white;
-  text-shadow: 1px 1px 2px black, 1px 1px 1px black;
-  text-align: center;
-}
-.title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 9px;
-  width: 9px;
-  border: 1px solid black;
-  bottom: 0;
-  left: 0;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
-}
-
 :root {
   --HSL-server-icon-size: 25px; /* Size of the server icons | DEFAULT: 40px */
   --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
@@ -175,6 +132,95 @@ body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .circleIconBut
   background: linear-gradient(to bottom, rgb(16, 140, 228), rgb(87, 140, 208));
   color: hsla(0deg, 0%, 100%, 0.8);
 }
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:only-of-type {
+  position: fixed;
+  height: auto;
+  margin: 0;
+  right: auto;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  top: 140px;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:only-of-type :is(.icon-2xnN2Y) {
+  background: linear-gradient(rgb(12, 168, 12), green);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  height: 36px;
+  width: 36px;
+  box-shadow: 1px 1px 2px black;
+  color: white;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:only-of-type::before {
+  content: attr(aria-label);
+  display: block;
+  position: absolute;
+  top: 46px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+  text-align: center;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:only-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border: 1px solid black;
+  bottom: 0;
+  left: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) {
+  position: fixed;
+  height: auto;
+  margin: 0;
+  right: 50px;
+  left: auto;
+  display: flex;
+  justify-content: center;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) :is(.icon-2xnN2Y) {
+  background: linear-gradient(rgb(12, 168, 12), green);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  height: 36px;
+  width: 36px;
+  box-shadow: 1px 1px 2px black;
+  color: white;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::before {
+  content: attr(aria-label);
+  display: block;
+  position: absolute;
+  top: 46px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+  text-align: center;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border: 1px solid black;
+  bottom: 0;
+  left: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
+}
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu {
   position: absolute;
   bottom: 0;
@@ -252,6 +298,15 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .actionIcon-2sw4Sl,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .actionIcon-2sw4Sl {
   color: hsla(0deg, 0%, 0%, 0.7);
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .channelInfo-3jN1ay,
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .channelInfo-3jN1ay {
+  --background-primary: lightgrey;
+  --background-tertiary: grey;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .channelInfo-3jN1ay .wrapper-2fEmwW,
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .channelInfo-3jN1ay .wrapper-2fEmwW {
+  border-radius: 3px;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .modeSelected-3DmyhH .actionIcon-2sw4Sl {
   color: hsla(0deg, 0%, 100%, 0.8);
@@ -414,32 +469,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .c
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .button-12Fmur.enabled-9OeuTA:hover {
   color: white;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
-  border-radius: 0;
-}
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI.threadSidebarOpen-1LSXvU .chatContent-3KubbW .message-2CShn3 {
-  margin-right: 0 !important;
-}
-body #app-mount .container-1eFtFS .base-2jDfDU .resizeHandle-PBRzPC {
-  position: relative;
-  right: 120px;
-  margin: 50px 0 50px 0;
-  height: auto;
-  background: rgb(3, 114, 255);
-}
-body #app-mount .container-1eFtFS .base-2jDfDU .container-3XgAHv {
-  position: relative;
-  margin: 50px 0 50px 0;
-  right: 120px;
-  border-radius: 0;
-  max-width: 100%;
-  border: 2px solid rgb(22, 101, 202);
-  border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
-}
-body #app-mount .container-1eFtFS .base-2jDfDU .chatTarget-3H6mpC {
-  display: none;
-}
 body #app-mount .container-1eFtFS .base-2jDfDU .container-2cd8Mz {
   margin: 50px 120px 50px 270px;
   overflow: hidden;
@@ -469,6 +498,32 @@ body #app-mount .container-1eFtFS .base-2jDfDU .applicationStore-2nk7Lo {
   border-top: 0;
   box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
+  border-radius: 0;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI.threadSidebarOpen-1LSXvU .chatContent-3KubbW .message-2CShn3 {
+  margin-right: 0 !important;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .resizeHandle-PBRzPC {
+  position: relative;
+  right: 120px;
+  margin: 50px 0 50px 0;
+  height: auto;
+  background: rgb(3, 114, 255);
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .container-3XgAHv {
+  position: relative;
+  margin: 50px 0 50px 0;
+  right: 120px;
+  border-radius: 0;
+  max-width: 100%;
+  border: 2px solid rgb(22, 101, 202);
+  border-top: 0;
+  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chatTarget-3H6mpC {
+  display: none;
+}
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI {
   margin: 50px 120px 50px 270px;
   overflow: hidden;
@@ -481,6 +536,58 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW 
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .message-2CShn3 .container-2gUZhU {
   right: 130px;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ {
+  position: fixed;
+  height: auto;
+  margin: 0;
+  right: auto;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  top: 50px;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ :is(.contents-3ca1mk) {
+  background: linear-gradient(rgb(12, 168, 12), green);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  height: 36px;
+  width: 36px;
+  box-shadow: 1px 1px 2px black;
+  color: white;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ::before {
+  content: attr(aria-label);
+  display: block;
+  position: absolute;
+  top: 46px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+  text-align: center;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border: 1px solid black;
+  bottom: 0;
+  left: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk {
+  padding: 0;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk .active-z80xEj .buttonWrapper-3YFQGJ,
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk .buttonWrapper-3YFQGJ:hover {
+  color: inherit;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .headerRow-1MKoR-,
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .list-3FIpnh > div:first-child {
@@ -650,8 +757,57 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
+  --interactive-normal: black;
+  --interactive-active: black;
 }
-body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI {
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e10 .topPill-3DJJNV {
+  position: absolute;
+  bottom: -1px;
+  z-index: 1;
+  align-items: base;
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e10 .topPill-3DJJNV .tab-TRrPC8 {
+  background: rgb(235, 232, 215);
+  border-radius: 3px 3px 0 0;
+  border: solid rgb(22, 101, 202);
+  border-width: 1px 1px 0 1px;
+  margin: 0;
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e10 .topPill-3DJJNV .tab-TRrPC8.selected-g-kMVV {
+  padding-top: 1px;
+  height: 25px;
+  background: linear-gradient(to bottom, orange, white 10%, rgb(235, 232, 215) 80%);
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.container-2ebMPP .header-145e10 .button-1_oXub {
+  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  min-height: 26px;
+  min-width: 26px;
+  height: 26px;
+  width: 26px;
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopoutWrap-3zryHW .header-145e10 .button-1_oXub {
+  top: 0;
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+  margin-left: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: radial-gradient(circle at 4px 4px, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  min-height: 26px;
+  min-width: 26px;
+  height: 26px;
+  width: 26px;
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c {
   --background-secondary: white;
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
@@ -666,8 +822,12 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPop
   font-family: var(--font-primary);
   background: white;
   border: 1px solid rgb(0, 90, 231);
+  --header-primary: black;
+  --header-secondary: grey;
+  background: rgb(235, 232, 215);
 }
-body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI::after {
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI::after,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c::after {
   content: "";
   display: block;
   position: absolute;
@@ -675,6 +835,34 @@ body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPop
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, transparent, orange, transparent);
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channel-3NJZ1V .channelHeader-DFRX8q,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .container-iA3Qrz .channelHeader-DFRX8q,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .channel-3NJZ1V .channelHeader-DFRX8q,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .container-iA3Qrz .channelHeader-DFRX8q {
+  background: rgb(235, 232, 215);
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channel-3NJZ1V .channelHeader-DFRX8q .button-1_oXub,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .container-iA3Qrz .channelHeader-DFRX8q .button-1_oXub,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .channel-3NJZ1V .channelHeader-DFRX8q .button-1_oXub,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .container-iA3Qrz .channelHeader-DFRX8q .button-1_oXub {
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgb(240, 239, 237);
+  color: black;
+  box-shadow: inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white;
+}
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channel-3NJZ1V .messages-23can0,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channel-3NJZ1V .messageContainer-3VTXBC,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .container-iA3Qrz .messages-23can0,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .container-iA3Qrz .messageContainer-3VTXBC,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .channel-3NJZ1V .messages-23can0,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .channel-3NJZ1V .messageContainer-3VTXBC,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .container-iA3Qrz .messages-23can0,
+body #app-mount .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .container-iA3Qrz .messageContainer-3VTXBC {
+  font-family: "Whitney", var(--i18n-fallbacks);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
 }
 body #app-mount .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
@@ -728,6 +916,7 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
   font-family: var(--font-primary);
   background: white;
   border: 1px solid rgb(0, 90, 231);
+  background: rgb(235, 232, 215);
 }
 body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI::after {
   content: "";
@@ -737,6 +926,12 @@ body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopou
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, transparent, orange, transparent);
+}
+body #app-mount .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI .messageGroupWrapper-1jf_7C {
+  font-family: "Whitney", var(--i18n-fallbacks);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -2px -2px 2px 0 white;
+  border: 0;
 }
 
 #floating-editor-window {

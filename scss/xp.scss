@@ -48,6 +48,7 @@ $green-max: green;
 
 $test-color: rgb(56, 57, 121);
 $beige: rgb(235, 232, 215);
+$beige-light: rgb(240, 239, 237);
 
 $white-overlay: hsla(0,0%,100%,0.8);
 $black-overlay: hsla(0,0%,0%,0.7);
@@ -265,9 +266,19 @@ body #app-mount {
                         .content-1gYQeQ,
                         .container-32HW5s {
                             border-radius: 0;
+
                             // Channel actions
                             .actionIcon-2sw4Sl {
                                 color: $black-overlay;
+                            }
+
+                            // Voice channel member limit
+                            .channelInfo-3jN1ay {
+                                --background-primary: lightgrey;
+                                --background-tertiary: grey;
+                                .wrapper-2fEmwW {
+                                    border-radius: 3px;
+                                }
                             }
                         }
                         // Selected channel
@@ -628,11 +639,91 @@ body #app-mount {
 
         // Inbox
         .recentMentionsPopout-2bI1ZN {
+
+            // Top bar
             .header-145e10 {
                 @include titlebar;
+                --interactive-normal: black;
+                --interactive-active: black;
+
+                // Mentions / unreads tabs
+                .topPill-3DJJNV {
+                    position: absolute;
+                    bottom: -1px;
+                    z-index: 1;
+                    align-items: base;
+                    .tab-TRrPC8 {
+                        background: $beige;
+                        border-radius: 3px 3px 0 0;
+                        border: solid $blue-select;
+                        border-width: 1px 1px 0 1px;
+                        margin: 0;
+                        // Selected tab
+                        &.selected-g-kMVV {
+                            padding-top: 1px;
+                            height: 25px;
+                            background: linear-gradient(to bottom, orange, white 10%, $beige 80%);
+                        }
+                    }
+                }
             }
-            .messagesPopout-eVzQcI {
+            @mixin inboxHeaderButton() {
+                border-radius: 3px;
+                border: 1px solid white;
+                color: white;
+                $size: 26px; 
+                min-height: $size;
+                min-width: $size;
+                height: $size;
+                width: $size;
+            }
+            // Mark all as read button
+            &.container-2ebMPP {
+                .header-145e10 .button-1_oXub {
+                    @include winButtonRed;
+                    @include inboxHeaderButton;
+                }
+            }
+            // Filter mentions button
+            &.messagesPopoutWrap-3zryHW {
+                .header-145e10 .button-1_oXub {
+                    @include winButton;
+                    @include inboxHeaderButton;
+                }
+            }
+
+            // Content
+            .messagesPopout-eVzQcI,
+            .scroller-145h9c {
                 @include startMenuList;
+                --header-primary: black;
+                --header-secondary: grey;
+                background: $beige;
+
+                // Channel unread group
+                .channel-3NJZ1V,
+                .container-iA3Qrz {
+                    // Channel group header
+                    .channelHeader-DFRX8q {
+                        background: $beige;
+                        // Buttons
+                        .button-1_oXub {
+                            border-radius: 3px;
+                            border: 1px solid black;
+                            background: $beige-light;
+                            color: black;
+                            box-shadow: (
+                                inset -1px -1px 2px 0 grey,
+                                inset 2px 2px 2px 0 white
+                            );
+                        }
+                    }
+                    // Message group
+                    .messages-23can0,
+                    .messageContainer-3VTXBC {
+                        @include indentMessage;
+                    }
+                }
             }
         }
 
@@ -653,6 +744,11 @@ body #app-mount {
             }
             .messagesPopout-eVzQcI {
                 @include startMenuList;
+                background: $beige;
+                .messageGroupWrapper-1jf_7C {
+                    @include indentMessage;
+                    border: 0;
+                }
             }
         }
 
