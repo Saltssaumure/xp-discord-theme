@@ -2,9 +2,9 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.0
+ * @version 1.0.1
 */
- 
+
 @use "_membersListToggle.scss";
 @import "_mixins.scss";
 
@@ -15,7 +15,7 @@
     --HSL-server-icon-size: 25px;  /* Size of the server icons | DEFAULT: 40px */
     --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
-}   
+}
 code,
 .markup-eYLPri pre {
     font-family: var(--font-code);
@@ -43,9 +43,14 @@ $blue-bright: rgb(16, 140, 228);
 $red-bright: rgb(230, 77, 28);
 $red-max: rgb(199, 50, 7);
 
+$green-bright: rgb(56, 196, 56);
+$green-max: green;
+
 $test-color: rgb(56, 57, 121);
 $beige: rgb(235, 232, 215);
-$white-overlay: hsla(0,0%,255%,0.8);
+
+$white-overlay: hsla(0,0%,100%,0.8);
+$black-overlay: hsla(0,0%,0%,0.7);
 
 body #app-mount {
 
@@ -115,7 +120,7 @@ body #app-mount {
                     background: linear-gradient(to bottom, transparent, $red-bright);
                 }
             }
-            // Unread icon 
+            // Unread icon
             .lowerBadge-3WTshO .numberBadge-37OJ3S {
                 opacity: 0.8;
             }
@@ -126,7 +131,7 @@ body #app-mount {
 
                 // DMs icon / Start button
                 .tutorialContainer-1pL9QS {
-                    @include taskbar(true, green, rgb(56, 196, 56));
+                    @include taskbar(true, $green-max, $green-bright);
                     position: relative;
                     padding: 5px 0 30px 0;
                     &::after {
@@ -160,7 +165,7 @@ body #app-mount {
                         }
                     }
                 }
-                
+
                 // Unread pill
                 .item-2LIpTv {
                     background: white;
@@ -187,15 +192,6 @@ body #app-mount {
 
             // Channels sidebar
             .sidebar-1tnWFu {
-                --background-modifier-selected: #{$blue-select};
-                --channels-default: black;
-                --channel-icon: black;
-                --interactive-hover: black;
-                --interactive-active: black;
-                --interactive-muted: lightgrey;
-                --font-primary: Tahoma, sans-serif;
-                --font-display: Tahoma, sans-serif;
-                font-family: var(--font-primary);
 
                 position: absolute;
                 bottom: 0;
@@ -234,7 +230,7 @@ body #app-mount {
                         @include startMenuList();
 
                         // Channel names
-                        :is(.modeConnected-NrO4cP, .modeSelected-3DmyhH, .modeUnread-3Cxepe, .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
+                        :is(.modeSelected-3DmyhH, .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
                             .name-28HaxV {
                                 color: white;
                             }
@@ -245,7 +241,7 @@ body #app-mount {
                             background: transparent;
                         }
 
-                        // Category 
+                        // Category
                         .containerDefault-3TQ5YN:not(:nth-child(2)) {
                             @include startMenuDivider(7px);
                         }
@@ -254,11 +250,23 @@ body #app-mount {
                         .content-1gYQeQ,
                         .container-32HW5s {
                             border-radius: 0;
+                            // Channel actions
+                            .actionIcon-2sw4Sl {
+                                color: $black-overlay;
+                            }
                         }
+                        // Selected channel
                         .modeSelected-3DmyhH {
                             // Channel actions
                             .actionIcon-2sw4Sl {
                                 color: $white-overlay;
+                            }
+                        }
+                        // Muted channel
+                        .modeMuted-2T4MDZ {
+                            .name-28HaxV,
+                            .icon-2W8DHg {
+                                color: grey;
                             }
                         }
                     }
@@ -271,6 +279,15 @@ body #app-mount {
                     // Find conversation
                     .searchBar-3TnChZ {
                         @include startMenuTop();
+                        .searchBarComponent-3N7dCG {
+                            background: transparent;
+                            font-size: 14px;
+                            line-height: $title-height;
+                            font-weight: 600;
+                            font-family: Tahoma, sans-serif;
+                            text-shadow: 0 1px 1px black;
+                            color: white;
+                        }
                     }
 
                     // DMs and friends
@@ -284,7 +301,7 @@ body #app-mount {
                         @include startMenuDivider(2px);
                     }
 
-                    // Menu item 
+                    // Menu item
                     .container-32HW5s {
                         border-radius: 0;
                     }
@@ -309,8 +326,8 @@ body #app-mount {
                         position: fixed;
                         width: 240px;
                         z-index: 2;
-                    }                
-                    // Category 
+                    }
+                    // Category
                     .container-1oeRFJ {
                         color: var(--channels-default);
                         border-radius: 0;
@@ -340,18 +357,26 @@ body #app-mount {
 
                     .container-YkUktl {
                         height: inherit;
+                        flex-direction: row-reverse;
 
-                        // Username
-                        .nameTag-sc-gpq {
-                            text-shadow: 0 1px 1px black;
-                            .title-338goq {
-                                color: white;
-                                font-weight: normal;
-                            }
-                            .subtext-2HDqJ7 {
-                                color: $white-overlay;
+                        // Self info
+                        .avatarWrapper-1B9FTW {
+                            margin: 0 0 0 6px;
+                            padding: 0 4px 0 0;
+                            flex-direction: row-reverse;
+                            // Username
+                            .nameTag-sc-gpq {
+                                text-shadow: 0 1px 1px black;
+                                .title-338goq {
+                                    color: white;
+                                    font-weight: normal;
+                                }
+                                .subtext-2HDqJ7 {
+                                    color: $white-overlay;
+                                }
                             }
                         }
+
 
                         // Buttons
                         .button-12Fmur {
@@ -368,11 +393,16 @@ body #app-mount {
                     }
                 }
             }
-            
-            // Thread
+
+            // Chat panel with thread open
             .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
                 border-radius: 0;
+                // Message needs no indent as member list cannot be visible at once.
+                .chatContent-3KubbW .message-2CShn3 {
+                    margin-right: 0 !important;
+                }
             }
+            // Main chat / thread separator
             .resizeHandle-PBRzPC {
                 position: relative;
                 right: $window-right;
@@ -380,13 +410,18 @@ body #app-mount {
                 height: auto;
                 background: $blue-vivid;
             }
+            // Thread panel
             .container-3XgAHv {
                 position: relative;
                 margin: $window-top 0 $window-bottom 0;
                 right: $window-right;
                 border-radius: 0;
+                max-width: 100%;
                 @include windowBorder();
                 @include window-shadow(3px);
+            }
+            .chatTarget-3H6mpC {
+                display: none;
             }
 
             // Main DM and friend list view
@@ -394,7 +429,7 @@ body #app-mount {
                 @include mainWindow();
             }
 
-            // Explore servers view 
+            // Explore servers view
             .pageWrapper-2PwDoS {
                 @include mainWindow();
             }
@@ -412,28 +447,29 @@ body #app-mount {
             // Main chat and top bar
             .chat-2ZfjoI {
                 @include mainWindow();
-                // Top bar   
-                    // moved to membersListToggle.scss 
+
                 // Main chat
                 .chatContent-3KubbW {
 
                     // Message
                     .message-2CShn3 {
-                        margin-right: 150px!important;
+                        padding-right: 140px!important;
+                        // Message actions
+                        .container-2gUZhU {
+                            right: 130px;
+                        }
                     }
                 }
+
+                // Forums
+                .headerRow-1MKoR-,
+                .list-3FIpnh>div:first-child {
+                    min-width: 0;
+                }
+
                 // Members list
                 .membersWrap-3NUR2t {
-                    --background-secondary: white;
-                    --background-modifier-selected: #{$blue-select};
-                    --channels-default: black;
-                    --channel-icon: black;
-                    --interactive-hover: black;
-                    --interactive-active: black;
-                    --interactive-muted: lightgrey;
-                    --font-primary: Tahoma, sans-serif;
-                    --font-display: Tahoma, sans-serif;
-                    font-family: var(--font-primary);
+                    @include startMenuList();
 
                     position: fixed;
                     right: 30px;
@@ -478,12 +514,77 @@ body #app-mount {
             background: $beige;
             border: 1px solid black;
             color: black;
+            border-radius: 0;
             .guildNameText-jBFbNC {
                 color: black;
             }
         }
 
-        // Profile 
+        // Small menus
+        .menu-1QACrS {
+            --interactive-normal: black;
+            background: $beige;
+            border: 1px solid black;
+            border-radius: 0;
+
+            // Menu item
+            .colorDefault-CDqZdO {
+
+                // Focused menu item
+                &.focused-3qFvc8 {
+                    background: $blue-select;
+                    border-radius: 0;
+                }
+
+                .icon-E4cW1l {
+                    // Radio button
+                    path:only-of-type {
+                        d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
+                    }
+                    // circle
+                    .radioSelection-1UHp0b {
+                        color: $green-bright;
+                    }
+
+                    // Checkbox
+                    .checkbox-hADx5o {
+                        d: path("M 2 2 V 22 H 22 V 2 Z M 3 3 V 21 H 21 V 3 Z");
+                        color: black;
+                        border: 1px solid black;
+                    }
+                    .check-3HZJs4 {
+                        color: $green-bright;
+                    }
+                }
+
+            }
+            // Slider bar
+            .bar-1Bhnl9 {
+                background: $beige;
+                box-shadow: (
+                    inset 1px 1px 2px 0 grey,
+                    inset -2px -2px 2px 0 white
+                );
+                .barFill-2Bh7CX {
+                    background: transparent;
+                }
+            }
+            // Handle
+            .grabber-2GQyvM {
+                height: 16px;
+                width: 10px;
+                margin-top: -1px;
+                border-radius: 3px;
+                border: solid $green-bright;
+                border-width: 3px 0;
+                box-shadow: (
+                    inset -1px -1px 2px 0 grey,
+                    inset 2px 2px 2px 0 white
+                );
+            }
+        }
+
+        // Profile
         .accountProfilePopoutWrapper-3GskID {
             @include windowHasPseudoTitle("User Profile");
             &::before {
@@ -493,6 +594,38 @@ body #app-mount {
                 border-radius: 0;
             }
         }
+
+        // Inbox
+        .recentMentionsPopout-2bI1ZN {
+            .header-145e10 {
+                @include titlebar;
+            }
+            .messagesPopout-eVzQcI {
+                @include startMenuList;
+            }
+        }
+
+        // Threads
+        .browser-mnQ1T7 {
+            .header-3_zmOb {
+                @include titlebar;
+            }
+            .list-3YHPPb {
+                @include startMenuList;
+            }
+        }
+
+        // Pinned messages
+        .messagesPopoutWrap-3zryHW {
+            .header-1w9Q93 {
+                @include titlebar;
+            }
+            .messagesPopout-eVzQcI {
+                @include startMenuList;
+            }
+        }
+
+
     }
 }
 
@@ -518,4 +651,16 @@ body #app-mount {
             }
         }
     }
+}
+
+// Avatar sphere effect - move this somewhere more appropriate
+.wrapper-1VLyxH::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at 25% 25%, $white-overlay, transparentize($white-overlay, 0.4) 20%, transparentize($white-overlay, 0.6) 40%, transparent);
+    border-radius: 50%;
+    z-index: 1;
 }

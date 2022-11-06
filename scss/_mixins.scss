@@ -82,12 +82,28 @@
 }
 
 @mixin startMenuList() {
+    --background-secondary: white;
+    --background-modifier-selected: #{$blue-select};
+    --background-modifier-hover: lightgrey;
+    --channels-default: black;
+    --channel-icon: black;
+    --interactive-hover: black;
+    --interactive-active: black;
+    --interactive-muted: lightgrey;
+    --font-primary: Tahoma, sans-serif;
+    --font-display: Tahoma, sans-serif;
+    --text-muted: grey;
+    font-family: var(--font-primary);
+
     background: white;
     border: 1px solid $blue-max;
 
-    &::before {
+    // orange stripe
+    &::after {
         content: "";
         display: block;
+        position: absolute;
+        top: 0;
         width: 100%;
         height: 2px;
         background: linear-gradient(to right, transparent, orange, transparent);
