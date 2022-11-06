@@ -5,7 +5,7 @@
  * @version 1.0.1
 */
 
-@use "_membersListToggle.scss";
+@import "_shortcutIcon.scss";
 @import "_mixins.scss";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
@@ -189,6 +189,21 @@ body #app-mount {
 
         // Channels sidebar and main chat
         .base-2jDfDU {
+
+            // Top bar
+            .title-31SJ6t {
+                .toolbar-3_r2xA {
+                    // Move help icon
+                    .iconWrapper-2awDjA:only-of-type {
+                        @include makeIcon(50px, auto, ".icon-2xnN2Y");
+                        top: $window-top + 90px;
+                    }
+                    // Move show/hide member list button
+                    .iconWrapper-2awDjA:is(#{makeSelectors()}) { 
+                        @include makeIcon(auto, 50px, ".icon-2xnN2Y");
+                    }
+                }   
+            }
 
             // Channels sidebar
             .sidebar-1tnWFu {
@@ -394,7 +409,27 @@ body #app-mount {
                 }
             }
 
-            // Chat panel with thread open
+            // Main DM and friend list view
+            .container-2cd8Mz {
+                @include mainWindow();
+            }
+
+            // Explore servers view
+            .pageWrapper-2PwDoS {
+                @include mainWindow();
+            }
+            // University hub
+            .scroller-RfJjkV {
+                @include mainWindow();
+                height: auto;
+            }
+
+            // Buy nitro page
+            .applicationStore-2nk7Lo {
+                @include mainWindow();
+            }
+
+            // Main chat with thread open
             .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
                 border-radius: 0;
                 // Message needs no indent as member list cannot be visible at once.
@@ -424,26 +459,6 @@ body #app-mount {
                 display: none;
             }
 
-            // Main DM and friend list view
-            .container-2cd8Mz {
-                @include mainWindow();
-            }
-
-            // Explore servers view
-            .pageWrapper-2PwDoS {
-                @include mainWindow();
-            }
-            // University hub
-            .scroller-RfJjkV {
-                @include mainWindow();
-                height: auto;
-            }
-
-            // Buy nitro page
-            .applicationStore-2nk7Lo {
-                @include mainWindow();
-            }
-
             // Main chat and top bar
             .chat-2ZfjoI {
                 @include mainWindow();
@@ -457,6 +472,22 @@ body #app-mount {
                         // Message actions
                         .container-2gUZhU {
                             right: 130px;
+                        }
+                    }
+
+                    // Message box
+                    .form-3gdLxP {
+                        // Gift nitro button
+                        .buttons-uaqb-5>.button-f2h6uQ {
+                            @include makeIcon(50px, auto, ".contents-3ca1mk");
+                            top: $window-top;
+                            .contents-3ca1mk {
+                                padding: 0;
+                                .active-z80xEj .buttonWrapper-3YFQGJ,
+                                .buttonWrapper-3YFQGJ:hover {
+                                    color: inherit;
+                                }
+                            }
                         }
                     }
                 }

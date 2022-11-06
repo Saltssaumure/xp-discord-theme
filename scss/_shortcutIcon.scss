@@ -70,51 +70,49 @@
     @return $selectors
 };
 
-.title-31SJ6t {
-    // Move show/hide member list button
-    .toolbar-3_r2xA {
-        .iconWrapper-2awDjA:is(#{makeSelectors()}) { 
-            position: fixed;
-            height: auto;
-            margin: 0;
-            right: 50px;
-            display: flex;
-            justify-content: center;
-        
-            .icon-2xnN2Y {
-                background: linear-gradient(rgb(12, 168, 12), green);
-                border-radius: 4px;
-                padding: 5px;
-                margin: 5px;
-                height: 36px;
-                width: 36px;
-                box-shadow: 1px 1px 2px black;
-            } 
+@mixin makeIcon($left-offset, $right-offset, $inner-element) {
+    position: fixed;
+    height: auto;
+    margin: 0;
+    right: $right-offset;
+    left: $left-offset;
+    display: flex;
+    justify-content: center;
 
-            &::before {
-                content: attr(aria-label);
-                display: block;
-                position: absolute;
-                top: 46px;
-                width: fit-content;
-                font-size: 12px;
-                line-height: 12px;
-                color: white;
-                text-shadow: 1px 1px 2px black, 1px 1px 1px black;
-                text-align: center;
-            }
+    :is(#{$inner-element}) {
+        background: linear-gradient(rgb(12, 168, 12), green);
+        border-radius: 4px;
+        padding: 5px;
+        margin: 5px;
+        height: 36px;
+        width: 36px;
+        box-shadow: 1px 1px 2px black;
 
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                height: 9px;
-                width: 9px;
-                border: 1px solid black;
-                bottom: 0;
-                left: 0;
-                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
-            }
-        }
-    }   
+        color: white;
+    } 
+
+    &::before {
+        content: attr(aria-label);
+        display: block;
+        position: absolute;
+        top: 46px;
+        width: fit-content;
+        font-size: 12px;
+        line-height: 12px;
+        color: white;
+        text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+        text-align: center;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        border: 1px solid black;
+        bottom: 0;
+        left: 0;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
+    }
 }
