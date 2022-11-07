@@ -235,6 +235,9 @@
                 .text-md-normal-304U3g {
                     color: black!important;
                 }
+                .button-f2h6uQ {
+                    @include beigeButton;
+                }
             }
         }
     }
@@ -250,6 +253,9 @@
             .messageGroupWrapper-1jf_7C {
                 @include indentBox;
                 border: 0;
+            }
+            .body-GBnhET {
+                color: black;
             }
         }
     }
@@ -337,6 +343,86 @@
         @include beigeBox;
         .watchButton-2YRKxv {
             @include beigeButton;
+        }
+    }
+
+    // Select role preview
+    .container-3ssFyj {
+        @include beigeBox;
+        // Search role
+        .container-2oNtJn {
+            @include beigeButtonInset;
+        }
+        // Role
+        .item-1BCeuB {
+            border-radius: 0;
+            &.selected-22ukbQ {
+                background: $blue-select;
+            }
+            .itemLabel-27pirQ span {
+                background: $beige;
+            }
+            // Checkbox
+            .box-BHImcZ {
+                border-radius: 0;
+                &.checked-1pZh2h {
+                    background: $beige !important;
+                    path {
+                        fill: $green-bright!important;
+                    }
+                }
+            }
+        }
+    }
+
+    // Emoji info
+    .popoutContainer-2wbmiM {
+        @include beigeBox;
+        // Nitro button
+        .shinyButton-2Q9MDB {
+            @include beigeButton;
+        }
+    }
+    
+    // Color picker
+    .colorPickerCustom-1swUKF {
+        @include beigeBox;
+        // Hex code box
+        .input-2g-os5 {
+            @include beigeButtonInset;
+        }
+        // Suggested colour buttons
+        .suggestedColor-2q1U7c {
+            @include beigeButton;
+        }
+        // Saturation brightness grid
+        .saturation-CLQHFD {
+            box-shadow: (
+                -1px -1px 2px 0 grey,
+                2px 2px 2px 0 white
+            );
+        }
+        // Hue slider
+        .hue-horizontal {
+            box-shadow: (
+                inset 1px 1px 2px 0 grey,
+                inset -2px -2px 2px 0 white
+            );
+            // Grabber
+            div:last-child {
+                height: 12px;
+                width: 10px;
+                margin-top: -4px;
+                div {
+                    border-radius: 3px;
+                    border: solid $green-bright;
+                    border-width: 3px 0;
+                    box-shadow: (
+                        inset -1px -1px 2px 0 grey,
+                        inset 2px 2px 2px 0 white
+                    );
+                }
+            }
         }
     }
 
@@ -516,6 +602,7 @@
 
         // Gif picker
         #gif-picker-tab-panel {
+            background: $beige;
             // Back button
             .backButton-bSKWLe {
                 color: black;

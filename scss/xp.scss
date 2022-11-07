@@ -164,6 +164,17 @@ body #app-mount {
         // Channels sidebar and main chat
         .base-2jDfDU {
 
+            // Notice banner
+            .notice-2olXi7 {
+                top: $window-top;
+                margin: 0 $window-right 0 $window-left;
+                width: auto;
+                border-radius: 0;
+                border: solid $blue-select;
+                border-width: 0 2px 0 2px;
+                box-shadow: none;
+            }
+
             // Top bar
             .title-31SJ6t {
                 .toolbar-3_r2xA {
