@@ -1,3 +1,5 @@
+@use "../_vars.scss" as *;
+
 @mixin beigeButton() {
     border-radius: 3px;
     border: 1px solid black;
@@ -6,6 +8,14 @@
     box-shadow: (
         inset -1px -1px 2px 0 grey,
         inset 2px 2px 2px 0 white
+    );
+}
+
+@mixin beigeButtonInset() {
+    @include beigeButton();
+    box-shadow: (
+        inset 1px 1px 2px 0 grey,
+        inset -2px -2px 2px 0 white
     );
 }
 

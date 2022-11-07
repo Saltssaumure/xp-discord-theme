@@ -5,10 +5,13 @@
  * @version 1.1.0
 */
 
-@import "_shortcutIcon.scss";
-@import "_boxes.scss";
-@import "_buttons.scss";
+@use "_vars.scss" as *;
+
+@import "mixins/_shortcutIcon.scss";
+@import "mixins/_boxes.scss";
+@import "mixins/_buttons.scss";
 @import "_bsod.scss";
+@import "_popovers.scss";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
@@ -22,38 +25,6 @@ code,
 .markup-eYLPri pre {
     font-family: var(--font-code);
 }
-
-// Member list
-$panel-width: 240px;
-
-// Chat window
-$window-top: 50px;
-$window-right: 120px;
-$window-bottom: 50px;
-$window-left: 270px;
-
-// Window bars
-$title-height: 30px;
-
-// General colours
-$blue-select: rgb(22, 101, 202);
-$blue-max: rgb(0, 90, 231);
-$blue-vivid: rgb(3, 114, 255);
-$blue-mild: rgb(87, 140, 208);
-$blue-bright: rgb(16, 140, 228);
-
-$red-bright: rgb(230, 77, 28);
-$red-max: rgb(199, 50, 7);
-
-$green-bright: rgb(56, 196, 56);
-$green-max: green;
-
-$test-color: rgb(56, 57, 121);
-$beige: rgb(235, 232, 215);
-$beige-light: rgb(240, 239, 237);
-
-$white-overlay: hsla(0,0%,100%,0.8);
-$black-overlay: hsla(0,0%,0%,0.7);
 
 body #app-mount {
 
@@ -284,6 +255,10 @@ body #app-mount {
                                 }
                             }
                         }
+                        // User in voice channel
+                        .content-1Tgc42 {
+                            border-radius: 0;
+                        }
                         // Selected channel
                         .modeSelected-3DmyhH {
                             // Channel actions
@@ -378,14 +353,38 @@ body #app-mount {
                 // Control panel
                 .panels-3wFtMD {
                     width: $panel-width;
-                    height: var(--server-container);
+                    height: auto;
                     position: fixed;
-                    top: calc(100% - var(--server-container));
+                    bottom: -1px;
                     left: calc(100vw - $panel-width);
+                    z-index: 0;
                     @include barGradient(false, $blue-bright, $blue-mild);
+                    &:hover {
+                        z-index: 1;
+                    }
 
+                    .subtext-2HDqJ7 {
+                        color: $white-overlay;
+                    }
+
+                    // Voice chat controls
+                    .container-1zzFcN {
+                        // Video stream buttons
+                        .button-1EGGcP {
+                            @include beigeButton;
+                            &.buttonActive-Uc1jHx {
+                                background: $beige;
+                                box-shadow: (
+                                    inset 1px 1px 2px 0 grey,
+                                    inset -2px -2px 2px 0 white
+                                );
+                            }
+                        }
+                    }
+
+                    // User and settings
                     .container-YkUktl {
-                        height: inherit;
+                        height: var(--server-container);
                         flex-direction: row-reverse;
 
                         // Self info
@@ -400,25 +399,21 @@ body #app-mount {
                                     color: white;
                                     font-weight: normal;
                                 }
-                                .subtext-2HDqJ7 {
-                                    color: $white-overlay;
-                                }
                             }
                         }
+                    }
 
-
-                        // Buttons
-                        .button-12Fmur {
-                            color: $white-overlay;
-                        }
-                        .withTagAsButton-OsgQ9L:hover,
-                        .withTagless-10ooWt:hover,
-                        .button-12Fmur.enabled-9OeuTA:hover {
-                            background: linear-gradient(to bottom, $blue-select, $blue-bright);
-                        }
-                        .button-12Fmur.enabled-9OeuTA:hover {
-                            color: white;
-                        }
+                    // Buttons
+                    .button-12Fmur {
+                        color: $white-overlay;
+                    }
+                    .withTagAsButton-OsgQ9L:hover,
+                    .withTagless-10ooWt:hover,
+                    .button-12Fmur.enabled-9OeuTA:hover {
+                        background: linear-gradient(to bottom, $blue-select, $blue-bright);
+                    }
+                    .button-12Fmur.enabled-9OeuTA:hover {
+                        color: white;
                     }
                 }
             }
@@ -441,35 +436,6 @@ body #app-mount {
             // Buy nitro page
             .applicationStore-2nk7Lo {
                 @include mainWindow();
-            }
-
-            // Main chat with thread open
-            .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
-                border-radius: 0;
-                // Message needs no indent as member list cannot be visible at once.
-                .chatContent-3KubbW .message-2CShn3 {
-                    margin-right: 0 !important;
-                }
-            }
-            // Main chat / thread separator
-            .resizeHandle-PBRzPC {
-                position: relative;
-                right: $window-right;
-                margin: $window-top 0 $window-bottom 0;
-                height: auto;
-                background: $blue-vivid;
-            }
-            // Thread panel
-            .container-3XgAHv {
-                position: relative;
-                margin: $window-top 0 $window-bottom 0;
-                right: $window-right;
-                border-radius: 0;
-                max-width: 100%;
-                @include windowBox(3px);
-            }
-            .chatTarget-3H6mpC {
-                display: none;
             }
 
             // Main chat and top bar
@@ -501,6 +467,10 @@ body #app-mount {
                                     color: inherit;
                                 }
                             }
+                        }
+                        // Autocompleter
+                        .autocomplete-3NRXG8 {
+                            width: calc(100% - 150px);
                         }
                     }
                 }
@@ -538,366 +508,81 @@ body #app-mount {
                                 border-radius: 0;
                             }
                         }
-
                     }
                 }
+
+                // VC video
+                .video-3n15R6 {
+                    z-index: 0;
+                }
             }
-        }
-    }
-
-    // Settings menu
-    .layer-86YKbF {
-        background: transparent;
-        .standardSidebarView-E9Pc3j {
-            @include mainWindow();
-        }
-    }
-
-    // Popouts
-    .layerContainer-2v_Sit {
-
-        // Inbox etc window
-        .messagesPopoutWrap-3zryHW {
-            border-radius: 8px 8px 0 0;
-            max-height: calc(100vh - $window-top - 120px)!important;
-            // No "protips" please
-            .footer-5ji8u1 {
+            // Main chat with thread open
+            .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
+                border-radius: 0;
+                // Message needs no indent as member list cannot be visible at once.
+                .chatContent-3KubbW .message-2CShn3 {
+                    margin-right: 0 !important;
+                }
+                // Neither does autocompleter
+                .autocomplete-3NRXG8 {
+                    width: auto!important;
+                }
+            }
+            .resizeHandle-PBRzPC {
+                background: $blue-vivid;
+            }
+            // Floating thread panel
+            .floating-3M3WeH {
+                border-radius: 0;
+            }
+            // Threads not video chat
+            .content-1SgpWY> {
+                 // Main chat / thread separator
+                .resizeHandle-PBRzPC {
+                    position: relative;
+                    right: $window-right;
+                    margin: $window-top 0 $window-bottom 0;
+                    height: auto;
+                }
+                // Thread panel
+                .container-3XgAHv {
+                    position: relative;
+                    margin: $window-top 0 $window-bottom 0;
+                    right: $window-right;
+                    border-radius: 0;
+                    max-width: 100%;
+                    @include windowBox(3px);
+                }
+                // Floating thread panel for narrow screens
+                .chatLayerWrapper-2mgEK- {
+                    // margin: $window-top $window-right $window-bottom 0;
+                    top: $window-top;
+                    right: calc($window-right + 2px);
+                    bottom: calc($window-bottom + 2px);
+                    height: auto;
+                }
+            }
+            .chatTarget-3H6mpC {
                 display: none;
             }
         }
+    }
 
-        // Tooltips
-        .tooltip-14MtrL {
-            background: $beige;
-            border: 1px solid black;
-            color: black;
-            border-radius: 0;
-            .guildNameText-jBFbNC {
-                color: black;
-            }
-            .tooltipPointer-3L49xb {
-                border-top-color: black;
-            }
+    .layer-86YKbF {
+        background: transparent;
+        // Settings menu
+        .standardSidebarView-E9Pc3j {
+            @include mainWindow();
         }
-
-        // Small menus
-        .menu-1QACrS {
-            --interactive-normal: black;
-            background: $beige;
-            border: 1px solid black;
+        .pictureInPictureWindow-3ms5Zy {
+            @include windowHasPseudoTitle("Stream");
+            overflow: visible;
             border-radius: 0;
-
-            // Menu item
-            .colorDefault-CDqZdO {
-
-                // Focused menu item
-                &.focused-3qFvc8 {
-                    background: $blue-select;
-                    border-radius: 0;
-                }
-
-                .icon-E4cW1l {
-                    // Radio button
-                    path[d^="M12 20C16.4183"] {
-                        d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
-                    }
-                    // circle
-                    .radioSelection-1UHp0b {
-                        color: $green-bright;
-                    }
-
-                    // Checkbox
-                    .checkbox-hADx5o {
-                        d: path("M 2 2 V 22 H 22 V 2 Z M 3 3 V 21 H 21 V 3 Z");
-                        color: black;
-                        border: 1px solid black;
-                    }
-                    .check-3HZJs4 {
-                        color: $green-bright;
-                    }
-                }
-
-            }
-            // Slider bar
-            .bar-1Bhnl9 {
-                background: $beige;
-                box-shadow: (
-                    inset 1px 1px 2px 0 grey,
-                    inset -2px -2px 2px 0 white
-                );
-                .barFill-2Bh7CX {
-                    background: transparent;
-                }
-            }
-            // Handle
-            .grabber-2GQyvM {
-                height: 16px;
-                width: 10px;
-                margin-top: -1px;
-                border-radius: 3px;
-                border: solid $green-bright;
-                border-width: 3px 0;
-                box-shadow: (
-                    inset -1px -1px 2px 0 grey,
-                    inset 2px 2px 2px 0 white
-                );
-            }
-        }
-
-        // Profile
-        .accountProfilePopoutWrapper-3GskID {
-            @include windowHasPseudoTitle("User Profile");
             &::before {
                 left: -2px;
             }
-            .userProfileOuter-1K_BYU {
+            .pictureInPictureVideo-2puO2Q {
                 border-radius: 0;
-            }
-        }
-
-        // Inbox
-        .recentMentionsPopout-2bI1ZN {
-
-            // Top bar
-            .header-145e10 {
-                @include windowTitle;
-                --interactive-normal: black;
-                --interactive-active: black;
-
-                // Mentions / unreads tabs
-                .topPill-3DJJNV {
-                    position: absolute;
-                    bottom: -1px;
-                    z-index: 1;
-                    align-items: base;
-                    .tab-TRrPC8 {
-                        background: $beige;
-                        border-radius: 3px 3px 0 0;
-                        border: solid $blue-select;
-                        border-width: 1px 1px 0 1px;
-                        margin: 0;
-                        // Selected tab
-                        &.selected-g-kMVV {
-                            padding-top: 1px;
-                            height: 25px;
-                            background: linear-gradient(to bottom, orange, white 10%, $beige 80%);
-                        }
-                        // Hovered tab 
-                        &:hover {
-                            color: black;
-                        }
-                    }
-                }
-            }
-            // Mark all as read button
-            &.container-2ebMPP {
-                .header-145e10 .button-1_oXub {
-                    @include winButton(26px, false);
-                }
-            }
-            // Filter mentions button
-            &.messagesPopoutWrap-3zryHW {
-                .header-145e10 .button-1_oXub {
-                    @include winButton(26px, false);
-                }
-            }
-
-            // Content
-            .messagesPopout-eVzQcI,
-            .scroller-145h9c {
-                @include startMenuList;
-                --header-primary: black;
-                --header-secondary: grey;
-                background: $beige;
-
-                // Channel unread group
-                .channel-3NJZ1V,
-                .container-iA3Qrz {
-                    // Channel group header
-                    .channelHeader-DFRX8q {
-                        background: $beige;
-                        // Buttons
-                        .button-1_oXub {
-                            @include beigeButton();
-                        }
-                    }
-                    // Message group
-                    .messages-23can0,
-                    .messageContainer-3VTXBC {
-                        @include indentBox;
-                    }
-                }
-            }
-        }
-
-        // Threads
-        .browser-mnQ1T7 {
-            border-radius: 8px 8px 0 0;
-
-            // Top bar
-            .header-3_zmOb {
-                @include windowTitle;
-
-                // #
-                .threadIcon-rd1kqG {
-                    color:white;
-                }
-
-                // Search bar
-                .searchBox-3IjAC1 {
-                    @include beigeButton;
-                    box-shadow: (
-                        inset 1px 1px 2px 0 grey,
-                        inset -2px -2px 2px 0 white
-                    );
-                    .input-2m5SfJ {
-                        color: black;
-                    }
-                }
-
-                // Close button
-                .closeIcon-11tHJX {
-                    @include winButton(26px, true);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                // Create thread button
-                .createButton-oruGBs {
-                    @include beigeButton;
-                }
-            }
-
-            // Content
-            .list-3YHPPb {
-                @include startMenuList;
-                background: $beige;
-                // Thread age
-                .sectionHeader-QsOv68 {
-                    color: black!important;
-                }
-                // Thread
-                .container-2rzKKA {
-                    @include indentBox;
-                    border: 0;
-                }
-                // No threads
-                .container-2c4_8A {
-                    .defaultColor-HXu-5n,
-                    .text-md-normal-304U3g {
-                        color: black!important;
-                    }
-                }
-            }
-        }
-
-        // Pinned messages
-        .messagesPopoutWrap-3zryHW {
-            .header-1w9Q93 {
-                @include windowTitle;
-            }
-            .messagesPopout-eVzQcI {
-                @include startMenuList;
-                background: $beige;
-                .messageGroupWrapper-1jf_7C {
-                    @include indentBox;
-                    border: 0;
-                }
-            }
-        }
-
-        // User profile
-        .userPopoutOuter-3AVBmJ {
-            border-radius: 0;
-            @include windowHasPseudoTitle("User info");
-            &::before {
-                width: 100%;
-                left: 0;
-            }
-            .avatarWrapper-3y0KZ1 {
-                left: 24px;
-            }
-
-            // All profiles
-            .userPopoutInner-1hXSeY {
-
-                // Edit profile button
-                .pencilContainer-11Kuga {
-                    @include beigeButton;
-                    .pencilIcon-1MUmnO {
-                        color: black;
-                    }
-                }
-
-                // Hypesquad etc badges
-                .profileBadges-31rDHI {
-                    @include beigeButton;
-                }
-
-                // Inner box
-                .overlayBackground-1KgwVi {
-                    border-radius: 0;
-                    --font-primary: Tahoma, sans-serif;
-                    --font-display: Tahoma, sans-serif;
-                    @include indentBox;
-                    
-                    // Roles
-                    .rolePill-2IJ1vo {
-                        @include beigeButton;
-                    }
-                    
-                    // User note
-                    .note-6O4w9y {
-                        @include indentBox;
-                    }
-
-                    // Message user
-                    .messageInputContainer-2rGDH8 {
-                        @include indentBox;
-                    }
-                }
-            }
-
-            // Unstyled profile
-            .userProfileInnerThemedNonPremium-1gT-zY {
-                background: $beige;
-
-                --interactive-active: black;
-                --header-primary: black;
-                --header-secondary: grey;
-                --text-normal: black;
-                --background-secondary: beige;
-                --interactive-muted: beige;
-
-                // Inner box
-                .overlayBackground-1KgwVi {
-                    background: white;
-                }
-            }
-        }
-
-        // Modals
-        .backdrop-2ByYRN {
-            background: var(--bsod-color, navy)!important;
-            opacity: 1.0!important;
-            &::before {
-                content: var(--bsod-text, var(--bsod-text-original));
-                white-space: pre-wrap;
-                display: block;
-                font-family: 'Courier New', Courier, monospace;
-                font-size: 20px;
-                color: white;
-                margin: 40px;
-            }
-        }
-        .layer-1Ixpg3 {
-            align-items: flex-end;
-            padding-right: 10vw;
-            .focusLock-2tveLW {
-                border: 2px solid white;
-                padding: 5px;
-                background: var(--bsod-color, rgba(0, 0, 128, 0.8));
             }
         }
     }

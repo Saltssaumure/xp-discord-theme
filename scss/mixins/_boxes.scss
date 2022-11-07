@@ -1,3 +1,5 @@
+@use "../_vars.scss" as *;
+
 @mixin windowBox($vertical-offset) {
     border: 2px solid $blue-select;
     border-top: 0;
@@ -105,4 +107,11 @@
         inset 1px 1px 2px 0 $black-overlay,
         inset -2px -2px 2px 0 white
     );
+}
+
+@mixin beigeBox() {
+    --text-normal: black;
+    background: $beige;
+    border: 1px solid black;
+    border-radius: 0;
 }
