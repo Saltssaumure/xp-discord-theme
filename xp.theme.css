@@ -1375,20 +1375,20 @@ body #app-mount .container-1eFtFS .base-2jDfDU .applicationStore-2nk7Lo {
   border-top: 0;
   box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
   margin: 50px 120px 50px 270px;
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
   box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .message-2CShn3 {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .message-2CShn3 {
   padding-right: 140px !important;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .message-2CShn3 .container-2gUZhU {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .message-2CShn3 .container-2gUZhU {
   right: 130px;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ {
   position: fixed;
   height: auto;
   margin: 0;
@@ -1398,7 +1398,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW 
   justify-content: center;
   top: 50px;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ :is(.contents-3ca1mk) {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ :is(.contents-3ca1mk) {
   background: linear-gradient(rgb(12, 168, 12), green);
   border-radius: 4px;
   padding: 5px;
@@ -1408,7 +1408,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW 
   box-shadow: 1px 1px 2px black;
   color: white;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ::before {
   content: attr(aria-label);
   display: block;
   position: absolute;
@@ -1422,7 +1422,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW 
   text-shadow: 1px 1px 2px black, 1px 1px 1px black;
   text-align: center;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ::after {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ::after {
   content: "";
   display: block;
   position: absolute;
@@ -1433,21 +1433,21 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW 
   left: 0;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk {
   padding: 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk .active-z80xEj .buttonWrapper-3YFQGJ,
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk .buttonWrapper-3YFQGJ:hover {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk .active-z80xEj .buttonWrapper-3YFQGJ,
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .buttons-uaqb-5 > .button-f2h6uQ .contents-3ca1mk .buttonWrapper-3YFQGJ:hover {
   color: inherit;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .chatContent-3KubbW .form-3gdLxP .autocomplete-3NRXG8 {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .form-3gdLxP .autocomplete-3NRXG8 {
   width: calc(100% - 150px);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .headerRow-1MKoR-,
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .list-3FIpnh > div:first-child {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .headerRow-1MKoR-,
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .list-3FIpnh > div:first-child {
   min-width: 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t {
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
   --channels-default: black;
@@ -1470,7 +1470,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t 
   border-top: 0;
   box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t::after {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t::after {
   content: "";
   display: block;
   position: absolute;
@@ -1479,7 +1479,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t:
   height: 2px;
   background: linear-gradient(to right, transparent, orange, transparent);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t::before {
   content: "Members";
   display: block;
   position: absolute;
@@ -1501,13 +1501,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t:
   --header-primary: white;
   text-shadow: 0 1px 1px black;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx {
   background: white;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2)) {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2)) {
   position: relative;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2))::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2))::before {
   content: "";
   display: block;
   position: absolute;
@@ -1516,13 +1516,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t 
   height: 2px;
   background: linear-gradient(to right, transparent 10%, lightgrey, transparent 90%);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l {
   background: white;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l .layout-1qmrhw {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l .layout-1qmrhw {
   border-radius: 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI .video-3n15R6 {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .video-3n15R6 {
   z-index: 0;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI.threadSidebarOpen-1LSXvU {

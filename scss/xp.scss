@@ -450,7 +450,7 @@ body #app-mount {
             }
 
             // Main chat and top bar
-            .chat-2ZfjoI {
+            .chat-2ZfjoI:not(.container-2IKOsH>.chat-2ZfjoI) {
                 @include mainWindow();
 
                 // Main chat
