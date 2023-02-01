@@ -1322,6 +1322,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .c
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .container-YkUktl {
   height: var(--server-container);
   flex-direction: row-reverse;
+  background: transparent;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .container-YkUktl .avatarWrapper-1B9FTW {
   margin: 0 0 0 6px;
