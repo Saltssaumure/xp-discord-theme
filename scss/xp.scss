@@ -226,6 +226,24 @@ body #app-mount {
                         }
                     }
 
+                    // Server event
+                    .container-2Y4CWj {
+                        background: $beige;
+                        --header-primary: black; //ctrl
+                        --header-secondary: black;
+                        @include windowBox(15px);
+
+                        // Inner box
+                        .channelNotice-K4UfZY {
+                            border-bottom: none;
+
+                            // Event Details button
+                            .joinButton-1HdI2a {
+                                border-radius: 0;
+                            }
+                        }
+                    }
+
                     // Channels
                     .scroller-1ox3I2 {
                         @include startMenuList();

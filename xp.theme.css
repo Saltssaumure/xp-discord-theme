@@ -1105,6 +1105,20 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .animatedContainer-2laTjx .bannerImage-ubW8K-::before {
   display: none;
 }
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .container-2Y4CWj {
+  background: rgb(235, 232, 215);
+  --header-primary: black;
+  --header-secondary: black;
+  border: 2px solid rgb(22, 101, 202);
+  border-top: 0;
+  box-shadow: 2px 15px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .container-2Y4CWj .channelNotice-K4UfZY {
+  border-bottom: none;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .container-2Y4CWj .channelNotice-K4UfZY .joinButton-1HdI2a {
+  border-radius: 0;
+}
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 {
   --background-modifier-selected: rgb(22, 101, 202);
   --background-modifier-hover: lightgrey;
