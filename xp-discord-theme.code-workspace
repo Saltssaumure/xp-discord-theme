@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "C:/Users/Salt/AppData/Roaming/BetterDiscord/themes"
+		},
+		{
+			"path": "/home/salt/.config/BetterDiscord/themes"
 		}
 	],
 	"settings": {
@@ -18,6 +21,11 @@
 				"format": "expanded",
 				"extensionName": ".theme.css",
 				"savePath": "/"
+			},
+			{
+				"format": "expanded",
+				"extensionName": ".theme.css",
+				"savePath": "../../../.config/BetterDiscord/themes/" // on linux laptop
 			}
 		],
 		"liveSassCompile.settings.generateMap": false,
