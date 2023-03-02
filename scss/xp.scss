@@ -168,15 +168,15 @@ body #app-mount {
             .title-31SJ6t {
                 .toolbar-3_r2xA {
                     // Move help icon
-                    .iconWrapper-2awDjA:only-of-type {
+                    .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
                         @include makeIcon(50px, auto, ".icon-2xnN2Y");
                         top: $window-top + 90px;
                     }
                     // Move show/hide member list button
-                    .iconWrapper-2awDjA:is(#{makeSelectors()}) { 
+                    .iconWrapper-2awDjA:is(#{makeSelectors()}) {
                         @include makeIcon(auto, 50px, ".icon-2xnN2Y");
                     }
-                }   
+                }
             }
 
             // Channels sidebar
@@ -188,7 +188,7 @@ body #app-mount {
                 background: transparent;
                 border-radius: 8px 8px 0 0;
                 @include windowBox(15px);
-                
+
                 // Title and channels
                 .container-1NXEtd {
                     background: transparent;
@@ -476,14 +476,17 @@ body #app-mount {
                     // Message box
                     .form-3gdLxP {
                         // Gift nitro button
-                        .buttons-uaqb-5>.button-f2h6uQ {
-                            @include makeIcon(50px, auto, ".contents-3ca1mk");
+                        .buttons-uaqb-5>.button-ejjZWC {
+                            @include makeIcon(50px, auto, ".buttonWrapper-3YFQGJ");
                             top: $window-top;
-                            .contents-3ca1mk {
-                                padding: 0;
-                                .active-z80xEj .buttonWrapper-3YFQGJ,
-                                .buttonWrapper-3YFQGJ:hover {
-                                    color: inherit;
+                            .button-3BaQ4X {
+                                margin: 0;
+                                .buttonWrapper-3YFQGJ {
+                                    padding: 0;
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                 }
                             }
                         }
@@ -503,7 +506,7 @@ body #app-mount {
                 // Members list
                 .membersWrap-3NUR2t {
                     @include startMenuList();
-                    
+
                     position: fixed;
                     right: 30px;
                     top: 180px;
