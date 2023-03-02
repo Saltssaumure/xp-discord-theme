@@ -108,19 +108,8 @@ body #app-mount {
                     @include barGradient(true, $green-max, $green-bright);
                     position: relative;
                     padding: 5px 0 30px 0;
-                    &::after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        height: 10px;
-                        width: 100%;
-                        border-radius: 0 0 50% 50%;
-                        bottom: -5px;
-                        background: inherit;
-                    }
-                    .wrapper-28eC3z {
-                        height: 40px;
-                        width: 40px;
+                    border-radius: 0 0 100% 100% / 0 0 12px 12px;
+                    .wrapper-2PSQCG {
                         .svg-2zuE5p {
                             height: inherit;
                             width: inherit;

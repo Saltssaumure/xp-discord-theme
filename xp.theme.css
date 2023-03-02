@@ -72,7 +72,7 @@
 .layerContainer-2v_Sit .accountProfilePopoutWrapper-3GskID {
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 .layerContainer-2v_Sit .accountProfilePopoutWrapper-3GskID::before {
   content: "User Profile";
@@ -89,7 +89,7 @@
   color: white;
   text-indent: 9px;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -104,7 +104,7 @@
 }
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .header-145e10 {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -145,7 +145,7 @@
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN.messagesPopoutWrap-3zryHW .header-145e10 .button-1_oXub {
   top: 0;
@@ -158,7 +158,7 @@
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI,
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c {
@@ -215,14 +215,14 @@
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c .container-iA3Qrz .messageContainer-3VTXBC {
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
-  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 1px 1px 2px 0 hsla(0, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.8);
 }
 .layerContainer-2v_Sit .browser-mnQ1T7 {
   border-radius: 8px 8px 0 0;
 }
 .layerContainer-2v_Sit .browser-mnQ1T7 .header-3_zmOb {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -254,8 +254,8 @@
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,7 +298,7 @@
 .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .container-2rzKKA {
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
-  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 1px 1px 2px 0 hsla(0, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.8);
   border: 0;
 }
 .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .container-2c4_8A .defaultColor-HXu-5n,
@@ -314,7 +314,7 @@
 }
 .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .header-1w9Q93 {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -349,7 +349,7 @@
 .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI .messageGroupWrapper-1jf_7C {
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
-  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 1px 1px 2px 0 hsla(0, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.8);
   border: 0;
 }
 .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI .body-GBnhET {
@@ -359,7 +359,7 @@
   border-radius: 0;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ::before {
   content: "User info";
@@ -376,7 +376,7 @@
   color: white;
   text-indent: 9px;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -413,7 +413,7 @@
   --font-display: Tahoma, sans-serif;
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
-  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 1px 1px 2px 0 hsla(0, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.8);
 }
 .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi .rolePill-2IJ1vo {
   border-radius: 3px;
@@ -425,12 +425,12 @@
 .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi .note-6O4w9y {
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
-  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 1px 1px 2px 0 hsla(0, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.8);
 }
 .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY .overlayBackground-1KgwVi .messageInputContainer-2rGDH8 {
   font-family: "Whitney", var(--i18n-fallbacks);
   border-radius: 0;
-  box-shadow: inset 1px 1px 2px 0 hsla(0deg, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 1px 1px 2px 0 hsla(0, 0%, 0%, 0.7), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.8);
 }
 .layerContainer-2v_Sit .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY {
   background: rgb(235, 232, 215);
@@ -674,7 +674,7 @@
 .layerContainer-2v_Sit .animatorLeft-3yvG13 > #emoji-picker-tab-panel {
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 .layerContainer-2v_Sit .animatorLeft-3yvG13 > #emoji-picker-tab-panel::before {
   content: "Add a reaction";
@@ -691,7 +691,7 @@
   color: white;
   text-indent: 9px;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -713,7 +713,7 @@
   border-radius: 0;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0, 0%, 0%, 0.4);
   overflow: visible;
 }
 .layerContainer-2v_Sit .contentWrapper-3vHNP2::before {
@@ -731,7 +731,7 @@
   color: white;
   text-indent: 9px;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -788,7 +788,7 @@
   color: black;
 }
 .layerContainer-2v_Sit .contentWrapper-3vHNP2 #gif-picker-tab-panel .categoryFadeBlurple-1l49_Q {
-  background: hsla(0deg, 0%, 0%, 0.7);
+  background: hsla(0, 0%, 0%, 0.7);
 }
 .layerContainer-2v_Sit .contentWrapper-3vHNP2 #gif-picker-tab-panel .result-pzZrwj {
   background-color: white !important;
@@ -799,11 +799,11 @@
 }
 .layerContainer-2v_Sit .contentWrapper-3vHNP2 #gif-picker-tab-panel .focused-16Owih,
 .layerContainer-2v_Sit .contentWrapper-3vHNP2 #gif-picker-tab-panel .result-pzZrwj:hover {
-  box-shadow: 0 11px 22px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: 0 11px 22px 1px hsla(0, 0%, 100%, 0.8);
 }
 .layerContainer-2v_Sit .contentWrapper-3vHNP2 #gif-picker-tab-panel .placeholder-T1Tuu8 {
   border-radius: 0;
-  background: hsla(0deg, 0%, 100%, 0.8);
+  background: hsla(0, 0%, 100%, 0.8);
 }
 .layerContainer-2v_Sit .backdrop-2ByYRN {
   background: var(--bsod-color, navy) !important;
@@ -849,7 +849,7 @@ body #app-mount .titleBar-1it3bQ {
   top: 20px;
   z-index: 2;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -884,7 +884,7 @@ body #app-mount .titleBar-1it3bQ .winButton-3UMjdg {
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 body #app-mount .titleBar-1it3bQ .winButton-3UMjdg.winButtonClose-3Q8ZH5 {
   top: 0;
@@ -897,8 +897,8 @@ body #app-mount .titleBar-1it3bQ .winButton-3UMjdg.winButtonClose-3Q8ZH5 {
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
 }
 body #app-mount .bg-1QIAus {
   background: var(--background-image, url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)) center/cover;
@@ -923,38 +923,25 @@ body #app-mount .container-1eFtFS .guilds-2JjMmN .lowerBadge-3WTshO .numberBadge
 }
 body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA {
   background: linear-gradient(to left, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset -2px 0 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset -2px 0 2px 1px hsla(0, 0%, 100%, 0.8);
   padding-top: 0 !important;
 }
 body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS {
   background: linear-gradient(to left, green, green 12%, rgb(56, 196, 56));
-  box-shadow: inset 0 0 3px 2px green, inset -2px 0 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px green, inset -2px 0 2px 1px hsla(0, 0%, 100%, 0.8);
   position: relative;
   padding: 5px 0 30px 0;
+  border-radius: 0 0 100% 100%/0 0 12px 12px;
 }
-body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 10px;
-  width: 100%;
-  border-radius: 0 0 50% 50%;
-  bottom: -5px;
-  background: inherit;
-}
-body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-28eC3z {
-  height: 40px;
-  width: 40px;
-}
-body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-28eC3z .svg-2zuE5p {
+body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-2PSQCG .svg-2zuE5p {
   height: inherit;
   width: inherit;
 }
-body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-28eC3z .wrapper-3kah-n .selected-1Drb7Z .childWrapper-1j_1ub, body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-28eC3z .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-2PSQCG .wrapper-3kah-n .selected-1Drb7Z .childWrapper-1j_1ub, body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-2PSQCG .wrapper-3kah-n:hover .childWrapper-1j_1ub {
   color: white;
 }
-body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-28eC3z .wrapper-3kah-n .childWrapper-1j_1ub {
-  color: hsla(0deg, 0%, 100%, 0.8);
+body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS .wrapper-2PSQCG .wrapper-3kah-n .childWrapper-1j_1ub {
+  color: hsla(0, 0%, 100%, 0.8);
   background: transparent;
 }
 body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .item-2LIpTv {
@@ -968,7 +955,7 @@ body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .expandedFolde
 }
 body #app-mount .container-1eFtFS .guilds-2JjMmN .scroller-3X7KbA .circleIconButton-1VxDrg {
   background: linear-gradient(to bottom, rgb(16, 140, 228), rgb(87, 140, 208));
-  color: hsla(0deg, 0%, 100%, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .notice-2olXi7 {
   top: 50px;
@@ -1004,7 +991,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .ic
   display: block;
   position: absolute;
   top: 46px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 12px;
@@ -1048,7 +1034,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .ic
   display: block;
   position: absolute;
   top: 46px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 12px;
@@ -1076,14 +1061,14 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu {
   border-radius: 8px 8px 0 0;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 15px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 15px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd {
   background: transparent;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .header-3OsQeK {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -1095,7 +1080,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
   color: white;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .header-3OsQeK .headerContent-2SNbie .flowerStar-2tNFCR {
-  color: hsla(0deg, 0%, 100%, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .animatedContainer-2laTjx {
   background: transparent;
@@ -1111,7 +1096,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
   --header-secondary: black;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 15px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 15px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .container-2Y4CWj .channelNotice-K4UfZY {
   border-bottom: none;
@@ -1164,7 +1149,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .actionIcon-2sw4Sl,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .actionIcon-2sw4Sl {
-  color: hsla(0deg, 0%, 0%, 0.7);
+  color: hsla(0, 0%, 0%, 0.7);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .channelInfo-3jN1ay,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .channelInfo-3jN1ay {
@@ -1179,7 +1164,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
   border-radius: 0;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .modeSelected-3DmyhH .actionIcon-2sw4Sl {
-  color: hsla(0deg, 0%, 100%, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .modeMuted-2T4MDZ .name-28HaxV,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .modeMuted-2T4MDZ .icon-2W8DHg {
@@ -1190,7 +1175,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .searchBar-3TnChZ {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -1276,7 +1261,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .discoverHeader-1vsvZ0 {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -1314,13 +1299,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD {
   left: calc(100vw - 240px);
   z-index: 0;
   background: linear-gradient(to bottom, rgb(16, 140, 228), rgb(16, 140, 228) 12%, rgb(87, 140, 208));
-  box-shadow: inset 0 0 3px 2px rgb(16, 140, 228), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(16, 140, 228), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD:hover {
   z-index: 1;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .subtext-2HDqJ7 {
-  color: hsla(0deg, 0%, 100%, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .container-1zzFcN .button-1EGGcP {
   border-radius: 3px;
@@ -1351,7 +1336,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .c
   font-weight: normal;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .button-12Fmur {
-  color: hsla(0deg, 0%, 100%, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .withTagAsButton-OsgQ9L:hover,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .withTagless-10ooWt:hover,
@@ -1366,21 +1351,21 @@ body #app-mount .container-1eFtFS .base-2jDfDU .container-2cd8Mz {
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .pageWrapper-2PwDoS {
   margin: 50px 120px 50px 270px;
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .scroller-RfJjkV {
   margin: 50px 120px 50px 270px;
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
   height: auto;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .applicationStore-2nk7Lo {
@@ -1388,14 +1373,14 @@ body #app-mount .container-1eFtFS .base-2jDfDU .applicationStore-2nk7Lo {
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
   margin: 50px 120px 50px 270px;
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .chatContent-3KubbW .message-2CShn3 {
   padding-right: 140px !important;
@@ -1428,7 +1413,6 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
   display: block;
   position: absolute;
   top: 46px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 12px;
@@ -1483,7 +1467,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
   max-height: calc(100vh - 400px);
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t::after {
   content: "";
@@ -1509,7 +1493,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
   color: white;
   text-indent: 9px;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -1569,7 +1553,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .content-1SgpWY > .container-3XgA
   max-width: 100%;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .content-1SgpWY > .chatLayerWrapper-2mgEK- {
   top: 50px;
@@ -1588,12 +1572,12 @@ body #app-mount .layer-86YKbF .standardSidebarView-E9Pc3j {
   overflow: hidden;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 3px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 3px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 body #app-mount .layer-86YKbF .pictureInPictureWindow-3ms5Zy {
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 0px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 0px 3px 2px hsla(0, 0%, 0%, 0.4);
   overflow: visible;
   border-radius: 0;
 }
@@ -1612,7 +1596,7 @@ body #app-mount .layer-86YKbF .pictureInPictureWindow-3ms5Zy::before {
   color: white;
   text-indent: 9px;
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -1630,11 +1614,11 @@ body #app-mount .layer-86YKbF .pictureInPictureWindow-3ms5Zy .pictureInPictureVi
   border-radius: 10px 10px 0 0;
   border: 2px solid rgb(22, 101, 202);
   border-top: 0;
-  box-shadow: 2px 5px 3px 2px hsla(0deg, 0%, 0%, 0.4);
+  box-shadow: 2px 5px 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 #floating-editor-window .floating-window-titlebar {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
-  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0deg, 0%, 100%, 0.8);
+  box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
   height: 30px;
   --font-display: Tahoma, sans-serif;
@@ -1659,7 +1643,7 @@ body #app-mount .layer-86YKbF .pictureInPictureWindow-3ms5Zy .pictureInPictureVi
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
 }
 #floating-editor-window .floating-window-titlebar .button.close-button {
   top: 0;
@@ -1672,8 +1656,8 @@ body #app-mount .layer-86YKbF .pictureInPictureWindow-3ms5Zy .pictureInPictureVi
   border: 1px solid white;
   border-radius: 3px;
   color: white;
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
-  background: radial-gradient(circle at 20% 20%, hsla(0deg, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(3, 114, 255), rgb(0, 90, 231));
+  background: radial-gradient(circle at 20% 20%, hsla(0, 0%, 100%, 0.8), rgb(230, 77, 28), rgb(199, 50, 7));
 }
 
 .wrapper-1VLyxH::before {
@@ -1682,7 +1666,7 @@ body #app-mount .layer-86YKbF .pictureInPictureWindow-3ms5Zy .pictureInPictureVi
   position: absolute;
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle at 25% 25%, hsla(0deg, 0%, 100%, 0.8), rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.2) 40%, transparent);
+  background: radial-gradient(circle at 25% 25%, hsla(0, 0%, 100%, 0.8), rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.2) 40%, transparent);
   border-radius: 50%;
   z-index: 1;
 }
