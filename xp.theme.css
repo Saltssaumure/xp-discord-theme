@@ -163,17 +163,17 @@
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI,
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .scroller-145h9c {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
   --header-primary: black;
   --header-secondary: grey;
@@ -187,7 +187,7 @@
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .channel-3NJZ1V .channelHeader-DFRX8q,
 .layerContainer-2v_Sit .recentMentionsPopout-2bI1ZN .messagesPopout-eVzQcI .container-iA3Qrz .channelHeader-DFRX8q,
@@ -269,17 +269,17 @@
 }
 .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
   background: rgb(235, 232, 215);
 }
@@ -290,7 +290,7 @@
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
 .layerContainer-2v_Sit .browser-mnQ1T7 .list-3YHPPb .sectionHeader-QsOv68 {
   color: black !important;
@@ -323,17 +323,17 @@
 }
 .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
   background: rgb(235, 232, 215);
 }
@@ -344,7 +344,7 @@
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
 .layerContainer-2v_Sit .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI .messageGroupWrapper-1jf_7C {
   font-family: "Whitney", var(--i18n-fallbacks);
@@ -839,6 +839,22 @@ code,
   font-family: var(--font-code);
 }
 
+.theme-dark {
+  --xp-bg-color: #000;
+  --xp-txt-color: #FFF;
+  --xp-set-color: hsla(0, 0%, 100%, 0.8);
+  --xp-hover-color: #123;
+  --xp-zing-color: #A50;
+}
+
+.theme-light {
+  --xp-bg-color: white;
+  --xp-txt-color: black;
+  --xp-set-color: hsla(0, 0%, 0%, 0.7);
+  --xp-hover-color: lightgrey;
+  --xp-zing-color: orange;
+}
+
 body #app-mount .withFrame-2dL45i {
   margin-top: 0;
 }
@@ -1112,17 +1128,17 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2::after {
@@ -1132,7 +1148,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 :is(.modeSelected-3DmyhH, .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) .name-28HaxV {
   color: white;
@@ -1155,7 +1171,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .actionIcon-2sw4Sl,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .actionIcon-2sw4Sl {
-  color: hsla(0, 0%, 0%, 0.7);
+  color: var(--xp-set-color);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .content-1gYQeQ .channelInfo-3jN1ay,
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .container-1NXEtd .scroller-1ox3I2 .container-32HW5s .channelInfo-3jN1ay {
@@ -1199,17 +1215,17 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .scroller-WSmht3 {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .scroller-WSmht3::after {
@@ -1219,7 +1235,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .privateChannelsHeaderContainer-1UWASm {
   position: relative;
@@ -1236,36 +1252,36 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .privateChannels-oVe7HL .container-32HW5s {
   border-radius: 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
   position: relative;
   border-radius: 8px 8px 0 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt::after {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4::after {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4::before {
   display: none;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .discoverHeader-1vsvZ0 {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 .discoverHeader-1vsvZ0 {
   background: linear-gradient(to bottom, rgb(0, 90, 231), rgb(0, 90, 231) 12%, rgb(3, 114, 255));
   box-shadow: inset 0 0 3px 2px rgb(0, 90, 231), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
   border-radius: 8px 8px 0 0;
@@ -1281,20 +1297,20 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_
   width: 240px;
   z-index: 2;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .container-1oeRFJ {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 .container-1oeRFJ {
   color: var(--channels-default);
   border-radius: 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .container-1oeRFJ:first-of-type {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 .container-1oeRFJ:first-of-type {
   margin-top: 62px;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .container-1oeRFJ:nth-last-of-type(2) {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 .container-1oeRFJ:nth-last-of-type(2) {
   margin-bottom: 10px;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .container-1oeRFJ .layout-1qmrhw {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 .container-1oeRFJ .layout-1qmrhw {
   border-radius: 0;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-_bVAAt .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu > .scrollerBase-1Pkza4 .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
   background-color: var(--background-modifier-selected);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD {
@@ -1457,17 +1473,17 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t {
   --background-modifier-selected: rgb(22, 101, 202);
-  --background-modifier-hover: lightgrey;
-  --channels-default: black;
-  --channel-icon: black;
-  --interactive-hover: black;
-  --interactive-active: black;
-  --interactive-muted: lightgrey;
+  --background-modifier-hover: var(--xp-hover-color);
+  --channels-default: var(--xp-txt-color);
+  --channel-icon: var(--xp-txt-color);
+  --interactive-hover: var(--xp-txt-color);
+  --interactive-active: var(--xp-txt-color);
+  --interactive-muted: var(--xp-hover-color);
   --font-primary: Tahoma, sans-serif;
   --font-display: Tahoma, sans-serif;
   --text-muted: grey;
   font-family: var(--font-primary);
-  background: white;
+  background: var(--xp-bg-color);
   border: 1px solid rgb(0, 90, 231);
   position: fixed;
   right: 30px;
@@ -1485,7 +1501,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
   top: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, orange, transparent);
+  background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t::before {
   content: "Members";
@@ -1510,7 +1526,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
   text-shadow: 0 1px 1px black;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx {
-  background: white;
+  background: var(--xp-bg-color);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl:not(:nth-child(2)) {
   position: relative;
@@ -1525,8 +1541,9 @@ body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOs
   background: linear-gradient(to right, transparent 10%, lightgrey, transparent 90%);
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l {
-  background: white;
+  background: var(--xp-bg-color);
 }
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l .container-1oeRFJ,
 body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) .membersWrap-3NUR2t .members-3WRCEx .member-48YF_l .layout-1qmrhw {
   border-radius: 0;
 }

@@ -26,6 +26,21 @@ code,
     font-family: var(--font-code);
 }
 
+.theme-dark {
+    --xp-bg-color: #000;
+    --xp-txt-color: #FFF;
+    --xp-set-color: #{$white-overlay};
+    --xp-hover-color: #123;
+    --xp-zing-color: #A50;
+}
+.theme-light {
+    --xp-bg-color: white;
+    --xp-txt-color: black;
+    --xp-set-color: #{$black-overlay};
+    --xp-hover-color: lightgrey;
+    --xp-zing-color: orange;
+}
+
 body #app-mount {
 
     // Very top window bar
@@ -269,7 +284,7 @@ body #app-mount {
 
                             // Channel actions
                             .actionIcon-2sw4Sl {
-                                color: $black-overlay;
+                                color: var(--xp-set-color);
                             }
 
                             // Voice channel member limit
@@ -338,7 +353,7 @@ body #app-mount {
                 }
 
                 // Explore servers category list
-                &>.scrollerBase-_bVAAt {
+                &>.scrollerBase-1Pkza4 {
                     @include startMenuList();
                     position: relative;
                     border-radius: 8px 8px 0 0;
@@ -521,7 +536,7 @@ body #app-mount {
                     @include windowHasPseudoTitle("Members");
 
                     .members-3WRCEx {
-                        background: white;
+                        background: var(--xp-bg-color);
 
                         // Member group
                         .membersGroup-2eiWxl:not(:nth-child(2)) {
@@ -531,7 +546,8 @@ body #app-mount {
 
                         // Member
                         .member-48YF_l {
-                            background: white;
+                            background: var(--xp-bg-color);
+                            .container-1oeRFJ,
                             .layout-1qmrhw {
                                 border-radius: 0;
                             }
