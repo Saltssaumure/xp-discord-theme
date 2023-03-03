@@ -21,6 +21,7 @@
 2. Click pencil icon on this theme.
 3. Customise the variable values. See table below for reference.
 4. Save changes and enjoy.
+
 | Description                 | Variable name        | Valid values                               | Default value                                                                           |
 |-----------------------------|----------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
 | Wallpaper  image            | `--background-image` | Any image link wrapped encased in `url()`. | `url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)`                    |
