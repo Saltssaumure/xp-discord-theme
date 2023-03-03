@@ -2,7 +2,7 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.1.0
+ * @version 1.2.0
 */
 
 @use "_vars.scss" as *;
@@ -164,8 +164,16 @@ body #app-mount {
                 box-shadow: none;
             }
 
-            // Top bar
-            .title-31SJ6t {
+            // Call banner (in DMs)
+            .wrapper-1gVUIN {
+                z-index: 0;
+            }
+            .content-1jQy2l::before {
+                z-index: 0;
+            }
+
+            // Top bar (not in DMs)
+            .chat-2ZfjoI>.title-31SJ6t {
                 .toolbar-3_r2xA {
                     // Move help icon
                     .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
@@ -375,11 +383,7 @@ body #app-mount {
                     position: fixed;
                     bottom: -1px;
                     left: calc(100vw - $panel-width);
-                    z-index: 0;
                     @include barGradient(false, $blue-bright, $blue-mild);
-                    &:hover {
-                        z-index: 1;
-                    }
 
                     .subtext-2HDqJ7 {
                         color: $white-overlay;
@@ -387,6 +391,8 @@ body #app-mount {
 
                     // Voice chat controls
                     .container-1zzFcN {
+                        background: inherit;
+                        border-bottom: 0;
                         // Video stream buttons
                         .button-1EGGcP {
                             @include beigeButton;

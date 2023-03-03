@@ -2,7 +2,7 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.1.0
+ * @version 1.2.0
 */
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
@@ -966,7 +966,13 @@ body #app-mount .container-1eFtFS .base-2jDfDU .notice-2olXi7 {
   border-width: 0 2px 0 2px;
   box-shadow: none;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
+body #app-mount .container-1eFtFS .base-2jDfDU .wrapper-1gVUIN {
+  z-index: 0;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .content-1jQy2l::before {
+  z-index: 0;
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
   position: fixed;
   height: auto;
   margin: 0;
@@ -976,7 +982,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .an
   justify-content: center;
   top: 140px;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type :is(.icon-2xnN2Y) {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type :is(.icon-2xnN2Y) {
   background: linear-gradient(rgb(12, 168, 12), green);
   border-radius: 4px;
   padding: 5px;
@@ -986,7 +992,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .an
   box-shadow: 1px 1px 2px black;
   color: white;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type::before {
   content: attr(aria-label);
   display: block;
   position: absolute;
@@ -999,7 +1005,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .an
   text-shadow: 1px 1px 2px black, 1px 1px 1px black;
   text-align: center;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type::after {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type::after {
   content: "";
   display: block;
   position: absolute;
@@ -1010,7 +1016,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .an
   left: 0;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) {
   position: fixed;
   height: auto;
   margin: 0;
@@ -1019,7 +1025,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .ic
   display: flex;
   justify-content: center;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) :is(.icon-2xnN2Y) {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"]) :is(.icon-2xnN2Y) {
   background: linear-gradient(rgb(12, 168, 12), green);
   border-radius: 4px;
   padding: 5px;
@@ -1029,7 +1035,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .ic
   box-shadow: 1px 1px 2px black;
   color: white;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::before {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::before {
   content: attr(aria-label);
   display: block;
   position: absolute;
@@ -1042,7 +1048,7 @@ body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .ic
   text-shadow: 1px 1px 2px black, 1px 1px 1px black;
   text-align: center;
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::after {
+body #app-mount .container-1eFtFS .base-2jDfDU .chat-2ZfjoI > .title-31SJ6t .toolbar-3_r2xA .iconWrapper-2awDjA:is([aria-label="Vis medlemsliste"], [aria-label="Skjul medlemsliste"], [aria-label="Mitgliederliste ausblenden"], [aria-label="Mitgliederliste anzeigen"], [aria-label="Show Member List"], [aria-label="Hide Member List"], [aria-label="Mostrar lista de miembros"], [aria-label="Ocultar lista de miembros"], [aria-label="Mostrar lista de membros"], [aria-label="Ocultar lista de membros"], [aria-label="Masquer la liste des membres"], [aria-label="Afficher la liste des membres"])::after {
   content: "";
   display: block;
   position: absolute;
@@ -1297,15 +1303,15 @@ body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD {
   position: fixed;
   bottom: -1px;
   left: calc(100vw - 240px);
-  z-index: 0;
   background: linear-gradient(to bottom, rgb(16, 140, 228), rgb(16, 140, 228) 12%, rgb(87, 140, 208));
   box-shadow: inset 0 0 3px 2px rgb(16, 140, 228), inset 0 2px 2px 1px hsla(0, 0%, 100%, 0.8);
 }
-body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD:hover {
-  z-index: 1;
-}
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .subtext-2HDqJ7 {
   color: hsla(0, 0%, 100%, 0.8);
+}
+body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .container-1zzFcN {
+  background: inherit;
+  border-bottom: 0;
 }
 body #app-mount .container-1eFtFS .base-2jDfDU .sidebar-1tnWFu .panels-3wFtMD .container-1zzFcN .button-1EGGcP {
   border-radius: 3px;
