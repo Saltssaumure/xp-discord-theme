@@ -10,9 +10,9 @@
 1. Install [BetterDiscord](https://betterdiscord.app/).
 2. Download the theme file:
     - [GitHub](https://github.com/Saltssaumure/xp-discord-theme/releases/latest)
-    - [BD Store](https://betterdiscord.app/theme/Exponent)
+    - [BD Store](https://betterdiscord.app/theme/?id=823)
 3. Place theme file in BetterDiscord's theme folder:
-    - Windows: `%appdata%/betterdiscord/themes`
+    - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
     
