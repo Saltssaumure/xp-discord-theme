@@ -2,16 +2,17 @@
  * @name Exponent - Main
  * @author Saltssaumure#7557
  * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.2.0
+ * @version 1.2.1
 */
 
-@use "_vars.scss" as *;
+@use "vars" as *;
 
-@import "mixins/_shortcutIcon.scss";
-@import "mixins/_boxes.scss";
-@import "mixins/_buttons.scss";
-@import "_bsod.scss";
-@import "_popovers.scss";
+@import "mixins/shortcutIcon";
+@import "mixins/boxes";
+@import "mixins/buttons";
+@import "bsod";
+@import "popovers";
+@import "plugins";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
