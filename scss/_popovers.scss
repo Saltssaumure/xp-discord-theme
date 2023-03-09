@@ -129,7 +129,7 @@
                         height: 25px;
                         background: linear-gradient(to bottom, orange, white 10%, $beige 80%);
                     }
-                    // Hovered tab 
+                    // Hovered tab
                     &:hover {
                         color: black;
                     }
@@ -294,12 +294,12 @@
                 --font-primary: Tahoma, sans-serif;
                 --font-display: Tahoma, sans-serif;
                 @include indentBox;
-                
+
                 // Roles
                 .rolePill-2IJ1vo {
                     @include beigeButton;
                 }
-                
+
                 // User note
                 .note-6O4w9y {
                     @include indentBox;
@@ -313,19 +313,34 @@
         }
 
         // Unstyled profile
-        .userProfileInnerThemedNonPremium-1gT-zY {
+        &.theme-light .userProfileInnerThemedNonPremium-1gT-zY {
             background: $beige;
 
-            --interactive-active: black;
-            --header-primary: black;
-            --header-secondary: grey;
-            --text-normal: black;
+            --interactive-active: var(--xp-txt-color);
+            --header-primary: var(--xp-txt-color);
+            --header-secondary: var(--xp-set-color);
+            --text-normal: var(--xp-txt-color);
             --background-secondary: beige;
             --interactive-muted: beige;
 
             // Inner box
             .overlayBackground-1KgwVi {
-                background: white;
+                background: var(--xp-bg-color);
+            }
+        }
+        &.theme-dark .userProfileInnerThemedNonPremium-1gT-zY {
+            background: var(--xp-bg-color);
+
+            --interactive-active: var(--xp-txt-color);
+            --header-primary: var(--xp-txt-color);
+            --header-secondary: var(--xp-set-color);
+            --text-normal: var(--xp-txt-color);
+            --background-secondary: var(--xp-hover-color);
+            --interactive-muted: var(--xp-hover-color);
+
+            // Inner box
+            .overlayBackground-1KgwVi {
+                background: var(--xp-bg-color);
             }
         }
     }
@@ -386,7 +401,7 @@
             @include beigeButton;
         }
     }
-    
+
     // Color picker
     .colorPickerCustom-1swUKF {
         @include beigeBox;
@@ -622,7 +637,7 @@
                     border-radius: 0;
                 }
             }
-            // Hovered 
+            // Hovered
             .focused-16Owih,
             .result-pzZrwj:hover {
                 box-shadow: 0 11px 22px 1px $white-overlay;
