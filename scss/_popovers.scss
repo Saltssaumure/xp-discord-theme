@@ -2,11 +2,10 @@
 
 // Popouts
 .layerContainer-2lfOPe {
-
     // Inbox etc window
     .messagesPopoutWrap-3zryHW {
         border-radius: 8px 8px 0 0;
-        max-height: calc(100vh - $window-top - 120px)!important;
+        max-height: calc(100vh - $window-top - 120px) !important;
         // No "protips" please
         .footer-5ji8u1 {
             display: none;
@@ -36,7 +35,6 @@
 
         // Menu item
         .colorDefault-CDqZdO {
-
             // Focused menu item
             &.focused-3qFvc8 {
                 background: $blue-select;
@@ -63,15 +61,11 @@
                     color: $green-bright;
                 }
             }
-
         }
         // Slider bar
         .bar-1Bhnl9 {
             background: $beige;
-            box-shadow: (
-                inset 1px 1px 2px 0 grey,
-                inset -2px -2px 2px 0 white
-            );
+            box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
             .barFill-2Bh7CX {
                 background: transparent;
             }
@@ -84,10 +78,7 @@
             border-radius: 3px;
             border: solid $green-bright;
             border-width: 3px 0;
-            box-shadow: (
-                inset -1px -1px 2px 0 grey,
-                inset 2px 2px 2px 0 white
-            );
+            box-shadow: (inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white);
         }
     }
 
@@ -104,7 +95,6 @@
 
     // Inbox
     .recentMentionsPopout-2bI1ZN {
-
         // Top bar
         .header-145e10 {
             @include windowTitle;
@@ -187,16 +177,13 @@
 
             // #
             .threadIcon-rd1kqG {
-                color:white;
+                color: white;
             }
 
             // Search bar
             .searchBox-3IjAC1 {
                 @include beigeButton;
-                box-shadow: (
-                    inset 1px 1px 2px 0 grey,
-                    inset -2px -2px 2px 0 white
-                );
+                box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
                 .input-2m5SfJ {
                     color: black;
                 }
@@ -222,7 +209,7 @@
             background: $beige;
             // Thread age
             .sectionHeader-QsOv68 {
-                color: black!important;
+                color: black !important;
             }
             // Thread
             .container-2rzKKA {
@@ -233,7 +220,7 @@
             .container-2c4_8A {
                 .defaultColor-HXu-5n,
                 .text-md-normal-304U3g {
-                    color: black!important;
+                    color: black !important;
                 }
                 .button-f2h6uQ {
                     @include beigeButton;
@@ -274,7 +261,6 @@
 
         // All profiles
         .userPopoutInner-1hXSeY {
-
             // Edit profile button
             .pencilContainer-11Kuga {
                 @include beigeButton;
@@ -386,7 +372,7 @@
                 &.checked-1pZh2h {
                     background: $beige !important;
                     path {
-                        fill: $green-bright!important;
+                        fill: $green-bright !important;
                     }
                 }
             }
@@ -415,17 +401,11 @@
         }
         // Saturation brightness grid
         .saturation-CLQHFD {
-            box-shadow: (
-                -1px -1px 2px 0 grey,
-                2px 2px 2px 0 white
-            );
+            box-shadow: (-1px -1px 2px 0 grey, 2px 2px 2px 0 white);
         }
         // Hue slider
         .hue-horizontal {
-            box-shadow: (
-                inset 1px 1px 2px 0 grey,
-                inset -2px -2px 2px 0 white
-            );
+            box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
             // Grabber
             div:last-child {
                 height: 12px;
@@ -435,10 +415,7 @@
                     border-radius: 3px;
                     border: solid $green-bright;
                     border-width: 3px 0;
-                    box-shadow: (
-                        inset -1px -1px 2px 0 grey,
-                        inset 2px 2px 2px 0 white
-                    );
+                    box-shadow: (inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white);
                 }
             }
         }
@@ -529,9 +506,7 @@
             border-radius: 0;
             // Emoji grid
             .bodyWrapper-1eSOtW {
-                box-shadow: (
-                    inset 0 0 2px 2px grey,
-                );
+                box-shadow: (inset 0 0 2px 2px grey);
                 // Section title
                 .wrapper-1NNaWG {
                     background: linear-gradient(to bottom, transparent, white, transparent);
@@ -539,10 +514,7 @@
                 // Hovered emoji
                 .emojiItem-277VFM.emojiItemSelected-2Lg50V {
                     @include beigeButton;
-                    box-shadow: (
-                        inset 1px 1px 2px 0 grey,
-                        inset -2px -2px 2px 0 white
-                    );
+                    box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
                 }
             }
             // Emoji info
@@ -555,7 +527,7 @@
         }
     }
     // Reaction emoji picker
-    .animatorLeft-3yvG13>#emoji-picker-tab-panel {
+    .animatorLeft-3yvG13 > #emoji-picker-tab-panel {
         @include windowHasPseudoTitle("Add a reaction");
         &::before {
             left: -2px;
@@ -597,9 +569,7 @@
             // Sticker grid
             #sticker-picker-grid {
                 background: white;
-                box-shadow: (
-                    inset 0 0 2px 2px grey,
-                );
+                box-shadow: (inset 0 0 2px 2px grey);
                 // Section title
                 .wrapper-1NNaWG {
                     background: linear-gradient(to bottom, transparent, white, transparent);
@@ -631,7 +601,7 @@
             }
             // Item / category
             .result-pzZrwj {
-                background-color: white!important;
+                background-color: white !important;
                 &::after {
                     box-shadow: inset 0 0 0 2px white;
                     border-radius: 0;
@@ -653,13 +623,13 @@
     // Modals
     // BSOD
     .backdrop-2ByYRN {
-        background: var(--bsod-color, navy)!important;
-        opacity: 1.0!important;
+        background: var(--bsod-color, navy) !important;
+        opacity: 1 !important;
         &::before {
             content: var(--bsod-text, var(--bsod-text-original));
             white-space: pre-wrap;
             display: block;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: "Courier New", Courier, monospace;
             font-size: 20px;
             color: white;
             margin: 40px;

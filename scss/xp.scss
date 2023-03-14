@@ -1,10 +1,3 @@
-/**
- * @name Exponent - Main
- * @author Saltssaumure#7557
- * @description Main section of the Exponent theme. Please download the autoupdater from https://github.com/Saltssaumure/xp-discord-theme/releases/tag/latest.
- * @version 1.2.1
-*/
-
 @use "vars" as *;
 
 @import "mixins/shortcutIcon";
@@ -18,8 +11,8 @@
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
 
 :root {
-    --HSL-server-icon-size: 25px;  /* Size of the server icons | DEFAULT: 40px */
-    --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+    --HSL-server-icon-size: 25px; /* Size of the server icons | DEFAULT: 40px */
+    --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
 }
 code,
@@ -29,10 +22,10 @@ code,
 
 .theme-dark {
     --xp-bg-color: #000;
-    --xp-txt-color: #FFF;
+    --xp-txt-color: #fff;
     --xp-set-color: #{$white-overlay};
     --xp-hover-color: #123;
-    --xp-zing-color: #A50;
+    --xp-zing-color: #a50;
 }
 .theme-light {
     --xp-bg-color: white;
@@ -43,7 +36,6 @@ code,
 }
 
 body #app-mount {
-
     // Very top window bar
     .withFrame-2dL45i {
         margin-top: 0;
@@ -91,11 +83,10 @@ body #app-mount {
 
     // Main view
     .container-1eFtFS {
-
         // Servers sidebar / Taskbar
         // leave gap in server bar for user settings
         .guilds-2JjMmN {
-            height: calc(100vw - $panel-width)!important;
+            height: calc(100vw - $panel-width) !important;
             left: calc(100vw - $panel-width);
             z-index: 0;
 
@@ -117,7 +108,7 @@ body #app-mount {
 
             .scroller-3X7KbA {
                 @include barGradient(true, $blue-max, $blue-vivid);
-                padding-top: 0!important;
+                padding-top: 0 !important;
 
                 // DMs icon / Start button
                 .tutorialContainer-1pL9QS {
@@ -133,7 +124,7 @@ body #app-mount {
                         .wrapper-3kah-n {
                             .selected-1Drb7Z,
                             &:hover {
-                                .childWrapper-1j_1ub{
+                                .childWrapper-1j_1ub {
                                     color: white;
                                 }
                             }
@@ -168,7 +159,6 @@ body #app-mount {
 
         // Channels sidebar and main chat
         .base-2jDfDU {
-
             // Notice banner
             .notice-2olXi7 {
                 top: $window-top;
@@ -189,7 +179,7 @@ body #app-mount {
             }
 
             // Top bar (not in DMs)
-            .chat-2ZfjoI>.title-31SJ6t {
+            .chat-2ZfjoI > .title-31SJ6t {
                 .toolbar-3_r2xA {
                     // Move help icon
                     .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
@@ -205,7 +195,6 @@ body #app-mount {
 
             // Channels sidebar
             .sidebar-1tnWFu {
-
                 position: absolute;
                 bottom: 0;
                 max-height: 60vh;
@@ -354,7 +343,7 @@ body #app-mount {
                 }
 
                 // Explore servers category list
-                &>.scrollerBase-1Pkza4 {
+                & > .scrollerBase-1Pkza4 {
                     @include startMenuList();
                     position: relative;
                     border-radius: 8px 8px 0 0;
@@ -414,10 +403,7 @@ body #app-mount {
                             @include beigeButton;
                             &.buttonActive-Uc1jHx {
                                 background: $beige;
-                                box-shadow: (
-                                    inset 1px 1px 2px 0 grey,
-                                    inset -2px -2px 2px 0 white
-                                );
+                                box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
                             }
                         }
                     }
@@ -480,15 +466,14 @@ body #app-mount {
             }
 
             // Main chat and top bar
-            .chat-2ZfjoI:not(.container-2IKOsH>.chat-2ZfjoI) {
+            .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
                 @include mainWindow();
 
                 // Main chat
                 .chatContent-3KubbW {
-
                     // Message
                     .message-2CShn3 {
-                        padding-right: 140px!important;
+                        padding-right: 140px !important;
                         // Message actions
                         .container-2gUZhU {
                             right: 130px;
@@ -498,7 +483,7 @@ body #app-mount {
                     // Message box
                     .form-3gdLxP {
                         // Gift nitro button
-                        .buttons-uaqb-5>.button-ejjZWC {
+                        .buttons-uaqb-5 > .button-ejjZWC {
                             @include makeIcon(50px, auto, ".buttonWrapper-3YFQGJ");
                             top: $window-top;
                             .button-3BaQ4X {
@@ -521,7 +506,7 @@ body #app-mount {
 
                 // Forums
                 .headerRow-1MKoR-,
-                .list-3FIpnh>div:first-child {
+                .list-3FIpnh > div:first-child {
                     min-width: 0;
                 }
 
@@ -570,7 +555,7 @@ body #app-mount {
                 }
                 // Neither does autocompleter
                 .autocomplete-3NRXG8 {
-                    width: auto!important;
+                    width: auto !important;
                 }
             }
             .resizeHandle-PBRzPC {
@@ -581,8 +566,8 @@ body #app-mount {
                 border-radius: 0;
             }
             // Threads not video chat
-            .content-1SgpWY> {
-                 // Main chat / thread separator
+            .content-1SgpWY > {
+                // Main chat / thread separator
                 .resizeHandle-PBRzPC {
                     position: relative;
                     right: $window-right;
@@ -663,7 +648,13 @@ body #app-mount {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at 25% 25%, $white-overlay, transparentize($white-overlay, 0.4) 20%, transparentize($white-overlay, 0.6) 40%, transparent);
+    background: radial-gradient(
+        circle at 25% 25%,
+        $white-overlay,
+        transparentize($white-overlay, 0.4) 20%,
+        transparentize($white-overlay, 0.6) 40%,
+        transparent
+    );
     border-radius: 50%;
     z-index: 1;
 }

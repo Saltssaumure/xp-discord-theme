@@ -1,5 +1,4 @@
 @function makeSelectors() {
-
     $labels: (
         "Vis medlemsliste",
         "Skjul medlemsliste",
@@ -69,8 +68,8 @@
         $selectors: append($selectors, "[aria-label='#{$label}']", comma);
     }
 
-    @return $selectors
-};
+    @return $selectors;
+}
 
 @mixin makeIcon($left-offset, $right-offset, $inner-element) {
     position: fixed;

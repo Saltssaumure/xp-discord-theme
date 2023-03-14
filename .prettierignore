@@ -1,0 +1,11 @@
+.github
+
+node_modules
+src
+
+LICENSE
+*.md
+*.code-workspace
+
+*.min.css
+*.theme.css

@@ -1,17 +1,17 @@
 {
-  "name": "exponent",
-  "version": "1.2.1",
-  "description": "blarg.",
-  "repository": "https://github.com/DiscordStyles/HorizontalServerList.git",
-  "author": "Gibbu <Gibbu_@hotmail.com>",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "dev": "bd-scss dev",
-    "build": "bd-scss build"
-  },
-  "type": "module",
-  "dependencies": {
-    "bd-scss": "^2.0.12"
-  }
+    "name": "exponent",
+    "version": "1.2.2",
+    "description": "A Windows XP style theme built for BetterDiscord.",
+    "repository": "https://github.com/Saltssaumure/xp-discord-theme.git",
+    "author": "Saltssaumure <saltssaumure@gmail.com>",
+    "license": "GPL-3.0",
+    "private": true,
+    "scripts": {
+        "dev": "bd-scss dev",
+        "build": "bd-scss build"
+    },
+    "type": "module",
+    "dependencies": {
+        "bd-scss": "^2.0.12"
+    }
 }

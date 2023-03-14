@@ -5,18 +5,12 @@
     border: 1px solid black;
     background: $beige-light;
     color: black;
-    box-shadow: (
-        inset -1px -1px 2px 0 grey,
-        inset 2px 2px 2px 0 white
-    );
+    box-shadow: (inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white);
 }
 
 @mixin beigeButtonInset() {
     @include beigeButton();
-    box-shadow: (
-        inset 1px 1px 2px 0 grey,
-        inset -2px -2px 2px 0 white
-    );
+    box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
 }
 
 @mixin winButton($size, $isRed) {

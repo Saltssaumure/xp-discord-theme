@@ -3,7 +3,7 @@
 @mixin windowBox($vertical-offset) {
     border: 2px solid $blue-select;
     border-top: 0;
-    box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0,0%,0%,0.4);
+    box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0, 0%, 0%, 0.4);
 }
 
 @mixin mainWindow() {
@@ -19,16 +19,8 @@
         $direction: left;
         $shadow: -2px 0;
     }
-    background: linear-gradient(
-        to #{$direction},
-        $color-dark,
-        $color-dark 12%,
-        $color-light
-    );
-    box-shadow: (
-        inset 0 0 3px 2px $color-dark,
-        inset #{$shadow} 2px 1px $white-overlay
-    );
+    background: linear-gradient(to #{$direction}, $color-dark, $color-dark 12%, $color-light);
+    box-shadow: (inset 0 0 3px 2px $color-dark, inset #{$shadow} 2px 1px $white-overlay);
 }
 
 @mixin windowTitle() {
@@ -103,10 +95,7 @@
 @mixin indentBox() {
     font-family: "Whitney", var(--i18n-fallbacks);
     border-radius: 0;
-    box-shadow: (
-        inset 1px 1px 2px 0 $black-overlay,
-        inset -1px -1px 2px 0 $white-overlay
-    );
+    box-shadow: (inset 1px 1px 2px 0 $black-overlay, inset -1px -1px 2px 0 $white-overlay);
 }
 
 @mixin beigeBox() {
