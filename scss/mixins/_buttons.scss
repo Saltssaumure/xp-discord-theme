@@ -25,6 +25,7 @@
     border-radius: 3px;
     color: white;
     background: radial-gradient(circle at 20% 20%, $white-overlay, $blue-vivid, $blue-max);
+
     @if ($isRed) {
         background: radial-gradient(circle at 20% 20%, $white-overlay, $red-bright, $red-max);
     }

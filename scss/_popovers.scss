@@ -2,10 +2,12 @@
 
 // Popouts
 .layerContainer-2lfOPe {
+
     // Inbox etc window
     .messagesPopoutWrap-3zryHW {
         border-radius: 8px 8px 0 0;
         max-height: calc(100vh - $window-top - 120px) !important;
+
         // No "protips" please
         .footer-5ji8u1 {
             display: none;
@@ -18,9 +20,11 @@
         border: 1px solid black;
         color: black;
         border-radius: 0;
+
         .guildNameText-jBFbNC {
             color: black;
         }
+
         .tooltipPointer-3L49xb {
             border-top-color: black;
         }
@@ -35,6 +39,7 @@
 
         // Menu item
         .colorDefault-CDqZdO {
+
             // Focused menu item
             &.focused-3qFvc8 {
                 background: $blue-select;
@@ -42,10 +47,12 @@
             }
 
             .icon-E4cW1l {
+
                 // Radio button
                 path[d^="M12 20C16.4183"] {
                     d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
                 }
+
                 // circle
                 .radioSelection-1UHp0b {
                     color: $green-bright;
@@ -57,19 +64,23 @@
                     color: black;
                     border: 1px solid black;
                 }
+
                 .check-3HZJs4 {
                     color: $green-bright;
                 }
             }
         }
+
         // Slider bar
         .bar-1Bhnl9 {
             background: $beige;
             box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+
             .barFill-2Bh7CX {
                 background: transparent;
             }
         }
+
         // Handle
         .grabber-2GQyvM {
             height: 16px;
@@ -85,9 +96,11 @@
     // Profile
     .accountProfilePopoutWrapper-3GskID {
         @include windowHasPseudoTitle("User Profile");
+
         &::before {
             left: -2px;
         }
+
         .userProfileOuter-1K_BYU {
             border-radius: 0;
         }
@@ -95,6 +108,7 @@
 
     // Inbox
     .recentMentionsPopout-2bI1ZN {
+
         // Top bar
         .header-145e10 {
             @include windowTitle;
@@ -107,18 +121,21 @@
                 bottom: -1px;
                 z-index: 1;
                 align-items: base;
+
                 .tab-TRrPC8 {
                     background: $beige;
                     border-radius: 3px 3px 0 0;
                     border: solid $blue-select;
                     border-width: 1px 1px 0 1px;
                     margin: 0;
+
                     // Selected tab
                     &.selected-g-kMVV {
                         padding-top: 1px;
                         height: 25px;
                         background: linear-gradient(to bottom, orange, white 10%, $beige 80%);
                     }
+
                     // Hovered tab
                     &:hover {
                         color: black;
@@ -126,12 +143,14 @@
                 }
             }
         }
+
         // Mark all as read button
         &.container-2ebMPP {
             .header-145e10 .button-1_oXub {
                 @include winButton(26px, false);
             }
         }
+
         // Filter mentions button
         &.messagesPopoutWrap-3zryHW {
             .header-145e10 .button-1_oXub {
@@ -150,14 +169,17 @@
             // Channel unread group
             .channel-3NJZ1V,
             .container-iA3Qrz {
+
                 // Channel group header
                 .channelHeader-DFRX8q {
                     background: $beige;
+
                     // Buttons
                     .button-1_oXub {
                         @include beigeButton();
                     }
                 }
+
                 // Message group
                 .messages-23can0,
                 .messageContainer-3VTXBC {
@@ -184,6 +206,7 @@
             .searchBox-3IjAC1 {
                 @include beigeButton;
                 box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+
                 .input-2m5SfJ {
                     color: black;
                 }
@@ -207,21 +230,26 @@
         .list-3YHPPb {
             @include startMenuList;
             background: $beige;
+
             // Thread age
             .sectionHeader-QsOv68 {
                 color: black !important;
             }
+
             // Thread
             .container-2rzKKA {
                 @include indentBox;
                 border: 0;
             }
+
             // No threads
             .container-2c4_8A {
+
                 .defaultColor-HXu-5n,
                 .text-md-normal-304U3g {
                     color: black !important;
                 }
+
                 .button-f2h6uQ {
                     @include beigeButton;
                 }
@@ -234,13 +262,16 @@
         .header-1w9Q93 {
             @include windowTitle;
         }
+
         .messagesPopout-eVzQcI {
             @include startMenuList;
             background: $beige;
+
             .messageGroupWrapper-1jf_7C {
                 @include indentBox;
                 border: 0;
             }
+
             .body-GBnhET {
                 color: black;
             }
@@ -251,19 +282,23 @@
     .userPopoutOuter-3AVBmJ {
         border-radius: 0;
         @include windowHasPseudoTitle("User info");
+
         &::before {
             width: 100%;
             left: 0;
         }
+
         .avatarWrapper-3y0KZ1 {
             left: 24px;
         }
 
         // All profiles
         .userPopoutInner-1hXSeY {
+
             // Edit profile button
             .pencilContainer-11Kuga {
                 @include beigeButton;
+
                 .pencilIcon-1MUmnO {
                     color: black;
                 }
@@ -314,6 +349,7 @@
                 background: var(--xp-bg-color);
             }
         }
+
         &.theme-dark .userProfileInnerThemedNonPremium-1gT-zY {
             background: var(--xp-bg-color);
 
@@ -330,6 +366,7 @@
             }
         }
     }
+
     .userPopoutOuter-3AVBmJ.theme-dark .rolePill-2IJ1vo .defaultColor-1EVLSt {
         color: black;
     }
@@ -337,6 +374,7 @@
     // VC ping
     .container-1ILvLB {
         @include beigeBox;
+
         .popoutText-3NRmTw {
             color: black;
         }
@@ -345,6 +383,7 @@
     // Stream preview
     .streamPreview-I7itZ6 {
         @include beigeBox;
+
         .watchButton-2YRKxv {
             @include beigeButton;
         }
@@ -353,24 +392,31 @@
     // Select role preview
     .container-3ssFyj {
         @include beigeBox;
+
         // Search role
         .container-2oNtJn {
             @include beigeButtonInset;
         }
+
         // Role
         .item-1BCeuB {
             border-radius: 0;
+
             &.selected-22ukbQ {
                 background: $blue-select;
             }
+
             .itemLabel-27pirQ span {
                 background: $beige;
             }
+
             // Checkbox
             .box-BHImcZ {
                 border-radius: 0;
+
                 &.checked-1pZh2h {
                     background: $beige !important;
+
                     path {
                         fill: $green-bright !important;
                     }
@@ -382,6 +428,7 @@
     // Emoji info
     .popoutContainer-2wbmiM {
         @include beigeBox;
+
         // Nitro button
         .shinyButton-2Q9MDB {
             @include beigeButton;
@@ -391,26 +438,32 @@
     // Color picker
     .colorPickerCustom-1swUKF {
         @include beigeBox;
+
         // Hex code box
         .input-2g-os5 {
             @include beigeButtonInset;
         }
+
         // Suggested colour buttons
         .suggestedColor-2q1U7c {
             @include beigeButton;
         }
+
         // Saturation brightness grid
         .saturation-CLQHFD {
             box-shadow: (-1px -1px 2px 0 grey, 2px 2px 2px 0 white);
         }
+
         // Hue slider
         .hue-horizontal {
             box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+
             // Grabber
             div:last-child {
                 height: 12px;
                 width: 10px;
                 margin-top: -4px;
+
                 div {
                     border-radius: 3px;
                     border: solid $green-bright;
@@ -436,12 +489,14 @@
         --search-popout-option-fade-hover: linear-gradient(to right, transparent, #{$blue-select} 60%);
         border-radius: 0;
         border: 1px solid black;
+
         .option-ayUoaq {
             border-radius: 0;
         }
 
         .react-datepicker {
             background: $beige;
+
             .react-datepicker__navigation {
                 @include beigeButton;
                 background-size: 30%;
@@ -449,32 +504,40 @@
                 background-position: center;
                 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='25'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M17.338 12.485c-4.156 4.156-8.312 8.312-12.468 12.467-1.402-1.402-2.805-2.804-4.207-4.206 2.756-2.757 5.513-5.514 8.27-8.27C6.176 9.72 3.419 6.963.663 4.207L4.87 0c-.058-.059 12.555 12.562 12.468 12.485z' clip-rule='evenodd'/%3E%3C/svg%3E");
             }
+
             .react-datepicker__header {
                 background: transparent;
+
                 .react-datepicker__current-month,
                 .react-datepicker__day-name {
                     color: black;
                 }
             }
+
             .react-datepicker__month {
                 border: 1px solid black;
                 border-radius: 3px;
+
                 .react-datepicker__day:not(.react-datepicker__day--disabled) {
                     @include beigeButton;
                     border-radius: 0;
                     border: 0;
+
                     &.react-datepicker__day--outside-month {
                         background: $beige;
                     }
                 }
+
                 .react-datepicker__day--disabled {
                     background: $beige;
                     color: grey;
                 }
             }
         }
+
         .hintValue-V9hd8l {
             @include beigeButton;
+
             &:hover {
                 background: inherit;
             }
@@ -489,46 +552,57 @@
         --text-normal: black;
         --header-secondary: black;
         --background-primary: #{$blue-select};
+
         .header-11eigE {
             background: $beige;
             border-radius: 0;
+
             .searchBar-2M9mRP {
                 @include beigeButtonInset;
             }
+
             .diversitySelectorButton-2CGlo5,
             .diversitySelectorOptions-3DhNYs {
                 @include beigeButton;
                 padding: 3px;
             }
         }
+
         .emojiPicker-6YCk8a {
             background: white;
             border-radius: 0;
+
             // Emoji grid
             .bodyWrapper-1eSOtW {
                 box-shadow: (inset 0 0 2px 2px grey);
+
                 // Section title
                 .wrapper-1NNaWG {
                     background: linear-gradient(to bottom, transparent, white, transparent);
                 }
+
                 // Hovered emoji
                 .emojiItem-277VFM.emojiItemSelected-2Lg50V {
                     @include beigeButton;
                     box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
                 }
             }
+
             // Emoji info
             .inspector-DFKXwB {
                 background: $beige;
             }
         }
+
         .categoryList-2qRrlj {
             background: $beige;
         }
     }
+
     // Reaction emoji picker
-    .animatorLeft-3yvG13 > #emoji-picker-tab-panel {
+    .animatorLeft-3yvG13>#emoji-picker-tab-panel {
         @include windowHasPseudoTitle("Add a reaction");
+
         &::before {
             left: -2px;
         }
@@ -546,18 +620,22 @@
         background: $beige;
         border-radius: 0;
         @include windowHasPseudoTitle("Chat addition");
+
         &::before {
             left: -2px;
         }
+
         overflow: visible;
 
         // Gif / sticker / emoji buttons
         .navButton-1XuvI- {
             @include beigeButton;
+
             &.navButtonActive-1EqC5l {
                 @include beigeButtonInset;
             }
         }
+
         // Gif / sticker searchbar
         .container-1SX9VC,
         .container-2oNtJn {
@@ -566,24 +644,29 @@
 
         // Sticker picker
         #sticker-picker-tab-panel {
+
             // Sticker grid
             #sticker-picker-grid {
                 background: white;
                 box-shadow: (inset 0 0 2px 2px grey);
+
                 // Section title
                 .wrapper-1NNaWG {
                     background: linear-gradient(to bottom, transparent, white, transparent);
                 }
             }
+
             // Discord default sticker button
             .standardStickerShortcut-ObSns3 {
                 background: $beige;
             }
+
             // Emoji info
             .inspector-DFKXwB {
                 background: $beige;
             }
         }
+
         .categoryList-2qRrlj {
             background: $beige;
         }
@@ -591,27 +674,33 @@
         // Gif picker
         #gif-picker-tab-panel {
             background: $beige;
+
             // Back button
             .backButton-bSKWLe {
                 color: black;
             }
+
             // Favs category
             .categoryFadeBlurple-1l49_Q {
                 background: $black-overlay;
             }
+
             // Item / category
             .result-pzZrwj {
                 background-color: white !important;
+
                 &::after {
                     box-shadow: inset 0 0 0 2px white;
                     border-radius: 0;
                 }
             }
+
             // Hovered
             .focused-16Owih,
             .result-pzZrwj:hover {
                 box-shadow: 0 11px 22px 1px $white-overlay;
             }
+
             // Placeholder for loading gif
             .placeholder-T1Tuu8 {
                 border-radius: 0;
@@ -625,6 +714,7 @@
     .backdrop-2ByYRN {
         background: var(--bsod-color, navy) !important;
         opacity: 1 !important;
+
         &::before {
             content: var(--bsod-text, var(--bsod-text-original));
             white-space: pre-wrap;
@@ -635,10 +725,12 @@
             margin: 40px;
         }
     }
+
     // Modal item
     .layer-fP3xEz {
         align-items: flex-end;
         padding-right: 10vw;
+
         .focusLock-bHVOlV {
             border: 2px solid white;
             padding: 5px;
