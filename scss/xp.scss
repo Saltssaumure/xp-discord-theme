@@ -26,7 +26,11 @@ code,
 
 .theme-dark {
     --xp-bg-color: #000;
+    --xp-bg-bright-color: #234;
+    --xp-bg-tint-color: #123;
+    --xp-bg-shade-color: #012;
     --xp-txt-color: #fff;
+    --xp-border-color: #{$blue-select};
     --xp-set-color: #{$white-overlay};
     --xp-hover-color: #123;
     --xp-zing-color: #a50;
@@ -34,14 +38,17 @@ code,
 
 .theme-light {
     --xp-bg-color: white;
+    --xp-bg-bright-color: #{$beige-light};
+    --xp-bg-tint-color: #{$beige};
+    --xp-bg-shade-color: grey;
     --xp-txt-color: black;
+    --xp-border-color: black;
     --xp-set-color: #{$black-overlay};
     --xp-hover-color: lightgrey;
     --xp-zing-color: orange;
 }
 
 body #app-mount {
-
     // Very top window bar
     .withFrame-2dL45i {
         margin-top: 0;
@@ -93,7 +100,6 @@ body #app-mount {
 
     // Main view
     .container-1eFtFS {
-
         // Servers sidebar / Taskbar
         // leave gap in server bar for user settings
         .guilds-2JjMmN {
@@ -137,7 +143,6 @@ body #app-mount {
                         }
 
                         .wrapper-3kah-n {
-
                             .selected-1Drb7Z,
                             &:hover {
                                 .childWrapper-1j_1ub {
@@ -178,7 +183,6 @@ body #app-mount {
 
         // Channels sidebar and main chat
         .base-2jDfDU {
-
             // Notice banner
             .notice-2olXi7 {
                 top: $window-top;
@@ -200,9 +204,8 @@ body #app-mount {
             }
 
             // Top bar (not in DMs)
-            .chat-2ZfjoI>.title-31SJ6t {
+            .chat-2ZfjoI > .title-31SJ6t {
                 .toolbar-3_r2xA {
-
                     // Move help icon
                     .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
                         @include makeIcon(50px, auto, ".icon-2xnN2Y");
@@ -321,7 +324,6 @@ body #app-mount {
 
                         // Selected channel
                         .modeSelected-3DmyhH {
-
                             // Channel actions
                             .actionIcon-2sw4Sl {
                                 color: $white-overlay;
@@ -330,7 +332,6 @@ body #app-mount {
 
                         // Muted channel
                         .modeMuted-2T4MDZ {
-
                             .name-28HaxV,
                             .icon-2W8DHg {
                                 color: grey;
@@ -376,7 +377,7 @@ body #app-mount {
                 }
 
                 // Explore servers category list
-                &>.scrollerBase-1Pkza4 {
+                & > .scrollerBase-1Pkza4 {
                     @include startMenuList();
                     position: relative;
                     border-radius: 8px 8px 0 0;
@@ -440,11 +441,11 @@ body #app-mount {
 
                         // Video stream buttons
                         .button-1EGGcP {
-                            @include beigeButton;
+                            @include bgButton;
 
                             &.buttonActive-Uc1jHx {
                                 background: $beige;
-                                box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+                                @include boxShadow;
                             }
                         }
                     }
@@ -517,7 +518,6 @@ body #app-mount {
 
                 // Main chat
                 .chatContent-3KubbW {
-
                     // Message
                     .message-2CShn3 {
                         padding-right: 140px !important;
@@ -530,9 +530,8 @@ body #app-mount {
 
                     // Message box
                     .form-3gdLxP {
-
                         // Gift nitro button
-                        .buttons-uaqb-5>.button-ejjZWC {
+                        .buttons-uaqb-5 > .button-ejjZWC {
                             @include makeIcon(50px, auto, ".buttonWrapper-3YFQGJ");
                             top: $window-top;
 
@@ -558,7 +557,7 @@ body #app-mount {
 
                 // Forums
                 .headerRow-1MKoR-,
-                .list-3FIpnh>div:first-child {
+                .list-3FIpnh > div:first-child {
                     min-width: 0;
                 }
 
@@ -625,8 +624,7 @@ body #app-mount {
             }
 
             // Threads not video chat
-            .content-1SgpWY> {
-
+            .content-1SgpWY > {
                 // Main chat / thread separator
                 .resizeHandle-PBRzPC {
                     position: relative;
@@ -717,11 +715,13 @@ body #app-mount {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at 25% 25%,
-            $white-overlay,
-            transparentize($white-overlay, 0.4) 20%,
-            transparentize($white-overlay, 0.6) 40%,
-            transparent);
+    background: radial-gradient(
+        circle at 25% 25%,
+        $white-overlay,
+        transparentize($white-overlay, 0.4) 20%,
+        transparentize($white-overlay, 0.6) 40%,
+        transparent
+    );
     border-radius: 50%;
     z-index: 1;
 }

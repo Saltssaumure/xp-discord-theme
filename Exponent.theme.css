@@ -3,7 +3,7 @@
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
  * @description A Windows XP style theme built for BetterDiscord.
- * @version 1.2
+ * @version 1.3
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/xp-discord-theme
  * @donate https://ko-fi.com/saltssaumure
@@ -35,15 +35,23 @@ Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
 
 .theme-dark {
     --xp-bg-color: #000;
+    --xp-bg-bright-color: #234;
+    --xp-bg-tint-color: #222;
+    --xp-bg-shade-color: #111;
     --xp-txt-color: #FFF;
-    --xp-set-color: rgba(255,255,255,0.7);
+    --xp-border-color: #1665CA;
+    --xp-set-color: #FFFFFFB3;
     --xp-hover-color: #123;
     --xp-zing-color: #A50;
 }
 .theme-light {
-    --xp-bg-color: white;
-    --xp-txt-color: black;
-    --xp-set-color: rgba(0,0,0,0.7);
-    --xp-hover-color: lightgrey;
-    --xp-zing-color: orange;
+    --xp-bg-color: #FFF;
+    --xp-bg-bright-color: #F0EFED;
+    --xp-bg-tint-color: #EBE8D7;
+    --xp-bg-shade-color: #808080;
+    --xp-txt-color: #000;
+    --xp-border-color: #000;
+    --xp-set-color: #000000B3;
+    --xp-hover-color: #D3D3D3;
+    --xp-zing-color: #FFA500;
 }

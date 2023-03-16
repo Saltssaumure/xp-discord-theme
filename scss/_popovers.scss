@@ -2,7 +2,6 @@
 
 // Popouts
 .layerContainer-2lfOPe {
-
     // Inbox etc window
     .messagesPopoutWrap-3zryHW {
         border-radius: 8px 8px 0 0;
@@ -22,7 +21,7 @@
         border-radius: 0;
 
         .guildNameText-jBFbNC {
-            color: black;
+            color: inherit;
         }
 
         .tooltipPointer-sMBQqe {
@@ -31,99 +30,81 @@
     }
 
     // Small menus
-    .menu-1QACrS {
-        --interactive-normal: black;
-        background: $beige;
-        border: 1px solid black;
+    .menu-2TXYjN {
+        --interactive-normal: var(--xp-txt-color);
+        background: var(--xp-bg-tint-color);
+        border: 1px solid var(--xp-border-color);
         border-radius: 0;
 
         // Menu item
-        .colorDefault-CDqZdO {
-
+        .colorDefault-2_rLdz {
             // Focused menu item
-            &.focused-3qFvc8 {
+            &.focused-3LIdPu {
                 background: $blue-select;
                 border-radius: 0;
             }
 
-            .icon-E4cW1l {
-
+            .icon-3XHs8t {
                 // Radio button
                 path[d^="M12 20C16.4183"] {
                     d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
                 }
 
                 // circle
-                .radioSelection-1UHp0b {
+                .radioSelection-3PDNAQ {
                     color: $green-bright;
                 }
 
                 // Checkbox
-                .checkbox-hADx5o {
+                .checkbox-397WsK {
                     d: path("M 2 2 V 22 H 22 V 2 Z M 3 3 V 21 H 21 V 3 Z");
-                    color: black;
-                    border: 1px solid black;
+                    color: var(--xp-txt-color);
                 }
 
-                .check-3HZJs4 {
+                .check-3-73a4 {
                     color: $green-bright;
                 }
             }
         }
 
         // Slider bar
-        .bar-1Bhnl9 {
-            background: $beige;
-            box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+        .bar-2H7Q9u {
+            @include bgButton($isBeige: true);
+            border: none;
 
-            .barFill-2Bh7CX {
+            .barFill-3RgCsY {
                 background: transparent;
             }
         }
 
         // Handle
-        .grabber-2GQyvM {
+        .grabber-3R-Rx9 {
+            @include bgButton($isBeige: true, $isInset: true);
             height: 16px;
             width: 10px;
             margin-top: -1px;
-            border-radius: 3px;
             border: solid $green-bright;
             border-width: 3px 0;
-            box-shadow: (inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white);
-        }
-    }
-
-    // Profile
-    .accountProfilePopoutWrapper-3GskID {
-        @include windowHasPseudoTitle("User Profile");
-
-        &::before {
-            left: -2px;
-        }
-
-        .userProfileOuter-1K_BYU {
-            border-radius: 0;
         }
     }
 
     // Inbox
     .recentMentionsPopout-2bI1ZN {
-
         // Top bar
         .header-145e10 {
             @include windowTitle;
-            --interactive-normal: black;
-            --interactive-active: black;
+            --interactive-normal: var(--xp-txt-color);
+            --interactive-active: var(--xp-txt-color);
 
             // Mentions / unreads tabs
-            .topPill-3DJJNV {
+            .topPill-2vcLsa {
                 position: absolute;
                 bottom: -1px;
                 z-index: 1;
                 align-items: base;
 
                 .tab-TRrPC8 {
-                    background: $beige;
+                    background: var(--xp-bg-tint-color);
                     border-radius: 3px 3px 0 0;
                     border: solid $blue-select;
                     border-width: 1px 1px 0 1px;
@@ -138,7 +119,7 @@
 
                     // Hovered tab
                     &:hover {
-                        color: black;
+                        color: var(--xp-txt-color);
                     }
                 }
             }
@@ -162,21 +143,20 @@
         .messagesPopout-eVzQcI,
         .scroller-145h9c {
             @include startMenuList;
-            --header-primary: black;
+            --header-primary: var(--xp-txt-color);
             --header-secondary: grey;
-            background: $beige;
+            background: var(--xp-bg-tint-color);
 
             // Channel unread group
             .channel-3NJZ1V,
             .container-iA3Qrz {
-
                 // Channel group header
                 .channelHeader-DFRX8q {
-                    background: $beige;
+                    background: var(--xp-bg-tint-color);
 
                     // Buttons
                     .button-1_oXub {
-                        @include beigeButton();
+                        @include bgButton;
                     }
                 }
 
@@ -204,8 +184,7 @@
 
             // Search bar
             .searchBox-3IjAC1 {
-                @include beigeButton;
-                box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+                @include bgButton($isBeige: true, $isInset: true);
 
                 .input-2m5SfJ {
                     color: black;
@@ -222,18 +201,18 @@
 
             // Create thread button
             .createButton-oruGBs {
-                @include beigeButton;
+                @include bgButton($isBeige: true);
             }
         }
 
         // Content
         .list-3YHPPb {
             @include startMenuList;
-            background: $beige;
+            background: var(--xp-bg-tint-color);
 
             // Thread age
             .sectionHeader-QsOv68 {
-                color: black !important;
+                color: var(--xp-txt-color) !important;
             }
 
             // Thread
@@ -244,14 +223,13 @@
 
             // No threads
             .container-2c4_8A {
-
                 .defaultColor-HXu-5n,
                 .text-md-normal-304U3g {
-                    color: black !important;
+                    color: var(--xp-txt-color) !important;
                 }
 
                 .button-f2h6uQ {
-                    @include beigeButton;
+                    @include bgButton;
                 }
             }
         }
@@ -265,7 +243,7 @@
 
         .messagesPopout-eVzQcI {
             @include startMenuList;
-            background: $beige;
+            background: var(--xp-bg-tint-color);
 
             .messageGroupWrapper-1jf_7C {
                 @include indentBox;
@@ -273,12 +251,13 @@
             }
 
             .body-GBnhET {
-                color: black;
+                color: var(--xp-txt-color);
             }
         }
     }
 
     // User profile
+    // Popout or in profile settings
     .userPopoutOuter-3AVBmJ {
         border-radius: 0;
         @include windowHasPseudoTitle("User info");
@@ -294,19 +273,18 @@
 
         // All profiles
         .userPopoutInner-1hXSeY {
-
             // Edit profile button
             .pencilContainer-11Kuga {
-                @include beigeButton;
+                @include bgButton;
 
                 .pencilIcon-1MUmnO {
-                    color: black;
+                    color: var(--xp-txt-color);
                 }
             }
 
             // Hypesquad etc badges
             .profileBadges-31rDHI {
-                @include beigeButton;
+                @include bgButton;
             }
 
             // Inner box
@@ -318,7 +296,7 @@
 
                 // Roles
                 .rolePill-2IJ1vo {
-                    @include beigeButton;
+                    @include bgButton;
                 }
 
                 // User note
@@ -334,15 +312,14 @@
         }
 
         // Unstyled profile
-        &.theme-light .userProfileInnerThemedNonPremium-1gT-zY {
-            background: $beige;
-
+        .userProfileInnerThemedNonPremium-1gT-zY {
+            background: var(--xp-bg-tint-color);
             --interactive-active: var(--xp-txt-color);
             --header-primary: var(--xp-txt-color);
             --header-secondary: var(--xp-set-color);
             --text-normal: var(--xp-txt-color);
-            --background-secondary: beige;
-            --interactive-muted: beige;
+            --background-secondary: var(--xp-bg-tint-color);
+            --interactive-muted: var(--xp-bg-tint-color);
 
             // Inner box
             .overlayBackground-1KgwVi {
@@ -350,25 +327,9 @@
             }
         }
 
-        &.theme-dark .userProfileInnerThemedNonPremium-1gT-zY {
-            background: var(--xp-bg-color);
-
-            --interactive-active: var(--xp-txt-color);
-            --header-primary: var(--xp-txt-color);
-            --header-secondary: var(--xp-set-color);
-            --text-normal: var(--xp-txt-color);
-            --background-secondary: var(--xp-hover-color);
-            --interactive-muted: var(--xp-hover-color);
-
-            // Inner box
-            .overlayBackground-1KgwVi {
-                background: var(--xp-bg-color);
-            }
+        .rolePill-2IJ1vo .defaultColor-1EVLSt {
+            color: var(--xp-txt-color);
         }
-    }
-
-    .userPopoutOuter-3AVBmJ.theme-dark .rolePill-2IJ1vo .defaultColor-1EVLSt {
-        color: black;
     }
 
     // VC ping
@@ -376,7 +337,7 @@
         @include beigeBox;
 
         .popoutText-3NRmTw {
-            color: black;
+            color: var(--xp-txt-color);
         }
     }
 
@@ -385,7 +346,7 @@
         @include beigeBox;
 
         .watchButton-2YRKxv {
-            @include beigeButton;
+            @include bgButton;
         }
     }
 
@@ -395,7 +356,7 @@
 
         // Search role
         .container-2oNtJn {
-            @include beigeButtonInset;
+            @include bgButton($isInset: true);
         }
 
         // Role
@@ -407,7 +368,7 @@
             }
 
             .itemLabel-27pirQ span {
-                background: $beige;
+                background: var(--xp-bg-tint-color);
             }
 
             // Checkbox
@@ -431,7 +392,7 @@
 
         // Nitro button
         .shinyButton-2Q9MDB {
-            @include beigeButton;
+            @include bgButton;
         }
     }
 
@@ -441,22 +402,22 @@
 
         // Hex code box
         .input-2g-os5 {
-            @include beigeButtonInset;
+            @include bgButton;
         }
 
         // Suggested colour buttons
         .suggestedColor-2q1U7c {
-            @include beigeButton;
+            @include bgButton;
         }
 
         // Saturation brightness grid
         .saturation-CLQHFD {
-            box-shadow: (-1px -1px 2px 0 grey, 2px 2px 2px 0 white);
+            @include boxShadow($isInset: true);
         }
 
         // Hue slider
         .hue-horizontal {
-            box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+            @include boxShadow;
 
             // Grabber
             div:last-child {
@@ -468,7 +429,7 @@
                     border-radius: 3px;
                     border: solid $green-bright;
                     border-width: 3px 0;
-                    box-shadow: (inset -1px -1px 2px 0 grey, inset 2px 2px 2px 0 white);
+                    @include boxShadow($isInset: true);
                 }
             }
         }
@@ -476,29 +437,29 @@
 
     // Search options
     .container-2McqkF {
-        --header-secondary: black;
-        --text-muted: black;
-        --interactive-normal: black;
-        --search-popout-option-non-text-color: black;
-        --search-popout-option-user-nickname: black;
-        --search-popout-option-user-username: black;
-        --search-popout-date-picker-hint-text: black;
-        --background-floating: #{$beige};
+        --header-secondary: var(--xp-txt-color);
+        --text-muted: var(--xp-txt-color);
+        --interactive-normal: var(--xp-txt-color);
+        --search-popout-option-non-text-color: var(--xp-txt-color);
+        --search-popout-option-user-nickname: var(--xp-txt-color);
+        --search-popout-option-user-username: var(--xp-txt-color);
+        --search-popout-date-picker-hint-text: var(--xp-txt-color);
+        --background-floating: var(--xp-bg-tint-color);
         --background-modifier-hover: #{$blue-select};
-        --search-popout-option-fade: linear-gradient(to right, transparent, #{$beige});
+        --search-popout-option-fade: linear-gradient(to right, transparent, var(--xp-bg-tint-color) ;);
         --search-popout-option-fade-hover: linear-gradient(to right, transparent, #{$blue-select} 60%);
         border-radius: 0;
-        border: 1px solid black;
+        border: 1px solid var(--xp-border-color);
 
         .option-ayUoaq {
             border-radius: 0;
         }
 
         .react-datepicker {
-            background: $beige;
+            background: var(--xp-bg-tint-color);
 
             .react-datepicker__navigation {
-                @include beigeButton;
+                @include bgButton;
                 background-size: 30%;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -510,33 +471,33 @@
 
                 .react-datepicker__current-month,
                 .react-datepicker__day-name {
-                    color: black;
+                    color: var(--xp-txt-color);
                 }
             }
 
             .react-datepicker__month {
-                border: 1px solid black;
+                border: 1px solid var(--xp-border-color);
                 border-radius: 3px;
 
                 .react-datepicker__day:not(.react-datepicker__day--disabled) {
-                    @include beigeButton;
+                    @include bgButton;
                     border-radius: 0;
                     border: 0;
 
                     &.react-datepicker__day--outside-month {
-                        background: $beige;
+                        background: var(--xp-bg-tint-color);
                     }
                 }
 
                 .react-datepicker__day--disabled {
-                    background: $beige;
+                    background: var(--xp-bg-tint-color);
                     color: grey;
                 }
             }
         }
 
         .hintValue-V9hd8l {
-            @include beigeButton;
+            @include bgButton;
 
             &:hover {
                 background: inherit;
@@ -546,30 +507,30 @@
 
     // Emoji pickers
     #emoji-picker-tab-panel {
-        --interactive-normal: black;
-        --interactive-hover: black;
-        --interactive-active: black;
-        --text-normal: black;
-        --header-secondary: black;
+        --interactive-normal: var(--xp-txt-color);
+        --interactive-hover: var(--xp-txt-color);
+        --interactive-active: var(--xp-txt-color);
+        --text-normal: var(--xp-txt-color);
+        --header-secondary: var(--xp-txt-color);
         --background-primary: #{$blue-select};
 
         .header-11eigE {
-            background: $beige;
+            background: var(--xp-bg-tint-color);
             border-radius: 0;
 
             .searchBar-2M9mRP {
-                @include beigeButtonInset;
+                @include bgButton($isInset: true);
             }
 
             .diversitySelectorButton-2CGlo5,
             .diversitySelectorOptions-3DhNYs {
-                @include beigeButton;
+                @include bgButton;
                 padding: 3px;
             }
         }
 
         .emojiPicker-6YCk8a {
-            background: white;
+            background: var(--xp-bg-color);
             border-radius: 0;
 
             // Emoji grid
@@ -578,29 +539,28 @@
 
                 // Section title
                 .wrapper-1NNaWG {
-                    background: linear-gradient(to bottom, transparent, white, transparent);
+                    background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
                 }
 
                 // Hovered emoji
                 .emojiItem-277VFM.emojiItemSelected-2Lg50V {
-                    @include beigeButton;
-                    box-shadow: (inset 1px 1px 2px 0 grey, inset -2px -2px 2px 0 white);
+                    @include bgButton($isInset: true);
                 }
             }
 
             // Emoji info
             .inspector-DFKXwB {
-                background: $beige;
+                background: var(--xp-bg-tint-color);
             }
         }
 
         .categoryList-2qRrlj {
-            background: $beige;
+            background: var(--xp-bg-tint-color);
         }
     }
 
     // Reaction emoji picker
-    .animatorLeft-3yvG13>#emoji-picker-tab-panel {
+    .animatorLeft-3yvG13 > #emoji-picker-tab-panel {
         @include windowHasPseudoTitle("Add a reaction");
 
         &::before {
@@ -610,14 +570,14 @@
 
     // Gif / sticker / emoji picker
     .contentWrapper-3vHNP2 {
-        --interactive-normal: black;
-        --interactive-hover: black;
-        --interactive-active: black;
-        --text-normal: black;
-        --header-secondary: black;
+        --interactive-normal: var(--xp-txt-color);
+        --interactive-hover: var(--xp-txt-color);
+        --interactive-active: var(--xp-txt-color);
+        --text-normal: var(--xp-txt-color);
+        --header-secondary: var(--xp-txt-color);
         --background-primary: #{$blue-select};
         --background-tertiary: transparent;
-        background: $beige;
+        background: var(--xp-bg-tint-color);
         border-radius: 0;
         @include windowHasPseudoTitle("Chat addition");
 
@@ -629,68 +589,67 @@
 
         // Gif / sticker / emoji buttons
         .navButton-1XuvI- {
-            @include beigeButton;
+            @include bgButton;
 
             &.navButtonActive-1EqC5l {
-                @include beigeButtonInset;
+                @include bgButton($isInset: true);
             }
         }
 
         // Gif / sticker searchbar
         .container-1SX9VC,
         .container-2oNtJn {
-            @include beigeButtonInset;
+            @include bgButton($isInset: true);
         }
 
         // Sticker picker
         #sticker-picker-tab-panel {
-
             // Sticker grid
             #sticker-picker-grid {
-                background: white;
-                box-shadow: (inset 0 0 2px 2px grey);
+                background: var(--xp-bg-color);
+                box-shadow: (inset 0 0 2px 2px var(--xp-bg-shade-color));
 
                 // Section title
                 .wrapper-1NNaWG {
-                    background: linear-gradient(to bottom, transparent, white, transparent);
+                    background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
                 }
             }
 
             // Discord default sticker button
             .standardStickerShortcut-ObSns3 {
-                background: $beige;
+                background: var(--xp-bg-tint-color);
             }
 
             // Emoji info
             .inspector-DFKXwB {
-                background: $beige;
+                background: var(--xp-bg-tint-color);
             }
         }
 
         .categoryList-2qRrlj {
-            background: $beige;
+            background: var(--xp-bg-tint-color);
         }
 
         // Gif picker
         #gif-picker-tab-panel {
-            background: $beige;
+            background: var(--xp-bg-tint-color);
 
             // Back button
             .backButton-bSKWLe {
-                color: black;
+                color: var(--xp-txt-color);
             }
 
             // Favs category
             .categoryFadeBlurple-1l49_Q {
-                background: $black-overlay;
+                background: var(--xp-zing-color);
             }
 
             // Item / category
             .result-pzZrwj {
-                background-color: white !important;
+                background-color: var(--xp-bg-color) !important;
 
                 &::after {
-                    box-shadow: inset 0 0 0 2px white;
+                    box-shadow: inset 0 0 0 2px var(--xp-bg-color);
                     border-radius: 0;
                 }
             }
@@ -698,13 +657,13 @@
             // Hovered
             .focused-16Owih,
             .result-pzZrwj:hover {
-                box-shadow: 0 11px 22px 1px $white-overlay;
+                box-shadow: 0 11px 22px 1px var(--xp-zing-color);
             }
 
             // Placeholder for loading gif
             .placeholder-T1Tuu8 {
                 border-radius: 0;
-                background: $white-overlay;
+                background: var(--xp-set-color);
             }
         }
     }
