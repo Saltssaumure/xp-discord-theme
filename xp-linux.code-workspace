@@ -23,5 +23,7 @@
         "liveSassCompile.settings.generateMap": false,
         "liveSassCompile.settings.showOutputWindowOn": "Information",
         "liveSassCompile.settings.watchOnLaunch": true,
+        "editor.formatOnSaveMode": "modificationsIfAvailable",
+        "editor.formatOnSave": true,
     }
 }

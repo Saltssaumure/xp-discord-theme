@@ -2,11 +2,13 @@
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/xp-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/xp-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/xp-discord-theme?style=flat-square "Total size")
 
-***A Windows XP style theme built for BetterDiscord.***
+***A Windows XP style Discord theme.***
 
 ![Screenshot of Exponent Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/200100486-a816673f-1b8d-4739-a9c6-b8fb14bd67b5.png)
 
 ## Installation
+
+### BetterDiscord
 1. Install [BetterDiscord](https://betterdiscord.app/).
 2. Download the theme file:
     - [GitHub](https://github.com/Saltssaumure/xp-discord-theme/releases/latest)
@@ -15,7 +17,13 @@
     - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
-    
+
+### Replugged
+1. Install [Replugged](https://replugged.dev/).
+2. Install the theme:
+    - [GitHub](https://github.com/Saltssaumure/xp-discord-theme/releases/latest)
+    - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/xp-discord-theme&source=github)
+
 ## Customisation
 1. Open `Settings` > `Themes` menu in Discord.
 2. Click pencil icon on this theme.
@@ -34,7 +42,7 @@
 | Panel top decoration colour | `--xp-zing-color`    | Any CSS-recognised colour.                 | `#A50` (dark) / `orange` (light)                                                        |
 
 ## License
-- **Whole theme:** [GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)  
+- **Whole theme:** [GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)
 <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 - **[HorizontalServerList](https://github.com/DiscordStyles/HorizontalServerList):** [MIT License](https://github.com/DiscordStyles/HorizontalServerList/blob/master/LICENSE.md)
 

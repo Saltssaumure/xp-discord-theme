@@ -1,17 +1,23 @@
 {
     "name": "exponent",
-    "version": "1.2.2",
-    "description": "A Windows XP style theme built for BetterDiscord.",
+    "version": "1.3.0",
+    "description": "A Windows XP style Discord theme.",
     "repository": "https://github.com/Saltssaumure/xp-discord-theme.git",
     "author": "Saltssaumure <saltssaumure@gmail.com>",
     "license": "GPL-3.0",
     "private": true,
     "scripts": {
         "dev": "bd-scss dev",
-        "build": "bd-scss build"
+        "bd": "bd-scss build",
+        "plug": "replugged build theme"
     },
     "type": "module",
     "dependencies": {
-        "bd-scss": "file:../bd-scss"
+        "bd-scss": "file:../bd-scss",
+        "@parcel/config-default": "^2.8.3",
+        "@parcel/core": "^2.8.3",
+        "@types/node": "^18.11.15",
+        "prettier": "^2.8.1",
+        "replugged": "^4.1.0"
     }
 }
