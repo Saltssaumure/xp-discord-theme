@@ -12,6 +12,6 @@
     },
     "type": "module",
     "dependencies": {
-        "bd-scss": "^2.0.12"
+        "bd-scss": "file:../bd-scss"
     }
 }
