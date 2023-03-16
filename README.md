@@ -24,22 +24,26 @@
     - [GitHub](https://github.com/Saltssaumure/xp-discord-theme/releases/latest)
     - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/xp-discord-theme&source=github)
 
-## Customisation
+## Customisation (BD only)
 1. Open `Settings` > `Themes` menu in Discord.
 2. Click pencil icon on this theme.
 3. Customise the variable values. See table below for reference.
 4. Save changes and enjoy.
 
-| Description                 | Variable name        | Valid values                               | Default value                                                                           |
-|-----------------------------|----------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
-| Wallpaper  image            | `--background-image` | Any image link wrapped encased in `url()`. | `url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)`                    |
-| BSOD background colour      | `--bsod-color`       | Any CSS-recognised colour.                 | `navy`                                                                                  |
-| BSOD text                   | `--bsod-text`        | Any quoted text. Use `\A` for new lines.   | [Read here](https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/_bsod.scss) |
-| Panel background colour     | `--xp-bg-color`      | Any CSS-recognised colour.                 | `#000` (dark) / `#FFF` (light)                                                          |
-| Panel text colour           | `--xp-txt-color`     | Any CSS-recognised colour.                 | `#FFF` (dark) / `#000` (light)                                                          |
-| Panel settings icon colour  | `--xp-set-color`     | Any CSS-recognised colour.                 | `#FFFB` (dark) / `#000B` (light)                                                        |
-| Panel hovered item colour   | `--xp-hover-color`   | Any CSS-recognised colour.                 | `#123` (dark) / `lightgrey` (light)                                                     |
-| Panel top decoration colour | `--xp-zing-color`    | Any CSS-recognised colour.                 | `#A50` (dark) / `orange` (light)                                                        |
+| Description                 | Variable name          | Valid values                               | Default value                                                                           |
+|-----------------------------|------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
+| Wallpaper  image            | `--background-image`   | Any image link wrapped encased in `url()`. | `url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)`                    |
+| BSOD background colour      | `--bsod-color`         | Any CSS-recognised colour.                 | `navy`                                                                                  |
+| BSOD text                   | `--bsod-text`          | Any quoted text. Use `\A` for new lines.   | [Read here](https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/_bsod.scss) |
+| Panel background colour     | `--xp-bg-color`        | Any CSS-recognised colour.                 | `#000` (dark) / `#FFF` (light)                                                          |
+| Button highlight colour     | `--xp-bg-bright-color` | Any CSS-recognised colour.                 | `#203040` (dark) / `#F0EFED` (light)                                                    |
+| Button background colour    | `--xp-bg-tint-color`   | Any CSS-recognised colour.                 | `#202020` (dark) / `#EBE8D7` (light)                                                    |
+| Button shadow colour        | `--xp-bg-shade-color`  | Any CSS-recognised colour.                 | `#101010` (dark) / `#808080` (light)                                                    |
+| Panel text colour           | `--xp-txt-color`       | Any CSS-recognised colour.                 | `#FFF` (dark) / `#000` (light)                                                          |
+| Button/panel border colour  | `--xp-border-color`    | Any CSS-recognised colour.                 | `#1665CA` (dark) / `#000000` (light)                                                    |
+| Panel settings icon colour  | `--xp-set-color`       | Any CSS-recognised colour.                 | `#FFFFFFB3` (dark) / `#000000B3` (light)                                                |
+| Panel hovered item colour   | `--xp-hover-color`     | Any CSS-recognised colour.                 | `#102030` (dark) / `#D3D3D3` (light)                                                    |
+| Panel top decoration colour | `--xp-zing-color`      | Any CSS-recognised colour.                 | `#A05000` (dark) / `#FFA500` (light)                                                    |
 
 ## License
 - **Whole theme:** [GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)
