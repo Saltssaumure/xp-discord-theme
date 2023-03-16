@@ -9,7 +9,8 @@
     "scripts": {
         "dev": "bd-scss dev",
         "bd": "bd-scss build",
-        "plug": "replugged build theme"
+        "plug": "replugged build theme",
+        "bundle": "replugged bundle theme"
     },
     "type": "module",
     "dependencies": {

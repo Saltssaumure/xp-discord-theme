@@ -7,4 +7,5 @@ package-lock.json
 pnpm-lock.yaml
 
 dist
+bundle
 src
