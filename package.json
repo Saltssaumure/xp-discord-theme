@@ -14,7 +14,7 @@
     },
     "type": "module",
     "dependencies": {
-        "bd-scss": "file:../bd-scss",
+        "salt-bd-scss": "^1.0.0",
         "@parcel/config-default": "^2.8.3",
         "@parcel/core": "^2.8.3",
         "@types/node": "^18.11.15",
