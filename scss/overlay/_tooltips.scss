@@ -1,8 +1,11 @@
+@use "../top/vars-scss" as *;
+
 // Tooltips
 .tooltip-33Jwqe {
-    background: $beige;
+    --background-floating: #{$beige};
+    --text-normal: black;
+    --interactive-normal: black;
     border: 1px solid black;
-    color: black;
     border-radius: 0;
 
     .guildNameText-jBFbNC {
@@ -10,6 +13,6 @@
     }
 
     .tooltipPointer-sMBQqe {
-        border-top-color: black;
+        --background-floating: black;
     }
 }
