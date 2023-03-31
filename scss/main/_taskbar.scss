@@ -1,0 +1,83 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+
+// Servers sidebar / Taskbar
+// leave gap in server bar for user settings
+.guilds-2JjMmN {
+    height: calc(100vw - $panel-width) !important;
+    left: calc(100vw - $panel-width);
+    z-index: 0;
+
+    --status-danger: #{$red-bright};
+
+    // Unread indicator
+    .unreadMentionsIndicatorBottom-3RJMnQ,
+    .unreadMentionsIndicatorTop-2bTgUU {
+        width: 100%;
+
+        .bar-2eAyLE {
+            border-radius: 0;
+            background: linear-gradient(to bottom, transparent, $red-bright);
+        }
+    }
+
+    // Unread icon
+    .lowerBadge-3WTshO .numberBadge-37OJ3S {
+        opacity: 0.8;
+    }
+
+    .scroller-3X7KbA {
+        @include box.barGradient(true, $blue-max, $blue-vivid);
+
+        // DMs icon / Start button
+        .tutorialContainer-1pL9QS {
+            @include box.barGradient(true, $green-max, $green-bright);
+            position: relative;
+            padding: 5px 0 30px 0;
+            border-radius: 0 0 100% 100% / 0 0 12px 12px;
+
+            .wrapper-2PSQCG {
+                .svg-2zuE5p {
+                    height: inherit;
+                    width: inherit;
+                }
+
+                .wrapper-3kah-n {
+
+                    .selected-1Drb7Z,
+                    &:hover {
+                        .childWrapper-1j_1ub {
+                            color: white;
+                        }
+                    }
+
+                    .childWrapper-1j_1ub {
+                        color: $white-overlay;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+
+        // Unread pill
+        .item-2LIpTv {
+            background: white;
+        }
+
+        // Folder
+        .folder-241Joy {
+            background: radial-gradient(circle at 12px 12px, white, $blue-bright, $blue-select);
+        }
+
+        // Open folder
+        .expandedFolderBackground-1kSAf6 {
+            background: linear-gradient(to bottom, $blue-bright, $blue-mild);
+        }
+
+        // Add server and community servers
+        .circleIconButton-1VxDrg {
+            background: linear-gradient(to bottom, $blue-bright, $blue-mild);
+            color: $white-overlay;
+        }
+    }
+}

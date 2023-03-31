@@ -1,0 +1,70 @@
+@use "../../../top/vars-scss" as *;
+@use "../../../top/boxes" as box;
+@use "../../../top/buttons" as bt;
+
+// Threads
+.browser-mnQ1T7 {
+    border-radius: 8px 8px 0 0;
+
+    // Top bar
+    .header-3_zmOb {
+        @include box.windowTitle;
+
+        // #
+        .threadIcon-rd1kqG {
+            color: white;
+        }
+
+        // Search bar
+        .searchBox-3IjAC1 {
+            @include bt.bgButton($isBeige: true, $isInset: true);
+
+            .input-2m5SfJ {
+                color: black;
+            }
+        }
+
+        // Close button
+        .closeIcon-11tHJX {
+            @include bt.winButton(26px, true);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        // Create thread button
+        .createButton-oruGBs {
+            @include bt.bgButton($isBeige: true);
+        }
+    }
+
+    // Content
+    .list-3YHPPb {
+        @include box.startMenuList;
+        background: var(--xp-bg-tint-color);
+
+        // Thread age
+        .sectionHeader-QsOv68 {
+            color: var(--xp-txt-color) !important;
+        }
+
+        // Thread
+        .container-2rzKKA {
+            @include box.indentBox;
+            border: 0;
+        }
+
+        // No threads
+        .container-2c4_8A {
+
+            .defaultColor-HXu-5n,
+            .text-md-normal-304U3g {
+                color: var(--xp-txt-color) !important;
+            }
+
+            .button-f2h6uQ {
+                @include bt.bgButton;
+            }
+        }
+    }
+}

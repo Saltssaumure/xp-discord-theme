@@ -1,0 +1,80 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as box;
+@use "../../top/buttons" as bt;
+
+// User profile
+// Popout or in profile settings
+.userPopoutOuter-3AVBmJ {
+    border-radius: 0;
+    @include box.windowHasPseudoTitle("User info");
+
+    &::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .avatarWrapper-3y0KZ1 {
+        left: 24px;
+    }
+
+    // All profiles
+    .userPopoutInner-1hXSeY {
+
+        // Edit profile button
+        .pencilContainer-11Kuga {
+            @include bt.bgButton;
+
+            .pencilIcon-1MUmnO {
+                color: var(--xp-txt-color);
+            }
+        }
+
+        // Hypesquad etc badges
+        .profileBadges-31rDHI {
+            @include bt.bgButton;
+        }
+
+        // Inner box
+        .overlayBackground-1KgwVi {
+            border-radius: 0;
+            --font-primary: Tahoma, sans-serif;
+            --font-display: Tahoma, sans-serif;
+            @include box.indentBox;
+
+            // Roles
+            .rolePill-2IJ1vo {
+                @include bt.bgButton;
+            }
+
+            // User note
+            .note-6O4w9y {
+                @include box.indentBox;
+            }
+
+            // Message user
+            .messageInputContainer-2rGDH8 {
+                @include box.indentBox;
+            }
+        }
+    }
+
+    // Unstyled profile
+    .userProfileInnerThemedNonPremium-1gT-zY {
+        background: var(--xp-bg-tint-color);
+        --interactive-active: var(--xp-txt-color);
+        --header-primary: var(--xp-txt-color);
+        --header-secondary: var(--xp-set-color);
+        --text-normal: var(--xp-txt-color);
+        --background-secondary: var(--xp-bg-tint-color);
+        --interactive-muted: var(--xp-bg-tint-color);
+
+        // Inner box
+        .overlayBackground-1KgwVi {
+            background: var(--xp-bg-color);
+        }
+    }
+
+    .rolePill-2IJ1vo .defaultColor-1EVLSt {
+        color: var(--xp-txt-color);
+    }
+}

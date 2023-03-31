@@ -1,0 +1,25 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+
+.layer-86YKbF {
+    background: transparent;
+
+    // Settings menu
+    .standardSidebarView-E9Pc3j {
+        @include box.mainWindow();
+    }
+
+    .pictureInPictureWindow-3ms5Zy {
+        @include box.windowHasPseudoTitle("Stream");
+        overflow: visible;
+        border-radius: 0;
+
+        &::before {
+            left: -2px;
+        }
+
+        .pictureInPictureVideo-2puO2Q {
+            border-radius: 0;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as box;
+@use "../../top/buttons" as bt;
+
+// Select role preview
+.container-3ssFyj {
+    @include box.beigeBox;
+
+    // Search role
+    .container-2oNtJn {
+        @include bt.bgButton($isInset: true);
+    }
+
+    // Role
+    .item-1BCeuB {
+        border-radius: 0;
+
+        &.selected-22ukbQ {
+            background: $blue-select;
+        }
+
+        .itemLabel-27pirQ span {
+            background: var(--xp-bg-tint-color);
+        }
+
+        // Checkbox
+        .box-BHImcZ {
+            border-radius: 0;
+
+            &.checked-1pZh2h {
+                background: $beige !important;
+
+                path {
+                    fill: $green-bright !important;
+                }
+            }
+        }
+    }
+}

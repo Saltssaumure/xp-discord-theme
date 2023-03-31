@@ -1,0 +1,28 @@
+// Modals
+// BSOD
+.backdrop-2ByYRN {
+    background: var(--bsod-color, navy) !important;
+    opacity: 1 !important;
+
+    &::before {
+        content: var(--bsod-text, var(--bsod-text-original));
+        white-space: pre-wrap;
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        color: white;
+        margin: 40px;
+    }
+}
+
+// Modal item
+.layer-fP3xEz {
+    align-items: flex-end;
+    padding-right: 10vw;
+
+    .focusLock-bHVOlV {
+        border: 2px solid white;
+        padding: 5px;
+        background: var(--bsod-color, rgba(0, 0, 128, 0.8));
+    }
+}

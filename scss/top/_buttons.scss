@@ -1,0 +1,40 @@
+@use "vars-scss" as x;
+@use "shadows" as shd;
+
+@mixin bgButton($isBeige: false, $isInset: false) {
+    border-radius: 3px;
+
+    @if $isBeige {
+        --xp-bg-bright-color: #{x.$beige-light};
+        --xp-bg-tint-color: #{x.$beige};
+        --xp-bg-shade-color: grey;
+        --xp-txt-color: black;
+        --xp-border-color: black;
+    }
+
+    border: 1px solid var(--xp-border-color);
+    background: var(--xp-bg-tint-color);
+    color: var(--xp-txt-color);
+    @include shd.boxShadow($isInset);
+}
+
+@mixin winButton($size, $isRed) {
+    top: 0;
+    min-height: $size;
+    min-width: $size;
+    height: $size;
+    width: $size;
+    margin: 4px;
+    margin-left: 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+
+    @if $isRed {
+        background: radial-gradient(circle at 20% 20%, x.$white-overlay, x.$red-bright, x.$red-max);
+    }
+
+    @else {
+        background: radial-gradient(circle at 20% 20%, x.$white-overlay, x.$blue-vivid, x.$blue-max);
+    }
+}

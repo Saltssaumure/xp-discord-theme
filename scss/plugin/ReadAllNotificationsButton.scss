@@ -1,3 +1,5 @@
+@use "../top/vars-scss" as *;
+
 // Replaces "read all" in ReadAllNotificationsButton with eye icon on blue background
 #app-mount .guilds-2JjMmN .frame-oXWS21[class*="listItem"] {
     .wrapper-3kah-n {
