@@ -1,0 +1,26 @@
+.theme-dark {
+    --xp-bg-addon-lumInternal: var(--xp-bg-addon-luminosity, 0%);
+}
+
+.theme-light {
+    --xp-bg-addon-lumInternal: var(--xp-bg-addon-luminosity, 100%);
+}
+
+.theme-dark, .theme-light {
+    --background-primary: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),var(--xp-bg-addon-opacity, 0.4));
+    --background-secondary: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),var(--xp-bg-addon-opacity, 0.4));
+    --background-tertiary: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),var(--xp-bg-addon-opacity, 0.4));
+    --channeltextarea-background: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),var(--xp-bg-addon-opacity, 0.2));
+    --home-background: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),var(--xp-bg-addon-opacity, 0.4));
+    --scrollbar-auto-track: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),var(--xp-bg-addon-opacity, 0.4));
+    --scrollbar-auto-thumb: hsla(0,0%,var(--xp-bg-addon-lumInternal, 0%),calc(var(--xp-bg-addon-opacity, 0.4)*2));
+}
+
+.container-2cd8Mz,
+.pageWrapper-2PwDoS,
+.scroller-RfJjkV,
+.applicationStore-2nk7Lo,
+.standardSidebarView-E9Pc3j,
+.chat-2ZfjoI {
+    background: var(--xp-bg-addon-image, url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)) center/cover;
+}
