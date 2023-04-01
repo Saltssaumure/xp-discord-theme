@@ -6,8 +6,8 @@
     transform: scale(1) !important;
 
     .container-1eFtFS {
-        filter: grayscale(0.8) brightness(0.7) blur(2px);
-        backdrop-filter: blur(4px);
+        filter: grayscale(0.8) brightness(0.5);
+        backdrop-filter: brightness(1);
     }
 }
 
