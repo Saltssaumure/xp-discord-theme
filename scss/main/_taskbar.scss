@@ -4,12 +4,8 @@
 @use "../top/shadows" as shd;
 
 // Servers sidebar / Taskbar
-// leave gap in server bar for control panel
 .guilds-2JjMmN {
-    height: calc(100vw - $panel-width) !important;
-    left: calc(100vw - $panel-width);
     z-index: 0;
-
     --status-danger: #{$red-bright};
 
     // Unread indicator
@@ -99,7 +95,7 @@
     }
 
     &:has(.activityPanel-9icbyU) {
-        border-radius: 8px 0 0 8px;
+        border-radius: 8px 8px 0 0;
     }
 
     // Now playing game/activity

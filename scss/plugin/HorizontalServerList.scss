@@ -1,3 +1,5 @@
+@use "../top/vars-scss" as *;
+
 // Override HSL options
 
 // Channels sidebar
@@ -6,6 +8,14 @@
 }
 
 // Taskbar
-#app-mount .guilds-2JjMmN .scrollerBase-1Pkza4 {
-    padding-top: 0 !important;
+// leave gap in server bar for control panel
+#app-mount .guilds-2JjMmN {
+    height: calc(100vw - $panel-width) !important;
+
+    .scrollerBase-1Pkza4 {
+        padding-top: 0 !important;
+    }
+}
+body #app-mount .guilds-2JjMmN {
+    left: calc(100vw - $panel-width);
 }
