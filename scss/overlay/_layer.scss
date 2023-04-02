@@ -1,0 +1,81 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+
+.baseLayer-W6S8cY.stop-animations {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+
+    .container-1eFtFS {
+        filter: grayscale(0.8) brightness(0.5);
+        backdrop-filter: brightness(1);
+    }
+}
+
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV {
+    transform: none !important;
+}
+
+.layer-86YKbF {
+    background: transparent;
+
+    // Settings menu
+    .standardSidebarView-E9Pc3j {
+        @include box.mainWindow();
+
+        // Settings sidebar as separate window on left side
+        .sidebarRegion-1VBisG {
+            @include box.startMenuList();
+            position: fixed;
+            left: 60px;
+            top: 180px;
+            height: 65vh;
+            max-height: calc(100vh - 400px);
+            @include box.windowHasPseudoTitle("Settings");
+
+            &::before {
+                left: -2px;
+            }
+
+            .sidebarRegionScroller-FXiQOh {
+                background: var(--xp-bg-color);
+
+                .sidebar-nqHbhN {
+                    padding: 8px;
+                    padding-right: 0;
+
+                    .separator-2N511j {
+                        background: transparent;
+                        position: relative;
+                        @include box.startMenuDivider(-2px);
+                    }
+
+                    .item-2GWPIy {
+                        border-radius: 0;
+
+                        &.selected-1sf9UK:not(.disabled-2G98Nl) {
+                            background: var(--background-modifier-selected);
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .contentRegionShownSidebar-fHXkEg {
+            justify-content: center;
+        }
+    }
+
+    .pictureInPictureWindow-3ms5Zy {
+        @include box.windowHasPseudoTitle("Stream");
+        overflow: visible;
+        border-radius: 0;
+
+        &::before {
+            left: -2px;
+        }
+
+        .pictureInPictureVideo-2puO2Q {
+            border-radius: 0;
+        }
+    }
+}

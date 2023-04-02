@@ -1,0 +1,34 @@
+@use "top/boxes" as box;
+@use "top/buttons" as bt;
+
+#floating-editor-window {
+    border-radius: 10px 10px 0 0;
+    @include box.windowBox(5px);
+
+    .floating-window-titlebar {
+        @include box.windowTitle();
+
+        .title {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: Tahoma, sans-serif;
+            text-shadow: 0 1px 1px black;
+            color: white;
+        }
+
+        .button {
+            @include bt.winButton(20px, false);
+
+            &.close-button {
+                @include bt.winButton(20px, true);
+            }
+        }
+    }
+}
+
+.bd-sidebar-header {
+    h2,
+    .bd-icon {
+        color: var(--channels-default);
+    }
+}

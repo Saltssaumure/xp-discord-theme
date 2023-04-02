@@ -1,0 +1,18 @@
+{
+    "id": "net.saltssaumure.Exponent",
+    "name": "Exponent",
+    "description": "A Windows XP style theme.",
+    "author": {
+        "name": "Saltssaumure",
+        "discordID": "134142022092062720",
+        "github": "Saltssaumure"
+    },
+    "version": "1.3.1",
+    "updater": {
+        "type": "github",
+        "id": "Saltssaumure/xp-discord-theme"
+    },
+    "license": "GPL-3.0",
+    "type": "replugged-theme",
+    "main": "scss/xp.scss"
+}

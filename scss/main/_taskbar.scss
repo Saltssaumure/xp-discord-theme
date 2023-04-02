@@ -1,0 +1,165 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+@use "../top/buttons" as bt;
+@use "../top/shadows" as shd;
+
+// Servers sidebar / Taskbar
+.guilds-2JjMmN {
+    z-index: 0;
+    --status-danger: #{$red-bright};
+
+    // Unread indicator
+    .unreadMentionsIndicatorBottom-3RJMnQ,
+    .unreadMentionsIndicatorTop-2bTgUU {
+        width: 100%;
+
+        .bar-2eAyLE {
+            border-radius: 0;
+            background: linear-gradient(to bottom, transparent, $red-bright);
+        }
+    }
+
+    // Unread icon
+    .lowerBadge-3WTshO .numberBadge-37OJ3S {
+        opacity: 0.8;
+    }
+
+    .scroller-3X7KbA {
+        @include box.barGradient(true, $blue-max, $blue-vivid);
+
+        // DMs icon / Start button
+        .tutorialContainer-1pL9QS {
+            @include box.barGradient(true, $green-max, $green-bright);
+            position: relative;
+            padding: 5px 0 30px 0;
+            border-radius: 0 0 100% 100% / 0 0 12px 12px;
+
+            .wrapper-2PSQCG {
+                .svg-2zuE5p {
+                    height: inherit;
+                    width: inherit;
+                }
+
+                .wrapper-3kah-n {
+
+                    .selected-1Drb7Z,
+                    &:hover {
+                        .childWrapper-1j_1ub {
+                            color: white;
+                        }
+                    }
+
+                    .childWrapper-1j_1ub {
+                        color: $white-overlay;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+
+        // Unread pill
+        .item-2LIpTv {
+            background: white;
+        }
+
+        // Folder
+        .folder-241Joy {
+            background: radial-gradient(circle at 12px 12px, white, $blue-bright, $blue-select);
+        }
+
+        // Open folder
+        .expandedFolderBackground-1kSAf6 {
+            background: linear-gradient(to bottom, $blue-bright, $blue-mild);
+        }
+
+        // Add server and community servers
+        .circleIconButton-1VxDrg {
+            background: linear-gradient(to bottom, $blue-bright, $blue-mild);
+            color: $white-overlay;
+        }
+    }
+}
+
+// Control panel
+.panels-3wFtMD {
+    width: $panel-width;
+    height: auto;
+    position: fixed;
+    bottom: -1px;
+    left: calc(100vw - $panel-width);
+    z-index: 0;
+    @include box.barGradient(false, $blue-bright, $blue-mild);
+
+    &:hover {
+        z-index: 1;
+    }
+
+    &:has(.activityPanel-9icbyU) {
+        border-radius: 8px 8px 0 0;
+    }
+
+    // Now playing game/activity
+    .panel-2ZFCRb {
+        background: transparent;
+        border-bottom: 0;
+    }
+
+    .subtext-2HDqJ7 {
+        color: $white-overlay;
+    }
+
+    // Voice chat controls
+    .container-1zzFcN {
+        background: inherit;
+        border-bottom: 0;
+
+        // Video stream buttons
+        .button-1EGGcP {
+            @include bt.bgButton($isBeige: true);
+
+            &.buttonActive-Uc1jHx {
+                background: $beige;
+                @include shd.boxShadow;
+            }
+        }
+    }
+
+    // User and settings
+    .container-YkUktl {
+        height: var(--server-container);
+        flex-direction: row-reverse;
+        background: transparent;
+
+        // Self info
+        .avatarWrapper-1B9FTW {
+            margin: 0 0 0 6px;
+            padding: 0 4px 0 0;
+            flex-direction: row-reverse;
+
+            // Username
+            .nameTag-sc-gpq {
+                text-shadow: 0 1px 1px black;
+
+                .title-338goq {
+                    color: white;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    // Buttons
+    .button-12Fmur {
+        color: $white-overlay;
+    }
+
+    .withTagAsButton-OsgQ9L:hover,
+    .withTagless-10ooWt:hover,
+    .button-12Fmur.enabled-9OeuTA:hover {
+        background: linear-gradient(to bottom, $blue-select, $blue-bright);
+    }
+
+    .button-12Fmur.enabled-9OeuTA:hover {
+        color: white;
+    }
+}

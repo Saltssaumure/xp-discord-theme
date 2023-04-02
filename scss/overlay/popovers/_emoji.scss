@@ -1,0 +1,167 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as box;
+@use "../../top/buttons" as bt;
+
+// Emoji pickers
+#emoji-picker-tab-panel {
+    --interactive-normal: var(--xp-txt-color);
+    --interactive-hover: var(--xp-txt-color);
+    --interactive-active: var(--xp-txt-color);
+    --text-normal: var(--xp-txt-color);
+    --header-secondary: var(--xp-txt-color);
+    --background-primary: #{$blue-select};
+
+    .header-11eigE {
+        background: var(--xp-bg-tint-color);
+        border-radius: 0;
+
+        .searchBar-2M9mRP {
+            @include bt.bgButton($isInset: true);
+        }
+
+        .diversitySelectorButton-2CGlo5,
+        .diversitySelectorOptions-3DhNYs {
+            @include bt.bgButton;
+            padding: 3px;
+        }
+    }
+
+    .emojiPicker-6YCk8a {
+        background: var(--xp-bg-color);
+        border-radius: 0;
+
+        // Emoji grid
+        .bodyWrapper-1eSOtW {
+            box-shadow: (inset 0 0 2px 2px grey);
+
+            // Section title
+            .wrapper-1NNaWG {
+                background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
+            }
+
+            // Hovered emoji
+            .emojiItem-277VFM.emojiItemSelected-2Lg50V {
+                @include bt.bgButton($isInset: true);
+            }
+        }
+
+        // Emoji info
+        .inspector-DFKXwB {
+            background: var(--xp-bg-tint-color);
+        }
+    }
+
+    .categoryList-2qRrlj {
+        background: var(--xp-bg-tint-color);
+    }
+}
+
+// Reaction emoji picker
+.animatorLeft-3yvG13>#emoji-picker-tab-panel {
+    @include box.windowHasPseudoTitle("Add a reaction");
+
+    &::before {
+        left: -2px;
+    }
+}
+
+// Gif / sticker / emoji picker
+.contentWrapper-3vHNP2 {
+    --interactive-normal: var(--xp-txt-color);
+    --interactive-hover: var(--xp-txt-color);
+    --interactive-active: var(--xp-txt-color);
+    --text-normal: var(--xp-txt-color);
+    --header-secondary: var(--xp-txt-color);
+    --background-primary: #{$blue-select};
+    --background-tertiary: transparent;
+    background: var(--xp-bg-tint-color);
+    border-radius: 0;
+    @include box.windowHasPseudoTitle("Chat addition");
+
+    &::before {
+        left: -2px;
+    }
+
+    overflow: visible;
+
+    // Gif / sticker / emoji buttons
+    .navButton-1XuvI- {
+        @include bt.bgButton;
+
+        &.navButtonActive-1EqC5l {
+            @include bt.bgButton($isInset: true);
+        }
+    }
+
+    // Gif / sticker searchbar
+    .container-1SX9VC,
+    .container-2oNtJn {
+        @include bt.bgButton($isInset: true);
+    }
+
+    // Sticker picker
+    #sticker-picker-tab-panel {
+
+        // Sticker grid
+        #sticker-picker-grid {
+            background: var(--xp-bg-color);
+            box-shadow: (inset 0 0 2px 2px var(--xp-bg-shade-color));
+
+            // Section title
+            .wrapper-1NNaWG {
+                background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
+            }
+        }
+
+        // Discord default sticker button
+        .standardStickerShortcut-ObSns3 {
+            background: var(--xp-bg-tint-color);
+        }
+
+        // Emoji info
+        .inspector-DFKXwB {
+            background: var(--xp-bg-tint-color);
+        }
+    }
+
+    .categoryList-2qRrlj {
+        background: var(--xp-bg-tint-color);
+    }
+
+    // Gif picker
+    #gif-picker-tab-panel {
+        background: var(--xp-bg-tint-color);
+
+        // Back button
+        .backButton-bSKWLe {
+            color: var(--xp-txt-color);
+        }
+
+        // Favs category
+        .categoryFadeBlurple-1l49_Q {
+            background: var(--xp-zing-color);
+        }
+
+        // Item / category
+        .result-pzZrwj {
+            background-color: var(--xp-bg-color) !important;
+
+            &::after {
+                box-shadow: inset 0 0 0 2px var(--xp-bg-color);
+                border-radius: 0;
+            }
+        }
+
+        // Hovered
+        .focused-16Owih,
+        .result-pzZrwj:hover {
+            box-shadow: 0 11px 22px 1px var(--xp-zing-color);
+        }
+
+        // Placeholder for loading gif
+        .placeholder-T1Tuu8 {
+            border-radius: 0;
+            background: var(--xp-set-color);
+        }
+    }
+}

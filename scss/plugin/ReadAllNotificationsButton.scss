@@ -1,0 +1,14 @@
+@use "../top/vars-scss" as *;
+
+// Replaces "read all" in ReadAllNotificationsButton with eye icon on blue background
+#app-mount .guilds-2JjMmN .frame-oXWS21[class*="listItem"] {
+    .wrapper-3kah-n {
+        width: var(--server-size);
+    }
+
+    .button-Jt-tIg {
+        background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJoc2xhKDAsIDAlLCAxMDAlLCAwLjgpIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxOTIwIDE5MjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTk2MCAxMjc3Ljg1M2MtMTc1LjI5NyAwLTMxNy45NTEtMTQyLjY1NC0zMTcuOTUxLTMxNy45NTEgMC0xNzUuMjk3IDE0Mi42NTQtMzE3Ljk1MSAzMTcuOTUxLTMxNy45NTEgMTc1LjI5NyAwIDMxNy45NTEgMTQyLjY1NCAzMTcuOTUxIDMxNy45NTEgMCAxNzUuMjk3LTE0Mi42NTQgMzE3Ljk1LTMxNy45NTEgMzE3Ljk1Wm05NDguMzQyLTM0MS41ODVDMTcyMC42NDUgNTU4LjY0OCAxMzU3LjMzMiAzMjQgOTYwIDMyNGMtMzk3LjMzMyAwLTc2MC42NDUgMjM0LjY0OC05NDguMzQyIDYxMi4yNjhMMCA5NTkuOTAybDExLjY1OCAyMy42MzRjMTg3LjY5NyAzNzcuNjIgNTUxLjAxIDYxMi4yNjggOTQ4LjM0MiA2MTIuMjY4IDM5Ny4zMzMgMCA3NjAuNjQ1LTIzNC42NDggOTQ4LjM0Mi02MTIuMjY4TDE5MjAgOTU5LjkwMmwtMTEuNjU4LTIzLjYzNFoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==") no-repeat center,
+            linear-gradient(to bottom, $blue-bright, $blue-mild);
+        font-size: 0;
+    }
+}

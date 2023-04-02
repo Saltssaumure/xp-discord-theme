@@ -1,0 +1,46 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as box;
+@use "../top/buttons" as bt;
+
+.withFrame-2dL45i {
+    margin-top: 0;
+}
+
+.titleBar-1it3bQ {
+    position: absolute;
+    left: $window-left;
+    right: $window-right;
+    top: calc($window-top - $title-height);
+    z-index: 2;
+    @include box.windowTitle();
+
+    // Discord logo
+    .wordmarkWindows-2dq6rw {
+        color: white;
+        padding-top: 2px;
+
+        &::before {
+            content: "Discord";
+            display: block;
+            position: relative;
+            font-size: 14px;
+            line-height: $title-height;
+            font-weight: 600;
+            font-family: Tahoma, sans-serif;
+            text-shadow: 0 1px 1px black;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    // Min / Max / Close buttons
+    .winButton-3UMjdg {
+        @include bt.winButton(20px, false);
+
+        &.winButtonClose-3Q8ZH5 {
+            @include bt.winButton(20px, true);
+        }
+    }
+}

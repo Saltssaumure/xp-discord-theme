@@ -1,0 +1,23 @@
+@use "../../../top/vars-scss" as *;
+@use "../../../top/boxes" as box;
+
+// Pinned messages
+.messagesPopoutWrap-3zryHW {
+    .header-1w9Q93 {
+        @include box.windowTitle;
+    }
+
+    .messagesPopout-eVzQcI {
+        @include box.startMenuList;
+        background: var(--xp-bg-tint-color);
+
+        .messageGroupWrapper-1jf_7C {
+            @include box.indentBox;
+            border: 0;
+        }
+
+        .body-GBnhET {
+            color: var(--xp-txt-color);
+        }
+    }
+}

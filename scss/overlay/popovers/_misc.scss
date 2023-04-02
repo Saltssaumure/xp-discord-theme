@@ -1,0 +1,31 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as box;
+@use "../../top/buttons" as bt;
+
+// VC ping
+.container-1ILvLB {
+    @include box.beigeBox;
+
+    .popoutText-3NRmTw {
+        color: var(--xp-txt-color);
+    }
+}
+
+// Stream preview
+.streamPreview-I7itZ6 {
+    @include box.beigeBox;
+
+    .watchButton-2YRKxv {
+        @include bt.bgButton;
+    }
+}
+
+// Emoji info
+.popoutContainer-2wbmiM {
+    @include box.beigeBox;
+
+    // Nitro button
+    .shinyButton-2Q9MDB {
+        @include bt.bgButton;
+    }
+}

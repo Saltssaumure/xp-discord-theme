@@ -1,0 +1,86 @@
+@use "../../../top/vars-scss" as *;
+@use "../../../top/boxes" as box;
+@use "../../../top/buttons" as bt;
+
+// Inbox
+.recentMentionsPopout-2bI1ZN {
+
+    // Top bar
+    .header-145e10 {
+        @include box.windowTitle;
+        --interactive-normal: var(--xp-txt-color);
+        --interactive-active: var(--xp-txt-color);
+
+        // Mentions / unreads tabs
+        .topPill-2vcLsa {
+            position: absolute;
+            bottom: -1px;
+            z-index: 1;
+            align-items: base;
+
+            .tab-TRrPC8 {
+                background: var(--xp-bg-tint-color);
+                border-radius: 3px 3px 0 0;
+                border: solid $blue-select;
+                border-width: 1px 1px 0 1px;
+                margin: 0;
+
+                // Selected tab
+                &.selected-g-kMVV {
+                    padding-top: 1px;
+                    height: 25px;
+                    background: linear-gradient(to bottom, orange, white 10%, $beige 80%);
+                }
+
+                // Hovered tab
+                &:hover {
+                    color: var(--xp-txt-color);
+                }
+            }
+        }
+    }
+
+    // Mark all as read button
+    &.container-2ebMPP {
+        .header-145e10 .button-1_oXub {
+            @include bt.winButton(26px, false);
+        }
+    }
+
+    // Filter mentions button
+    &.messagesPopoutWrap-3zryHW {
+        .header-145e10 .button-1_oXub {
+            @include bt.winButton(26px, false);
+        }
+    }
+
+    // Content
+    .messagesPopout-eVzQcI,
+    .scroller-145h9c {
+        @include box.startMenuList;
+        --header-primary: var(--xp-txt-color);
+        --header-secondary: grey;
+        background: var(--xp-bg-tint-color);
+
+        // Channel unread group
+        .channel-3NJZ1V,
+        .container-iA3Qrz {
+
+            // Channel group header
+            .channelHeader-DFRX8q {
+                background: var(--xp-bg-tint-color);
+
+                // Buttons
+                .button-1_oXub {
+                    @include bt.bgButton;
+                }
+            }
+
+            // Message group
+            .messages-23can0,
+            .messageContainer-3VTXBC {
+                @include box.indentBox;
+            }
+        }
+    }
+}

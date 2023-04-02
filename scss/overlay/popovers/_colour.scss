@@ -1,0 +1,43 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as box;
+@use "../../top/buttons" as bt;
+@use "../../top/shadows" as shd;
+
+// Color picker
+.colorPickerCustom-1swUKF {
+    @include box.beigeBox;
+
+    // Hex code box
+    .input-2g-os5 {
+        @include bt.bgButton;
+    }
+
+    // Suggested colour buttons
+    .suggestedColor-2q1U7c {
+        @include bt.bgButton;
+    }
+
+    // Saturation brightness grid
+    .saturation-CLQHFD {
+        @include shd.boxShadow($isInset: true);
+    }
+
+    // Hue slider
+    .hue-horizontal {
+        @include shd.boxShadow;
+
+        // Grabber
+        div:last-child {
+            height: 12px;
+            width: 10px;
+            margin-top: -4px;
+
+            div {
+                border-radius: 3px;
+                border: solid $green-bright;
+                border-width: 3px 0;
+                @include shd.boxShadow($isInset: true);
+            }
+        }
+    }
+}

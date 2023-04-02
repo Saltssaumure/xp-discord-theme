@@ -1,0 +1,110 @@
+@use "vars-scss" as x;
+@use "shadows" as shd;
+
+@mixin windowBox($vertical-offset) {
+    border: 2px solid x.$blue-select;
+    border-top: 0;
+    box-shadow: 2px #{$vertical-offset} 3px 2px hsla(0, 0%, 0%, 0.4);
+}
+
+@mixin mainWindow() {
+    margin: x.$window-top x.$window-right x.$window-bottom x.$window-left;
+    overflow: hidden;
+    @include windowBox(3px);
+}
+
+@mixin barGradient($isRotate, $color-dark, $color-light) {
+    $direction: bottom;
+    $shadow: 0 2px;
+
+    @if ($isRotate) {
+        $direction: left;
+        $shadow: -2px 0;
+    }
+
+    background: linear-gradient(to #{$direction}, $color-dark, $color-dark 12%, $color-light);
+    box-shadow: (inset 0 0 3px 2px $color-dark, inset #{$shadow} 2px 1px x.$white-overlay);
+}
+
+@mixin windowTitle() {
+    @include barGradient(false, x.$blue-max, x.$blue-vivid);
+    border-radius: 8px 8px 0 0;
+    height: x.$title-height;
+    --font-display: Tahoma, sans-serif;
+    --header-primary: white;
+    text-shadow: 0 1px 1px black;
+}
+
+@mixin windowHasPseudoTitle($title) {
+    @include windowBox(0px);
+
+    &::before {
+        content: $title;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: calc(100% + 4px);
+        top: - x.$title-height;
+        font-size: 14px;
+        line-height: x.$title-height;
+        font-weight: 600;
+        font-family: Tahoma, sans-serif;
+        text-shadow: 0 1px 1px black;
+        color: white;
+        text-indent: 9px;
+        @include windowTitle;
+    }
+}
+
+@mixin startMenuList() {
+    --background-modifier-selected: #{x.$blue-select};
+    --background-modifier-hover: var(--xp-hover-color);
+    --channels-default: var(--xp-txt-color);
+    --channel-icon: var(--xp-txt-color);
+    --interactive-hover: var(--xp-txt-color);
+    --interactive-active: var(--xp-txt-color);
+    --interactive-muted: var(--xp-hover-color);
+    --font-primary: Tahoma, sans-serif;
+    --font-display: Tahoma, sans-serif;
+    --text-muted: grey;
+    font-family: var(--font-primary);
+
+    background: var(--xp-bg-color);
+    border: 1px solid x.$blue-max;
+
+    // orange stripe
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, var(--xp-zing-color), transparent);
+    }
+}
+
+@mixin startMenuDivider($offset) {
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: $offset;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent 10%, lightgrey, transparent 90%);
+    }
+}
+
+@mixin indentBox() {
+    font-family: "Whitney", var(--i18n-fallbacks);
+    border-radius: 0;
+    @include shd.boxShadow($isInset: true);
+}
+
+@mixin beigeBox() {
+    --text-normal: black;
+    background: x.$beige;
+    border: 1px solid black;
+    border-radius: 0;
+}
