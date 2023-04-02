@@ -4,7 +4,9 @@
 
 ***A Windows XP style Discord theme.***
 
-![Screenshot of Exponent Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/200100486-a816673f-1b8d-4739-a9c6-b8fb14bd67b5.png)
+| Light mode | Dark mode |
+| ---------- | --------- |
+| ![Screenshot of Exponent Discord Theme applied to Discord desktop client ](https://user-images.githubusercontent.com/29710355/229367843-ad03f107-ad47-4c63-9692-89cd781d40f8.png) | ![Screenshot of Exponent Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/229367846-78bf3675-a091-4f60-8ff0-4427697a2ef2.png) |
 
 ## Installation
 
@@ -24,7 +26,12 @@
     - [GitHub](https://github.com/Saltssaumure/xp-discord-theme/releases/latest)
     - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/xp-discord-theme&source=github)
 
-## Customisation (BD only)
+## Customisation (BetterDiscord only)
+
+### Addons
+- [ExponentBgImageAddon](https://raw.githubusercontent.com/Saltssaumure/xp-discord-theme/main/addon/ExponentBgImageAddon.theme.css) - enables custom background image in the main window.
+
+### Settings 
 1. Open `Settings` > `Themes` menu in Discord.
 2. Click pencil icon on this theme.
 3. Customise the variable values. See table below for reference.
@@ -34,7 +41,7 @@
 |-----------------------------|------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
 | Wallpaper  image            | `--background-image`   | Any image link wrapped encased in `url()`. | `url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)`                    |
 | BSOD background colour      | `--bsod-color`         | Any CSS-recognised colour.                 | `navy`                                                                                  |
-| BSOD text                   | `--bsod-text`          | Any quoted text. Use `\A` for new lines.   | [Read here](https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/_bsod.scss) |
+| BSOD text                   | `--bsod-text`          | Any quoted text. Use `\A` for new lines.   | [Read here](https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/top/_vars-css.scss) |
 | Panel background colour     | `--xp-bg-color`        | Any CSS-recognised colour.                 | `#000` (dark) / `#FFF` (light)                                                          |
 | Button highlight colour     | `--xp-bg-bright-color` | Any CSS-recognised colour.                 | `#203040` (dark) / `#F0EFED` (light)                                                    |
 | Button background colour    | `--xp-bg-tint-color`   | Any CSS-recognised colour.                 | `#202020` (dark) / `#EBE8D7` (light)                                                    |
@@ -47,7 +54,7 @@
 
 ## License
 - **Whole theme:** [GNU General Public License v3.0](https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE)
-<span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+    - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 - **[HorizontalServerList](https://github.com/DiscordStyles/HorizontalServerList):** [MIT License](https://github.com/DiscordStyles/HorizontalServerList/blob/master/LICENSE.md)
 
 ## Questions or suggestions?
