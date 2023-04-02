@@ -57,12 +57,8 @@
 }
 
 // Reaction emoji picker
-.animatorLeft-3yvG13>#emoji-picker-tab-panel {
+.animatorLeft-1I1Kvj>#emoji-picker-tab-panel {
     @include box.windowHasPseudoTitle("Add a reaction");
-
-    &::before {
-        left: -2px;
-    }
 }
 
 // Gif / sticker / emoji picker
@@ -76,13 +72,8 @@
     --background-tertiary: transparent;
     background: var(--xp-bg-tint-color);
     border-radius: 0;
-    @include box.windowHasPseudoTitle("Chat addition");
-
-    &::before {
-        left: -2px;
-    }
-
     overflow: visible;
+    @include box.windowHasPseudoTitle("Chat addition");
 
     // Gif / sticker / emoji buttons
     .navButton-1XuvI- {

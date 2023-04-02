@@ -33,10 +33,6 @@
             max-height: calc(100vh - 400px);
             @include box.windowHasPseudoTitle("Settings");
 
-            &::before {
-                left: -2px;
-            }
-
             .sidebarRegionScroller-FXiQOh {
                 background: var(--xp-bg-color);
 
@@ -92,10 +88,6 @@
         @include box.windowHasPseudoTitle("Stream");
         overflow: visible;
         border-radius: 0;
-
-        &::before {
-            left: -2px;
-        }
 
         .pictureInPictureVideo-2puO2Q {
             border-radius: 0;
