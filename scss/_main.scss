@@ -14,11 +14,13 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at 25% 25%,
-            $white-overlay,
-            transparentize($white-overlay, 0.4) 20%,
-            transparentize($white-overlay, 0.6) 40%,
-            transparent);
+    background: radial-gradient(
+        circle at 25% 25%,
+        $white-overlay,
+        transparentize($white-overlay, 0.4) 20%,
+        transparentize($white-overlay, 0.6) 40%,
+        transparent
+    );
     border-radius: 50%;
     z-index: 1;
 }
@@ -30,10 +32,8 @@
 
 // Main view
 .container-1eFtFS {
-
     // Channels sidebar and main chat
     .base-2jDfDU {
-
         // Notice banner
         .notice-2olXi7 {
             top: $window-top;
@@ -55,9 +55,8 @@
         }
 
         // Top bar (not in DMs)
-        .chat-2ZfjoI>.title-31SJ6t {
+        .chat-2ZfjoI > .title-31SJ6t {
             .toolbar-3_r2xA {
-
                 // Move help icon
                 .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
                     @include ico.makeIcon(50px, auto, ".icon-2xnN2Y");
@@ -91,10 +90,8 @@
 
         // Main chat and top bar
         .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
-
             // Main chat
             .chatContent-3KubbW {
-
                 // Message
                 .message-2CShn3 {
                     padding-right: 140px !important;
@@ -107,9 +104,8 @@
 
                 // Message box
                 .form-3gdLxP {
-
                     // Gift nitro button
-                    .buttons-uaqb-5>.button-ejjZWC {
+                    .buttons-uaqb-5 > .button-ejjZWC {
                         @include ico.makeIcon(50px, auto, ".buttonWrapper-3YFQGJ");
                         top: $window-top;
 
@@ -135,7 +131,7 @@
 
             // Forums
             .headerRow-1MKoR-,
-            .list-3FIpnh>div:first-child {
+            .list-3FIpnh > div:first-child {
                 min-width: 0;
             }
 
@@ -160,7 +156,8 @@
                     }
 
                     // Member
-                    .member-48YF_l {
+                    .member-48YF_l,
+                    .member-2gU6Ar {
                         background: var(--xp-bg-color);
 
                         .container-1oeRFJ,
@@ -174,6 +171,15 @@
             // VC video
             .video-3n15R6 {
                 z-index: 0;
+            }
+        }
+
+        // VC controls with members list visible
+        &:has(.membersWrap-3NUR2t) {
+
+            .bottomControls-31YuPK {
+                width: auto;
+                padding-right: 150px;
             }
         }
     }
