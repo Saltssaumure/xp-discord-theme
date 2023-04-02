@@ -1,5 +1,6 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as box;
+@use "../top/shortcutIcon" as ico;
 
 .baseLayer-W6S8cY.stop-animations {
     opacity: 1 !important;
@@ -60,8 +61,30 @@
                 }
             }
         }
+
         .contentRegionShownSidebar-fHXkEg {
             justify-content: center;
+
+            .toolsContainer-25FL6V {
+                padding-top: 10px;
+                margin-right: 0;
+                position: absolute;
+                left: -80px;
+                height: 50px;
+
+                .container-O54IuJ {
+                    @include ico.makeIcon(50px, auto, ".closeButton-PCZcma");
+                    position: unset;
+
+                    &::before {
+                        content: "Close";
+                    }
+
+                    .keybind-13vtq8 {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 
