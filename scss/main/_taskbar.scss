@@ -91,10 +91,10 @@
     @include box.barGradient(false, $blue-bright, $blue-mild);
 
     &:hover {
-        z-index: 1;
+        z-index: 2;
     }
 
-    &:has(.activityPanel-9icbyU) {
+    &:has(.activityPanel-9icbyU, .container-1zzFcN) {
         border-radius: 8px 8px 0 0;
     }
 
@@ -102,6 +102,12 @@
     .panel-2ZFCRb {
         background: transparent;
         border-bottom: 0;
+
+        // Game title and icon
+        .title-338goq,
+        .badge-370Op6 {
+            color: white;
+        }
     }
 
     .subtext-2HDqJ7 {
@@ -119,7 +125,7 @@
 
             &.buttonActive-Uc1jHx {
                 background: $beige;
-                @include shd.boxShadow;
+                @include shd.boxShadow($isInset: true);
             }
         }
     }
@@ -149,7 +155,7 @@
     }
 
     // Buttons
-    .button-12Fmur {
+    .button-12Fmur{
         color: $white-overlay;
     }
 
