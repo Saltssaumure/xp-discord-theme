@@ -6,6 +6,7 @@ jobs:
   build:
     name: "Build CSS"
     runs-on: "ubuntu-latest"
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout Git repository
