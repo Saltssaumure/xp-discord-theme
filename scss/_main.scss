@@ -92,16 +92,6 @@
         .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
             // Main chat
             .chatContent-3KubbW {
-                // Message
-                .message-2CShn3 {
-                    padding-right: 140px !important;
-
-                    // Message actions
-                    .container-2gUZhU {
-                        right: 130px;
-                    }
-                }
-
                 // Message box
                 .form-3gdLxP {
                     // Gift nitro button
@@ -174,12 +164,23 @@
             }
         }
 
-        // VC controls with members list visible
+        // With members list visible
         &:has(.membersWrap-3NUR2t) {
-
+            
+            // VC video controls
             .bottomControls-31YuPK {
                 width: auto;
                 padding-right: 150px;
+            }
+
+            // Message
+            .message-2CShn3 {
+                padding-right: 140px !important;
+
+                // Message actions
+                .container-2gUZhU {
+                    right: 130px;
+                }
             }
         }
     }
