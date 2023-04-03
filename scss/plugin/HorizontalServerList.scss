@@ -19,3 +19,15 @@
 body #app-mount .guilds-2JjMmN {
     left: calc(100vw - $panel-width);
 }
+
+// Titlebar
+html.platform-osx #app-mount {
+
+    .base-2jDfDU {
+        top: 0 !important;
+    }
+    
+    .typeMacOS-3V4xXE {
+        width: auto;
+    }
+}
