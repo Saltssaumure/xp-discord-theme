@@ -4,62 +4,92 @@
 
 // User profile
 // Popout or in profile settings
-.userPopoutOuter-3AVBmJ {
+.userProfileOuter-2tQwNf {
     border-radius: 0;
-    @include box.windowHasPseudoTitle("User info");
 
-    &::before {
-        width: 100%;
-        left: 0;
+    &:not(.profileCustomizationPreview-3zZw6E) {
+        @include box.windowHasPseudoTitle("User info");
+
+        &::before {
+            width: 100%;
+            left: 0;
+        }
     }
 
-    .avatarWrapper-3y0KZ1 {
-        left: 24px;
+    &.profileCustomizationPreview-3zZw6E {
+        border: 2px solid $blue-select;
+    }
+
+    &.userProfileOuterThemed-2BgJCM {
+        padding: 0;
+    }
+
+    .banner-3D8GgT,
+    .roundedBanner-uNt2w- {
+        border-radius: 0;
+    }
+
+    // Avatar
+    .avatarWrapper-eenWra {
+        &:not(.avatarPositionPremiumBanner-2EAbSH) {
+            left: 24px;
+        }
+        
+        &.avatarPositionPremiumBanner-2EAbSH {
+            left: 20px;
+            top: 72px;
+        }
     }
 
     // All profiles
-    .userPopoutInner-1hXSeY {
+    .userProfileInner-1ngKnf {
+        // Tint (only visible with nitro)
+        &::before {
+            border-radius: 0;
+            height: calc(100% - 2px);
+            width: calc(100% - 4px);
+        }
 
         // Edit profile button
-        .pencilContainer-11Kuga {
+        .pencilContainer-18TrEJ {
             @include bt.bgButton;
 
-            .pencilIcon-1MUmnO {
+            .pencilIcon-z04-c5 {
                 color: var(--xp-txt-color);
             }
         }
 
         // Hypesquad etc badges
-        .profileBadges-31rDHI {
+        .profileBadges-2pItdR {
             @include bt.bgButton;
         }
 
         // Inner box
-        .overlayBackground-1KgwVi {
+        .overlayBackground-2aa7wt {
             border-radius: 0;
             --font-primary: Tahoma, sans-serif;
             --font-display: Tahoma, sans-serif;
             @include box.indentBox;
 
             // Roles
-            .rolePill-2IJ1vo {
+            .rolePill-78LFtg {
                 @include bt.bgButton;
             }
 
             // User note
-            .note-6O4w9y {
+            .note-1NN2aP {
                 @include box.indentBox;
             }
 
             // Message user
-            .messageInputContainer-2rGDH8 {
+            .messageInputContainer-24qqTx {
                 @include box.indentBox;
             }
         }
     }
 
     // Unstyled profile
-    .userProfileInnerThemedNonPremium-1gT-zY {
+    .userProfileInnerThemedNonPremium-2AJg-H {
         background: var(--xp-bg-tint-color);
         --interactive-active: var(--xp-txt-color);
         --header-primary: var(--xp-txt-color);
@@ -69,12 +99,12 @@
         --interactive-muted: var(--xp-bg-tint-color);
 
         // Inner box
-        .overlayBackground-1KgwVi {
+        .overlayBackground-2aa7wt {
             background: var(--xp-bg-color);
         }
     }
 
-    .rolePill-2IJ1vo .defaultColor-1EVLSt {
+    .rolePill-78LFtg .defaultColor-1EVLSt {
         color: var(--xp-txt-color);
     }
 }
