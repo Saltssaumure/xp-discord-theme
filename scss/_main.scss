@@ -64,7 +64,7 @@
                 }
 
                 // Move show/hide member list button
-                .iconWrapper-2awDjA:is(#{ico.makeSelectors()}) {
+                .iconWrapper-2awDjA:has([d^="M14 8.00598"]) {
                     @include ico.makeIcon(auto, 50px, ".icon-2xnN2Y");
                 }
             }
