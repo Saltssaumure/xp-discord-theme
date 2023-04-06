@@ -58,8 +58,21 @@
             }
         }
 
-        .contentRegionShownSidebar-fHXkEg {
+        // Settings contents
+        :is(.contentRegionShownSidebar-fHXkEg, .contentRegion-3HkfJJ) {
             justify-content: center;
+
+            // Server setting roles sidebar
+            .sidebar-3K3Z4C {
+                left: 0;
+            }
+
+            // Server setting roles main content
+            .customContainer-dK1ozq,
+            .contentContainer-3hXFtK {
+                position: relative;
+                left: 0;
+            }
 
             // Close settings button
             .toolsContainer-25FL6V {
