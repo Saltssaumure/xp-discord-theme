@@ -7,27 +7,9 @@
 @use "main/threads";
 @use "main/titlebar";
 
-// Avatar sphere effect
-.wrapper-1VLyxH::before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: radial-gradient(
-        circle at 25% 25%,
-        $white-overlay,
-        transparentize($white-overlay, 0.4) 20%,
-        transparentize($white-overlay, 0.6) 40%,
-        transparent
-    );
-    border-radius: 50%;
-    z-index: 1;
-}
-
 // Image background
 .bg-1QIAus {
-    background: var(--background-image, url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg)) center/cover;
+    background: var(--xp-background-color, $xp-background-color) var(--xp-background-image, $xp-background-image) center/cover;
 }
 
 // Main view
@@ -166,7 +148,6 @@
 
         // With members list visible
         &:has(.membersWrap-3NUR2t) {
-            
             // VC video controls
             .bottomControls-31YuPK {
                 width: auto;
