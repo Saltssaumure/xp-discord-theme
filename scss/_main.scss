@@ -7,9 +7,14 @@
 @use "main/threads";
 @use "main/titlebar";
 
-// Image background
+// Overall background
 .bg-1QIAus {
     background: var(--xp-background-color, $xp-background-color) var(--xp-background-image, $xp-background-image) center/cover;
+}
+
+// Transparency
+:is(.appMount-2yBXZl, body, .app-2CXKsg) {
+    background: transparent;
 }
 
 // Main view

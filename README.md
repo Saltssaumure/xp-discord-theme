@@ -85,7 +85,7 @@
 
 ### Replugged
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-3. Copy and paste lines 15-45 of [`Exponent.theme.css`][.theme.css].
+2. Copy and paste lines 15-45 of [`Exponent.theme.css`][.theme.css].
 3. Edit the variable values and apply changes.
 
 ### Vencord
