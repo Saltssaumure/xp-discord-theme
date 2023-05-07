@@ -1,3 +1,9 @@
+// Default CSS var values
+$xp-background-image: url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif);
+$xp-background-color: #0066CC;
+$bsod-color: navy;
+$bsod-text: "A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance.";
+
 // Member list
 $panel-width: 240px;
 

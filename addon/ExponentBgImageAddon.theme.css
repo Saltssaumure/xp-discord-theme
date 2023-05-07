@@ -2,38 +2,19 @@
  * @name Exponent Background Image Addon
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description Customisable inner background image for Exponent theme: https://github.com/Saltssaumure/xp-discord-theme
+ * @description Customisable main inner window background image for Exponent: https://github.com/Saltssaumure/xp-discord-theme
+ * @license GPL-3.0
  * @version 1.0
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/xp-discord-theme
  * @donate https://ko-fi.com/saltssaumure
 */
 
-/*
-                                                Made by:
- _______  _______  _    _________ _______  _______  _______           __   __           _______  _______
-(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
-| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
-(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)
-/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
-\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
-                                         Licensed under GPL-3.0
-
-Discord: Saltssaumure#7557
-GitHub: https://github.com/Saltssaumure/xp-discord-theme
-Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
-*/
-
 @import url("https://saltssaumure.github.io/xp-discord-theme/addon/xp-bg-image.css");
 
-/* USER EDITABLE VARIABLES
- * --xp-bg-addon-image: Image URL, or `none` for transparent background.
- * --xp-bg-addon-luminosity: 0-100% - 0 for black, 100% = white, in-between for greys. OPTIONAL.
- * --xp-bg-addon-opacity: 0-1 - 0 for fully transparent, 1 for fully opaque. OPTIONAL.
-*/
-
+/* See https://github.com/Saltssaumure/xp-discord-theme/tree/main/addon#ExponentBgImageAddon for customisation settings. */
 :root {
-    --xp-bg-addon-image: url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg);
+    --xp-bg-addon-image: url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif);
     /* --xp-bg-addon-luminosity: 0%; */
     /* --xp-bg-addon-opacity: 0.4; */
 }
