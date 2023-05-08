@@ -8,12 +8,7 @@
     border-radius: 0;
 
     &:not(.profileCustomizationPreview-3zZw6E) {
-        @include box.windowHasPseudoTitle("User info");
-
-        &::before {
-            width: 100%;
-            left: 0;
-        }
+        @include box.windowHasPseudoTitle("User info", $offset: 0);
     }
 
     &.profileCustomizationPreview-3zZw6E {
@@ -34,7 +29,7 @@
         &:not(.avatarPositionPremiumBanner-2EAbSH) {
             left: 24px;
         }
-        
+
         &.avatarPositionPremiumBanner-2EAbSH {
             left: 20px;
             top: 72px;

@@ -1,0 +1,58 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as box;
+@use "../../top/buttons" as bt;
+
+// Soundboard
+.picker-20lcBA {
+    --interactive-normal: var(--xp-txt-color);
+    --interactive-hover: var(--xp-txt-color);
+    --interactive-active: var(--xp-txt-color);
+    --text-normal: var(--xp-txt-color);
+    --header-secondary: var(--xp-txt-color);
+    --background-primary: #{$blue-select};
+    --background-tertiary: transparent;
+    background: var(--xp-bg-tint-color);
+    @include box.windowHasPseudoTitle("Soundboard", $offset: 0);
+    border-radius: 0;
+
+    .header-3YNgrp {
+        .container-1SX9VC {
+            @include bt.bgButton($isInset: true);
+        }
+
+        .settingsClickArea-1vKB0J {
+            @include bt.bgButton;
+            box-sizing: border-box;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // Categories
+    .categoryList-iuh2t0 {
+        left: 2px;
+    }
+
+    // Sound panel
+    .listWrapper-1y1la3 {
+        background: var(--xp-bg-color);
+        box-shadow: (inset 0 0 2px 2px grey);
+
+        .soundButton-2P2Ua2 {
+            @include bt.bgButton;
+        }
+
+        .buttonOverlayBackground-3fyfGX {
+            background: var(--xp-bg-tint-color);
+        }
+    }
+}
+
+// Soundboard volume
+#user-context {
+    z-index: 1;
+    position: relative;
+}

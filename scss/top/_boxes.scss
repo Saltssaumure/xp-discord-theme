@@ -35,7 +35,7 @@
     text-shadow: 0 1px 1px black;
 }
 
-@mixin windowHasPseudoTitle($title) {
+@mixin windowHasPseudoTitle($title, $offset: -2px) {
     @include windowBox(0px);
 
     &::before {
@@ -43,8 +43,7 @@
         display: block;
         position: absolute;
         z-index: 1;
-        width: calc(100% + 4px);
-        top: - x.$title-height;
+        inset: -(x.$title-height $offset) auto $offset;
         font-size: 14px;
         line-height: x.$title-height;
         font-weight: 600;
@@ -52,7 +51,6 @@
         text-shadow: 0 1px 1px black;
         color: white;
         text-indent: 9px;
-        left: -2px;
         @include windowTitle;
     }
 }
