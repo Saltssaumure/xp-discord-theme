@@ -47,7 +47,7 @@
 
         // Edit profile button
         .pencilContainer-18TrEJ {
-            @include bt.bgButton;
+            @include bt.button;
 
             .pencilIcon-z04-c5 {
                 color: var(--xp-txt-color);
@@ -56,7 +56,7 @@
 
         // Hypesquad etc badges
         .profileBadges-2pItdR {
-            @include bt.bgButton;
+            @include bt.button;
         }
 
         // Inner box
@@ -68,7 +68,7 @@
 
             // Roles
             .rolePill-78LFtg {
-                @include bt.bgButton;
+                @include bt.button;
             }
 
             // User note

@@ -43,7 +43,7 @@
 
     // Slider bar
     .bar-2H7Q9u {
-        @include bt.bgButton($isBeige: true);
+        @include bt.button($isBeige: true);
         border: none;
 
         .barFill-3RgCsY {
@@ -53,7 +53,7 @@
 
     // Handle
     .grabber-3R-Rx9 {
-        @include bt.bgButton($isBeige: true, $isInset: true);
+        @include bt.button($isBeige: true, $isInset: true);
         height: 16px;
         width: 10px;
         margin-top: -1px;

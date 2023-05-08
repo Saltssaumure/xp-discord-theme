@@ -17,7 +17,7 @@
 
         // Search bar
         .searchBox-3IjAC1 {
-            @include bt.bgButton($isBeige: true, $isInset: true);
+            @include bt.button($isBeige: true, $isInset: true);
 
             .input-2m5SfJ {
                 color: black;
@@ -34,7 +34,7 @@
 
         // Create thread button
         .createButton-oruGBs {
-            @include bt.bgButton($isBeige: true);
+            @include bt.button($isBeige: true);
         }
     }
 
@@ -63,7 +63,7 @@
             }
 
             .button-f2h6uQ {
-                @include bt.bgButton;
+                @include bt.button;
             }
         }
     }

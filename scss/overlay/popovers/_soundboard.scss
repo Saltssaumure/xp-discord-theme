@@ -17,11 +17,11 @@
 
     .header-3YNgrp {
         .container-1SX9VC {
-            @include bt.bgButton($isInset: true);
+            @include bt.inset;
         }
 
         .settingsClickArea-1vKB0J {
-            @include bt.bgButton;
+            @include bt.button;
             box-sizing: border-box;
             width: 32px;
             height: 32px;
@@ -42,7 +42,7 @@
         box-shadow: (inset 0 0 2px 2px grey);
 
         .soundButton-2P2Ua2 {
-            @include bt.bgButton;
+            @include bt.button;
         }
 
         .buttonOverlayBackground-3fyfGX {

@@ -1,9 +1,7 @@
 @use "vars-scss" as x;
 @use "shadows" as shd;
 
-@mixin bgButton($isBeige: false, $isInset: false) {
-    border-radius: 3px;
-
+@mixin button($isBeige: false, $isInset: false) {
     @if $isBeige {
         --xp-bg-bright-color: #{x.$beige-light};
         --xp-bg-tint-color: #{x.$beige};
@@ -11,11 +9,15 @@
         --xp-txt-color: black;
         --xp-border-color: black;
     }
-
+    border-radius: 3px;
     border: 1px solid var(--xp-border-color);
     background: var(--xp-bg-tint-color);
     color: var(--xp-txt-color);
     @include shd.boxShadow($isInset);
+}
+
+@mixin inset($isBeige: false) {
+    @include button($isBeige: $isBeige, $isInset: true);
 }
 
 @mixin winButton($size, $isRed) {
