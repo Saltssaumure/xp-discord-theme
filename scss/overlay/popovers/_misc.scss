@@ -16,7 +16,7 @@
     @include box.beigeBox;
 
     .watchButton-2YRKxv {
-        @include bt.bgButton;
+        @include bt.button;
     }
 }
 
@@ -26,6 +26,6 @@
 
     // Nitro button
     .shinyButton-2Q9MDB {
-        @include bt.bgButton;
+        @include bt.button;
     }
 }

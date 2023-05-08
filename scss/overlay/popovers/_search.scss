@@ -26,7 +26,7 @@
         background: var(--xp-bg-tint-color);
 
         .react-datepicker__navigation {
-            @include bt.bgButton;
+            @include bt.button;
             background-size: 30%;
             background-repeat: no-repeat;
             background-position: center;
@@ -47,7 +47,7 @@
             border-radius: 3px;
 
             .react-datepicker__day:not(.react-datepicker__day--disabled) {
-                @include bt.bgButton;
+                @include bt.button;
                 border-radius: 0;
                 border: 0;
 
@@ -64,7 +64,7 @@
     }
 
     .hintValue-V9hd8l {
-        @include bt.bgButton;
+        @include bt.button;
 
         &:hover {
             background: inherit;

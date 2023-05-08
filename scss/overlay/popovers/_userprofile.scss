@@ -8,12 +8,7 @@
     border-radius: 0;
 
     &:not(.profileCustomizationPreview-3zZw6E) {
-        @include box.windowHasPseudoTitle("User info");
-
-        &::before {
-            width: 100%;
-            left: 0;
-        }
+        @include box.windowHasPseudoTitle("User info", $offset: 0);
     }
 
     &.profileCustomizationPreview-3zZw6E {
@@ -34,7 +29,7 @@
         &:not(.avatarPositionPremiumBanner-2EAbSH) {
             left: 24px;
         }
-        
+
         &.avatarPositionPremiumBanner-2EAbSH {
             left: 20px;
             top: 72px;
@@ -52,7 +47,7 @@
 
         // Edit profile button
         .pencilContainer-18TrEJ {
-            @include bt.bgButton;
+            @include bt.button;
 
             .pencilIcon-z04-c5 {
                 color: var(--xp-txt-color);
@@ -61,7 +56,7 @@
 
         // Hypesquad etc badges
         .profileBadges-2pItdR {
-            @include bt.bgButton;
+            @include bt.button;
         }
 
         // Inner box
@@ -73,7 +68,7 @@
 
             // Roles
             .rolePill-78LFtg {
-                @include bt.bgButton;
+                @include bt.button;
             }
 
             // User note

@@ -8,7 +8,7 @@
 
     // Search role
     .container-2oNtJn {
-        @include bt.bgButton($isInset: true);
+        @include bt.inset;
     }
 
     // Role

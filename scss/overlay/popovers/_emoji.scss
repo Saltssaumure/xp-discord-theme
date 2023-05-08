@@ -16,12 +16,12 @@
         border-radius: 0;
 
         .searchBar-2M9mRP {
-            @include bt.bgButton($isInset: true);
+            @include bt.inset;
         }
 
         .diversitySelectorButton-2CGlo5,
         .diversitySelectorOptions-3DhNYs {
-            @include bt.bgButton;
+            @include bt.button;
             padding: 3px;
         }
     }
@@ -41,7 +41,7 @@
 
             // Hovered emoji
             .emojiItem-277VFM.emojiItemSelected-2Lg50V {
-                @include bt.bgButton($isInset: true);
+                @include bt.inset;
             }
         }
 
@@ -77,17 +77,17 @@
 
     // Gif / sticker / emoji buttons
     .navButton-1XuvI- {
-        @include bt.bgButton;
+        @include bt.button;
 
         &.navButtonActive-1EqC5l {
-            @include bt.bgButton($isInset: true);
+            @include bt.inset;
         }
     }
 
     // Gif / sticker searchbar
     .container-1SX9VC,
     .container-2oNtJn {
-        @include bt.bgButton($isInset: true);
+        @include bt.inset;
     }
 
     // Sticker picker

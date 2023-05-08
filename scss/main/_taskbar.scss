@@ -121,7 +121,7 @@
 
         // Video stream buttons
         .button-1EGGcP {
-            @include bt.bgButton($isBeige: true);
+            @include bt.button($isBeige: true);
 
             &.buttonActive-Uc1jHx {
                 background: $beige;
