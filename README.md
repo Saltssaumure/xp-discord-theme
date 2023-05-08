@@ -11,11 +11,11 @@
 [Vencord]:          https://github.com/Vendicated/Vencord
 
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
-[ko-fi]:            https://ko-fi.com/saltssaumure "Any amount is much appreciated!"
+[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
-[shield-total-dl]:  https://img.shields.io/github/downloads/saltssaumure/xp-discord-theme/total?color=purple&label=Total%20GitHub%20downloads&style=flat-square
-[shield-asar-dl]:   https://img.shields.io/github/downloads/saltssaumure/xp-discord-theme/latest/net.saltssaumure.Exponent.asar?color=purple&label=Replugged%20installs&style=flat-square
-[shield-repo-size]: https://img.shields.io/github/repo-size/saltssaumure/xp-discord-theme?style=flat-square "Total size"
+[shield-bd-dl]:  https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/Exponent.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
+[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/net.saltssaumure.Exponent.asar?color=purple&label=Replugged%20downloads&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/xp-discord-theme?style=flat-square "Total size"
 
 [license]:          https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE
 [issues]:           https://github.com/Saltssaumure/xp-discord-theme/issues
@@ -26,9 +26,9 @@
 [release-rp]:       https://replugged.dev/install?identifier=Saltssaumure/xp-discord-theme&source=github "Replugged addon installer"
 
 # Exponent Discord Theme
-[![Donate via ko-fi][shield-donate]][ko-fi]
-[![Total downloads][shield-total-dl]][release-gh]
-[![Replugged installs][shield-asar-dl]][release-gh]
+[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
+[![BetterDiscord GitHub downloads][shield-bd-dl]][release-gh]
+[![Replugged downloads][shield-asar-dl]][release-rp]
 ![Total size][shield-repo-size]
 
 ***A Windows XP style Discord theme.***
