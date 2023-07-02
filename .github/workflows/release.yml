@@ -1,4 +1,4 @@
-name: Release
+name: Release for Replugged
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout Git repository
+      - name: Check out Git repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
@@ -21,8 +21,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install PNPM
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v2
         with:
           version: latest
 
@@ -34,5 +33,6 @@ jobs:
 
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "bundle/*"
+          artifacts: "bundle/*, *.theme.css"
           makeLatest: true
+          generateReleaseNotes: true
