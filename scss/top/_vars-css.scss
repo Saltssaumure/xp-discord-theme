@@ -7,11 +7,18 @@
     /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column;
     /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
-}
 
-code,
-.markup-eYLPri pre {
-    font-family: var(--font-code);
+    --xp-window-color-1: #{$blue-max};
+    --xp-window-color-2: #{$blue-vivid};
+    --xp-taskbar-color-1: #{$blue-bright};
+    --xp-taskbar-color-2: #{$blue-mild};
+    --xp-taskbar-color-3: #{$blue-select};
+    --xp-start-color-1: #{$green-max};
+    --xp-start-color-2: #{$green-bright};
+    --xp-shortcut-color-1: #{$green-vivid};
+    --xp-shortcut-color-2: #{$green-max};
+    --xp-ping-color: #{$red-bright};
+    --xp-selected-color: #{$blue-select};
 }
 
 .theme-dark {
@@ -36,4 +43,9 @@ code,
     --xp-set-color: #{$black-overlay};
     --xp-hover-color: lightgrey;
     --xp-zing-color: orange;
+}
+
+code,
+.markup-eYLPri pre {
+    font-family: var(--font-code);
 }

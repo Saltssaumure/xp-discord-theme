@@ -7,10 +7,10 @@
         "discordID": "134142022092062720",
         "github": "Saltssaumure"
     },
-    "version": "1.3.3",
+    "version": "1.4.0",
     "updater": {
-        "type": "github",
-        "id": "Saltssaumure/xp-discord-theme"
+        "type": "store",
+        "id": "net.saltssaumure.Exponent"
     },
     "license": "GPL-3.0",
     "type": "replugged-theme",
