@@ -8,7 +8,7 @@
     justify-content: center;
 
     :is(#{$inner-element}) {
-        background: linear-gradient(rgb(12, 168, 12), green);
+        background: linear-gradient(var(--xp-shortcut-color-1), var(--xp-shortcut-color-2));
         border-radius: 4px;
         padding: 5px;
         margin: 5px;

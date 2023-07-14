@@ -37,6 +37,6 @@
     }
 
     @else {
-        background: radial-gradient(circle at 20% 20%, x.$white-overlay, x.$blue-vivid, x.$blue-max);
+        background: radial-gradient(circle at 20% 20%, x.$white-overlay, var(--xp-window-color-2), var(--xp-window-color-1));
     }
 }

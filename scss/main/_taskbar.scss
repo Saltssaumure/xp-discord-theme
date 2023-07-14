@@ -6,7 +6,7 @@
 // Servers sidebar / Taskbar
 .guilds-2JjMmN {
     z-index: 0;
-    --status-danger: #{$red-bright};
+    --status-danger: var(--xp-ping-color);
 
     // Unread indicator
     .unreadMentionsIndicatorBottom-3RJMnQ,
@@ -15,7 +15,7 @@
 
         .bar-2eAyLE {
             border-radius: 0;
-            background: linear-gradient(to bottom, transparent, $red-bright);
+            background: linear-gradient(to bottom, transparent, var(--xp-ping-color));
         }
     }
 
@@ -25,11 +25,11 @@
     }
 
     .scroller-3X7KbA {
-        @include box.barGradient(true, $blue-max, $blue-vivid);
+        @include box.barGradient(true, var(--xp-window-color-1), var(--xp-window-color-2));
 
         // DMs icon / Start button
         .tutorialContainer-1pL9QS {
-            @include box.barGradient(true, $green-max, $green-bright);
+            @include box.barGradient(true, var(--xp-start-color-1), var(--xp-start-color-2));
             position: relative;
             padding: 5px 0 30px 0;
             border-radius: 0 0 100% 100% / 0 0 12px 12px;
@@ -64,17 +64,17 @@
 
         // Folder
         .folder-241Joy {
-            background: radial-gradient(circle at 12px 12px, white, $blue-bright, $blue-select);
+            background: radial-gradient(circle at 12px 12px, white, var(--xp-taskbar-color-1), var(--xp-taskbar-color-3));
         }
 
         // Open folder
         .expandedFolderBackground-1kSAf6 {
-            background: linear-gradient(to bottom, $blue-bright, $blue-mild);
+            background: linear-gradient(to bottom, var(--xp-taskbar-color-1), var(--xp-taskbar-color-2));
         }
 
         // Add server and community servers
         .circleIconButton-1VxDrg {
-            background: linear-gradient(to bottom, $blue-bright, $blue-mild);
+            background: linear-gradient(to bottom, var(--xp-taskbar-color-1), var(--xp-taskbar-color-2));
             color: $white-overlay;
         }
     }
@@ -88,7 +88,7 @@
     bottom: -1px;
     left: calc(100vw - $panel-width);
     z-index: 0;
-    @include box.barGradient(false, $blue-bright, $blue-mild);
+    @include box.barGradient(false, var(--xp-taskbar-color-1), var(--xp-taskbar-color-2));
 
     &:hover {
         z-index: 2;
@@ -162,7 +162,7 @@
     .withTagAsButton-OsgQ9L:hover,
     .withTagless-10ooWt:hover,
     .button-12Fmur.enabled-9OeuTA:hover {
-        background: linear-gradient(to bottom, $blue-select, $blue-bright);
+        background: linear-gradient(to bottom, var(--xp-taskbar-color-3), var(--xp-taskbar-color-1));
     }
 
     .button-12Fmur.enabled-9OeuTA:hover {

@@ -8,6 +8,6 @@ export default {
         /** The name of your theme repository. */
         repo: "xp-discord-theme",
         /** The version of your theme. */
-        version: "1.3.4"
+        version: "1.4.0"
     }
 };
