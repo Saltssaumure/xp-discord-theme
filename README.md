@@ -25,7 +25,7 @@
 [release-bd]:       https://betterdiscord.app/theme/?id=823 "BetterDiscord store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/Exponent.theme.css "Latest Exponent.theme.css"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Exponent "Replugged store page"
-[release-rp-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/net.saltssaumure.Exponent.asar "Replugged addon installer"
+[release-rp-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/net.saltssaumure.Exponent.asar "Latest net.saltssaumure.Exponent.asar"
 
 # Exponent Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
