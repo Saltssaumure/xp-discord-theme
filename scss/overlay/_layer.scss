@@ -26,7 +26,7 @@
 
         // Settings sidebar as separate window on left side
         .sidebarRegion-1VBisG {
-            @include box.startMenuList();
+            @include box.startMenuList;
             position: fixed;
             left: 60px;
             top: 180px;

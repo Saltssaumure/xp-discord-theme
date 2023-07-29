@@ -59,7 +59,7 @@
 
         // Channels
         .scroller-1ox3I2 {
-            @include box.startMenuList();
+            @include box.startMenuList;
 
             // Channel names
             :is(.modeSelected-3DmyhH, .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
@@ -142,7 +142,7 @@
 
         // DMs and friends
         .scroller-WSmht3 {
-            @include box.startMenuList();
+            @include box.startMenuList;
         }
 
         // DMs category
@@ -159,7 +159,7 @@
 
     // Explore servers category list
     & > .scrollerBase-1Pkza4 {
-        @include box.startMenuList();
+        @include box.startMenuList;
         position: relative;
         border-radius: 8px 8px 0 0;
 
