@@ -1,6 +1,6 @@
-@use "top/color-generic" as *;
-@use "top/boxes" as box;
-@use "top/buttons" as bt;
+@use "../top/color-generic" as *;
+@use "../top/boxes" as box;
+@use "../top/buttons" as bt;
 
 #floating-editor-window {
     border-radius: 10px 10px 0 0;
