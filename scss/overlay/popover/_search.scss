@@ -1,4 +1,4 @@
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/boxes" as box;
 @use "../../top/buttons" as bt;
 
@@ -12,9 +12,9 @@
     --search-popout-option-user-username: var(--xp-txt-color);
     --search-popout-date-picker-hint-text: var(--xp-txt-color);
     --background-floating: var(--xp-bg-tint-color);
-    --background-modifier-hover: #{$blue-select};
-    --search-popout-option-fade: linear-gradient(to right, transparent, var(--xp-bg-tint-color); );
-    --search-popout-option-fade-hover: linear-gradient(to right, transparent, #{$blue-select} 60%);
+    --background-modifier-hover: #{$color-selected};
+    --search-popout-option-fade: linear-gradient(to right, transparent, var(--xp-bg-tint-color) ;);
+    --search-popout-option-fade-hover: linear-gradient(to right, transparent, $color-selected 60%);
     border-radius: 0;
     border: 1px solid var(--xp-border-color);
 

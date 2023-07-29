@@ -1,4 +1,5 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
+@use "../top/color-generic" as *;
 
 // Modals
 // BSOD
@@ -12,7 +13,7 @@
         display: block;
         font-family: "Courier New", Courier, monospace;
         font-size: 20px;
-        color: white;
+        color: $white;
         margin: 40px;
     }
 }
@@ -23,7 +24,7 @@
     padding-right: 10vw;
 
     .focusLock-bHVOlV {
-        border: 2px solid white;
+        border: 2px solid $white;
         padding: 5px;
         background: var(--bsod-color, transparentize($bsod-color, 0.2));
     }

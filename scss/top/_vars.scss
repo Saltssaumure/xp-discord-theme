@@ -1,6 +1,6 @@
 // Default CSS var values
 $xp-background-image: url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif);
-$xp-background-color: #0066CC;
+$xp-background-color: #0066cc;
 $bsod-color: navy;
 $bsod-text: "A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance.";
 
@@ -16,23 +16,20 @@ $window-left: 270px;
 // Window bars
 $title-height: 30px;
 
-// General colours
-$blue-select: rgb(22, 101, 202);
-$blue-max: rgb(0, 90, 231);
-$blue-vivid: rgb(3, 114, 255);
-$blue-mild: rgb(87, 140, 208);
-$blue-bright: rgb(16, 140, 228);
+// Colours
+$color-window-1: var(--xp-window-color-1);
+$color-window-2: var(--xp-window-color-2);
+$color-taskbar-1: var(--xp-taskbar-color-1);
+$color-taskbar-2: var(--xp-taskbar-color-2);
+$color-taskbar-3: var(--xp-taskbar-color-3);
+$color-start-1: var(--xp-start-color-1);
+$color-start-2: var(--xp-start-color-2);
+$color-shortcut-1: var(--xp-shortcut-color-1);
+$color-shortcut-2: var(--xp-shortcut-color-2);
+$color-ping: var(--xp-ping-color);
+$color-selected: var(--xp-selected-color);
 
-$red-bright: rgb(230, 77, 28);
-$red-max: rgb(199, 50, 7);
-
-$green-bright: rgb(56, 196, 56);
-$green-vivid: rgb(12, 168, 12);
-$green-max: green;
-
-$test-color: rgb(56, 57, 121);
-$beige: rgb(235, 232, 215);
-$beige-light: rgb(240, 239, 237);
-
-$white-overlay: hsla(0, 0%, 100%, 0.7);
-$black-overlay: hsla(0, 0%, 0%, 0.7);
+// Not (yet) added to .theme.css
+$color-tooltip-1: var(--xp-tooltip-color-1);
+$color-tooltip-2: var(--xp-tooltip-color-2);
+$color-ping-2: var(--xp-ping-color-2);

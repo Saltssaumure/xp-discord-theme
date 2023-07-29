@@ -1,22 +1,25 @@
-@mixin makeIcon($left-offset, $right-offset, $inner-element) {
+@use "../top/vars" as *;
+@use "../top/color-generic" as *;
+
+@mixin makeIcon($LEFT-OFFSET, $RIGHT-OFFSET, $INNER-ELEMENT) {
     position: fixed;
     height: auto;
     margin: 0;
-    right: $right-offset;
-    left: $left-offset;
+    right: $RIGHT-OFFSET;
+    left: $LEFT-OFFSET;
     display: flex;
     justify-content: center;
 
-    :is(#{$inner-element}) {
-        background: linear-gradient(var(--xp-shortcut-color-1), var(--xp-shortcut-color-2));
+    :is(#{$INNER-ELEMENT}) {
+        background: linear-gradient($color-shortcut-1, $color-shortcut-2);
         border-radius: 4px;
         padding: 5px;
         margin: 5px;
         height: 36px;
         width: 36px;
-        box-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 2px $black;
 
-        color: white;
+        color: $white;
     }
 
     &::before {
@@ -27,8 +30,10 @@
         width: fit-content;
         font-size: 12px;
         line-height: 12px;
-        color: white;
-        text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+        color: $white;
+        text-shadow:
+            1px 1px 2px $black,
+            1px 1px 1px $black;
         text-align: center;
     }
 
@@ -38,7 +43,7 @@
         position: absolute;
         height: 9px;
         width: 9px;
-        border: 1px solid black;
+        border: 1px solid $black;
         bottom: 0;
         left: 0;
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA6SURBVBhXdY1BCgAgDMP0/4+usla3KsthlARxoCfbLNDYO5W/SQc0anJheTfWuC/ZOCr2n9Yh2wuwAHBguYD1JFi4AAAAAElFTkSuQmCC");

@@ -1,4 +1,5 @@
-@use "vars-scss" as *;
+@use "../top/color-default" as *;
+@use "../top/color-generic" as *;
 
 :root {
     --HSL-server-icon-size: 25px;
@@ -19,6 +20,11 @@
     --xp-shortcut-color-2: #{$green-max};
     --xp-ping-color: #{$red-bright};
     --xp-selected-color: #{$blue-select};
+
+    // Not (yet) added to .theme.css
+    --xp-tooltip-color-1: #{$beige-light};
+    --xp-tooltip-color-2: #{$beige};
+    --xp-ping-color-2: #{$red-max};
 }
 
 .theme-dark {
@@ -34,12 +40,12 @@
 }
 
 .theme-light {
-    --xp-bg-color: white;
+    --xp-bg-color: #{$white};
     --xp-bg-bright-color: #{$beige-light};
     --xp-bg-tint-color: #{$beige};
     --xp-bg-shade-color: grey;
-    --xp-txt-color: black;
-    --xp-border-color: black;
+    --xp-txt-color: #{$black};
+    --xp-border-color: #{$black};
     --xp-set-color: #{$black-overlay};
     --xp-hover-color: lightgrey;
     --xp-zing-color: orange;

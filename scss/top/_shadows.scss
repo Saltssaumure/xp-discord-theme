@@ -1,9 +1,7 @@
-@mixin boxShadow($isInset: false) {
-    @if $isInset {
+@mixin boxShadow($ISINSET: false) {
+    @if $ISINSET {
         box-shadow: (inset 1px 1px 2px 0 var(--xp-bg-shade-color), inset -2px -2px 2px 0 var(--xp-bg-bright-color));
-    }
-
-    @else {
+    } @else {
         box-shadow: (inset -1px -1px 2px 0 var(--xp-bg-shade-color), inset 2px 2px 2px 0 var(--xp-bg-bright-color));
     }
 }

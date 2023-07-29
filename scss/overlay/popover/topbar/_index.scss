@@ -1,10 +1,10 @@
-@use "../../top/vars-scss" as *;
+@forward "./inbox";
+@forward "./pinned";
+@forward "./threads";
+
+@use "../../../top/vars" as *;
 
 // Top bar button popout windows, eg. inbox
-@use "topbar/inbox";
-@use "topbar/pinned";
-@use "topbar/threads";
-
 .messagesPopoutWrap-3zryHW {
     border-radius: 8px 8px 0 0;
     max-height: calc(100vh - $window-top - 120px) !important;
