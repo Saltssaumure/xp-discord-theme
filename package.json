@@ -1,25 +1,26 @@
 {
     "name": "exponent-discord-theme",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "A Windows XP style Discord theme.",
     "repository": "https://github.com/Saltssaumure/xp-discord-theme.git",
-    "author": "Saltssaumure <saltssaumure@gmail.com>",
+    "author": "Saltssaumure <themes@saltssaumure.net>",
     "license": "GPL-3.0",
     "private": true,
     "scripts": {
         "dev": "bd-scss dev",
         "bd": "bd-scss build",
-        "plug": "replugged build theme",
-        "bundle": "replugged bundle theme"
+        "rp": "replugged bundle theme",
+        "lint": "prettier ./scss --check",
+        "lint:fix": "prettier ./scss --write"
     },
     "type": "module",
     "dependencies": {
-        "@parcel/config-default": "^2.8.3",
-        "@parcel/core": "^2.8.3",
-        "@parcel/transformer-sass": "^2.8.3",
-        "@types/node": "^18.11.15",
-        "prettier": "^2.8.1",
-        "replugged": "^4.1.0",
+        "@parcel/config-default": "^2.9.3",
+        "@parcel/core": "^2.9.3",
+        "@parcel/transformer-sass": "^2.9.3",
+        "@types/node": "^20.4.5",
+        "prettier": "^3.0.0",
+        "replugged": "^4.5.1",
         "salt-bd-scss": "^1.0.0"
     }
 }

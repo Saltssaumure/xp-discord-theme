@@ -14,24 +14,25 @@
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
 [ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
-[shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/Exponent.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
-[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/net.saltssaumure.Exponent.asar?color=purple&label=Replugged%20downloads&style=flat-square
-[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/xp-discord-theme?style=flat-square "Total size"
+[shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/Exponent.theme.css?color=purple&label=Downloads&style=flat-square
+[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/net.saltssaumure.Exponent.asar?color=purple&label=Downloads&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/xp-discord-theme?label=Repository&style=flat-square
 
+[github]:           https://github.com/Saltssaumure/xp-discord-theme
 [license]:          https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE
 [issues]:           https://github.com/Saltssaumure/xp-discord-theme/issues
 [.theme.css]:       https://github.com/Saltssaumure/xp-discord-theme/blob/main/Exponent.theme.css
 
 [release-bd]:       https://betterdiscord.app/theme/?id=823 "BetterDiscord store page"
-[release-bd-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/Exponent.theme.css "Latest Exponent.theme.css"
+[release-bd-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/Exponent.theme.css "Get latest release"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Exponent "Replugged store page"
-[release-rp-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/net.saltssaumure.Exponent.asar "Latest net.saltssaumure.Exponent.asar"
+[release-rp-gh]:    https://github.com/Saltssaumure/xp-discord-theme/releases/latest/download/net.saltssaumure.Exponent.asar "Get latest release"
 
 # Exponent Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
 [![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
 [![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
-![Total size][shield-repo-size]
+[![Total repository size][shield-repo-size]][github]
 
 ***A Windows XP style Discord theme.***
 
