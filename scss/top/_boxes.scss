@@ -57,7 +57,7 @@
 }
 
 @mixin startMenuList {
-    --background-modifier-selected: $color-selected;
+    --background-modifier-selected: #{$color-selected};
     --background-modifier-hover: var(--xp-hover-color);
     --channels-default: var(--xp-txt-color);
     --channel-icon: var(--xp-txt-color);
@@ -67,8 +67,8 @@
     --font-primary: Tahoma, sans-serif;
     --font-display: Tahoma, sans-serif;
     --text-muted: grey;
-    font-family: var(--font-primary);
 
+    font-family: var(--font-primary);
     background: var(--xp-bg-color);
     border: 1px solid $color-window-1;
 
