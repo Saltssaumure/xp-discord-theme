@@ -1,4 +1,5 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
+@use "../top/color-generic" as *;
 @use "../top/boxes" as box;
 @use "../top/buttons" as bt;
 @use "../top/shadows" as shd;
@@ -6,7 +7,7 @@
 // Servers sidebar / Taskbar
 .guilds-2JjMmN {
     z-index: 0;
-    --status-danger: var(--xp-ping-color);
+    --status-danger: #{$color-ping};
 
     // Unread indicator
     .unreadMentionsIndicatorBottom-3RJMnQ,
@@ -15,7 +16,7 @@
 
         .bar-2eAyLE {
             border-radius: 0;
-            background: linear-gradient(to bottom, transparent, var(--xp-ping-color));
+            background: linear-gradient(to bottom, transparent, $color-ping);
         }
     }
 
@@ -25,11 +26,11 @@
     }
 
     .scroller-3X7KbA {
-        @include box.barGradient(true, var(--xp-window-color-1), var(--xp-window-color-2));
+        @include box.barGradient(true, $color-window-1, $color-window-2);
 
         // DMs icon / Start button
         .tutorialContainer-1pL9QS {
-            @include box.barGradient(true, var(--xp-start-color-1), var(--xp-start-color-2));
+            @include box.barGradient(true, $color-start-1, $color-start-2);
             position: relative;
             padding: 5px 0 30px 0;
             border-radius: 0 0 100% 100% / 0 0 12px 12px;
@@ -41,11 +42,10 @@
                 }
 
                 .wrapper-3kah-n {
-
                     .selected-1Drb7Z,
                     &:hover {
                         .childWrapper-1j_1ub {
-                            color: white;
+                            color: $white;
                         }
                     }
 
@@ -59,22 +59,22 @@
 
         // Unread pill
         .item-2LIpTv {
-            background: white;
+            background: $white;
         }
 
         // Folder
         .folder-241Joy {
-            background: radial-gradient(circle at 12px 12px, white, var(--xp-taskbar-color-1), var(--xp-taskbar-color-3));
+            background: radial-gradient(circle at 12px 12px, $white, $color-taskbar-1, $color-taskbar-3);
         }
 
         // Open folder
         .expandedFolderBackground-1kSAf6 {
-            background: linear-gradient(to bottom, var(--xp-taskbar-color-1), var(--xp-taskbar-color-2));
+            background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
         }
 
         // Add server and community servers
         .circleIconButton-1VxDrg {
-            background: linear-gradient(to bottom, var(--xp-taskbar-color-1), var(--xp-taskbar-color-2));
+            background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
             color: $white-overlay;
         }
     }
@@ -88,7 +88,7 @@
     bottom: -1px;
     left: calc(100vw - $panel-width);
     z-index: 0;
-    @include box.barGradient(false, var(--xp-taskbar-color-1), var(--xp-taskbar-color-2));
+    @include box.barGradient(false, $color-taskbar-1, $color-taskbar-2);
 
     &:hover {
         z-index: 2;
@@ -106,7 +106,7 @@
         // Game title and icon
         .title-338goq,
         .badge-370Op6 {
-            color: white;
+            color: $white;
         }
     }
 
@@ -121,11 +121,11 @@
 
         // Video stream buttons
         .button-1EGGcP {
-            @include bt.button($isBeige: true);
+            @include bt.button($ISBEIGE: true);
 
             &.buttonActive-Uc1jHx {
-                background: $beige;
-                @include shd.boxShadow($isInset: true);
+                background: $color-tooltip-2;
+                @include shd.boxShadow($ISINSET: true);
             }
         }
     }
@@ -144,10 +144,10 @@
 
             // Username
             .nameTag-sc-gpq {
-                text-shadow: 0 1px 1px black;
+                text-shadow: 0 1px 1px $black;
 
                 .title-338goq {
-                    color: white;
+                    color: $white;
                     font-weight: normal;
                 }
             }
@@ -155,17 +155,17 @@
     }
 
     // Buttons
-    .button-12Fmur{
+    .button-12Fmur {
         color: $white-overlay;
     }
 
     .withTagAsButton-OsgQ9L:hover,
     .withTagless-10ooWt:hover,
     .button-12Fmur.enabled-9OeuTA:hover {
-        background: linear-gradient(to bottom, var(--xp-taskbar-color-3), var(--xp-taskbar-color-1));
+        background: linear-gradient(to bottom, $color-taskbar-3, $color-taskbar-1);
     }
 
     .button-12Fmur.enabled-9OeuTA:hover {
-        color: white;
+        color: $white;
     }
 }

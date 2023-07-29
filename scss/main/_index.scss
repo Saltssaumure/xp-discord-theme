@@ -1,11 +1,11 @@
-@use "top/vars-scss" as *;
-@use "top/boxes" as box;
-@use "top/shortcutIcon" as ico;
+@forward "./channels";
+@forward "./taskbar";
+@forward "./threads";
+@forward "./titlebar";
 
-@use "main/channels";
-@use "main/taskbar";
-@use "main/threads";
-@use "main/titlebar";
+@use "../top/vars" as *;
+@use "../top/boxes" as box;
+@use "../top/shortcutIcon" as ico;
 
 // Overall background
 .bg-1QIAus {
@@ -27,7 +27,7 @@
             margin: 0 $window-right 0 $window-left;
             width: auto;
             border-radius: 0;
-            border: solid $blue-select;
+            border: solid $color-taskbar-3;
             border-width: 0 2px 0 2px;
             box-shadow: none;
         }

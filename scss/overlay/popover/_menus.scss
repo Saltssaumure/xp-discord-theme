@@ -1,4 +1,4 @@
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/buttons" as bt;
 
 // Small menus
@@ -10,15 +10,13 @@
 
     // Menu item
     .colorDefault-2_rLdz {
-
         // Focused menu item
         &.focused-3LIdPu {
-            background: $blue-select;
+            background: $color-selected;
             border-radius: 0;
         }
 
         .icon-3XHs8t {
-
             // Radio button
             path[d^="M12 20C16.4183"] {
                 d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
@@ -26,7 +24,7 @@
 
             // circle
             .radioSelection-3PDNAQ {
-                color: $green-bright;
+                color: $color-start-2;
             }
 
             // Checkbox
@@ -36,14 +34,14 @@
             }
 
             .check-3-73a4 {
-                color: $green-bright;
+                color: $color-start-2;
             }
         }
     }
 
     // Slider bar
     .bar-2H7Q9u {
-        @include bt.button($isBeige: true);
+        @include bt.button($ISBEIGE: true);
         border: none;
 
         .barFill-3RgCsY {
@@ -53,11 +51,11 @@
 
     // Handle
     .grabber-3R-Rx9 {
-        @include bt.button($isBeige: true, $isInset: true);
+        @include bt.button($ISBEIGE: true, $ISINSET: true);
         height: 16px;
         width: 10px;
         margin-top: -1px;
-        border: solid $green-bright;
+        border: solid $color-start-2;
         border-width: 3px 0;
     }
 }

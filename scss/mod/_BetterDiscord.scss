@@ -1,5 +1,6 @@
-@use "top/boxes" as box;
-@use "top/buttons" as bt;
+@use "../top/color-generic" as *;
+@use "../top/boxes" as box;
+@use "../top/buttons" as bt;
 
 #floating-editor-window {
     border-radius: 10px 10px 0 0;
@@ -12,8 +13,8 @@
             font-size: 14px;
             font-weight: 600;
             font-family: Tahoma, sans-serif;
-            text-shadow: 0 1px 1px black;
-            color: white;
+            text-shadow: 0 1px 1px $black;
+            color: $white;
         }
 
         .button {

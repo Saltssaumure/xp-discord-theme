@@ -1,4 +1,5 @@
-@use "../../../top/vars-scss" as *;
+@use "../../../top/vars" as *;
+@use "../../../top/color-generic" as *;
 @use "../../../top/boxes" as box;
 @use "../../../top/buttons" as bt;
 
@@ -12,15 +13,15 @@
 
         // #
         .threadIcon-rd1kqG {
-            color: white;
+            color: $white;
         }
 
         // Search bar
         .searchBox-3IjAC1 {
-            @include bt.button($isBeige: true, $isInset: true);
+            @include bt.button($ISBEIGE: true, $ISINSET: true);
 
             .input-2m5SfJ {
-                color: black;
+                color: $black;
             }
         }
 
@@ -34,7 +35,7 @@
 
         // Create thread button
         .createButton-oruGBs {
-            @include bt.button($isBeige: true);
+            @include bt.button($ISBEIGE: true);
         }
     }
 
@@ -56,7 +57,6 @@
 
         // No threads
         .container-2c4_8A {
-
             .defaultColor-HXu-5n,
             .text-md-normal-304U3g {
                 color: var(--xp-txt-color) !important;

@@ -1,42 +1,41 @@
-@use "vars-scss" as x;
+@use "vars" as *;
+@use "color-generic" as *;
 @use "shadows" as shd;
 
-@mixin button($isBeige: false, $isInset: false) {
-    @if $isBeige {
-        --xp-bg-bright-color: #{x.$beige-light};
-        --xp-bg-tint-color: #{x.$beige};
+@mixin button($ISBEIGE: false, $ISINSET: false) {
+    @if $ISBEIGE {
+        --xp-bg-bright-color: #{$color-tooltip-1};
+        --xp-bg-tint-color: #{$color-tooltip-2};
         --xp-bg-shade-color: grey;
-        --xp-txt-color: black;
-        --xp-border-color: black;
+        --xp-txt-color: #{$black};
+        --xp-border-color: #{$black};
     }
     border-radius: 3px;
     border: 1px solid var(--xp-border-color);
     background: var(--xp-bg-tint-color);
     color: var(--xp-txt-color);
-    @include shd.boxShadow($isInset);
+    @include shd.boxShadow($ISINSET);
 }
 
-@mixin inset($isBeige: false) {
-    @include button($isBeige: $isBeige, $isInset: true);
+@mixin inset($ISBEIGE: false) {
+    @include button($ISBEIGE: $ISBEIGE, $ISINSET: true);
 }
 
-@mixin winButton($size, $isRed) {
+@mixin winButton($SIZE, $ISRED) {
     top: 0;
-    min-height: $size;
-    min-width: $size;
-    height: $size;
-    width: $size;
+    min-height: $SIZE;
+    min-width: $SIZE;
+    height: $SIZE;
+    width: $SIZE;
     margin: 4px;
     margin-left: 0;
-    border: 1px solid white;
+    border: 1px solid $white;
     border-radius: 3px;
-    color: white;
+    color: $white;
 
-    @if $isRed {
-        background: radial-gradient(circle at 20% 20%, x.$white-overlay, x.$red-bright, x.$red-max);
-    }
-
-    @else {
-        background: radial-gradient(circle at 20% 20%, x.$white-overlay, var(--xp-window-color-2), var(--xp-window-color-1));
+    @if $ISRED {
+        background: radial-gradient(circle at 20% 20%, $white-overlay, $color-ping, $color-ping-2);
+    } @else {
+        background: radial-gradient(circle at 20% 20%, $white-overlay, $color-window-2, $color-window-1);
     }
 }

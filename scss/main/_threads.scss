@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as box;
 
 // Main chat with thread open
@@ -17,7 +17,7 @@
 }
 
 .resizeHandle-PBRzPC {
-    background: var(--xp-window-color-2);
+    background: $color-window-2;
 }
 
 // Floating thread panel
@@ -26,8 +26,7 @@
 }
 
 // Threads not video chat
-.content-1SgpWY> {
-
+.content-1SgpWY > {
     // Main chat / thread separator
     .resizeHandle-PBRzPC {
         position: relative;

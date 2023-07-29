@@ -1,4 +1,4 @@
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/boxes" as box;
 @use "../../top/buttons" as bt;
 
@@ -9,7 +9,7 @@
     --interactive-active: var(--xp-txt-color);
     --text-normal: var(--xp-txt-color);
     --header-secondary: var(--xp-txt-color);
-    --background-primary: #{$blue-select};
+    --background-primary: #{$color-taskbar-3};
 
     .header-11eigE {
         background: var(--xp-bg-tint-color);
@@ -57,7 +57,7 @@
 }
 
 // Reaction emoji picker
-.animatorLeft-1I1Kvj>#emoji-picker-tab-panel {
+.animatorLeft-1I1Kvj > #emoji-picker-tab-panel {
     @include box.windowHasPseudoTitle("Add a reaction");
 }
 
@@ -68,7 +68,7 @@
     --interactive-active: var(--xp-txt-color);
     --text-normal: var(--xp-txt-color);
     --header-secondary: var(--xp-txt-color);
-    --background-primary: #{$blue-select};
+    --background-primary: #{$color-taskbar-3};
     --background-tertiary: transparent;
     background: var(--xp-bg-tint-color);
     border-radius: 0;
@@ -92,7 +92,6 @@
 
     // Sticker picker
     #sticker-picker-tab-panel {
-
         // Sticker grid
         #sticker-picker-grid {
             background: var(--xp-bg-color);
