@@ -1,13 +1,9 @@
 /** @type {import('bd-scss/lib/config').Config} */
 export default {
     meta: {
-        /** The official name of your theme. */
-        name: "Exponent",
-        /** The name of your base scss file. */
-        scss: "xp",
-        /** The name of your theme repository. */
-        repo: "xp-discord-theme",
-        /** The version of your theme. */
-        version: "1.4.3"
+        name: "Exponent" /* The official name of your theme. */,
+        scss: "xp" /* The name of your base scss file. */,
+        repo: "xp-discord-theme" /* The name of your theme repository. */,
+        version: "dev" /* The version of your theme. */
     }
 };

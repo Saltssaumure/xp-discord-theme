@@ -1,8 +1,14 @@
-refs
+# Packages
+/.parcel-cache
+/node_modules
 
-.parcel-cache
-node_modules
+# Build
+/dist
+/bundle
+/src
 
-dist
-bundle
-src
+# Social images
+/preview
+
+# References
+/refs

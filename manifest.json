@@ -1,23 +1,24 @@
 {
-    "id": "net.saltssaumure.Exponent",
-    "name": "Exponent",
-    "description": "A Windows XP style theme.",
-    "author": {
-        "name": "Saltssaumure",
-        "discordID": "134142022092062720",
-        "github": "Saltssaumure"
-    },
-    "version": "1.4.3",
-    "updater": {
-        "type": "store",
-        "id": "net.saltssaumure.Exponent"
-    },
-    "license": "GPL-3.0",
-    "type": "replugged-theme",
-    "main": "scss/xp.scss",
-    "image": [
-        "https://cdn.discordapp.com/attachments/946226984005025835/1129618794348806154/exponent1.png",
-        "https://cdn.discordapp.com/attachments/946226984005025835/1129618794030055495/exponent2.png"
-    ],
-    "source": "https://github.com/Saltssaumure/xp-discord-theme"
+  "id": "net.saltssaumure.Exponent",
+  "name": "Exponent",
+  "description": "A Windows XP style theme. See github README for customisation options.",
+  "author": {
+    "name": "Saltssaumure",
+    "discordID": "134142022092062720",
+    "github": "Saltssaumure"
+  },
+  "version": "1.4.3",
+  "updater": {
+    "type": "store",
+    "id": "net.saltssaumure.Exponent"
+  },
+  "license": "GPL-3.0",
+  "type": "replugged-theme",
+  "main": "scss/xp.scss",
+  "source": "https://github.com/Saltssaumure/xp-discord-theme",
+  "image": [
+    "https://cdn.discordapp.com/attachments/946226984005025835/1129618794348806154/exponent1.png",
+    "https://cdn.discordapp.com/attachments/946226984005025835/1129618794030055495/exponent2.png",
+    "https://cdn.discordapp.com/attachments/1142305515439923260/1148063709063807106/exponent3.png"
+  ]
 }

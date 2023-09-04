@@ -22,7 +22,7 @@
 
     // Settings menu
     .standardSidebarView-E9Pc3j {
-        @include box.mainWindow();
+        @include box.mainWindow;
 
         // Settings sidebar as separate window on left side
         .sidebarRegion-1VBisG {
