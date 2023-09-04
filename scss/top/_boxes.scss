@@ -11,6 +11,7 @@
 @mixin mainWindow {
     margin: $window-top $window-right $window-bottom $window-left;
     overflow: hidden;
+    z-index: 1;
     @include windowBox($VERTICAL-OFFSET: 3px);
 }
 

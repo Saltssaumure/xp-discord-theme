@@ -67,7 +67,7 @@
         .applicationStore-2nk7Lo,
         // Main chat
         .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
-            @include box.mainWindow();
+            @include box.mainWindow;
         }
 
         // University hub
