@@ -1,0 +1,58 @@
+@use "../top/vars" as *;
+@use "../top/color-generic" as *;
+
+// Vencord SpotifyControls
+#vc-spotify-player {
+    .appMount-2yBXZl & {
+        background: unset;
+        border-bottom: 0;
+    }
+
+    #vc-spotify-progress-bar {
+        > [class^="slider"] [class^="grabber"] {
+            height: 16px !important;
+            width: 10px !important;
+            background-color: $color-tooltip-2;
+            border-color: $color-start-2;
+        }
+
+        > [class^="slider"] [class^="bar-"] {
+            height: 6px !important;
+        }
+    }
+
+    .colorStandard-1Xxp1s {
+        color: $white-overlay;
+    }
+
+    #vc-spotify-song-title,
+    .vc-spotify-artist,
+    .vc-spotify-album {
+        color: $white;
+    }
+
+    .vc-spotify-button {
+        color: $white-overlay;
+
+        &:hover {
+            color: $white;
+            border-radius: 4px;
+            background: linear-gradient(to bottom, $color-taskbar-3, $color-taskbar-1);
+        }
+
+        &:is(
+                .vc-spotify-shuffle-on,
+                .vc-spotify-repeat-context,
+                .vc-spotify-repeat-track,
+                .vc-spotify-shuffle-on:hover,
+                .vc-spotify-repeat-context:hover,
+                .vc-spotify-repeat-track:hover
+            ) {
+            .vc-spotify-button-icon,
+            .vc-spotify-repeat-1 {
+                color: $color-shortcut-1;
+                filter: drop-shadow(1px 1px 1px $black-overlay);
+            }
+        }
+    }
+}
