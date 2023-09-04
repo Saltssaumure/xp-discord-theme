@@ -1,26 +1,29 @@
 {
-    "name": "exponent-discord-theme",
-    "version": "1.4.3",
-    "description": "A Windows XP style Discord theme.",
-    "repository": "https://github.com/Saltssaumure/xp-discord-theme.git",
-    "author": "Saltssaumure <themes@saltssaumure.net>",
-    "license": "GPL-3.0",
-    "private": true,
-    "scripts": {
-        "dev": "bd-scss dev",
-        "bd": "bd-scss build",
-        "rp": "replugged bundle theme",
-        "lint": "prettier ./scss --check",
-        "lint:fix": "prettier ./scss --write"
-    },
-    "type": "module",
-    "dependencies": {
-        "@parcel/config-default": "^2.9.3",
-        "@parcel/core": "^2.9.3",
-        "@parcel/transformer-sass": "^2.9.3",
-        "@types/node": "^20.4.5",
-        "prettier": "^3.0.0",
-        "replugged": "^4.5.1",
-        "salt-bd-scss": "^1.0.0"
-    }
+  "name": "exponent-discord-theme",
+  "version": "1.4.3",
+  "description": "A Windows XP style Discord theme.",
+  "repository": "https://github.com/Saltssaumure/xp-discord-theme.git",
+  "author": "Saltssaumure <themes@saltssaumure.net>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "dev": "bd-scss dev",
+    "dev:rp": "replugged build theme --watch",
+    "dev:vc": "bd-scss dev:vc",
+    "bd": "bd-scss build",
+    "rp": "replugged bundle theme",
+    "lint": "prettier ./scss --check",
+    "lint:fix": "prettier ./scss --write --log-level warn",
+    "release": "replugged release"
+  },
+  "type": "module",
+  "dependencies": {
+    "@parcel/config-default": "^2.9.3",
+    "@parcel/core": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3",
+    "@types/node": "^20.5.6",
+    "prettier": "^3.0.2",
+    "replugged": "^4.6.1",
+    "salt-bd-scss": "^1.1.0"
+  }
 }

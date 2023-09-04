@@ -16,7 +16,7 @@
 
 [shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/Exponent.theme.css?color=purple&label=Downloads&style=flat-square
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/xp-discord-theme/net.saltssaumure.Exponent.asar?color=purple&label=Downloads&style=flat-square
-[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/xp-discord-theme?label=Repository&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/xp-discord-theme?label=Repository&style=flat-square "Total size"
 
 [github]:           https://github.com/Saltssaumure/xp-discord-theme
 [license]:          https://github.com/Saltssaumure/xp-discord-theme/blob/main/LICENSE
@@ -42,25 +42,35 @@
 
 ## Installation
 
-### BetterDiscord
-1. Install [BetterDiscord][BetterDiscord].
-2. Download the theme file:
+### [BetterDiscord][BetterDiscord]
+1. Download `Exponent.theme.css`:
     - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
-3. Place theme file in the `themes` folder:
-    - Windows: `%AppData%/BetterDiscord/themes`
-    - Mac: `~/Library/Application Support/betterdiscord/themes`
-    - Linux: `~/.config/BetterDiscord/themes`
+2. Place the file in the themes folder:
+    - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
+3. Toggle on the theme card.
 
-### Replugged
-1. Install [Replugged][Replugged].
-2. Install the theme:
+### [Replugged][Replugged]
+#### Automatic
+1. Click to install:
     - [Replugged store][release-rp]
+#### Manual
+1. Download `net.saltssaumure.Exponent.asar`:
     - [GitHub][release-rp-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `Replugged` > `Themes` > `Open Themes Folder`
+3. Click `Load Missing Themes` and toggle on the theme card.
 
-### Vencord
-1. Install [Vencord][Vencord].
-2. Paste the following in `Settings` > `Vencord` > `Themes`:
+### [Vencord][Vencord]
+#### Local
+1. Download `Exponent.theme.css`:
+    - [BetterDiscord store][release-bd]
+    - [GitHub][release-bd-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
+3. Click `Load missing Themes` and toggle on the theme card.
+#### Online
+1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://saltssaumure.github.io/xp-discord-theme/Exponent.theme.css`
 
 ## Customisation
@@ -94,18 +104,20 @@
 3. Edit the variable values and save changes.
 
 ### Replugged
+1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-2. Copy and paste lines 15-57 of [`Exponent.theme.css`][.theme.css].
-3. Edit the variable values and apply changes.
+3. Copy and paste lines 15-57 of [`Exponent.theme.css`][.theme.css].
+3. Edit the variable values and save.
 
 ### Vencord
-#### Standard method
-1. Follow the instructions in `Settings` > `Vencord` > `Themes`.
-#### Recommended method
-1. Open `Settings` > `Vencord` > `Vencord`.
-2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste lines 15-57 of [`Exponent.theme.css`][.theme.css].
-4. Edit the variable values.
+#### Local
+2. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
+3. Open `Exponent.theme.css` with your favourite text editor.
+4. Edit the variable values and save.
+#### Online
+1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
+2. Copy and paste lines 15-57 of [`Exponent.theme.css`][.theme.css].
+3. Edit the variable values.
 
 ## Addons
 See [Addons][addons] for mini-themes designed to be used alongside Exponent to add extra optional features.
