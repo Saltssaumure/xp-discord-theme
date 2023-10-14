@@ -1,13 +1,13 @@
 {
   "id": "net.saltssaumure.Exponent",
   "name": "Exponent",
-  "description": "A Windows XP style theme. See github README for customisation options.",
+  "description": "A Windows XP style theme. See GitHub for customisation options.",
   "author": {
     "name": "Saltssaumure",
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "1.4.4",
+  "version": "1.4.5",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Exponent"
