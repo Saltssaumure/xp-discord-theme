@@ -93,12 +93,12 @@
         z-index: 2;
     }
 
-    &:has(.activityPanel-9icbyU, .container-1zzFcN) {
+    &:has(.activityPanel-9icbyU, .container-2NLBJg) {
         border-radius: 8px 8px 0 0;
     }
 
     // Now playing game/activity
-    .panel-2ZFCRb {
+    .panel-ufc1-o {
         background: transparent;
         border-bottom: 0;
 
@@ -114,15 +114,15 @@
     }
 
     // Voice chat controls
-    .container-1zzFcN {
+    .container-2NLBJg {
         background: inherit;
         border-bottom: 0;
 
         // Video stream buttons
-        .button-1EGGcP {
+        .button-2gNyE9 {
             @include bt.button($ISBEIGE: true);
 
-            &.buttonActive-Uc1jHx {
+            &.buttonActive-1YQBrb {
                 background: $color-tooltip-2;
                 @include shd.boxShadow($ISINSET: true);
             }
@@ -130,19 +130,19 @@
     }
 
     // User and settings
-    .container-YkUktl {
+    .container-1CH86i {
         height: var(--server-container);
         flex-direction: row-reverse;
         background: transparent;
 
         // Self info
-        .avatarWrapper-1B9FTW {
+        .avatarWrapper-12uuu4 {
             margin: 0 0 0 6px;
             padding: 0 4px 0 0;
             flex-direction: row-reverse;
 
             // Username
-            .nameTag-sc-gpq {
+            .nameTag-2Q56-H {
                 text-shadow: 0 1px 1px $black;
 
                 .title-338goq {
@@ -158,8 +158,8 @@
         color: $white-overlay;
     }
 
-    .withTagAsButton-OsgQ9L:hover,
-    .withTagless-10ooWt:hover,
+    .withTagAsButton-2_JkHX:hover,
+    .withTagless-Lx3LMo:hover,
     .button-12Fmur.enabled-9OeuTA:hover {
         background: linear-gradient(to bottom, $color-taskbar-3, $color-taskbar-1);
     }
