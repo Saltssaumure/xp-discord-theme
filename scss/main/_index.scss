@@ -37,12 +37,12 @@
             z-index: 0;
         }
 
-        .content-1jQy2l::before {
+        .content-18rAwf::before {
             z-index: 0;
         }
 
         // Top bar (not in DMs)
-        .chat-2ZfjoI > .title-31SJ6t {
+        .chat-9g_3Xj > .title-31SJ6t {
             .toolbar-3_r2xA {
                 // Move help icon
                 .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
@@ -66,7 +66,7 @@
         // Buy nitro page
         .applicationStore-2nk7Lo,
         // Main chat
-        .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
+        .chat-9g_3Xj:not(.container-2IKOsH > .chat-9g_3Xj) {
             @include box.mainWindow;
         }
 
@@ -76,7 +76,7 @@
         }
 
         // Main chat and top bar
-        .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
+        .chat-9g_3Xj:not(.container-2IKOsH > .chat-9g_3Xj) {
             // Main chat
             .chatContent-3KubbW {
                 // Message box
