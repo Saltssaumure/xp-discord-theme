@@ -1,6 +1,6 @@
 {
   "name": "exponent-discord-theme",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A Windows XP style Discord theme.",
   "repository": "https://github.com/Saltssaumure/xp-discord-theme.git",
   "author": "Saltssaumure <themes@saltssaumure.net>",
@@ -21,7 +21,7 @@
     "@parcel/config-default": "^2.10.0",
     "@parcel/core": "^2.10.0",
     "@parcel/transformer-sass": "^2.10.0",
-    "@types/node": "^20.8.6",
+    "@types/node": "^20.8.7",
     "prettier": "^3.0.3",
     "replugged": "^4.6.5",
     "salt-bd-scss": "^1.1.0"
