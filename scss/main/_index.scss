@@ -42,7 +42,7 @@
         }
 
         // Top bar (not in DMs)
-        .chat-9g_3Xj > .title-31SJ6t {
+        .chat-9g_3Xj > :is(.title-31SJ6t, .title-5wgnIa) {
             .toolbar-3_r2xA {
                 // Move help icon
                 .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
@@ -78,9 +78,9 @@
         // Main chat and top bar
         .chat-9g_3Xj:not(.container-2IKOsH > .chat-9g_3Xj) {
             // Main chat
-            .chatContent-3KubbW {
+            :is(.chatContent-3KubbW, .chatContent-2O4SXb) {
                 // Message box
-                .form-3gdLxP {
+                :is(.form-3gdLxP, .form-3qe0Ni) {
                     // Gift nitro button
                     .buttons-uaqb-5 > .button-ejjZWC {
                         @include ico.makeIcon(50px, auto, ".buttonWrapper-3YFQGJ");
@@ -113,7 +113,7 @@
             }
 
             // Members list
-            .container-2o3qEW {
+            :is(.container-2o3qEW, .container-2vWgD2) {
                 @include box.startMenuList;
 
                 position: fixed;
@@ -123,17 +123,17 @@
                 max-height: calc(100vh - 400px);
                 @include box.windowHasPseudoTitle("Members");
 
-                .members-3WRCEx {
+                :is(.members-3WRCEx, .members-2y1nVj) {
                     background: var(--xp-bg-color);
 
                     // Member group
-                    .membersGroup-2eiWxl:not(:nth-child(2)) {
+                    :is(.membersGroup-2eiWxl, .membersGroup-2YoqY-):not(:nth-child(2)) {
                         position: relative;
                         @include box.startMenuDivider(7px);
                     }
 
                     // Member
-                    .member-48YF_l,
+                    :is(.member-48YF_l, .member-2iQhp7),
                     .member-2gU6Ar {
                         background: var(--xp-bg-color);
 
@@ -152,7 +152,7 @@
         }
 
         // With members list visible
-        &:has(.membersWrap-3NUR2t) {
+        &:has(:is(.membersWrap-3NUR2t, .membersWrap-3GwLFp)) {
             // VC video controls
             .bottomControls-31YuPK {
                 width: auto;
