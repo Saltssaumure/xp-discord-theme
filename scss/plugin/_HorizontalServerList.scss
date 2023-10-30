@@ -3,30 +3,30 @@
 // Override HSL options
 
 // Channels sidebar
-#app-mount .sidebar-1tnWFu {
+#app-mount .sidebar_ded4b5 {
     border-radius: 8px 8px 0 0;
 }
 
 // Taskbar
 // leave gap in server bar for control panel
-#app-mount .guilds-2JjMmN {
+#app-mount .guilds__2b93a {
     height: calc(100vw - $panel-width) !important;
 
-    .scrollerBase-1Pkza4 {
+    .scrollerBase_dc3aa9 {
         padding-top: 0 !important;
     }
 }
-body #app-mount .guilds-2JjMmN {
+body #app-mount .guilds__2b93a {
     left: calc(100vw - $panel-width);
 }
 
 // Titlebar
 html.platform-osx #app-mount {
-    .base-2jDfDU {
+    .base__3e6af {
         top: 0 !important;
     }
 
-    .typeMacOS-3V4xXE {
+    .typeMacOS__496b0 {
         width: auto;
     }
 }

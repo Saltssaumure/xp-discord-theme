@@ -1,8 +1,8 @@
 @use "../top/vars" as *;
 
 // Replaces "read all" in ReadAllNotificationsButton with eye icon on blue background
-#app-mount .guilds-2JjMmN .frame-oXWS21[class*="listItem"] {
-    .wrapper-3kah-n {
+#app-mount .guilds__2b93a .frame-oXWS21[class*="listItem"] {
+    .wrapper_d281dd {
         width: var(--server-size);
     }
 

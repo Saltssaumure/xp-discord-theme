@@ -5,12 +5,12 @@
 @use "../../../top/vars" as *;
 
 // Top bar button popout windows, eg. inbox
-.messagesPopoutWrap-3zryHW {
+.messagesPopoutWrap_b3b384 {
     border-radius: 8px 8px 0 0;
     max-height: calc(100vh - $window-top - 120px) !important;
 
     // No "protips" please
-    .footer-5ji8u1 {
+    .footer_a3029c {
         display: none;
     }
 }

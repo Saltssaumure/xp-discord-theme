@@ -2,33 +2,33 @@
 @use "../top/boxes" as box;
 
 // Main chat with thread open
-.chat-9g_3Xj:is(.threadSidebarOpen-1LSXvU, .threadSidebarOpen-lv7sGl) {
+.chat__52833.threadSidebarOpen_fa231d {
     border-radius: 0;
 
     // Message needs no indent as member list cannot be visible at once.
-    :is(.chatContent-3KubbW, .chatContent-2O4SXb) .message-2CShn3 {
+    .chatContent__5dca8 .message__80c10 {
         margin-right: 0 !important;
     }
 
     // Neither does autocompleter
-    .autocomplete-3NRXG8 {
+    .autocomplete_df266d {
         width: auto !important;
     }
 }
 
-:is(.resizeHandle-PBRzPC, .resizeHandle-2F4Beb) {
+.resizeHandle_f1a098 {
     background: $color-window-2;
 }
 
 // Floating thread panel
-:is(.floating-3M3WeH, .floating-1T0kDs) {
+.floating_f021e2 {
     border-radius: 0;
 }
 
 // Threads not video chat
-.content-1SgpWY > {
+.content__4bf10 > {
     // Main chat / thread separator
-    :is(.resizeHandle-PBRzPC, .resizeHandle-2F4Beb) {
+    .resizeHandle_f1a098 {
         position: relative;
         right: $window-right;
         margin: $window-top 0 $window-bottom 0;
@@ -36,7 +36,7 @@
     }
 
     // Thread panel
-    :is(.container-3XgAHv, .container-3s2w-i) {
+    .container_def45c {
         position: relative;
         margin: $window-top 0 $window-bottom 0;
         right: $window-right;
@@ -46,7 +46,7 @@
     }
 
     // Floating thread panel for narrow screens
-    :is(.chatLayerWrapper-2mgEK-, .chatLayerWrapper-1K7IFZ) {
+    .chatLayerWrapper__29dd6 {
         // margin: $window-top $window-right $window-bottom 0;
         top: $window-top;
         right: calc($window-right + 2px);
@@ -55,6 +55,6 @@
     }
 }
 
-:is(.chatTarget-3H6mpC, .chatTarget-1ROClP) {
+.chatTarget__0ea5e {
     display: none;
 }

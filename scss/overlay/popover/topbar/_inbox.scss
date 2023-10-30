@@ -4,21 +4,21 @@
 @use "../../../top/buttons" as bt;
 
 // Inbox
-.recentMentionsPopout-2bI1ZN {
+.recentMentionsPopout__826a9 {
     // Top bar
-    .header-145e10 {
+    .header__28ebb {
         @include box.windowTitle;
         --interactive-normal: var(--xp-txt-color);
         --interactive-active: var(--xp-txt-color);
 
         // Mentions / unreads tabs
-        .topPill-2vcLsa {
+        .topPill__0cdf1 {
             position: absolute;
             bottom: -1px;
             z-index: 1;
             align-items: base;
 
-            .tab-TRrPC8 {
+            .tab_a8a066 {
                 background: var(--xp-bg-tint-color);
                 border-radius: 3px 3px 0 0;
                 border: solid $color-taskbar-3;
@@ -41,43 +41,43 @@
     }
 
     // Mark all as read button
-    &.container-2ebMPP {
-        .header-145e10 .button-1_oXub {
+    &.container__20de0 {
+        .header__28ebb .button_ddf91e {
             @include bt.winButton(26px, false);
         }
     }
 
     // Filter mentions button
-    &.messagesPopoutWrap-3zryHW {
-        .header-145e10 .button-1_oXub {
+    &.messagesPopoutWrap_b3b384 {
+        .header__28ebb .button_ddf91e {
             @include bt.winButton(26px, false);
         }
     }
 
     // Content
-    .messagesPopout-eVzQcI,
-    .scroller-145h9c {
+    .messagesPopout__22763,
+    .scroller__1c703 {
         @include box.startMenuList;
         --header-primary: var(--xp-txt-color);
         --header-secondary: grey;
         background: var(--xp-bg-tint-color);
 
         // Channel unread group
-        .channel-3NJZ1V,
-        .container-iA3Qrz {
+        .channel_d48f2d,
+        .container__56e52 {
             // Channel group header
-            .channelHeader-DFRX8q {
+            .channelHeader__5d30c {
                 background: var(--xp-bg-tint-color);
 
                 // Buttons
-                .button-1_oXub {
+                .button_ddf91e {
                     @include bt.button;
                 }
             }
 
             // Message group
-            .messages-23can0,
-            .messageContainer-3VTXBC {
+            .messages_f7999e,
+            .messageContainer_aa7d14 {
                 @include box.indentBox;
             }
         }

@@ -8,19 +8,19 @@
 @use "../top/shortcutIcon" as ico;
 
 // Overall background
-.bg-1QIAus {
+.bg__12180 {
     background: var(--xp-background-color, $xp-background-color) var(--xp-background-image, $xp-background-image) center/cover;
 }
 
 // Transparency
-:is(.appMount-2yBXZl, body, .app-2CXKsg) {
+:is(.appMount_fae9dd, body, .app_de4237) {
     background: transparent;
 }
 
 // Main view
-.container-1eFtFS {
+.container__037ed {
     // Channels sidebar and main chat
-    .base-2jDfDU {
+    .base__3e6af {
         // Notice banner
         .notice-2olXi7 {
             top: $window-top;
@@ -33,63 +33,63 @@
         }
 
         // Call banner (in DMs)
-        .wrapper-1gVUIN {
+        .wrapper_bd2abe {
             z-index: 0;
         }
 
-        .content-18rAwf::before {
+        .content__1a4fe::before {
             z-index: 0;
         }
 
         // Top bar (not in DMs)
-        .chat-9g_3Xj > :is(.title-31SJ6t, .title-5wgnIa) {
-            .toolbar-3_r2xA {
+        .chat__52833 > .title_b7d661 {
+            .toolbar__88c63 {
                 // Move help icon
-                .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
-                    @include ico.makeIcon(50px, auto, ".icon-2xnN2Y");
+                .anchor_c8ddc0 .iconWrapper_af9215:only-of-type {
+                    @include ico.makeIcon(50px, auto, ".icon__4cb88");
                     top: $window-top + 90px;
                 }
 
                 // Move show/hide member list button
-                .iconWrapper-2awDjA:has([d^="M14 8.00598"]) {
-                    @include ico.makeIcon(auto, 50px, ".icon-2xnN2Y");
+                .iconWrapper_af9215:has([d^="M14 8.00598"]) {
+                    @include ico.makeIcon(auto, 50px, ".icon__4cb88");
                 }
             }
         }
 
         // Main DM and friend list view
-        .container-2cd8Mz,
+        .container__5c7e7,
         // Explore servers view
-        .pageWrapper-2PwDoS,
+        .pageWrapper_fef757,
         // University hub
-        .scroller-RfJjkV,
+        .scroller_e9501c,
         // Buy nitro page
-        .applicationStore-2nk7Lo,
+        .applicationStore_fc7d76,
         // Main chat
-        .chat-9g_3Xj:not(.container-2IKOsH > .chat-9g_3Xj) {
+        .chat__52833:not(.container__10dc7 > .chat__52833) {
             @include box.mainWindow;
         }
 
         // University hub
-        .scroller-RfJjkV {
+        .scroller_e9501c {
             height: auto;
         }
 
         // Main chat and top bar
-        .chat-9g_3Xj:not(.container-2IKOsH > .chat-9g_3Xj) {
+        .chat__52833:not(.container__10dc7 > .chat__52833) {
             // Main chat
-            :is(.chatContent-3KubbW, .chatContent-2O4SXb) {
+            .chatContent__5dca8 {
                 // Message box
-                :is(.form-3gdLxP, .form-3qe0Ni) {
+                .form__13a2c {
                     // Gift nitro button
-                    .buttons-uaqb-5 > .button-ejjZWC {
-                        @include ico.makeIcon(50px, auto, ".buttonWrapper-3YFQGJ");
+                    .buttons_ce5b56 > .button_afdfd9 {
+                        @include ico.makeIcon(50px, auto, ".buttonWrapper__69593");
                         top: $window-top;
 
-                        .button-3BaQ4X {
+                        .button__55e53 {
                             margin: 0;
 
-                            .buttonWrapper-3YFQGJ {
+                            .buttonWrapper__69593 {
                                 padding: 0;
                                 margin: 0;
                                 display: flex;
@@ -100,7 +100,7 @@
                     }
 
                     // Autocompleter
-                    .autocomplete-3NRXG8 {
+                    .autocomplete_df266d {
                         width: calc(100% - 150px);
                     }
                 }
@@ -113,7 +113,7 @@
             }
 
             // Members list
-            :is(.container-2o3qEW, .container-2vWgD2) {
+            .container_b2ce9c {
                 @include box.startMenuList;
 
                 position: fixed;
@@ -123,22 +123,22 @@
                 max-height: calc(100vh - 400px);
                 @include box.windowHasPseudoTitle("Members");
 
-                :is(.members-3WRCEx, .members-2y1nVj) {
+                .members__9f47b {
                     background: var(--xp-bg-color);
 
                     // Member group
-                    :is(.membersGroup-2eiWxl, .membersGroup-2YoqY-):not(:nth-child(2)) {
+                    .membersGroup__85843:not(:nth-child(2)) {
                         position: relative;
                         @include box.startMenuDivider(7px);
                     }
 
                     // Member
-                    :is(.member-48YF_l, .member-2iQhp7),
-                    .member-2gU6Ar {
+                    .member_b44d5d,
+                    .member_aa4760 {
                         background: var(--xp-bg-color);
 
-                        .container-1oeRFJ,
-                        .layout-1qmrhw {
+                        .container__4f20e,
+                        .layout_bb8e67 {
                             border-radius: 0;
                         }
                     }
@@ -146,25 +146,25 @@
             }
 
             // VC video
-            .video-3n15R6 {
+            .video__85ac2 {
                 z-index: 0;
             }
         }
 
         // With members list visible
-        &:has(:is(.membersWrap-3NUR2t, .membersWrap-3GwLFp)) {
+        &:has(.membersWrap__90226) {
             // VC video controls
-            .bottomControls-31YuPK {
+            .bottomControls__8bd89 {
                 width: auto;
                 padding-right: 150px;
             }
 
             // Message
-            .message-2CShn3 {
+            .message__80c10 {
                 padding-right: 140px !important;
 
                 // Message actions
-                .container-2gUZhU {
+                .container__9d616 {
                     right: 130px;
                 }
             }

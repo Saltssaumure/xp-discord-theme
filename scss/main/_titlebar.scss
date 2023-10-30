@@ -3,11 +3,11 @@
 @use "../top/boxes" as box;
 @use "../top/buttons" as bt;
 
-.withFrame-2dL45i {
+.withFrame__485f4 {
     margin-top: 0;
 }
 
-:is(.titleBar-1it3bQ, .titleBar-3AIemB) {
+.titleBar__01af6 {
     position: absolute;
     left: $window-left;
     right: $window-right;
@@ -16,7 +16,7 @@
     @include box.windowTitle();
 
     // Discord logo
-    .wordmarkWindows-2dq6rw {
+    .wordmarkWindows__05c46 {
         color: $white;
         padding-top: 2px;
 
@@ -37,10 +37,10 @@
     }
 
     // Min / Max / Close buttons
-    :is(.winButton-3UMjdg, .winButton-3SigSb) {
+    .winButton__88672 {
         @include bt.winButton(20px, false);
 
-        &.winButtonClose-3Q8ZH5 {
+        &.winButtonClose__73489 {
             @include bt.winButton(20px, true);
         }
     }

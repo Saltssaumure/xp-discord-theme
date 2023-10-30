@@ -4,40 +4,40 @@
 
 // User profile
 // Popout or in profile settings
-.userProfileOuter-2tQwNf {
+.userProfileOuter__46bb7 {
     border-radius: 0;
 
-    &:not(.profileCustomizationPreview-3zZw6E) {
+    &:not(.profileCustomizationPreview_ccc6a9) {
         @include box.windowHasPseudoTitle("User info", $OFFSET: 0);
     }
 
-    &.profileCustomizationPreview-3zZw6E {
+    &.profileCustomizationPreview_ccc6a9 {
         border: 2px solid $color-taskbar-3;
     }
 
-    &.userProfileOuterThemed-2BgJCM {
+    &.userProfileOuterThemed__6eb84 {
         padding: 0;
     }
 
-    .banner-3D8GgT,
-    .roundedBanner-uNt2w- {
+    .banner_b7f1fb,
+    .roundedBanner__9fa0a {
         border-radius: 0;
     }
 
     // Avatar
-    .avatarWrapper-eenWra {
-        &:not(.avatarPositionPremiumBanner-2EAbSH) {
+    .avatarWrapper_f77579 {
+        &:not(.avatarPositionPremiumBanner__1e83d) {
             left: 24px;
         }
 
-        &.avatarPositionPremiumBanner-2EAbSH {
+        &.avatarPositionPremiumBanner__1e83d {
             left: 20px;
             top: 72px;
         }
     }
 
     // All profiles
-    .userProfileInner-1ngKnf {
+    .userProfileInner__8065b {
         // Tint (only visible with nitro)
         &::before {
             border-radius: 0;
@@ -46,45 +46,45 @@
         }
 
         // Edit profile button
-        .pencilContainer-18TrEJ {
+        .pencilContainer_d4ce8d {
             @include bt.button;
 
-            .pencilIcon-z04-c5 {
+            .pencilIcon__21c0c {
                 color: var(--xp-txt-color);
             }
         }
 
         // Hypesquad etc badges
-        .profileBadges-2pItdR {
+        .profileBadges__7a7cb {
             @include bt.button;
         }
 
         // Inner box
-        .overlayBackground-2aa7wt {
+        .overlayBackground__86b78 {
             border-radius: 0;
             --font-primary: Tahoma, sans-serif;
             --font-display: Tahoma, sans-serif;
             @include box.indentBox;
 
             // Roles
-            .rolePill-78LFtg {
+            .rolePill_ee1aa1 {
                 @include bt.button;
             }
 
             // User note
-            .note-1NN2aP {
+            .note_ba0c31 {
                 @include box.indentBox;
             }
 
             // Message user
-            .messageInputContainer-24qqTx {
+            .messageInputContainer__768e6 {
                 @include box.indentBox;
             }
         }
     }
 
     // Unstyled profile
-    .userProfileInnerThemedNonPremium-2AJg-H {
+    .userProfileInnerThemedNonPremium__3d0a6 {
         background: var(--xp-bg-tint-color);
         --interactive-active: var(--xp-txt-color);
         --header-primary: var(--xp-txt-color);
@@ -94,12 +94,12 @@
         --interactive-muted: var(--xp-bg-tint-color);
 
         // Inner box
-        .overlayBackground-2aa7wt {
+        .overlayBackground__86b78 {
             background: var(--xp-bg-color);
         }
     }
 
-    .rolePill-78LFtg .defaultColor-1EVLSt {
+    .rolePill_ee1aa1 .defaultColor__77578 {
         color: var(--xp-txt-color);
     }
 }
