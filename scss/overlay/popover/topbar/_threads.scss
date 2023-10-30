@@ -4,29 +4,29 @@
 @use "../../../top/buttons" as bt;
 
 // Threads
-.browser-mnQ1T7 {
+.browser_fece63 {
     border-radius: 8px 8px 0 0;
 
     // Top bar
-    .header-3_zmOb {
+    .header__53b07 {
         @include box.windowTitle;
 
         // #
-        .threadIcon-rd1kqG {
+        .threadIcon__046f1 {
             color: $white;
         }
 
         // Search bar
-        .searchBox-3IjAC1 {
+        .searchBox_ff53b2 {
             @include bt.button($ISBEIGE: true, $ISINSET: true);
 
-            .input-2m5SfJ {
+            .input__74754 {
                 color: $black;
             }
         }
 
         // Close button
-        .closeIcon-11tHJX {
+        .closeIcon__15ae7 {
             @include bt.winButton(26px, true);
             display: flex;
             align-items: center;
@@ -34,35 +34,35 @@
         }
 
         // Create thread button
-        .createButton-oruGBs {
+        .createButton_c8864c {
             @include bt.button($ISBEIGE: true);
         }
     }
 
     // Content
-    .list-3YHPPb {
+    .list__19127 {
         @include box.startMenuList;
         background: var(--xp-bg-tint-color);
 
         // Thread age
-        .sectionHeader-QsOv68 {
+        .sectionHeader_a94dc1 {
             color: var(--xp-txt-color) !important;
         }
 
         // Thread
-        .container-2rzKKA {
+        .container__6604b {
             @include box.indentBox;
             border: 0;
         }
 
         // No threads
-        .container-2c4_8A {
+        .container__50947 {
             .defaultColor-HXu-5n,
             .text-md-normal-304U3g {
                 color: var(--xp-txt-color) !important;
             }
 
-            .button-f2h6uQ {
+            .button_afdfd9 {
                 @include bt.button;
             }
         }

@@ -3,7 +3,7 @@
 @use "../../top/buttons" as bt;
 
 // Soundboard
-.picker-20lcBA {
+.picker__6dca7 {
     --interactive-normal: var(--xp-txt-color);
     --interactive-hover: var(--xp-txt-color);
     --interactive-active: var(--xp-txt-color);
@@ -15,12 +15,12 @@
     @include box.windowHasPseudoTitle("Soundboard", $OFFSET: 0);
     border-radius: 0;
 
-    .header-3YNgrp {
-        .container-1SX9VC {
+    .header_bf5f46 {
+        .container_e4c233 {
             @include bt.inset;
         }
 
-        .settingsClickArea-1vKB0J {
+        .settingsClickArea__307ff {
             @include bt.button;
             box-sizing: border-box;
             width: 32px;
@@ -32,20 +32,20 @@
     }
 
     // Categories
-    .categoryList-iuh2t0 {
+    .categoryList__173de {
         left: 2px;
     }
 
     // Sound panel
-    .listWrapper-1y1la3 {
+    .listWrapper__2275d {
         background: var(--xp-bg-color);
         box-shadow: (inset 0 0 2px 2px grey);
 
-        .soundButton-2P2Ua2 {
+        .soundButton__5ad7b {
             @include bt.button;
         }
 
-        .buttonOverlayBackground-3fyfGX {
+        .buttonOverlayBackground_ec646a {
             background: var(--xp-bg-tint-color);
         }
     }

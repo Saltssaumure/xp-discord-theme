@@ -3,7 +3,7 @@
 @use "../top/boxes" as box;
 
 // Channels sidebar
-.sidebar-1tnWFu {
+.sidebar_ded4b5 {
     position: absolute;
     bottom: 0;
     max-height: 60vh;
@@ -11,30 +11,30 @@
     @include box.windowBox(15px);
 
     // Title and channels
-    .container-1NXEtd {
+    .container__590e2 {
         background: transparent;
 
         // Title
-        .header-3OsQeK {
+        .header__104ca {
             @include box.windowTitle();
             height: 48px;
 
-            .headerContent-2SNbie {
+            .headerContent_ee8727 {
                 color: $white;
 
-                .flowerStar-2tNFCR {
+                .flowerStar_a9981e {
                     color: $white-overlay;
                 }
             }
         }
 
         // Server image banner
-        .animatedContainer-2laTjx {
+        .animatedContainer__341f6 {
             background: transparent;
             z-index: 2;
             border-radius: 8px 8px 0 0;
 
-            .bannerImage-ubW8K-::before {
+            .bannerImage__39c51::before {
                 display: none;
             }
         }
@@ -47,74 +47,74 @@
             @include box.windowBox(15px);
 
             // Inner box
-            .channelNotice-K4UfZY {
+            .channelNotice__8f7b2 {
                 border-bottom: none;
 
                 // Event Details button
-                .joinButton-1HdI2a {
+                .joinButton_e760b6 {
                     border-radius: 0;
                 }
             }
         }
 
         // Channels
-        .scroller-1ox3I2 {
+        .scroller_f0f183 {
             @include box.startMenuList;
 
             // Channel names
-            :is(.modeSelected-3DmyhH, .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
-                .name-28HaxV {
+            :is(.modeSelected__487d6, .notInteractive_a7d9fb.modeConnected__1c02e, .notInteractive_a7d9fb.modeSelected__487d6) {
+                .name__8d1ec {
                     color: $white;
                 }
             }
 
             // Divider
-            .sectionDivider-189lqb {
+            .sectionDivider__68d2a {
                 background: transparent;
             }
 
             // Category
-            .containerDefault-3TQ5YN:not(:nth-child(2)) {
+            .containerDefault__23a29:not(:nth-child(2)) {
                 @include box.startMenuDivider(7px);
             }
 
             // Channel
-            :is(.content-1gYQeQ, .container-32HW5s, .link-1_kTxV) {
+            :is(.wrapper__7bcde, .container-32HW5s, .link__95dc0) {
                 border-radius: 0;
 
                 // Channel actions
-                .actionIcon-2sw4Sl {
+                .actionIcon_d679b5 {
                     color: var(--xp-set-color);
                 }
 
                 // Voice channel member limit
-                .channelInfo-3jN1ay {
+                .channelInfo_b7ab2e {
                     --background-primary: lightgrey;
                     --background-tertiary: grey;
 
-                    .wrapper-2fEmwW {
+                    .wrapper__5848b {
                         border-radius: 3px;
                     }
                 }
             }
 
             // User in voice channel
-            .content-1Tgc42 {
+            .content_b60865 {
                 border-radius: 0;
             }
 
             // Selected channel
-            .modeSelected-3DmyhH {
+            .modeSelected__487d6 {
                 // Channel actions
-                .actionIcon-2sw4Sl {
+                .actionIcon_d679b5 {
                     color: $white-overlay;
                 }
             }
 
             // Muted channel
-            .modeMuted-2T4MDZ {
-                .name-28HaxV,
-                .icon-2W8DHg {
+            .modeMuted__0aeea {
+                .name__8d1ec,
+                .icon_eff5d4 {
                     color: grey;
                 }
             }
@@ -122,14 +122,14 @@
     }
 
     // DMs
-    .privateChannels-oVe7HL {
+    .privateChannels__93473 {
         background: transparent;
 
         // Find conversation
-        .searchBar-3TnChZ {
+        .searchBar_e4ea2a {
             @include box.windowTitle;
 
-            .searchBarComponent-3N7dCG {
+            .searchBarComponent__22760 {
                 background: transparent;
                 font-size: 14px;
                 line-height: $title-height;
@@ -141,12 +141,12 @@
         }
 
         // DMs and friends
-        .scroller-WSmht3 {
+        .scroller__4b984 {
             @include box.startMenuList;
         }
 
         // DMs category
-        .privateChannelsHeaderContainer-1UWASm {
+        .privateChannelsHeaderContainer_ddcec6 {
             position: relative;
             @include box.startMenuDivider(2px);
         }
@@ -158,7 +158,7 @@
     }
 
     // Explore servers category list
-    & > .scrollerBase-1Pkza4 {
+    & > .scrollerBase_dc3aa9 {
         @include box.startMenuList;
         position: relative;
         border-radius: 8px 8px 0 0;
@@ -168,7 +168,7 @@
         }
 
         // Header
-        .discoverHeader-1vsvZ0 {
+        .discoverHeader_fae7fd {
             @include box.windowTitle;
             margin: 0;
             padding: 12px 0;
@@ -180,7 +180,7 @@
         }
 
         // Category
-        .container-1oeRFJ {
+        .container__4f20e {
             color: var(--channels-default);
             border-radius: 0;
 
@@ -192,12 +192,12 @@
                 margin-bottom: 10px;
             }
 
-            .layout-1qmrhw {
+            .layout_bb8e67 {
                 border-radius: 0;
             }
         }
 
-        .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+        .categoryItem_b1be5c.selectedCategoryItem__0bf4c .itemInner__9e755 {
             background-color: var(--background-modifier-selected);
         }
     }

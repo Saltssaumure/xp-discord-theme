@@ -5,51 +5,51 @@
 @use "../top/shadows" as shd;
 
 // Servers sidebar / Taskbar
-.guilds-2JjMmN {
+.guilds__2b93a {
     z-index: 0;
     --status-danger: #{$color-ping};
 
     // Unread indicator
-    .unreadMentionsIndicatorBottom-3RJMnQ,
-    .unreadMentionsIndicatorTop-2bTgUU {
+    .unreadMentionsIndicatorBottom_fdb943,
+    .unreadMentionsIndicatorTop_ada847 {
         width: 100%;
 
-        .bar-2eAyLE {
+        .bar_edc096 {
             border-radius: 0;
             background: linear-gradient(to bottom, transparent, $color-ping);
         }
     }
 
     // Unread icon
-    .lowerBadge-3WTshO .numberBadge-37OJ3S {
+    .lowerBadge-3WTshO .numberBadge__50328 {
         opacity: 0.8;
     }
 
-    .scroller-3X7KbA {
+    .scroller__3d071 {
         @include box.barGradient(true, $color-window-1, $color-window-2);
 
         // DMs icon / Start button
-        .tutorialContainer-1pL9QS {
+        .tutorialContainer__890ea {
             @include box.barGradient(true, $color-start-1, $color-start-2);
             position: relative;
             padding: 5px 0 30px 0;
             border-radius: 0 0 100% 100% / 0 0 12px 12px;
 
-            .wrapper-2PSQCG {
+            .wrapper__3af0b {
                 .svg-2zuE5p {
                     height: inherit;
                     width: inherit;
                 }
 
-                .wrapper-3kah-n {
-                    .selected-1Drb7Z,
+                .wrapper_d281dd {
+                    .selected_f5ec8e,
                     &:hover {
-                        .childWrapper-1j_1ub {
+                        .childWrapper__01b9c {
                             color: $white;
                         }
                     }
 
-                    .childWrapper-1j_1ub {
+                    .childWrapper__01b9c {
                         color: $white-overlay;
                         background: transparent;
                     }
@@ -58,22 +58,22 @@
         }
 
         // Unread pill
-        .item-2LIpTv {
+        .item_f9d377 {
             background: $white;
         }
 
         // Folder
-        .folder-241Joy {
+        .folder__17546 {
             background: radial-gradient(circle at 12px 12px, $white, $color-taskbar-1, $color-taskbar-3);
         }
 
         // Open folder
-        .expandedFolderBackground-1kSAf6 {
+        .expandedFolderBackground__1bec6 {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
         }
 
         // Add server and community servers
-        .circleIconButton-1VxDrg {
+        .circleIconButton_d8df29 {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
             color: $white-overlay;
         }
@@ -81,7 +81,7 @@
 }
 
 // Control panel
-.panels-3wFtMD {
+.panels__58331 {
     width: $panel-width;
     height: auto;
     position: fixed;
@@ -93,36 +93,36 @@
         z-index: 2;
     }
 
-    &:has(.activityPanel-9icbyU, .container-2NLBJg) {
+    &:has(.activityPanel__22355, .container_d667ff) {
         border-radius: 8px 8px 0 0;
     }
 
     // Now playing game/activity
-    .panel-ufc1-o {
+    .panel_bd8c76 {
         background: transparent;
         border-bottom: 0;
 
         // Game title and icon
-        .title-338goq,
-        .badge-370Op6 {
+        .title__10613,
+        .badge__1a553 {
             color: $white;
         }
     }
 
-    .subtext-2HDqJ7 {
+    .subtext__8f869 {
         color: $white-overlay;
     }
 
     // Voice chat controls
-    .container-2NLBJg {
+    .container_d667ff {
         background: inherit;
         border-bottom: 0;
 
         // Video stream buttons
-        .button-2gNyE9 {
+        .button__66e8c {
             @include bt.button($ISBEIGE: true);
 
-            &.buttonActive-1YQBrb {
+            &.buttonActive__407a7 {
                 background: $color-tooltip-2;
                 @include shd.boxShadow($ISINSET: true);
             }
@@ -130,22 +130,22 @@
     }
 
     // User and settings
-    .container-1CH86i {
+    .container_ca50b9 {
         height: var(--server-container);
         flex-direction: row-reverse;
         background: transparent;
 
         // Self info
-        .avatarWrapper-12uuu4 {
+        .avatarWrapper_ba5175 {
             margin: 0 0 0 6px;
             padding: 0 4px 0 0;
             flex-direction: row-reverse;
 
             // Username
-            .nameTag-2Q56-H {
+            .nameTag__0e320 {
                 text-shadow: 0 1px 1px $black;
 
-                .title-338goq {
+                .title__10613 {
                     color: $white;
                     font-weight: normal;
                 }
@@ -154,17 +154,17 @@
     }
 
     // Buttons
-    .button-12Fmur {
+    .button__4f306 {
         color: $white-overlay;
     }
 
-    .withTagAsButton-2_JkHX:hover,
-    .withTagless-Lx3LMo:hover,
-    .button-12Fmur.enabled-9OeuTA:hover {
+    .withTagAsButton_cc125f:hover,
+    .withTagless__98b7d:hover,
+    .button__4f306.enabled__470f0:hover {
         background: linear-gradient(to bottom, $color-taskbar-3, $color-taskbar-1);
     }
 
-    .button-12Fmur.enabled-9OeuTA:hover {
+    .button__4f306.enabled__470f0:hover {
         color: $white;
     }
 }
