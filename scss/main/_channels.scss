@@ -40,7 +40,7 @@
         }
 
         // Server event
-        .container-2Y4CWj {
+        .container__30406 {
             background: $color-tooltip-2;
             --header-primary: #{$black};
             --header-secondary: #{$black};
@@ -79,7 +79,7 @@
             }
 
             // Channel
-            :is(.wrapper__7bcde, .container-32HW5s, .link__95dc0) {
+            :is(.wrapper__7bcde, .container__8759a, .link__95dc0) {
                 border-radius: 0;
 
                 // Channel actions
@@ -152,7 +152,7 @@
         }
 
         // Menu item
-        .container-32HW5s {
+        .container__8759a {
             border-radius: 0;
         }
     }
