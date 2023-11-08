@@ -4,54 +4,71 @@
  * @authorLink https://github.com/Saltssaumure
  * @description A Windows XP style theme.
  * @license GPL-3.0
- * @version 1.4
+ * @version 1.7
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/xp-discord-theme
  * @donate https://ko-fi.com/saltssaumure
+ *
+ * @var text    xp-background-image "Desktop background image: Any image link wrapped in `url()`, or `none`." url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif)
+ * @var color   xp-background-color "Desktop background colour: Only visible where background image is transparent, or set to `none`." #0066CC
+ * @var color   xp-window-color-1   "Window titlebar 1"         #005AE7
+ * @var color   xp-window-color-2   "Window titlebar 2"         #0372FF
+ * @var color   xp-taskbar-color-1  "Taskbar control 1"         #108CE4
+ * @var color   xp-taskbar-color-2  "Taskbar control 2"         #578CD0
+ * @var color   xp-taskbar-color-3  "Taskbar control 3"         #1665CA
+ * @var color   xp-start-color-1    "Start button 1"            #008000
+ * @var color   xp-start-color-2    "Start button 2"            #38C438
+ * @var color   xp-shortcut-color-1 "Shortcut icon 1"           #0CA80C
+ * @var color   xp-shortcut-color-2 "Shortcut icon 2"           #008000
+ * @var color   xp-ping-color       "Ping bubble"               #E64D1C
+ * @var color   bsod-color          "BSOD background colour"    #000080
+ * @var text    bsod-text           "BSOD text: Use `\A` for line breaks." "A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance."
+ *
+ * @var color   xp-dark-bg-color        "Panel background: Dark mode"       #000000
+ * @var color   xp-dark-set-color       "Panel settings icon: Dark mode"    #FFFFFFB3
+ * @var color   xp-dark-hover-color     "Panel hovered item: Dark mode"     #112233
+ * @var color   xp-dark-zing-color      "Panel top decoration: Dark mode"   #AA5500
+ * @var color   xp-dark-txt-color       "Panel text: Dark mode"             #FFFFFF
+ * @var color   xp-dark-bg-bright-color "Button 1: Dark mode"               #223344
+ * @var color   xp-dark-bg-tint-color   "Button 2: Dark mode"               #222222
+ * @var color   xp-dark-bg-shade-color  "Button 3: Dark mode"               #111111
+ * @var color   xp-dark-border-color    "Panel/button border: Dark mode"    #1665CA
+ *
+ * @var color   xp-day-bg-color         "Panel background: Light mode"      #FFFFFF
+ * @var color   xp-day-set-color        "Panel settings icon: Light mode"   #000000B3
+ * @var color   xp-day-hover-color      "Panel hovered item: Light mode"    #D3D3D3
+ * @var color   xp-day-zing-color       "Panel top decoration: Light mode"  #FFA500
+ * @var color   xp-day-txt-color        "Panel text: Light mode"            #000000
+ * @var color   xp-day-bg-bright-color  "Button 1: Light mode"              #F0EFED
+ * @var color   xp-day-bg-tint-color    "Button 2: Light mode"              #EBE8D7
+ * @var color   xp-day-bg-shade-color   "Button 3: Light mode"              #808080
+ * @var color   xp-day-border-color     "Panel/button border: Light mode"   #000000
 */
 
 @import url("https://saltssaumure.github.io/xp-discord-theme/xp.min.css");
 
-/* See https://github.com/Saltssaumure/xp-discord-theme#customisation for customisation settings. */
-:root {
-    --xp-background-image:  url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif);
-    --xp-background-color:  #0066CC;
-    --xp-window-color-1:    #005AE7;
-    --xp-window-color-2:    #0372FF;
-    --xp-taskbar-color-1:   #108CE4;
-    --xp-taskbar-color-2:   #578CD0;
-    --xp-taskbar-color-3:   #1665CA;
-    --xp-start-color-1:     #008000;
-    --xp-start-color-2:     #38C438;
-    --xp-shortcut-color-1:  #0CA80C;
-    --xp-shortcut-color-2:  #008000;
-    --xp-ping-color:        #E64D1C;
-    --bsod-color:           #000080;
-    --bsod-text:            "A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance.";
-}
-
 .theme-dark {
-    --xp-bg-color:          #000000;
-    --xp-set-color:         #FFFFFFB3;
-    --xp-hover-color:       #112233;
-    --xp-selected-color:    #1665CA;
-    --xp-zing-color:        #AA5500;
-    --xp-txt-color:         #FFFFFF;
-    --xp-bg-bright-color:   #223344;
-    --xp-bg-tint-color:     #222222;
-    --xp-bg-shade-color:    #111111;
-    --xp-border-color:      #1665CA;
+    --xp-bg-color:          var(--xp-dark-bg-color);
+    --xp-set-color:         var(--xp-dark-set-color);
+    --xp-hover-color:       var(--xp-dark-hover-color);
+    --xp-selected-color:    var(--xp-dark-selected-color);
+    --xp-zing-color:        var(--xp-dark-zing-color);
+    --xp-txt-color:         var(--xp-dark-txt-color);
+    --xp-bg-bright-color:   var(--xp-dark-bg-bright-color);
+    --xp-bg-tint-color:     var(--xp-dark-bg-tint-color);
+    --xp-bg-shade-color:    var(--xp-dark-bg-shade-color);
+    --xp-border-color:      var(--xp-dark-border-color);
 }
 
 .theme-light {
-    --xp-bg-color:          #FFFFFF;
-    --xp-set-color:         #000000B3;
-    --xp-hover-color:       #D3D3D3;
-    --xp-selected-color:    #1665CA;
-    --xp-zing-color:        #FFA500;
-    --xp-txt-color:         #000000;
-    --xp-bg-bright-color:   #F0EFED;
-    --xp-bg-tint-color:     #EBE8D7;
-    --xp-bg-shade-color:    #808080;
-    --xp-border-color:      #000000;
+    --xp-bg-color:          var(--xp-day-bg-color);
+    --xp-set-color:         var(--xp-day-set-color);
+    --xp-hover-color:       var(--xp-day-hover-color);
+    --xp-selected-color:    var(--xp-day-selected-color);
+    --xp-zing-color:        var(--xp-day-zing-color);
+    --xp-txt-color:         var(--xp-day-txt-color);
+    --xp-bg-bright-color:   var(--xp-day-bg-bright-color);
+    --xp-bg-tint-color:     var(--xp-day-bg-tint-color);
+    --xp-bg-shade-color:    var(--xp-day-bg-shade-color);
+    --xp-border-color:      var(--xp-day-border-color);
 }
