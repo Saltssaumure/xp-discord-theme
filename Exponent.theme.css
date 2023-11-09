@@ -8,9 +8,10 @@
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/xp-discord-theme
  * @donate https://ko-fi.com/saltssaumure
+ * @website https://saltssaumure.github.io/xp-discord-theme
  *
- * @var text    xp-background-image "Desktop background image: Any image link wrapped in `url()`, or `none`." url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif)
- * @var color   xp-background-color "Desktop background colour: Only visible where background image is transparent, or set to `none`." #0066CC
+ * @var text    xp-background-image "Desktop background image: Any image link wrapped in `url()` or `none`." url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif)
+ * @var color   xp-background-color "Desktop background colour: Only visible where background image is transparent or set to `none`." #0066CC
  * @var color   xp-window-color-1   "Window titlebar 1"         #005AE7
  * @var color   xp-window-color-2   "Window titlebar 2"         #0372FF
  * @var color   xp-taskbar-color-1  "Taskbar control 1"         #108CE4
@@ -22,7 +23,7 @@
  * @var color   xp-shortcut-color-2 "Shortcut icon 2"           #008000
  * @var color   xp-ping-color       "Ping bubble"               #E64D1C
  * @var color   bsod-color          "BSOD background colour"    #000080
- * @var text    bsod-text           "BSOD text: Use `\A` for line breaks." "A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance."
+ * @var text    bsod-text           "BSOD text: Use `\A` for line breaks." A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance.
  *
  * @var color   xp-dark-bg-color        "Panel background: Dark mode"       #000000
  * @var color   xp-dark-set-color       "Panel settings icon: Dark mode"    #FFFFFFB3
