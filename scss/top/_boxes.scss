@@ -10,9 +10,17 @@
 
 @mixin mainWindow {
     margin: $window-top $window-right $window-bottom $window-left;
-    overflow: hidden;
     z-index: 1;
-    @include windowBox($VERTICAL-OFFSET: 3px);
+    overflow: hidden;
+
+    .platform-win & {
+        @include windowBox($VERTICAL-OFFSET: 3px);
+        overflow: hidden;
+    }
+    :is(.platform-web, .platform-linux) & {
+        @include windowHasPseudoTitle("Discord");
+        overflow: visible;
+    }
 }
 
 @mixin barGradient($ISROTATE, $COLOR-DARK, $COLOR-LIGHT) {
