@@ -156,6 +156,7 @@
     // Buttons
     .button__4f306 {
         color: $white-overlay;
+        --interactive-normal: #{$white-overlay};
     }
 
     .withTagAsButton_cc125f:hover,
@@ -166,5 +167,6 @@
 
     .button__4f306.enabled__470f0:hover {
         color: $white;
+        --interactive-normal: #{$white};
     }
 }
