@@ -3,7 +3,7 @@
 // Override HSL options
 
 // Channels sidebar
-#app-mount .sidebar_ded4b5 {
+#app-mount .sidebar_e031be {
     border-radius: 8px 8px 0 0;
 }
 
@@ -12,8 +12,8 @@
 #app-mount .guilds__2b93a {
     height: calc(100vw - $panel-width) !important;
 
-    .scrollerBase_dc3aa9,
-    .scrollerBase__2b744 {
+    .scrollerBase_f742b2,
+    .scrollerBase__65223 {
         padding-top: 0 !important;
     }
 }
@@ -23,11 +23,11 @@ body #app-mount .guilds__2b93a {
 
 // Titlebar
 html.platform-osx #app-mount {
-    .base__3e6af {
+    .base_c0676e {
         top: 0 !important;
     }
 
-    .typeMacOS__496b0 {
+    .typeMacOS_cacc59 {
         width: auto;
     }
 }

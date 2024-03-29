@@ -4,21 +4,21 @@
 @use "../../top/shadows" as shd;
 
 // Color picker
-.customColorPicker__3cb6a {
+.customColorPicker_bbc020 {
     @include box.beigeBox;
 
     // Hex code box
-    .input_d266e7 {
+    .input_f27786 {
         @include bt.button;
     }
 
     // Suggested colour buttons
-    .suggestedColor__34249 {
+    .suggestedColor__713b5 {
         @include bt.button;
     }
 
     // Saturation brightness grid
-    .saturation__35997 {
+    .saturation__918ba {
         @include shd.boxShadow($ISINSET: true);
     }
 

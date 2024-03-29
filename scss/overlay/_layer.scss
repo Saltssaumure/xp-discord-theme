@@ -3,29 +3,29 @@
 @use "../top/boxes" as box;
 @use "../top/shortcutIcon" as ico;
 
-.baseLayer__8fda3.stop-animations {
+.baseLayer__2b890.stop-animations {
     opacity: 1 !important;
     transform: scale(1) !important;
 
-    .container__037ed {
+    .container_d1f8f5 {
         filter: grayscale(0.8) brightness(0.5);
         backdrop-filter: brightness(1);
     }
 }
 
-.layers__1c917 > .layer__2efaa .animating__27211 {
+.layers__1c917 > .layer_f7d46a .animating_b7d085 {
     transform: none !important;
 }
 
-.layer__2efaa {
+.layer_f7d46a {
     background: transparent;
 
     // Settings menu
-    .standardSidebarView__1129a {
+    .standardSidebarView__12528 {
         @include box.mainWindow;
 
         // Settings sidebar as separate window on left side
-        .sidebarRegion__60457 {
+        .sidebarRegion__36437 {
             @include box.startMenuList;
             position: fixed;
             left: 60px;
@@ -34,14 +34,14 @@
             max-height: calc(100vh - 400px);
             @include box.windowHasPseudoTitle("Settings");
 
-            .sidebarRegionScroller__1fa7e {
+            .sidebarRegionScroller__8113e {
                 background: var(--xp-bg-color);
 
-                .sidebar__9e3e2 {
+                .sidebar__02e8d {
                     padding: 8px;
                     padding-right: 0;
 
-                    .separator_fdbcfd {
+                    .separator_d14fb1 {
                         background: transparent;
                         position: relative;
                         @include box.startMenuDivider(-2px);
@@ -50,7 +50,7 @@
                     .item__48dda {
                         border-radius: 0;
 
-                        &.selected__5711d:not(.disabled__85bca) {
+                        &.selected_a523ff:not(.disabled__2717e) {
                             background: var(--background-modifier-selected);
                             color: $white;
                         }
@@ -60,38 +60,38 @@
         }
 
         // Settings contents
-        :is(.contentRegionShownSidebar__610ed, .contentRegion__0bec1) {
+        :is(.contentRegionShownSidebar__9d1b9, .contentRegion__08eba) {
             justify-content: center;
 
             // Server setting roles sidebar
-            .sidebar_bdf6b7 {
+            .sidebar__37984 {
                 left: 0;
             }
 
             // Server setting roles main content
-            .customContainer__93c7c,
-            .contentContainer__23092 {
+            .customContainer__64260,
+            .contentContainer__50662 {
                 position: relative;
                 left: 0;
             }
 
             // Close settings button
-            .toolsContainer_f5d55d {
+            .toolsContainer__4e6ad {
                 padding-top: 10px;
                 margin-right: 0;
                 position: absolute;
                 left: -80px;
                 height: 50px;
 
-                .container_bb0c52 {
-                    @include ico.makeIcon(50px, auto, ".closeButton__34341");
+                .container__3529f {
+                    @include ico.makeIcon(50px, auto, ".closeButton__8177f");
                     position: unset;
 
                     &::before {
                         content: "Close";
                     }
 
-                    .keybind__57645 {
+                    .keybind_a619c1 {
                         display: none;
                     }
                 }
@@ -99,12 +99,12 @@
         }
     }
 
-    .pictureInPictureWindow_dc49a8 {
+    .pictureInPictureWindow__9f0e6 {
         @include box.windowHasPseudoTitle("Stream");
         overflow: visible;
         border-radius: 0;
 
-        .pictureInPictureVideo_f1081d {
+        .pictureInPictureVideo__31ff0 {
             border-radius: 0;
         }
     }

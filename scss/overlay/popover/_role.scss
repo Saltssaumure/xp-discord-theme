@@ -3,11 +3,11 @@
 @use "../../top/buttons" as bt;
 
 // Select role preview
-.container__9bb08 {
+.container__3d776 {
     @include box.beigeBox;
 
     // Search role
-    .container__7712a {
+    .container__33507 {
         @include bt.inset;
     }
 
@@ -15,11 +15,11 @@
     .item__287de {
         border-radius: 0;
 
-        &.selected__511cf {
+        &.selected__32a6a {
             background: $color-selected;
         }
 
-        .itemLabel__6d2fe span {
+        .itemLabel_d89e4d span {
             background: var(--xp-bg-tint-color);
         }
 
@@ -27,7 +27,7 @@
         .box__66058 {
             border-radius: 0;
 
-            &.checked__24ad6 {
+            &.checked__16f88 {
                 background: $color-shortcut-2 !important;
 
                 path {

@@ -13,14 +13,14 @@
 }
 
 // Transparency
-:is(.appMount_fae9dd, body, .app_de4237) {
+:is(.appMount_c99875, body, .app_de4237) {
     background: transparent;
 }
 
 // Main view
-.container__037ed {
+.container_d1f8f5 {
     // Channels sidebar and main chat
-    .base__3e6af {
+    .base_c0676e {
         // Notice banner
         .notice__5fd4c {
             top: $window-top;
@@ -33,63 +33,63 @@
         }
 
         // Call banner (in DMs)
-        .wrapper_bd2abe {
+        .wrapper__6bf2d {
             z-index: 0;
         }
 
-        .content__1a4fe::before {
+        .content__01e65::before {
             z-index: 0;
         }
 
         // Top bar (not in DMs)
-        .chat__52833 > .title_b7d661 {
-            .toolbar__88c63 {
+        .chat__52833 > .title_d4ba1a {
+            .toolbar__62fb5 {
                 // Move help icon
-                .anchor_c8ddc0 .iconWrapper_af9215:only-of-type {
-                    @include ico.makeIcon(50px, auto, ".icon__4cb88");
+                .anchor_c8ddc0 .iconWrapper_de6cd1:only-of-type {
+                    @include ico.makeIcon(50px, auto, ".icon_ae0b42");
                     top: $window-top + 90px;
                 }
 
                 // Move show/hide member list button
-                .iconWrapper_af9215:has([d^="M14 8.00598"]) {
-                    @include ico.makeIcon(auto, 50px, ".icon__4cb88");
+                .iconWrapper_de6cd1:has([d^="M14 8.00598"]) {
+                    @include ico.makeIcon(auto, 50px, ".icon_ae0b42");
                 }
             }
         }
 
         // Main DM and friend list view
-        .container__5c7e7,
+        .container_bd15da,
         // Explore servers view
-        .pageWrapper_fef757,
+        .pageWrapper_c182d3,
         // University hub
-        .scroller_e9501c,
+        .scroller__32e73,
         // Buy nitro page
-        .applicationStore_fc7d76,
+        .applicationStore__444b9,
         // Main chat
-        .chat__52833:not(.container__10dc7 > .chat__52833) {
+        .chat__52833:not(.container__03ec9 > .chat__52833) {
             @include box.mainWindow;
         }
 
         // University hub
-        .scroller_e9501c {
+        .scroller__32e73 {
             height: auto;
         }
 
         // Main chat and top bar
-        .chat__52833:not(.container__10dc7 > .chat__52833) {
+        .chat__52833:not(.container__03ec9 > .chat__52833) {
             // Main chat
-            .chatContent__5dca8 {
+            .chatContent_f087cb {
                 // Message box
-                .form__13a2c {
+                .form_d8a4a1 {
                     // Gift nitro button
-                    .buttons_ce5b56 > .button_afdfd9 {
-                        @include ico.makeIcon(50px, auto, ".buttonWrapper__69593");
+                    .buttons__7ecff > .button__581d0 {
+                        @include ico.makeIcon(50px, auto, ".buttonWrapper_bd4bd7");
                         top: $window-top;
 
-                        .button__55e53 {
+                        .button__493d9 {
                             margin: 0;
 
-                            .buttonWrapper__69593 {
+                            .buttonWrapper_bd4bd7 {
                                 padding: 0;
                                 margin: 0;
                                 display: flex;
@@ -100,20 +100,20 @@
                     }
 
                     // Autocompleter
-                    .autocomplete_df266d {
+                    .autocomplete__743a5 {
                         width: calc(100% - 150px);
                     }
                 }
             }
 
             // Forums
-            .headerRow__16d8e,
+            .headerRow__86f2e,
             .list__5ced9 > div:first-child {
                 min-width: 0;
             }
 
             // Members list
-            .container_b2ce9c {
+            .container_f79ab4 {
                 @include box.startMenuList;
 
                 position: fixed;
@@ -123,11 +123,11 @@
                 max-height: calc(100vh - 400px);
                 @include box.windowHasPseudoTitle("Members");
 
-                .members__9f47b {
+                .members__573eb {
                     background: var(--xp-bg-color);
 
                     // Member group
-                    .membersGroup__85843:not(:nth-child(2)) {
+                    .membersGroup_cad095:not(:nth-child(2)) {
                         position: relative;
                         @include box.startMenuDivider(7px);
                     }
@@ -137,7 +137,7 @@
                     .member_aa4760 {
                         background: var(--xp-bg-color);
 
-                        .container__4f20e,
+                        .container_a48b21,
                         .layout_bb8e67 {
                             border-radius: 0;
                         }
@@ -146,25 +146,25 @@
             }
 
             // VC video
-            .video__85ac2 {
+            .video__004a2 {
                 z-index: 0;
             }
         }
 
         // With members list visible
-        &:has(.membersWrap__90226) {
+        &:has(.membersWrap__5ca6b) {
             // VC video controls
-            .bottomControls__8bd89 {
+            .bottomControls__72d8d {
                 width: auto;
                 padding-right: 150px;
             }
 
             // Message
-            .message__80c10 {
+            .message_ccca67 {
                 padding-right: 140px !important;
 
                 // Message actions
-                .container__9d616 {
+                .container__2f489 {
                     right: 130px;
                 }
             }

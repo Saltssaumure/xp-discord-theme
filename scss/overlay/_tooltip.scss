@@ -2,18 +2,18 @@
 @use "../top/color-generic" as *;
 
 // Tooltips
-.tooltip__01384 {
+.tooltip__7b090 {
     --background-floating: #{$color-tooltip-2};
     --text-normal: #{$black};
     --interactive-normal: #{$black};
     border: 1px solid $black;
     border-radius: 0;
 
-    .guildNameText__16f3c {
+    .guildNameText__2c549 {
         color: inherit;
     }
 
-    .tooltipPointer_a79354 {
+    .tooltipPointer_f7411c {
         --background-floating: #{$black};
     }
 }
