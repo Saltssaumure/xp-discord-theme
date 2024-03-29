@@ -10,8 +10,8 @@
     --status-danger: #{$color-ping};
 
     // Unread indicator
-    .unreadMentionsIndicatorBottom_fdb943,
-    .unreadMentionsIndicatorTop_ada847 {
+    .unreadMentionsIndicatorBottom__9351c,
+    .unreadMentionsIndicatorTop__153ad {
         width: 100%;
 
         .bar_edc096 {
@@ -21,35 +21,35 @@
     }
 
     // Unread icon
-    .lowerBadge__669e7 .numberBadge__50328 {
+    .lowerBadge_e89e22 .numberBadge__40d6f {
         opacity: 0.8;
     }
 
-    .scroller__3d071 {
+    .scroller_de945b {
         @include box.barGradient(true, $color-window-1, $color-window-2);
 
         // DMs icon / Start button
-        .tutorialContainer__890ea {
+        .tutorialContainer_b06ae6 {
             @include box.barGradient(true, $color-start-1, $color-start-2);
             position: relative;
             padding: 5px 0 30px 0;
             border-radius: 0 0 100% 100% / 0 0 12px 12px;
 
-            .wrapper__3af0b {
-                .svg_ad7356 {
+            .wrapper__9916c {
+                .svg__34dd4 {
                     height: inherit;
                     width: inherit;
                 }
 
-                .wrapper_d281dd {
-                    .selected_f5ec8e,
+                .wrapper__8436d {
+                    .selected_ae80f7,
                     &:hover {
-                        .childWrapper__01b9c {
+                        .childWrapper_a6ce15 {
                             color: $white;
                         }
                     }
 
-                    .childWrapper__01b9c {
+                    .childWrapper_a6ce15 {
                         color: $white-overlay;
                         background: transparent;
                     }
@@ -68,12 +68,12 @@
         }
 
         // Open folder
-        .expandedFolderBackground__1bec6 {
+        .expandedFolderBackground_b1385f {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
         }
 
         // Add server and community servers
-        .circleIconButton_d8df29 {
+        .circleIconButton__05cf2 {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
             color: $white-overlay;
         }
@@ -93,7 +93,7 @@
         z-index: 2;
     }
 
-    &:has(.activityPanel__22355, .container_d667ff) {
+    &:has(.activityPanel_b73e7a, .container_e1958d) {
         border-radius: 8px 8px 0 0;
     }
 
@@ -103,26 +103,26 @@
         border-bottom: 0;
 
         // Game title and icon
-        .title__10613,
+        .title__4a7a9,
         .badge__1a553 {
             color: $white;
         }
     }
 
-    .subtext__8f869 {
+    .subtext_ce73b4 {
         color: $white-overlay;
     }
 
     // Voice chat controls
-    .container_d667ff {
+    .container_e1958d {
         background: inherit;
         border-bottom: 0;
 
         // Video stream buttons
-        .button__66e8c {
+        .button_b82d53 {
             @include bt.button($ISBEIGE: true);
 
-            &.buttonActive__407a7 {
+            &.buttonActive_ae686f {
                 background: $color-tooltip-2;
                 @include shd.boxShadow($ISINSET: true);
             }
@@ -130,22 +130,22 @@
     }
 
     // User and settings
-    .container_ca50b9 {
+    .container_debb33 {
         height: var(--server-container);
         flex-direction: row-reverse;
         background: transparent;
 
         // Self info
-        .avatarWrapper_ba5175 {
+        .avatarWrapper__500a6 {
             margin: 0 0 0 6px;
             padding: 0 4px 0 0;
             flex-direction: row-reverse;
 
             // Username
-            .nameTag__0e320 {
+            .nameTag__77ab2 {
                 text-shadow: 0 1px 1px $black;
 
-                .title__10613 {
+                .title__4a7a9 {
                     color: $white;
                     font-weight: normal;
                 }
@@ -154,18 +154,18 @@
     }
 
     // Buttons
-    .button__4f306 {
+    .button_ae40a4 {
         color: $white-overlay;
         --interactive-normal: #{$white-overlay};
     }
 
-    .withTagAsButton_cc125f:hover,
-    .withTagless__98b7d:hover,
-    .button__4f306.enabled__470f0:hover {
+    .withTagAsButton_e22174:hover,
+    .withTagless__058f8:hover,
+    .button_ae40a4.enabled__214db:hover {
         background: linear-gradient(to bottom, $color-taskbar-3, $color-taskbar-1);
     }
 
-    .button__4f306.enabled__470f0:hover {
+    .button_ae40a4.enabled__214db:hover {
         color: $white;
         --interactive-normal: #{$white};
     }

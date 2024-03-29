@@ -4,29 +4,29 @@
 @use "../../../top/buttons" as bt;
 
 // Threads
-.browser_fece63 {
+.browser_fa9cea {
     border-radius: 8px 8px 0 0;
 
     // Top bar
-    .header__53b07 {
+    .header__6d44a {
         @include box.windowTitle;
 
         // #
-        .threadIcon__046f1 {
+        .threadIcon_a292d5 {
             color: $white;
         }
 
         // Search bar
-        .searchBox_ff53b2 {
+        .searchBox__9423b {
             @include bt.button($ISBEIGE: true, $ISINSET: true);
 
-            .input__74754 {
+            .input__48d49 {
                 color: $black;
             }
         }
 
         // Close button
-        .closeIcon__15ae7 {
+        .closeIcon_ab1a00 {
             @include bt.winButton(26px, true);
             display: flex;
             align-items: center;
@@ -34,7 +34,7 @@
         }
 
         // Create thread button
-        .createButton_c8864c {
+        .createButton_f595af {
             @include bt.button($ISBEIGE: true);
         }
     }
@@ -45,24 +45,24 @@
         background: var(--xp-bg-tint-color);
 
         // Thread age
-        .sectionHeader_a94dc1 {
+        .sectionHeader__0f7c3 {
             color: var(--xp-txt-color) !important;
         }
 
         // Thread
-        .container__6604b {
+        .container__9922f {
             @include box.indentBox;
             border: 0;
         }
 
         // No threads
-        .container__50947 {
-            .defaultColor__87d87,
-            .text-md-normal__4afad {
+        .container__8f86b {
+            .defaultColor__8610e,
+            .text-md-normal__6e567 {
                 color: var(--xp-txt-color) !important;
             }
 
-            .button_afdfd9 {
+            .button__581d0 {
                 @include bt.button;
             }
         }

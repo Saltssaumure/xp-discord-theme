@@ -4,15 +4,15 @@
 @use "../../../top/buttons" as bt;
 
 // Inbox
-.recentMentionsPopout__826a9 {
+.recentMentionsPopout__40c54 {
     // Top bar
-    .header__28ebb {
+    .header__58a85 {
         @include box.windowTitle;
         --interactive-normal: var(--xp-txt-color);
         --interactive-active: var(--xp-txt-color);
 
         // Mentions / unreads tabs
-        .topPill__0cdf1 {
+        .topPill__63ad4 {
             position: absolute;
             bottom: -1px;
             z-index: 1;
@@ -26,7 +26,7 @@
                 margin: 0;
 
                 // Selected tab
-                &.selected__5711d {
+                &.selected_a523ff {
                     padding-top: 1px;
                     height: 25px;
                     background: linear-gradient(to bottom, orange, $white 10%, $color-tooltip-2 80%);
@@ -41,43 +41,43 @@
     }
 
     // Mark all as read button
-    &.container__20de0 {
-        .header__28ebb .button_ddf91e {
+    &.container_eb737e {
+        .header__58a85 .button__292b6 {
             @include bt.winButton(26px, false);
         }
     }
 
     // Filter mentions button
-    &.messagesPopoutWrap_b3b384 {
-        .header__28ebb .button_ddf91e {
+    &.messagesPopoutWrap__10dd1 {
+        .header__58a85 .button__292b6 {
             @include bt.winButton(26px, false);
         }
     }
 
     // Content
-    .messagesPopout__22763,
-    .scroller__1c703 {
+    .messagesPopout__28784,
+    .scroller_e3927b {
         @include box.startMenuList;
         --header-primary: var(--xp-txt-color);
         --header-secondary: grey;
         background: var(--xp-bg-tint-color);
 
         // Channel unread group
-        .channel_d48f2d,
-        .container__56e52 {
+        .channel__36a7e,
+        .container__7c2c1 {
             // Channel group header
-            .channelHeader__5d30c {
+            .channelHeader_ea0f89 {
                 background: var(--xp-bg-tint-color);
 
                 // Buttons
-                .button_ddf91e {
+                .button__292b6 {
                     @include bt.button;
                 }
             }
 
             // Message group
-            .messages_f7999e,
-            .messageContainer_aa7d14 {
+            .messages__1aaa1,
+            .messageContainer_cb3d47 {
                 @include box.indentBox;
             }
         }

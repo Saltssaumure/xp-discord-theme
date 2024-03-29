@@ -11,58 +11,58 @@
     --header-secondary: var(--xp-txt-color);
     --background-primary: #{$color-taskbar-3};
 
-    .header__55964 {
+    .header_e5d8b2 {
         background: var(--xp-bg-tint-color);
         border-radius: 0;
 
-        .searchBar__8f956 {
+        .searchBar__57f39 {
             @include bt.inset;
         }
 
-        .diversitySelectorButton_a4f274,
-        .diversitySelectorOptions__846c5 {
+        .diversitySelectorButton__3fd6f,
+        .diversitySelectorOptions_daea2d {
             @include bt.button;
             padding: 3px;
         }
     }
 
-    .emojiPicker_b65ce9 {
+    .emojiPicker__5e2e2 {
         background: var(--xp-bg-color);
         border-radius: 0;
 
         // Emoji grid
-        .bodyWrapper_cc3635 {
+        .bodyWrapper__5f209 {
             box-shadow: (inset 0 0 2px 2px grey);
 
             // Section title
-            .wrapper__7a35f {
+            .wrapper__91b2c {
                 background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
             }
 
             // Hovered emoji
-            .emojiItem_b15dee.emojiItemSelected__1a09a {
+            .emojiItem_de65fd.emojiItemSelected__023be {
                 @include bt.inset;
             }
         }
 
         // Emoji info
-        .inspector__993e1 {
+        .inspector__80c84 {
             background: var(--xp-bg-tint-color);
         }
     }
 
-    .categoryList_f8c48f {
+    .categoryList_eac4ac {
         background: var(--xp-bg-tint-color);
     }
 }
 
 // Reaction emoji picker
-.animatorLeft_b2289c > #emoji-picker-tab-panel {
+.animatorLeft_f985f4 > #emoji-picker-tab-panel {
     @include box.windowHasPseudoTitle("Add a reaction");
 }
 
 // Gif / sticker / emoji picker
-.contentWrapper__321ed {
+.contentWrapper_e0bb2c {
     --interactive-normal: var(--xp-txt-color);
     --interactive-hover: var(--xp-txt-color);
     --interactive-active: var(--xp-txt-color);
@@ -76,17 +76,17 @@
     @include box.windowHasPseudoTitle("Chat addition");
 
     // Gif / sticker / emoji buttons
-    .navButton__05cc7 {
+    .navButton_b588d0 {
         @include bt.button;
 
-        &.navButtonActive__735cb {
+        &.navButtonActive__0c878 {
             @include bt.inset;
         }
     }
 
     // Gif / sticker searchbar
-    .container_e4c233,
-    .container__7712a {
+    .container_ec5ce2,
+    .container__33507 {
         @include bt.inset;
     }
 
@@ -98,23 +98,23 @@
             box-shadow: (inset 0 0 2px 2px var(--xp-bg-shade-color));
 
             // Section title
-            .wrapper__7a35f {
+            .wrapper__91b2c {
                 background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
             }
         }
 
         // Discord default sticker button
-        .standardStickerShortcut__5254d {
+        .standardStickerShortcut_e9a698 {
             background: var(--xp-bg-tint-color);
         }
 
         // Emoji info
-        .inspector__993e1 {
+        .inspector__80c84 {
             background: var(--xp-bg-tint-color);
         }
     }
 
-    .categoryList_f8c48f {
+    .categoryList_eac4ac {
         background: var(--xp-bg-tint-color);
     }
 
@@ -123,12 +123,12 @@
         background: var(--xp-bg-tint-color);
 
         // Back button
-        .backButton__6a1f0 {
+        .backButton_d9b964 {
             color: var(--xp-txt-color);
         }
 
         // Favs category
-        .categoryFadeBlurple_e73c11 {
+        .categoryFadeBlurple_ffb0c5 {
             background: var(--xp-zing-color);
         }
 
@@ -143,13 +143,13 @@
         }
 
         // Hovered
-        .focused__036ed,
+        .focused__79359,
         .result_e1fc74:hover {
             box-shadow: 0 11px 22px 1px var(--xp-zing-color);
         }
 
         // Placeholder for loading gif
-        .placeholder__1d2a8 {
+        .placeholder__99206 {
             border-radius: 0;
             background: var(--xp-set-color);
         }

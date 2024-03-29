@@ -3,7 +3,7 @@
 @use "../top/boxes" as box;
 
 // Channels sidebar
-.sidebar_ded4b5 {
+.sidebar_e031be {
     position: absolute;
     bottom: 0;
     max-height: 60vh;
@@ -11,110 +11,110 @@
     @include box.windowBox(15px);
 
     // Title and channels
-    .container__590e2 {
+    .container__7e23c {
         background: transparent;
 
         // Title
-        .header__104ca {
+        .header__77c95 {
             @include box.windowTitle();
             height: 48px;
 
-            .headerContent_ee8727 {
+            .headerContent__6fcc7 {
                 color: $white;
 
-                .flowerStar_a9981e {
+                .flowerStar_fa5ad8 {
                     color: $white-overlay;
                 }
             }
         }
 
         // Server image banner
-        .animatedContainer__341f6 {
+        .animatedContainer__0e828 {
             background: transparent;
             z-index: 2;
             border-radius: 8px 8px 0 0;
 
-            .bannerImage__39c51::before {
+            .bannerImage_c73a57::before {
                 display: none;
             }
         }
 
         // Server event
-        .container__30406 {
+        .container__8567b {
             background: $color-tooltip-2;
             --header-primary: #{$black};
             --header-secondary: #{$black};
             @include box.windowBox(15px);
 
             // Inner box
-            .channelNotice__8f7b2 {
+            .channelNotice__36ec1 {
                 border-bottom: none;
 
                 // Event Details button
-                .joinButton_e760b6 {
+                .joinButton_a6e0b7 {
                     border-radius: 0;
                 }
             }
         }
 
         // Channels
-        .scroller_f0f183 {
+        .scroller__1f498 {
             @include box.startMenuList;
 
             // Channel names
-            :is(.modeSelected__487d6, .notInteractive_a7d9fb.modeConnected__1c02e, .notInteractive_a7d9fb.modeSelected__487d6) {
-                .name__8d1ec {
+            :is(.modeSelected__473f1, .notInteractive_e31551.modeConnected__52a8f, .notInteractive_e31551.modeSelected__473f1) {
+                .name__4eb92 {
                     color: $white;
                 }
             }
 
             // Divider
-            .sectionDivider__68d2a {
+            .sectionDivider__9dbcb {
                 background: transparent;
             }
 
             // Category
-            .containerDefault__23a29:not(:nth-child(2)) {
+            .containerDefault_e3b32b:not(:nth-child(2)) {
                 @include box.startMenuDivider(7px);
             }
 
             // Channel
-            :is(.wrapper__7bcde, .container__8759a, .link__95dc0) {
+            :is(.wrapper__612a5, .container__3792d, .link_ddbb36) {
                 border-radius: 0;
 
                 // Channel actions
-                .actionIcon_d679b5 {
+                .actionIcon_b149a2 {
                     color: var(--xp-set-color);
                 }
 
                 // Voice channel member limit
-                .channelInfo_b7ab2e {
+                .channelInfo_b0882c {
                     --background-primary: lightgrey;
                     --background-tertiary: grey;
 
-                    .wrapper__5848b {
+                    .wrapper__71278 {
                         border-radius: 3px;
                     }
                 }
             }
 
             // User in voice channel
-            .content_b60865 {
+            .content__3b07e {
                 border-radius: 0;
             }
 
             // Selected channel
-            .modeSelected__487d6 {
+            .modeSelected__473f1 {
                 // Channel actions
-                .actionIcon_d679b5 {
+                .actionIcon_b149a2 {
                     color: $white-overlay;
                 }
             }
 
             // Muted channel
-            .modeMuted__0aeea {
-                .name__8d1ec,
-                .icon_eff5d4 {
+            .modeMuted_f0a72e {
+                .name__4eb92,
+                .icon__67ab4 {
                     color: grey;
                 }
             }
@@ -122,14 +122,14 @@
     }
 
     // DMs
-    .privateChannels__93473 {
+    .privateChannels__9b518 {
         background: transparent;
 
         // Find conversation
-        .searchBar_e4ea2a {
+        .searchBar__621ec {
             @include box.windowTitle;
 
-            .searchBarComponent__22760 {
+            .searchBarComponent__8f95f {
                 background: transparent;
                 font-size: 14px;
                 line-height: $title-height;
@@ -141,24 +141,24 @@
         }
 
         // DMs and friends
-        .scroller__4b984 {
+        .scroller__89969 {
             @include box.startMenuList;
         }
 
         // DMs category
-        .privateChannelsHeaderContainer_ddcec6 {
+        .privateChannelsHeaderContainer_b22dc9 {
             position: relative;
             @include box.startMenuDivider(2px);
         }
 
         // Menu item
-        .container__8759a {
+        .container__3792d {
             border-radius: 0;
         }
     }
 
     // Explore servers category list
-    & > .scrollerBase_dc3aa9 {
+    & > .scrollerBase_f742b2 {
         @include box.startMenuList;
         position: relative;
         border-radius: 8px 8px 0 0;
@@ -168,7 +168,7 @@
         }
 
         // Header
-        .discoverHeader_fae7fd {
+        .discoverHeader__9d76e {
             @include box.windowTitle;
             margin: 0;
             padding: 12px 0;
@@ -180,7 +180,7 @@
         }
 
         // Category
-        .container__4f20e {
+        .container_a48b21 {
             color: var(--channels-default);
             border-radius: 0;
 
@@ -197,7 +197,7 @@
             }
         }
 
-        .categoryItem_b1be5c.selectedCategoryItem__0bf4c .itemInner__9e755 {
+        .categoryItem__0608f.selectedCategoryItem__3e361 .itemInner_eedb2b {
             background-color: var(--background-modifier-selected);
         }
     }

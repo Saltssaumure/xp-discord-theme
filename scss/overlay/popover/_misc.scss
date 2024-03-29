@@ -3,29 +3,29 @@
 @use "../../top/buttons" as bt;
 
 // VC ping
-.container__0810b {
+.container__13b2a {
     @include box.beigeBox;
 
-    .popoutText__56f7e {
+    .popoutText_aa3bfa {
         color: var(--xp-txt-color);
     }
 }
 
 // Stream preview
-.streamPreview__1846c {
+.streamPreview__965fa {
     @include box.beigeBox;
 
-    .watchButton__0d283 {
+    .watchButton__5a93d {
         @include bt.button;
     }
 }
 
 // Emoji info
-.popoutContainer__7b9a3 {
+.popoutContainer__66068 {
     @include box.beigeBox;
 
     // Nitro button
-    .shinyButton_fc8363 {
+    .shinyButton_d5e126 {
         @include bt.button;
     }
 }
