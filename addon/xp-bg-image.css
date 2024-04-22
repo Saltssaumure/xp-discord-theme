@@ -17,15 +17,15 @@
     --scrollbar-auto-thumb: hsla(0, 0%, var(--xp-bg-addon-lumInternal, 0%), calc(var(--xp-bg-addon-opacity, 0.4) * 2));
 }
 
-.container__5c7e7,
-.pageWrapper_fef757,
-.scroller_e9501c,
-.applicationStore_fc7d76,
-.standardSidebarView__1129a,
+.container_bd15da,
+.pageWrapper_c182d3,
+.scroller__32e73,
+.applicationStore__444b9,
+.standardSidebarView__12528,
 .chat__52833 {
     background: var(--xp-bg-addon-image, url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.avif)) center/cover;
 }
 
-.form__13a2c::before {
+.form_d8a4a1::before {
     display: none;
 }
