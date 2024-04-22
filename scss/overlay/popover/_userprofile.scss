@@ -4,7 +4,7 @@
 
 // User profile
 // Popout or in profile settings
-.userProfileOuter__4ac83 {
+.userProfileOuter__35e59 {
     border-radius: 0;
 
     &:not(.profileCustomizationPreview_a1502f) {
@@ -15,7 +15,7 @@
         border: 2px solid $color-taskbar-3;
     }
 
-    &.userProfileOuterThemed__1fbd7 {
+    &.userProfileOuterThemed_a425f3 {
         padding: 0;
     }
 
@@ -37,7 +37,7 @@
     }
 
     // All profiles
-    .userProfileInner__61cc1 {
+    .userProfileInner__8ff35 {
         // Tint (only visible with nitro)
         &::before {
             border-radius: 0;
@@ -60,7 +60,7 @@
         }
 
         // Inner box
-        .overlayBackground__2666e {
+        .overlayBackground__345c9 {
             border-radius: 0;
             --font-primary: Tahoma, sans-serif;
             --font-display: Tahoma, sans-serif;
@@ -84,7 +84,7 @@
     }
 
     // Unstyled profile
-    .userProfileInnerThemedNonPremium_ed9022 {
+    .userProfileInnerThemedNonPremium_b64fb4 {
         background: var(--xp-bg-tint-color);
         --interactive-active: var(--xp-txt-color);
         --header-primary: var(--xp-txt-color);
@@ -94,7 +94,7 @@
         --interactive-muted: var(--xp-bg-tint-color);
 
         // Inner box
-        .overlayBackground__2666e {
+        .overlayBackground__345c9 {
             background: var(--xp-bg-color);
         }
     }
