@@ -1,6 +1,7 @@
 [light]:        https://user-images.githubusercontent.com/29710355/229367843-ad03f107-ad47-4c63-9692-89cd781d40f8.png
 [dark]:         https://user-images.githubusercontent.com/29710355/229367846-78bf3675-a091-4f60-8ff0-4427697a2ef2.png
 [customised]:   https://github.com/Saltssaumure/xp-discord-theme/assets/29710355/e076daf4-23d5-40f2-9a86-ca3fdf0e251c
+
 [bsod-text]:    https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/top/_vars-scss.scss
 [addons]:       https://github.com/Saltssaumure/xp-discord-theme/tree/main/addon
 
@@ -123,8 +124,17 @@
 See [Addons][addons] for mini-themes designed to be used alongside Exponent to add extra optional features.
 
 ## License
-[GNU General Public License v3.0][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+Copyright (c) 2022-2024 Saltssaumure
+
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
+
+## Credits
+### Assets
+[bliss]:    https://archive.org/details/windows-xp-bliss-wallpaper
+
+- [Bliss][bliss] by Microsoft (Charles O'Rear)
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
