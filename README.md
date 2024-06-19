@@ -1,6 +1,6 @@
-[light]:        https://user-images.githubusercontent.com/29710355/229367843-ad03f107-ad47-4c63-9692-89cd781d40f8.png
-[dark]:         https://user-images.githubusercontent.com/29710355/229367846-78bf3675-a091-4f60-8ff0-4427697a2ef2.png
-[customised]:   https://github.com/Saltssaumure/xp-discord-theme/assets/29710355/e076daf4-23d5-40f2-9a86-ca3fdf0e251c
+[light]:        https://saltssaumure.github.io/xp-discord-theme/preview/exponent1.png
+[dark]:         https://saltssaumure.github.io/xp-discord-theme/preview/exponent2.png
+[customised]:   https://saltssaumure.github.io/xp-discord-theme/preview/exponent3.png
 
 [bsod-text]:    https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/top/_vars-scss.scss
 [addons]:       https://github.com/Saltssaumure/xp-discord-theme/tree/main/addon
