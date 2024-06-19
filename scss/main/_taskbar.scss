@@ -5,38 +5,38 @@
 @use "../top/shadows" as shd;
 
 // Servers sidebar / Taskbar
-.guilds__2b93a {
+.guilds_a4d4d9 {
     z-index: 0;
     --status-danger: #{$color-ping};
 
     // Unread indicator
-    .unreadMentionsIndicatorBottom__9351c,
-    .unreadMentionsIndicatorTop__153ad {
+    .unreadMentionsIndicatorBottom_fea3ef,
+    .unreadMentionsIndicatorTop_fea3ef {
         width: 100%;
 
-        .bar_edc096 {
+        .bar_c10249 {
             border-radius: 0;
             background: linear-gradient(to bottom, transparent, $color-ping);
         }
     }
 
     // Unread icon
-    .lowerBadge_e89e22 .numberBadge__40d6f {
+    .lowerBadge_c5f96a .numberBadge__40d6f {
         opacity: 0.8;
     }
 
-    .scroller_de945b {
+    .scroller_fea3ef {
         @include box.barGradient(true, $color-window-1, $color-window-2);
 
         // DMs icon / Start button
-        .tutorialContainer_b06ae6 {
+        .tutorialContainer_f9623d {
             @include box.barGradient(true, $color-start-1, $color-start-2);
             position: relative;
             padding: 5px 0 30px 0;
             border-radius: 0 0 100% 100% / 0 0 12px 12px;
 
-            .wrapper__9916c {
-                .svg__34dd4 {
+            .wrapper_c5f96a {
+                .svg_c5f96a {
                     height: inherit;
                     width: inherit;
                 }
@@ -58,22 +58,22 @@
         }
 
         // Unread pill
-        .item_f9d377 {
+        .item_fd07a3 {
             background: $white;
         }
 
         // Folder
-        .folder__17546 {
+        .folder_bc7085 {
             background: radial-gradient(circle at 12px 12px, $white, $color-taskbar-1, $color-taskbar-3);
         }
 
         // Open folder
-        .expandedFolderBackground_b1385f {
+        .expandedFolderBackground_bc7085 {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
         }
 
         // Add server and community servers
-        .circleIconButton__05cf2 {
+        .circleIconButton_db6521 {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
             color: $white-overlay;
         }
@@ -81,7 +81,7 @@
 }
 
 // Control panel
-.panels__58331 {
+.panels_a4d4d9 {
     width: $panel-width;
     height: auto;
     position: fixed;
@@ -93,36 +93,36 @@
         z-index: 2;
     }
 
-    &:has(.activityPanel_b73e7a, .container_e1958d) {
+    &:has(.activityPanel_a4d4d9, .container_adcaac) {
         border-radius: 8px 8px 0 0;
     }
 
     // Now playing game/activity
-    .panel_bd8c76 {
+    .panel_bf1a22 {
         background: transparent;
         border-bottom: 0;
 
         // Game title and icon
-        .title__4a7a9,
-        .badge__1a553 {
+        .title_d1da5f,
+        .badge_c07d45 {
             color: $white;
         }
     }
 
-    .subtext_ce73b4 {
+    .subtext_e06aad {
         color: $white-overlay;
     }
 
     // Voice chat controls
-    .container_e1958d {
+    .container_adcaac {
         background: inherit;
         border-bottom: 0;
 
         // Video stream buttons
-        .button_b82d53 {
+        .button_adcaac {
             @include bt.button($ISBEIGE: true);
 
-            &.buttonActive_ae686f {
+            &.buttonActive_adcaac {
                 background: $color-tooltip-2;
                 @include shd.boxShadow($ISINSET: true);
             }
@@ -130,22 +130,22 @@
     }
 
     // User and settings
-    .container_debb33 {
+    .container_b2ca13 {
         height: var(--server-container);
         flex-direction: row-reverse;
         background: transparent;
 
         // Self info
-        .avatarWrapper__500a6 {
+        .avatarWrapper_b2ca13 {
             margin: 0 0 0 6px;
             padding: 0 4px 0 0;
             flex-direction: row-reverse;
 
             // Username
-            .nameTag__77ab2 {
+            .nameTag_b2ca13 {
                 text-shadow: 0 1px 1px $black;
 
-                .title__4a7a9 {
+                .title_d1da5f {
                     color: $white;
                     font-weight: normal;
                 }
@@ -154,18 +154,18 @@
     }
 
     // Buttons
-    .button_ae40a4 {
+    .button_f67531 {
         color: $white-overlay;
         --interactive-normal: #{$white-overlay};
     }
 
-    .withTagAsButton_e22174:hover,
-    .withTagless__058f8:hover,
-    .button_ae40a4.enabled__214db:hover {
+    .withTagAsButton_b2ca13:hover,
+    .withTagless_b2ca13:hover,
+    .button_f67531.enabled_f67531:hover {
         background: linear-gradient(to bottom, $color-taskbar-3, $color-taskbar-1);
     }
 
-    .button_ae40a4.enabled__214db:hover {
+    .button_f67531.enabled_f67531:hover {
         color: $white;
         --interactive-normal: #{$white};
     }

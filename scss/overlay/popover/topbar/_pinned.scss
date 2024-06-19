@@ -2,21 +2,21 @@
 @use "../../../top/boxes" as box;
 
 // Pinned messages
-.messagesPopoutWrap__10dd1 {
-    .header__21b33 {
+.messagesPopoutWrap_ac90a2 {
+    .header_ac90a2 {
         @include box.windowTitle;
     }
 
-    .messagesPopout__28784 {
+    .messagesPopout_ac90a2 {
         @include box.startMenuList;
         background: var(--xp-bg-tint-color);
 
-        .messageGroupWrapper__1fce2 {
+        .messageGroupWrapper_ac90a2 {
             @include box.indentBox;
             border: 0;
         }
 
-        .body_a02b78 {
+        .body_ac90a2 {
             color: var(--xp-txt-color);
         }
     }

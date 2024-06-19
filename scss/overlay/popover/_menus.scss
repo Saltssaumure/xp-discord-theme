@@ -2,38 +2,38 @@
 @use "../../top/buttons" as bt;
 
 // Small menus
-.menu__088f7 {
+.menu_d90b3d {
     --interactive-normal: var(--xp-txt-color);
     background: var(--xp-bg-tint-color);
     border: 1px solid var(--xp-border-color);
     border-radius: 0;
 
     // Menu item
-    .colorDefault_e361cf {
+    .colorDefault_d90b3d {
         // Focused menu item
-        &.focused_dcafb9 {
+        &.focused_d90b3d {
             background: $color-selected;
             border-radius: 0;
         }
 
-        .icon__0bfbf {
+        .icon_d90b3d {
             // Radio button
             path[d^="M12 20C16.4183"] {
                 d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
             }
 
             // circle
-            .radioSelection__41d1e {
+            .radioSelection_d90b3d {
                 color: $color-start-2;
             }
 
             // Checkbox
-            .checkbox__378d3 {
+            .checkbox_d90b3d {
                 d: path("M 2 2 V 22 H 22 V 2 Z M 3 3 V 21 H 21 V 3 Z");
                 color: var(--xp-txt-color);
             }
 
-            .check__8d1bd {
+            .check_d90b3d {
                 color: $color-start-2;
             }
         }
@@ -41,19 +41,19 @@
 }
 
 // Slider
-.mini_d6d84c {
+.mini_c7a159 {
     // Slider bar
-    .bar_e58961 {
+    .bar_c7a159 {
         @include bt.button($ISBEIGE: true);
         border: none;
 
-        .barFill__1f56b {
+        .barFill_c7a159 {
             background: transparent;
         }
     }
 
     // Handle
-    .grabber_e3daf3 {
+    .grabber_c7a159 {
         @include bt.button($ISBEIGE: true, $ISINSET: true);
         height: 16px;
         width: 10px;

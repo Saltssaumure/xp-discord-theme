@@ -3,7 +3,7 @@
 @use "../top/boxes" as box;
 
 // Channels sidebar
-.sidebar_e031be {
+.sidebar_a4d4d9 {
     position: absolute;
     bottom: 0;
     max-height: 60vh;
@@ -11,110 +11,110 @@
     @include box.windowBox(15px);
 
     // Title and channels
-    .container__7e23c {
+    .container_ee69e0 {
         background: transparent;
 
         // Title
-        .header__77c95 {
+        .header_fd6364 {
             @include box.windowTitle();
             height: 48px;
 
-            .headerContent__6fcc7 {
+            .headerContent_fd6364 {
                 color: $white;
 
-                .flowerStar_fa5ad8 {
+                .flowerStar_ff7d90 {
                     color: $white-overlay;
                 }
             }
         }
 
         // Server image banner
-        .animatedContainer__0e828 {
+        .animatedContainer_fd6364 {
             background: transparent;
             z-index: 2;
             border-radius: 8px 8px 0 0;
 
-            .bannerImage_c73a57::before {
+            .bannerImage_fd6364::before {
                 display: none;
             }
         }
 
         // Server event
-        .container__8567b {
+        .container_fa295b {
             background: $color-tooltip-2;
             --header-primary: #{$black};
             --header-secondary: #{$black};
             @include box.windowBox(15px);
 
             // Inner box
-            .channelNotice__36ec1 {
+            .channelNotice_a6cd4e {
                 border-bottom: none;
 
                 // Event Details button
-                .joinButton_a6e0b7 {
+                .joinButton_a6cd4e {
                     border-radius: 0;
                 }
             }
         }
 
         // Channels
-        .scroller__1f498 {
+        .scroller_c43953 {
             @include box.startMenuList;
 
             // Channel names
-            :is(.modeSelected__473f1, .notInteractive_e31551.modeConnected__52a8f, .notInteractive_e31551.modeSelected__473f1) {
-                .name__4eb92 {
+            :is(.modeSelected_d8bfb3, .notInteractive_d8bfb3.modeConnected_d8bfb3, .notInteractive_d8bfb3.modeSelected_d8bfb3) {
+                .name_d8bfb3 {
                     color: $white;
                 }
             }
 
             // Divider
-            .sectionDivider__9dbcb {
+            .sectionDivider_c43953 {
                 background: transparent;
             }
 
             // Category
-            .containerDefault_e3b32b:not(:nth-child(2)) {
+            .containerDefault_a08117:not(:nth-child(2)) {
                 @include box.startMenuDivider(7px);
             }
 
             // Channel
-            :is(.wrapper__612a5, .container__3792d, .link_ddbb36) {
+            :is(.wrapper_d8bfb3, .container_b15955, .link_d8bfb3) {
                 border-radius: 0;
 
                 // Channel actions
-                .actionIcon_b149a2 {
+                .actionIcon_f6f816 {
                     color: var(--xp-set-color);
                 }
 
                 // Voice channel member limit
-                .channelInfo_b0882c {
+                .channelInfo_f6f816 {
                     --background-primary: lightgrey;
                     --background-tertiary: grey;
 
-                    .wrapper__71278 {
+                    .wrapper_a5bc92 {
                         border-radius: 3px;
                     }
                 }
             }
 
             // User in voice channel
-            .content__3b07e {
+            .content_cdc675 {
                 border-radius: 0;
             }
 
             // Selected channel
-            .modeSelected__473f1 {
+            .modeSelected_d8bfb3 {
                 // Channel actions
-                .actionIcon_b149a2 {
+                .actionIcon_f6f816 {
                     color: $white-overlay;
                 }
             }
 
             // Muted channel
-            .modeMuted_f0a72e {
-                .name__4eb92,
-                .icon__67ab4 {
+            .modeMuted_d8bfb3 {
+                .name_d8bfb3,
+                .icon_d8bfb3 {
                     color: grey;
                 }
             }
@@ -122,14 +122,14 @@
     }
 
     // DMs
-    .privateChannels__9b518 {
+    .privateChannels_f0963d {
         background: transparent;
 
         // Find conversation
-        .searchBar__621ec {
+        .searchBar_f0963d {
             @include box.windowTitle;
 
-            .searchBarComponent__8f95f {
+            .searchBarComponent_f0963d {
                 background: transparent;
                 font-size: 14px;
                 line-height: $title-height;
@@ -141,24 +141,24 @@
         }
 
         // DMs and friends
-        .scroller__89969 {
+        .scroller_c47fa9 {
             @include box.startMenuList;
         }
 
         // DMs category
-        .privateChannelsHeaderContainer_b22dc9 {
+        .privateChannelsHeaderContainer_c47fa9 {
             position: relative;
             @include box.startMenuDivider(2px);
         }
 
         // Menu item
-        .container__3792d {
+        .container_b15955 {
             border-radius: 0;
         }
     }
 
     // Explore servers category list
-    & > .scrollerBase_f742b2 {
+    & > .scrollerBase_eed6a8 {
         @include box.startMenuList;
         position: relative;
         border-radius: 8px 8px 0 0;
@@ -168,7 +168,7 @@
         }
 
         // Header
-        .discoverHeader__9d76e {
+        .discoverHeader_b992d4 {
             @include box.windowTitle;
             margin: 0;
             padding: 12px 0;
@@ -180,7 +180,7 @@
         }
 
         // Category
-        .container_a48b21 {
+        .container_e9f61e {
             color: var(--channels-default);
             border-radius: 0;
 
@@ -192,12 +192,12 @@
                 margin-bottom: 10px;
             }
 
-            .layout_bb8e67 {
+            .layout_e9f61e {
                 border-radius: 0;
             }
         }
 
-        .categoryItem__0608f.selectedCategoryItem__3e361 .itemInner_eedb2b {
+        .categoryItem_c72b37.selectedCategoryItem_c72b37 .itemInner_c72b37 {
             background-color: var(--background-modifier-selected);
         }
     }

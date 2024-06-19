@@ -4,40 +4,40 @@
 
 // User profile
 // Popout or in profile settings
-.userProfileOuter__35e59 {
+.userProfileOuter_c69a7b {
     border-radius: 0;
 
-    &:not(.profileCustomizationPreview_a1502f) {
+    &:not(.profileCustomizationPreview_ab876d) {
         @include box.windowHasPseudoTitle("User info", $OFFSET: 0);
     }
 
-    &.profileCustomizationPreview_a1502f {
+    &.profileCustomizationPreview_ab876d {
         border: 2px solid $color-taskbar-3;
     }
 
-    &.userProfileOuterThemed_a425f3 {
+    &.userProfileOuterThemed_c69a7b {
         padding: 0;
     }
 
-    .banner_b7f1fb,
-    .roundedBanner__16aa6 {
+    .banner_ab876d,
+    .roundedBanner_c3e427 {
         border-radius: 0;
     }
 
     // Avatar
-    .avatarWrapper__0cd44 {
-        &:not(.avatarPositionPremiumBanner_f3acc4) {
+    .avatarWrapper_f89da9 {
+        &:not(.avatarPositionPremiumBanner_f89da9) {
             left: 24px;
         }
 
-        &.avatarPositionPremiumBanner_f3acc4 {
+        &.avatarPositionPremiumBanner_f89da9 {
             left: 20px;
             top: 72px;
         }
     }
 
     // All profiles
-    .userProfileInner__8ff35 {
+    .userProfileInner_c69a7b {
         // Tint (only visible with nitro)
         &::before {
             border-radius: 0;
@@ -46,7 +46,7 @@
         }
 
         // Edit profile button
-        .pencilContainer_ae6d25 {
+        .pencilContainer_c3e427 {
             @include bt.button;
 
             .pencilIcon_e00224 {
@@ -55,36 +55,36 @@
         }
 
         // Hypesquad etc badges
-        .profileBadges__1f2ab {
+        .profileBadges_f89da9 {
             @include bt.button;
         }
 
         // Inner box
-        .overlayBackground__345c9 {
+        .overlayBackground_c69a7b {
             border-radius: 0;
             --font-primary: Tahoma, sans-serif;
             --font-display: Tahoma, sans-serif;
             @include box.indentBox;
 
             // Roles
-            .rolePill_f50ff5 {
+            .rolePill_fa2f72 {
                 @include bt.button;
             }
 
             // User note
-            .note_ba0c31 {
+            .note_c90ad7 {
                 @include box.indentBox;
             }
 
             // Message user
-            .messageInputContainer_a93946 {
+            .messageInputContainer_f2c0a8 {
                 @include box.indentBox;
             }
         }
     }
 
     // Unstyled profile
-    .userProfileInnerThemedNonPremium_b64fb4 {
+    .userProfileInnerThemedNonPremium_c69a7b {
         background: var(--xp-bg-tint-color);
         --interactive-active: var(--xp-txt-color);
         --header-primary: var(--xp-txt-color);
@@ -94,12 +94,12 @@
         --interactive-muted: var(--xp-bg-tint-color);
 
         // Inner box
-        .overlayBackground__345c9 {
+        .overlayBackground_c69a7b {
             background: var(--xp-bg-color);
         }
     }
 
-    .rolePill_f50ff5 .defaultColor__77578 {
+    .rolePill_fa2f72 .defaultColor__77578 {
         color: var(--xp-txt-color);
     }
 }
