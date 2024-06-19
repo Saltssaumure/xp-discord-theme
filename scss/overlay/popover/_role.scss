@@ -3,7 +3,7 @@
 @use "../../top/buttons" as bt;
 
 // Select role preview
-.container__3d776 {
+.container_cbadbc {
     @include box.beigeBox;
 
     // Search role
@@ -12,22 +12,22 @@
     }
 
     // Role
-    .item__287de {
+    .item_eef3ef {
         border-radius: 0;
 
-        &.selected__32a6a {
+        &.selected_eef3ef {
             background: $color-selected;
         }
 
-        .itemLabel_d89e4d span {
+        .itemLabel_eef3ef span {
             background: var(--xp-bg-tint-color);
         }
 
         // Checkbox
-        .box__66058 {
+        .box_f6cde8 {
             border-radius: 0;
 
-            &.checked__16f88 {
+            &.checked_f6cde8 {
                 background: $color-shortcut-2 !important;
 
                 path {

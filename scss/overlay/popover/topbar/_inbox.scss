@@ -4,21 +4,21 @@
 @use "../../../top/buttons" as bt;
 
 // Inbox
-.recentMentionsPopout__40c54 {
+.recentMentionsPopout_ddb5b4 {
     // Top bar
-    .header__58a85 {
+    .header_f0cd33 {
         @include box.windowTitle;
         --interactive-normal: var(--xp-txt-color);
         --interactive-active: var(--xp-txt-color);
 
         // Mentions / unreads tabs
-        .topPill__63ad4 {
+        .topPill_a0 {
             position: absolute;
             bottom: -1px;
             z-index: 1;
             align-items: base;
 
-            .tab_a8a066 {
+            .tab_f0cd33 {
                 background: var(--xp-bg-tint-color);
                 border-radius: 3px 3px 0 0;
                 border: solid $color-taskbar-3;
@@ -26,7 +26,7 @@
                 margin: 0;
 
                 // Selected tab
-                &.selected_a523ff {
+                &.selected_a0 {
                     padding-top: 1px;
                     height: 25px;
                     background: linear-gradient(to bottom, orange, $white 10%, $color-tooltip-2 80%);
@@ -41,32 +41,32 @@
     }
 
     // Mark all as read button
-    &.container_eb737e {
-        .header__58a85 .button__292b6 {
+    &.container_f1c3d9 {
+        .header_f0cd33 .button__292b6 {
             @include bt.winButton(26px, false);
         }
     }
 
     // Filter mentions button
-    &.messagesPopoutWrap__10dd1 {
-        .header__58a85 .button__292b6 {
+    &.messagesPopoutWrap_ac90a2 {
+        .header_f0cd33 .button__292b6 {
             @include bt.winButton(26px, false);
         }
     }
 
     // Content
-    .messagesPopout__28784,
-    .scroller_e3927b {
+    .messagesPopout_ac90a2,
+    .scroller_f1c3d9 {
         @include box.startMenuList;
         --header-primary: var(--xp-txt-color);
         --header-secondary: grey;
         background: var(--xp-bg-tint-color);
 
         // Channel unread group
-        .channel__36a7e,
-        .container__7c2c1 {
+        .channel_d09ffd,
+        .container_ddb5b4 {
             // Channel group header
-            .channelHeader_ea0f89 {
+            .channelHeader_f3978e {
                 background: var(--xp-bg-tint-color);
 
                 // Buttons
@@ -76,8 +76,8 @@
             }
 
             // Message group
-            .messages__1aaa1,
-            .messageContainer_cb3d47 {
+            .messages_c06487,
+            .messageContainer_ddb5b4 {
                 @include box.indentBox;
             }
         }

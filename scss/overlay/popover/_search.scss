@@ -3,7 +3,7 @@
 @use "../../top/buttons" as bt;
 
 // Search options
-.container__84c26 {
+.container_eedf95 {
     --header-secondary: var(--xp-txt-color);
     --text-muted: var(--xp-txt-color);
     --interactive-normal: var(--xp-txt-color);
@@ -18,7 +18,7 @@
     border-radius: 0;
     border: 1px solid var(--xp-border-color);
 
-    .option__91497 {
+    .option_b0286e {
         border-radius: 0;
     }
 
@@ -63,7 +63,7 @@
         }
     }
 
-    .hintValue__0c960 {
+    .hintValue_b0286e {
         @include bt.button;
 
         &:hover {
