@@ -1,0 +1,168 @@
+@use "../top/vars" as *;
+@use "../top/boxes" as box;
+@use "../top/shortcutIcon" as ico;
+
+// Overall background
+.bg_d4b6c5 {
+    background: var(--xp-background-color, $xp-background-color) var(--xp-background-image, $xp-background-image) center/cover;
+}
+
+// Transparency
+:is(.appMount_ea7e65, body, .app_a01fb1) {
+    background: transparent;
+}
+
+// Main view
+.container_a4d4d9 {
+    // Channels sidebar and main chat
+    .base_a4d4d9 {
+        // Notice banner
+        .notice__5fd4c {
+            top: $window-top;
+            margin: 0 $window-right 0 $window-left;
+            width: auto;
+            border-radius: 0;
+            border: solid $color-taskbar-3;
+            border-width: 0 2px 0 2px;
+            box-shadow: none;
+        }
+
+        // Call banner (in DMs)
+        .wrapper_d880dc {
+            z-index: 0;
+        }
+
+        .content_a7d72e::before {
+            z-index: 0;
+        }
+
+        // Top bar (not in DMs)
+        .chat_a7d72e > .title_a7d72e {
+            .toolbar_e44302 {
+                // Move help icon
+                .anchor_af404b .iconWrapper_e44302:only-of-type {
+                    @include ico.makeIcon(50px, auto, ".icon_e44302");
+                    top: $window-top + 90px;
+                }
+
+                // Move show/hide member list button
+                .iconWrapper_e44302:has([d^="M14 8.00598"]) {
+                    @include ico.makeIcon(auto, 50px, ".icon_e44302");
+                }
+            }
+        }
+
+        // Main DM and friend list view
+        .container_c2739c,
+        // Explore servers view
+        .pageWrapper_a3a4ce,
+        // University hub
+        .scroller_a39aa3,
+        // Buy nitro page
+        .applicationStore_cecc86,
+        // Main chat
+        .chat_a7d72e:not(.container_f1fd9c > .chat_a7d72e) {
+            @include box.mainWindow;
+        }
+
+        // University hub
+        .scroller_a39aa3 {
+            height: auto;
+        }
+
+        // Main chat and top bar
+        .chat_a7d72e:not(.container_f1fd9c > .chat_a7d72e) {
+            // Main chat
+            .chatContent_a7d72e {
+                // Message box
+                .form_a7d72e {
+                    // Gift nitro button
+                    .buttons_d0696b > .button_dd4f85 {
+                        @include ico.makeIcon(50px, auto, ".buttonWrapper_cecf00");
+                        top: $window-top;
+
+                        .button_d0696b {
+                            margin: 0;
+
+                            .buttonWrapper_cecf00 {
+                                padding: 0;
+                                margin: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                    // Autocompleter
+                    .autocomplete_f23da8 {
+                        width: calc(100% - 150px);
+                    }
+                }
+            }
+
+            // Forums
+            .headerRow_a6d69a,
+            .list_a6d69a > div:first-child {
+                min-width: 0;
+            }
+
+            // Members list
+            .container_cbd271 {
+                @include box.startMenuList;
+
+                position: fixed;
+                right: 30px;
+                top: 180px;
+                height: 65vh;
+                max-height: calc(100vh - 400px);
+                @include box.windowHasPseudoTitle("Members");
+
+                .members_cbd271 {
+                    background: var(--xp-bg-color);
+
+                    // Member group
+                    .membersGroup_cbd271:not(:nth-child(2)) {
+                        position: relative;
+                        @include box.startMenuDivider(7px);
+                    }
+
+                    // Member
+                    .member_cbd271,
+                    .member_a31c43 {
+                        background: var(--xp-bg-color);
+
+                        .container_e9f61e,
+                        .layout_e9f61e {
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+
+            // VC video
+            .video_d880dc {
+                z-index: 0;
+            }
+        }
+
+        // With members list visible
+        &:has(.membersWrap_cbd271) {
+            // VC video controls
+            .bottomControls_dd069c {
+                width: auto;
+                padding-right: 150px;
+            }
+
+            // Message
+            .message_d5deea {
+                padding-right: 140px !important;
+
+                // Message actions
+                .container_a3b500 {
+                    right: 130px;
+                }
+            }
+        }
+    }
+}
