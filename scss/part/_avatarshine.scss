@@ -1,0 +1,48 @@
+@use "../top/vars" as *;
+@use "../top/color-generic" as *;
+
+// Avatar shine effect
+
+@property --xp-avatar-shine {
+    syntax: "on | off";
+    inherits: false;
+    initial-value: on;
+}
+
+@container root style(--xp-avatar-shine: on) {
+    .contents_ec86aa:has(> .avatar_ec86aa)::before,
+    .wrapper_c51b4e::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: radial-gradient(
+            circle at 25% 25%,
+            $white-overlay,
+            transparentize($white-overlay, 0.4) 20%,
+            transparentize($white-overlay, 0.6) 40%,
+            transparent
+        );
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    // Chat avatars
+    .contents_ec86aa {
+        &:has(> .avatar_ec86aa)::before {
+            width: 40px;
+            height: 40px;
+            left: var(--custom-message-margin-horizontal);
+            margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy));
+            pointer-events: none;
+        }
+        &:has(> .avatar_ec86aa:active)::before {
+            transform: translateY(1px);
+        }
+    }
+
+    // Other avatars
+    .wrapper_c51b4e::before {
+        height: 100%;
+        width: 100%;
+    }
+}
