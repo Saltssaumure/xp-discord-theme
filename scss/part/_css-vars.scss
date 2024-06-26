@@ -2,13 +2,6 @@
 @use "../top/color-generic" as *;
 
 :root {
-    --HSL-server-icon-size: 25px;
-    /* Size of the server icons | DEFAULT: 40px */
-    --HSL-server-spacing: 10px;
-    /* Spacing between each server icon | DEFAULT: 10px */
-    --HSL-server-direction: column;
-    /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
-
     --xp-window-color-1: #{$blue-max};
     --xp-window-color-2: #{$blue-vivid};
     --xp-taskbar-color-1: #{$blue-bright};

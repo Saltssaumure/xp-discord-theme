@@ -9,6 +9,15 @@
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
 
 // Adjustments
+:root {
+    --HSL-server-icon-size: 25px;
+    /* Size of the server icons | DEFAULT: 40px */
+    --HSL-server-spacing: 10px;
+    /* Spacing between each server icon | DEFAULT: 10px */
+    --HSL-server-direction: column;
+    /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+}
+
 // Channels sidebar
 #app-mount .sidebar_a4d4d9 {
     border-radius: 8px 8px 0 0;
