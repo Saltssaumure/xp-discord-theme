@@ -11,13 +11,11 @@
     --xp-start-color-2: #{$green-bright};
     --xp-shortcut-color-1: #{$green-vivid};
     --xp-shortcut-color-2: #{$green-max};
-    --xp-ping-color: #{$red-bright};
-    --xp-selected-color: #{$blue-select};
-
-    // Not (yet) added to .theme.css
+    --xp-ping-color-1: #{$red-bright};
+    --xp-ping-color-2: #{$red-max};
     --xp-tooltip-color-1: #{$beige-light};
     --xp-tooltip-color-2: #{$beige};
-    --xp-ping-color-2: #{$red-max};
+    --xp-selected-color: #{$blue-select};
 }
 
 .theme-dark {

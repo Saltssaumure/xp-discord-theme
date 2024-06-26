@@ -7,7 +7,7 @@
 // Servers sidebar / Taskbar
 .guilds_a4d4d9 {
     z-index: 0;
-    --status-danger: #{$color-ping};
+    --status-danger: #{$color-ping-1};
 
     // Unread indicator
     .unreadMentionsIndicatorBottom_fea3ef,
@@ -16,7 +16,7 @@
 
         .bar_c10249 {
             border-radius: 0;
-            background: linear-gradient(to bottom, transparent, $color-ping);
+            background: linear-gradient(to bottom, transparent, $color-ping-1);
         }
     }
 

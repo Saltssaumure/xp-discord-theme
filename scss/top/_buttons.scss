@@ -34,7 +34,7 @@
     color: $white;
 
     @if $ISRED {
-        background: radial-gradient(circle at 20% 20%, $white-overlay, $color-ping, $color-ping-2);
+        background: radial-gradient(circle at 20% 20%, $white-overlay, $color-ping-1, $color-ping-2);
     } @else {
         background: radial-gradient(circle at 20% 20%, $white-overlay, $color-window-2, $color-window-1);
     }
