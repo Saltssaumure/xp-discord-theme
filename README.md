@@ -102,6 +102,7 @@
 | `--xp-shortcut-color-1`, `-2`      | Shortcut icon colours       | Any [colour][css-color].                         | `#0CA80C`, `#008000`                                                  |
 | `--xp-ping-color-1`, `-2`          | Ping bubble colours         | Any [colour][css-color].                         | `#E64D1C`, `#C73207`                                                  |
 | `--xp-tooltip-color-1`, `-2`       | Tooltip colours             | Any [colour][css-color].                         | `#F0EFED`, `#EBE8D7`                                                  |
+| `--xp-avatar-shine`                | Toggle avatar shine         | `on` or `off`                                    | `on`                                                                  |
 | `--bsod-color`                     | BSOD background colour      | Any [colour][css-color].                         | `navy`                                                                |
 | `--bsod-text`                      | BSOD text                   | Any [text][css-string]. Use `\A` for new lines.  | [Read here][bsod-text].                                               |
 | `--xp-bg-color`                    | Panel background colour     | Any [colour][css-color].                         | `#000` (dark) / `#FFF` (light)                                        |
