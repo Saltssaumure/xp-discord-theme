@@ -41,17 +41,21 @@
                     width: inherit;
                 }
 
-                .wrapper__8436d {
+                .wrapper_f90abb {
                     .selected_ae80f7,
                     &:hover {
-                        .childWrapper_a6ce15 {
+                        .childWrapper_f90abb {
                             color: $white;
                         }
                     }
 
-                    .childWrapper_a6ce15 {
+                    .childWrapper_f90abb {
                         color: $white-overlay;
                         background: transparent;
+
+                        svg {
+                            zoom: 1.5;
+                        }
                     }
                 }
             }
@@ -72,8 +76,10 @@
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
         }
 
-        // Add server and community servers
-        .circleIconButton_db6521 {
+        // Add server and discover servers
+        // Favourite servers
+        .circleIconButton_db6521,
+        .childWrapperNoHoverBg_f90abb {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
             color: $white-overlay;
         }
