@@ -1,8 +1,8 @@
-@use "main";
-@use "mod";
-@use "overlay";
-@use "part";
-@use "plugin";
+@forward "./main/";
+@forward "./mod/";
+@forward "./overlay/";
+@forward "./part/";
+@forward "./plugin/";
 
 :root {
     container: root;
