@@ -7,7 +7,7 @@
 // Servers sidebar / Taskbar
 .guilds_a4d4d9 {
     z-index: 0;
-    --status-danger: #{$color-ping};
+    --status-danger: #{$color-ping-1};
 
     // Unread indicator
     .unreadMentionsIndicatorBottom_fea3ef,
@@ -16,7 +16,7 @@
 
         .bar_c10249 {
             border-radius: 0;
-            background: linear-gradient(to bottom, transparent, $color-ping);
+            background: linear-gradient(to bottom, transparent, $color-ping-1);
         }
     }
 
@@ -41,17 +41,21 @@
                     width: inherit;
                 }
 
-                .wrapper__8436d {
+                .wrapper_f90abb {
                     .selected_ae80f7,
                     &:hover {
-                        .childWrapper_a6ce15 {
+                        .childWrapper_f90abb {
                             color: $white;
                         }
                     }
 
-                    .childWrapper_a6ce15 {
+                    .childWrapper_f90abb {
                         color: $white-overlay;
                         background: transparent;
+
+                        svg {
+                            zoom: 1.5;
+                        }
                     }
                 }
             }
@@ -72,8 +76,10 @@
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
         }
 
-        // Add server and community servers
-        .circleIconButton_db6521 {
+        // Add server and discover servers
+        // Favourite servers
+        .circleIconButton_db6521,
+        .childWrapperNoHoverBg_f90abb {
             background: linear-gradient(to bottom, $color-taskbar-1, $color-taskbar-2);
             color: $white-overlay;
         }
@@ -87,6 +93,7 @@
     position: fixed;
     bottom: -1px;
     left: calc(100vw - $panel-width);
+    z-index: 1;
     @include box.barGradient(false, $color-taskbar-1, $color-taskbar-2);
 
     &:hover {

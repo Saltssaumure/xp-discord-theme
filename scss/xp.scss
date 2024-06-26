@@ -1,8 +1,9 @@
-@use "main";
-@use "mod";
-@use "overlay";
-@use "part";
-@use "plugin";
+@forward "./main/";
+@forward "./mod/";
+@forward "./overlay/";
+@forward "./part/";
+@forward "./plugin/";
 
-@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
-@import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+:root {
+    container: root;
+}

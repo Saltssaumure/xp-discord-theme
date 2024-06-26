@@ -1,8 +1,3 @@
-@forward "./channels";
-@forward "./taskbar";
-@forward "./threads";
-@forward "./titlebar";
-
 @use "../top/vars" as *;
 @use "../top/boxes" as box;
 @use "../top/shortcutIcon" as ico;
@@ -41,8 +36,8 @@
             z-index: 0;
         }
 
-        // Top bar (not in DMs)
-        .chat_a7d72e > .title_a7d72e {
+        // Top bar
+        .chat_a7d72e > .subtitleContainer_a7d72e > .title_a7d72e {
             .toolbar_e44302 {
                 // Move help icon
                 .anchor_af404b .iconWrapper_e44302:only-of-type {
@@ -111,9 +106,12 @@
             .list_a6d69a > div:first-child {
                 min-width: 0;
             }
+            .header_a6d69a {
+                z-index: 0;
+            }
 
             // Members list
-            .container_cbd271 {
+            .membersWrap_cbd271 {
                 @include box.startMenuList;
 
                 position: fixed;

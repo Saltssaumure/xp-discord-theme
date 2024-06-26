@@ -7,7 +7,7 @@
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "1.8.0",
+  "version": "1.9.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Exponent"
@@ -19,6 +19,7 @@
   "image": [
     "https://saltssaumure.github.io/xp-discord-theme/preview/exponent1.png",
     "https://saltssaumure.github.io/xp-discord-theme/preview/exponent2.png",
-    "https://saltssaumure.github.io/xp-discord-theme/preview/exponent3.png"
+    "https://saltssaumure.github.io/xp-discord-theme/preview/exponent3.png",
+    "https://saltssaumure.github.io/xp-discord-theme/preview/withSystemColor.png"
   ]
 }

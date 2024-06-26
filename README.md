@@ -1,6 +1,7 @@
 [light]:        https://saltssaumure.github.io/xp-discord-theme/preview/exponent1.png
 [dark]:         https://saltssaumure.github.io/xp-discord-theme/preview/exponent2.png
 [customised]:   https://saltssaumure.github.io/xp-discord-theme/preview/exponent3.png
+[withSC]:       https://saltssaumure.github.io/xp-discord-theme/preview/withSystemColor.png
 
 [bsod-text]:    https://github.com/Saltssaumure/xp-discord-theme/blob/main/scss/top/_vars.scss
 [addons]:       https://github.com/Saltssaumure/xp-discord-theme/tree/main/addon
@@ -36,11 +37,11 @@
 [![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
 [![Total repository size][shield-repo-size]][github]
 
-***A Windows XP style Discord theme.***
+***A Windows XP style Discord theme. Recommended for use with [SystemColor](https://github.com/MiniDiscordThemes/SystemColor).***
 
-| Light mode                       | Dark mode                      |
-| -------------------------------- | ------------------------------ |
-| ![Exponent in light mode][light] | ![Exponent in dark mode][dark] |
+| Light mode                       | Dark mode                      | With SystemColor                     |
+| -------------------------------- | ------------------------------ | ------------------------------------ |
+| ![Exponent in light mode][light] | ![Exponent in dark mode][dark] | ![Exponent with SystemColor][withSC] |
 
 ## Installation
 
@@ -99,7 +100,8 @@
 | `--xp-taskbar-color-1`, `-2`, `-3` | Taskbar control colours     | Any [colour][css-color].                         | `#108CE4`, `#578CD0`, `#1665CA`                                       |
 | `--xp-start-color-1`, `-2`         | Start button colours        | Any [colour][css-color].                         | `#008000`, `#38C438`                                                  |
 | `--xp-shortcut-color-1`, `-2`      | Shortcut icon colours       | Any [colour][css-color].                         | `#0CA80C`, `#008000`                                                  |
-| `--xp-ping-color`                  | Ping bubble colour          | Any [colour][css-color].                         | `#E64D1C`                                                             |
+| `--xp-ping-color-1`, `-2`          | Ping bubble colours         | Any [colour][css-color].                         | `#E64D1C`, `#C73207`                                                  |
+| `--xp-tooltip-color-1`, `-2`       | Tooltip colours             | Any [colour][css-color].                         | `#F0EFED`, `#EBE8D7`                                                  |
 | `--bsod-color`                     | BSOD background colour      | Any [colour][css-color].                         | `navy`                                                                |
 | `--bsod-text`                      | BSOD text                   | Any [text][css-string]. Use `\A` for new lines.  | [Read here][bsod-text].                                               |
 | `--xp-bg-color`                    | Panel background colour     | Any [colour][css-color].                         | `#000` (dark) / `#FFF` (light)                                        |
@@ -145,9 +147,6 @@
 3. Edit the variable values.
 </details>
 
-## Addons
-See [Addons][addons] for mini-themes designed to be used alongside Exponent to add extra optional features.
-
 ## License
 Copyright (c) 2022-2024 Saltssaumure
 
@@ -156,9 +155,12 @@ This theme is free software: you can redistribute it and/or modify it under the 
 This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
 
 ## Credits
+### Themes
+[hsl]:  https://github.com/DiscordStyles/HorizontalServerList
+- [HorizontalServerList][hsl] by [DiscordStyles](https://github.com/DiscordStyles) ([Gibbu](https://github.com/Gibbu)) - MIT license
+
 ### Assets
 [bliss]:    https://archive.org/details/windows-xp-bliss-wallpaper
-
 - [Bliss][bliss] by Microsoft (Charles O'Rear)
 
 ## Questions or suggestions?
