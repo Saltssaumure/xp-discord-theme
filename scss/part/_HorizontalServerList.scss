@@ -1,7 +1,14 @@
 @use "../top/vars" as *;
 
-// Override HSL options
+// HorizontalServerList and adjustments
 
+// Copyright (c) 2020 DiscordStyles
+// MIT license
+// https://github.com/DiscordStyles/HorizontalServerList
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+
+// Adjustments
 // Channels sidebar
 #app-mount .sidebar_a4d4d9 {
     border-radius: 8px 8px 0 0;

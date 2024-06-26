@@ -156,9 +156,12 @@ This theme is free software: you can redistribute it and/or modify it under the 
 This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
 
 ## Credits
+### Themes
+[hsl]:  https://github.com/DiscordStyles/HorizontalServerList
+- [HorizontalServerList][hsl] by [DiscordStyles](https://github.com/DiscordStyles) ([Gibbu](https://github.com/Gibbu)) - MIT license
+
 ### Assets
 [bliss]:    https://archive.org/details/windows-xp-bliss-wallpaper
-
 - [Bliss][bliss] by Microsoft (Charles O'Rear)
 
 ## Questions or suggestions?
