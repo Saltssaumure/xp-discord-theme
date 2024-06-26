@@ -145,9 +145,6 @@
 3. Edit the variable values.
 </details>
 
-## Addons
-See [Addons][addons] for mini-themes designed to be used alongside Exponent to add extra optional features.
-
 ## License
 Copyright (c) 2022-2024 Saltssaumure
 
