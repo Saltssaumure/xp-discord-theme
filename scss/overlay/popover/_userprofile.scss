@@ -6,9 +6,10 @@
 // Popout or in profile settings
 .userProfileOuter_c69a7b {
     border-radius: 0;
+    overflow: visible;
 
     &:not(.profileCustomizationPreview_ab876d) {
-        @include box.windowHasPseudoTitle("User info", $OFFSET: 0);
+        @include box.windowHasPseudoTitle("User info", $OFFSET: -2px);
     }
 
     &.profileCustomizationPreview_ab876d {
@@ -27,11 +28,12 @@
     // Avatar
     .avatarWrapper_f89da9 {
         &:not(.avatarPositionPremiumBanner_f89da9) {
-            left: 24px;
+            left: 22px;
+            top: 16px;
         }
 
         &.avatarPositionPremiumBanner_f89da9 {
-            left: 20px;
+            left: 18px;
             top: 72px;
         }
     }
