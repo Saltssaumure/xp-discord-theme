@@ -93,6 +93,7 @@
     position: fixed;
     bottom: -1px;
     left: calc(100vw - $panel-width);
+    z-index: 1;
     @include box.barGradient(false, $color-taskbar-1, $color-taskbar-2);
 
     &:hover {
