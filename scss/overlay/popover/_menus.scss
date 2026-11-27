@@ -2,38 +2,38 @@
 @use "../../top/buttons" as bt;
 
 // Small menus
-.menu_d90b3d {
+.menu_M3qk4j {
     --interactive-normal: var(--xp-txt-color);
     background: var(--xp-bg-tint-color);
     border: 1px solid var(--xp-border-color);
     border-radius: 0;
 
     // Menu item
-    .colorDefault_d90b3d {
+    .colorDefault_M3qk4j {
         // Focused menu item
-        &.focused_d90b3d {
+        &.focused_M3qk4j {
             background: $color-selected;
             border-radius: 0;
         }
 
-        .icon_d90b3d {
+        .icon_M3qk4j {
             // Radio button
             path[d^="M12 20C16.4183"] {
                 d: path("M 12 22 A 1 1 0 0 0 12 2 A 1 1 0 0 0 12 22 Z M 12 21 A 1 1 0 0 0 12 3 A 1 1 0 0 0 12 21 Z");
             }
 
             // circle
-            .radioSelection_d90b3d {
+            .radioSelection_M3qk4j {
                 color: $color-start-2;
             }
 
             // Checkbox
-            .checkbox_d90b3d {
+            .checkbox_M3qk4j {
                 d: path("M 2 2 V 22 H 22 V 2 Z M 3 3 V 21 H 21 V 3 Z");
                 color: var(--xp-txt-color);
             }
 
-            .check_d90b3d {
+            .check_M3qk4j {
                 color: $color-start-2;
             }
         }
@@ -41,19 +41,19 @@
 }
 
 // Slider
-.mini_c7a159 {
+.mini_p3RiOL {
     // Slider bar
-    .bar_c7a159 {
+    .bar_p3RiOL {
         @include bt.button($ISBEIGE: true);
         border: none;
 
-        .barFill_c7a159 {
+        .barFill_p3RiOL {
             background: transparent;
         }
     }
 
     // Handle
-    .grabber_c7a159 {
+    .grabber_p3RiOL {
         @include bt.button($ISBEIGE: true, $ISINSET: true);
         height: 16px;
         width: 10px;

@@ -10,8 +10,8 @@
 }
 
 @container root style(--xp-avatar-shine: on) {
-    .contents_ec86aa:has(> .avatar_ec86aa)::before,
-    .wrapper_c51b4e::before {
+    .contents_2i8Bfm:has(> .avatar_2i8Bfm)::before,
+    .wrapper_XpIUHy::before {
         content: "";
         display: block;
         position: absolute;
@@ -27,21 +27,21 @@
     }
 
     // Chat avatars
-    .contents_ec86aa {
-        &:has(> .avatar_ec86aa)::before {
+    .contents_2i8Bfm {
+        &:has(> .avatar_2i8Bfm)::before {
             width: 40px;
             height: 40px;
             left: var(--custom-message-margin-horizontal);
             margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy));
             pointer-events: none;
         }
-        &:has(> .avatar_ec86aa:active)::before {
+        &:has(> .avatar_2i8Bfm:active)::before {
             transform: translateY(1px);
         }
     }
 
     // Other avatars
-    .wrapper_c51b4e::before {
+    .wrapper_XpIUHy::before {
         height: 100%;
         width: 100%;
     }

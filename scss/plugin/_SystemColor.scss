@@ -4,11 +4,11 @@
 // Fixes when used with SystemColor
 
 // Remove overall background tint and image
-.bg_d4b6c5.bg_d4b6c5::before {
+.bg_Fd0FEH.bg_Fd0FEH::before {
     display: none;
 }
 
 // Apply background image instead to chat window.
-.chat_a7d72e {
+.chat_z_gUBg {
     background: var(--systemcolor-bg-image) var(--systemcolor-bg-position);
 }
