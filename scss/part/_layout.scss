@@ -1,0 +1,438 @@
+/* ===== Exponent: layout for Discord's 2025+ app shell =====
+   Replaces the HorizontalServerList import (its CSS is gone: 404).
+   The new shell nests server list, DM/channel list and user panel inside .sidebar_pog62O
+   and adds a top bar (.bar_3zSH5d), so each piece is placed on its own here. */
+:root {
+    --xp-taskbar-height: 40px;
+    /* --xp-taskbar-lift (optional, default 0): raise the taskbar if something docks over the bottom of the window */
+    --xp-panel-width: 240px;
+    --xp-window-top: 50px;
+    --xp-window-right: 120px;
+    --xp-window-bottom: 50px;
+    --xp-window-left: 270px;
+    --xp-title-height: 30px;
+    --xp-startmenu-footer: 34px;
+}
+
+/* Collapse Discord's top-bar grid row so the windows can use the full screen */
+html body #app-mount .base_pog62O {
+    --custom-app-top-bar-height: 0px;
+}
+
+/* Let server list, start menu and tray each position themselves */
+html body #app-mount .content_pog62O > .sidebar_pog62O {
+    display: contents;
+}
+
+/* Page area spans the whole screen; the window margins place the window */
+html body #app-mount .page_pog62O {
+    position: absolute;
+    inset: 0;
+}
+/* Windows rest right on top of the taskbar (no strip of wallpaper between them) */
+html body #app-mount .base_pog62O :is(.container_zrUwGA, .pageWrapper_a3a4ce, .scroller_a39aa3, .applicationStore_6U3jXZ, .chat_z_gUBg:not(.container_xTP3zy > .chat_z_gUBg)) {
+    margin-bottom: calc(var(--xp-taskbar-height) + var(--xp-taskbar-lift, 0px));
+}
+
+/* ---------- Title bar: Discord's top bar becomes the main window's XP title bar ---------- */
+html body #app-mount .base_pog62O > .bar_3zSH5d {
+    position: fixed;
+    z-index: 2;
+    top: calc(var(--xp-window-top) - var(--xp-title-height));
+    left: var(--xp-window-left);
+    right: var(--xp-window-right);
+    height: var(--xp-title-height) !important;
+    min-height: 0;
+    padding: 0 5px 0 12px;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(to bottom, var(--xp-window-color-2) 0, var(--xp-window-color-1) 4px, var(--xp-window-color-1) 60%, var(--xp-window-color-2) 100%);
+    box-shadow: inset 0 1px 0 #ffffff99, inset 1px 0 0 #ffffff40, inset -1px 0 0 #00000033;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    font-family: Tahoma, sans-serif;
+    --interactive-normal: #fff;
+    --interactive-hover: #fff;
+    --icon-primary: #fff;
+}
+html body #app-mount .bar_3zSH5d > [class*="title_"] {
+    justify-content: flex-start;
+    /* Discord positions the title area itself, so pad it here rather than on the bar */
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+html body #app-mount .bar_3zSH5d [class*="title_"] [class*="defaultColor_"] {
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+html body #app-mount .bar_3zSH5d [class*="title_"] svg {
+    color: #fff;
+    filter: drop-shadow(0 1px 1px #0008);
+}
+/* Server/page icon in the title: small rounded app icon with a little breathing room */
+html body #app-mount .bar_3zSH5d [class*="title_"] > :is(svg, img, [class*="icon"]) {
+    margin: 0 6px 0 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* ---------- Tooltips: XP beige, and server tooltips pop up above the taskbar ---------- */
+html body :is(.tooltip_3_v8qp, .tooltip_ZDdyhE) {
+    background: var(--xp-tooltip-color-2) !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 3px #0006 !important;
+    font-family: Tahoma, sans-serif;
+    --text-default: #000;
+    --text-normal: #000;
+    --header-primary: #000;
+    --interactive-normal: #000;
+}
+html body :is(.tooltip_3_v8qp, .tooltip_ZDdyhE) * {
+    color: #000;
+}
+html body .tooltip_3_v8qp .tooltipPointer_3_v8qp,
+html body .tooltip_ZDdyhE .caretIcon_ZDdyhE,
+html body .tooltipLayer_ZDdyhE:has(.guildTooltipWrapper__-eZlF) .caretIcon_ZDdyhE {
+    display: none;
+}
+/* Discord still places server tooltips to the right, as for a vertical list.
+   Shift them to sit centred above the hovered taskbar button instead
+   (tooltip starts ~12px right of a 32px button, vertically centred on it). */
+html body .tooltip_ZDdyhE:has(.guildTooltipWrapper__-eZlF) {
+    transform: translate(calc(-50% - 28px), calc(-50% - 30px)) !important;
+}
+/* Inbox / Help as XP caption buttons */
+html body #app-mount .bar_3zSH5d [class*="trailing_"] {
+    gap: 2px;
+    align-items: center;
+}
+html body #app-mount .bar_3zSH5d [class*="trailing_"] [class*="clickable_"] {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: radial-gradient(circle at 70% 75%, #1c5ae4, #3a85f6 70%, #6aa4f8);
+    box-shadow: inset -1px -1px 1px #0d3cb0;
+    color: #fff;
+}
+html body #app-mount .bar_3zSH5d [class*="trailing_"] [class*="clickable_"]:hover {
+    filter: brightness(1.15);
+}
+html body #app-mount .bar_3zSH5d [class*="trailing_"] [class*="clickable_"]:active {
+    filter: brightness(0.9);
+    box-shadow: inset 1px 1px 1px #0d3cb0;
+}
+html body #app-mount .bar_3zSH5d [class*="trailing_"] svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* ---------- Taskbar: one continuous bar, edge to edge ----------
+   The server list draws the whole bar (under the tray too); the tray sits on top, transparent. */
+html body #app-mount .guilds_pog62O {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    width: auto;
+    /* the bar's background reaches the screen edge; its contents sit above any lift */
+    height: calc(var(--xp-taskbar-height) + var(--xp-taskbar-lift, 0px)) !important;
+    margin: 0;
+    padding-right: var(--xp-panel-width);
+    padding-bottom: var(--xp-taskbar-lift, 0px);
+    box-sizing: border-box;
+    overflow: visible;
+    background: linear-gradient(to bottom,
+        var(--xp-taskbar-color-2) 0,
+        var(--xp-taskbar-color-1) 3px,
+        var(--xp-taskbar-color-1) 55%,
+        var(--xp-taskbar-color-3) 100%);
+    border-top: 1px solid #ffffff80;
+    box-shadow: 0 -1px 0 var(--xp-taskbar-color-3);
+}
+html body #app-mount .guilds_pog62O .unreadMentionsIndicatorTop_5dqHTG,
+html body #app-mount .guilds_pog62O .unreadMentionsIndicatorBottom_5dqHTG {
+    display: none;
+}
+html body #app-mount .guilds_pog62O .tree_5dqHTG {
+    height: 100%;
+    width: 100%;
+}
+html body #app-mount .guilds_pog62O .scroller_5dqHTG {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px !important;
+    height: 100%;
+    width: 100%;
+    padding: 0 6px 0 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none;
+    background: transparent;
+    box-shadow: none;
+}
+html body #app-mount .guilds_pog62O .scroller_5dqHTG > *,
+html body #app-mount .guilds_pog62O [aria-label="Servers"],
+html body #app-mount .guilds_pog62O [aria-label="Servers"] > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 3px !important;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+/* Empty groups (e.g. no unread DMs) take no space */
+html body #app-mount .guilds_pog62O .scroller_5dqHTG > [class*="stack_"]:empty {
+    display: none;
+}
+
+/* Each server is a taskbar button */
+html body #app-mount .guilds_pog62O .listItem_rwEpIL {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+/* Icons keep Discord's 40px layout box (so Discord's own positioning stays correct)
+   and are scaled from their centre, landing exactly in the middle of the button */
+html body #app-mount .guilds_pog62O .listItem_rwEpIL > span:not([class]) {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    margin: -3px;
+    transform: scale(0.8);
+    transform-origin: 50% 50%;
+}
+html body #app-mount .guilds_pog62O .listItem_rwEpIL:hover {
+    background: #ffffff26;
+    box-shadow: inset 0 0 0 1px #ffffff40;
+}
+/* Open server: pressed-in taskbar button */
+html body #app-mount .guilds_pog62O .listItem_rwEpIL:has(.selected__o8_Xq) {
+    background: linear-gradient(to bottom, #0000004d, #00000026);
+    box-shadow: inset 1px 1px 2px #00000080, inset -1px -1px 0 #ffffff33;
+}
+/* Discord's left-edge pill → hidden; unread shown as a small marker under the icon */
+html body #app-mount .guilds_pog62O .wrapper__o8_Xq {
+    display: none;
+}
+html body #app-mount .guilds_pog62O .listItem_rwEpIL:has(.item__o8_Xq.visible__o8_Xq):not(:has(.selected__o8_Xq))::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    width: 14px;
+    height: 3px;
+    margin-left: -7px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 3px #fff;
+}
+/* Mention badges: XP-style red bubble */
+html body #app-mount .guilds_pog62O [class*="numberBadge_"] {
+    background: linear-gradient(to bottom, var(--xp-ping-color-1), var(--xp-ping-color-2)) !important;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px #0008;
+}
+/* Server folders open sideways */
+html body #app-mount .guilds_pog62O [class*="folderGroup"],
+html body #app-mount .guilds_pog62O [class*="folderGroup"] ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+/* Separator: vertical groove */
+html body #app-mount .guilds_pog62O .listItem_rwEpIL:has([class*="guildSeparator"]) {
+    width: 2px;
+    height: 26px;
+    margin: 0 4px;
+    border-radius: 0;
+    background: none;
+    border-left: 1px solid #0003;
+    border-right: 1px solid #fff4;
+}
+html body #app-mount .guilds_pog62O [class*="guildSeparator"] {
+    display: none;
+}
+/* Add server / Discover / Download: quick-launch style tiles, same size as servers */
+html body #app-mount .guilds_pog62O .circleIconButton_g8YUxD {
+    border-radius: 25%;
+    background: #ffffff1f !important;
+    box-shadow: inset 0 0 0 1px #ffffff40;
+    color: #fff !important;
+}
+html body #app-mount .guilds_pog62O .circleIconButton_g8YUxD:hover {
+    background: #ffffff40 !important;
+}
+/* Drop targets for drag-reordering are vertical-only; keep them out of the way */
+html body #app-mount .guilds_pog62O [class*="wrapper_nL08_v"] {
+    display: none;
+}
+
+/* Start button (Direct Messages) */
+html body #app-mount .guilds_pog62O .scroller_5dqHTG > .tutorialContainer_1IyMuq {
+    height: 100%;
+    padding: 0 24px 0 8px;
+    margin: 0 4px 0 0;
+    border-radius: 0 14px 14px 0;
+    background: linear-gradient(to bottom, var(--xp-start-color-1), var(--xp-start-color-1) 12%, var(--xp-start-color-2));
+    box-shadow: inset 0 0 3px 2px var(--xp-start-color-1), inset 0 2px 2px 1px #ffffffb3, 1px 0 2px #0000004d;
+    cursor: pointer;
+}
+html body #app-mount .guilds_pog62O .scroller_5dqHTG > .tutorialContainer_1IyMuq:hover {
+    filter: brightness(1.12);
+}
+html body #app-mount .guilds_pog62O .tutorialContainer_1IyMuq .listItem_rwEpIL,
+html body #app-mount .guilds_pog62O .tutorialContainer_1IyMuq .listItem_rwEpIL:hover,
+html body #app-mount .guilds_pog62O .tutorialContainer_1IyMuq .listItem_rwEpIL:has(.selected__o8_Xq) {
+    background: none;
+    box-shadow: none;
+}
+html body #app-mount .guilds_pog62O .tutorialContainer_1IyMuq .listItem_rwEpIL::after {
+    display: none;
+}
+html body #app-mount .guilds_pog62O .tutorialContainer_1IyMuq [class*="listItemWrapper_"],
+html body #app-mount .guilds_pog62O .tutorialContainer_1IyMuq .childWrapper_JJ-hgR {
+    background: transparent !important;
+    color: #fff;
+}
+html body #app-mount .guilds_pog62O .scroller_5dqHTG > .tutorialContainer_1IyMuq::after {
+    content: "start";
+    margin-left: 2px;
+    font: italic bold 19px/1 "Franklin Gothic Medium", "Trebuchet MS", Tahoma, sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    pointer-events: none;
+}
+
+/* ---------- Start menu: DM / channel list above the Start button ---------- */
+html body #app-mount .sidebarList_pog62O {
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    bottom: calc(var(--xp-taskbar-height) + var(--xp-taskbar-lift, 0px));
+    top: auto;
+    width: calc(var(--xp-window-left) - 10px);
+    height: 62vh;
+    max-height: calc(100vh - var(--xp-taskbar-height) - var(--xp-taskbar-lift, 0px) - 10px);
+    margin: 0;
+    padding-bottom: var(--xp-startmenu-footer);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid var(--xp-window-color-1);
+    border-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    background: var(--xp-bg-color);
+    box-shadow: 3px 0 4px #0006;
+    /* Discord pads the list bottom for the user panel, which now lives in the tray */
+    --custom-app-panels-height: 0px;
+    /* XP blue selection, grey hover */
+    --interactive-background-selected: var(--xp-selected-color);
+    --interactive-background-hover: var(--xp-hover-color);
+    --background-modifier-selected: var(--xp-selected-color);
+    --background-modifier-hover: var(--xp-hover-color);
+}
+html body #app-mount .sidebarList_pog62O [class*="interactiveSelected_"],
+html body #app-mount .sidebarList_pog62O [class*="interactiveSelected_"] * {
+    color: #fff !important;
+}
+html body #app-mount .sidebarList_pog62O [class*="interactive_"] {
+    border-radius: 0;
+}
+html body #app-mount .sidebarList_pog62O > * {
+    width: 100%;
+    height: 100%;
+}
+/* Start menu footer bar (like the Log Off / Turn Off strip) */
+html body #app-mount .sidebarList_pog62O::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--xp-startmenu-footer);
+    background: linear-gradient(to bottom, var(--xp-window-color-2), var(--xp-window-color-1) 30%, var(--xp-window-color-1));
+    border-top: 2px solid var(--xp-zing-color);
+    box-shadow: inset 0 1px 0 #ffffff59;
+    pointer-events: none;
+}
+
+/* ---------- System tray: user panel, sitting on the same bar (transparent) ---------- */
+html body #app-mount .panels_pog62O {
+    position: fixed;
+    z-index: 4;
+    left: auto;
+    right: 0;
+    bottom: var(--xp-taskbar-lift, 0px);
+    width: var(--xp-panel-width);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+/* Thin XP divider between the server buttons and the tray */
+html body #app-mount .panels_pog62O .container_g6VwXp::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 0;
+    border-left: 1px solid #0000004d;
+    border-right: 1px solid #ffffff4d;
+}
+/* Voice / activity panels float above the tray as their own little window */
+html body #app-mount .panels_pog62O > :not(.container_g6VwXp) {
+    background: linear-gradient(to bottom, var(--xp-taskbar-color-2), var(--xp-taskbar-color-1) 12%, var(--xp-taskbar-color-3));
+    border-radius: 8px 8px 0 0;
+    box-shadow: inset 0 1px 0 #ffffff80;
+}
+/* Quest / promo banner only when you hover the tray */
+html body #app-mount .panels_pog62O:not(:hover) > [class*="mask_"] {
+    display: none;
+}
+html body #app-mount .panels_pog62O:hover {
+    z-index: 5;
+}
+html body #app-mount .panels_pog62O .container_g6VwXp {
+    position: relative;
+    box-sizing: border-box;
+    height: var(--xp-taskbar-height);
+    min-height: 0;
+    padding: 0 4px 0 8px;
+    margin: 0;
+    gap: 2px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+html body #app-mount .panels_pog62O .container_g6VwXp [class*="accountPopoutButtonWrapper_"] {
+    min-width: 0;
+    flex: 1 1 auto;
+    border-radius: 3px;
+}
+html body #app-mount .panels_pog62O .button_Y-8oZW {
+    border-radius: 3px;
+}

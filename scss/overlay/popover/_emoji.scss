@@ -11,58 +11,58 @@
     --header-secondary: var(--xp-txt-color);
     --background-primary: #{$color-taskbar-3};
 
-    .header_c6ee36 {
+    .header_-sZhZn {
         background: var(--xp-bg-tint-color);
         border-radius: 0;
 
-        .searchBar_c6ee36 {
+        .searchBar_c0e32c {
             @include bt.inset;
         }
 
-        .diversitySelectorButton_cce80d,
-        .diversitySelectorOptions_cce80d {
+        .diversitySelectorButton_eHzdRB,
+        .diversitySelectorOptions_eHzdRB {
             @include bt.button;
             padding: 3px;
         }
     }
 
-    .emojiPicker_c6ee36 {
+    .emojiPicker_-sZhZn {
         background: var(--xp-bg-color);
         border-radius: 0;
 
         // Emoji grid
-        .bodyWrapper_c6ee36 {
+        .bodyWrapper_-sZhZn {
             box-shadow: (inset 0 0 2px 2px grey);
 
             // Section title
-            .wrapper_e06857 {
+            .wrapper_kSdzCr {
                 background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
             }
 
             // Hovered emoji
-            .emojiItem_fbfedd.emojiItemSelected_fbfedd {
+            .emojiItem_6OcK5D.emojiItemSelected_6OcK5D {
                 @include bt.inset;
             }
         }
 
         // Emoji info
-        .inspector_c3120f {
+        .inspector_1bDrGE {
             background: var(--xp-bg-tint-color);
         }
     }
 
-    .categoryList_c6ee36 {
+    .categoryList_-sZhZn {
         background: var(--xp-bg-tint-color);
     }
 }
 
 // Reaction emoji picker
-.animatorLeft_f88ae3 > #emoji-picker-tab-panel {
+.animatorLeft_98D4cN > #emoji-picker-tab-panel {
     @include box.windowHasPseudoTitle("Add a reaction");
 }
 
 // Gif / sticker / emoji picker
-.contentWrapper_af5dbb {
+.contentWrapper_58b0l2 {
     --interactive-normal: var(--xp-txt-color);
     --interactive-hover: var(--xp-txt-color);
     --interactive-active: var(--xp-txt-color);
@@ -76,16 +76,16 @@
     @include box.windowHasPseudoTitle("Chat addition");
 
     // Gif / sticker / emoji buttons
-    .navButton_af5dbb {
+    .navButton_58b0l2 {
         @include bt.button;
 
-        &.navButtonActive_af5dbb {
+        &.navButtonActive_58b0l2 {
             @include bt.inset;
         }
     }
 
     // Gif / sticker searchbar
-    .container_effbe2,
+    .container_isqatr,
     .container__33507 {
         @include bt.inset;
     }
@@ -98,23 +98,23 @@
             box-shadow: (inset 0 0 2px 2px var(--xp-bg-shade-color));
 
             // Section title
-            .wrapper_e06857 {
+            .wrapper_kSdzCr {
                 background: linear-gradient(to bottom, transparent, var(--xp-bg-color), transparent);
             }
         }
 
         // Discord default sticker button
-        .standardStickerShortcut_a7a485 {
+        .standardStickerShortcut_40yGEf {
             background: var(--xp-bg-tint-color);
         }
 
         // Emoji info
-        .inspector_c3120f {
+        .inspector_1bDrGE {
             background: var(--xp-bg-tint-color);
         }
     }
 
-    .categoryList_c6ee36 {
+    .categoryList_-sZhZn {
         background: var(--xp-bg-tint-color);
     }
 
@@ -123,17 +123,17 @@
         background: var(--xp-bg-tint-color);
 
         // Back button
-        .backButton_b56bbc {
+        .backButton_rfDq2B {
             color: var(--xp-txt-color);
         }
 
         // Favs category
-        .categoryFadeBlurple_af1167 {
+        .categoryFadeBlurple_d2GpC2 {
             background: var(--xp-zing-color);
         }
 
         // Item / category
-        .result_bad108 {
+        .result_H8nOze {
             background-color: var(--xp-bg-color) !important;
 
             &::after {
@@ -144,12 +144,12 @@
 
         // Hovered
         .focused_bad108,
-        .result_bad108:hover {
+        .result_H8nOze:hover {
             box-shadow: 0 11px 22px 1px var(--xp-zing-color);
         }
 
         // Placeholder for loading gif
-        .placeholder_bad108 {
+        .placeholder_H8nOze {
             border-radius: 0;
             background: var(--xp-set-color);
         }

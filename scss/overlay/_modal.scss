@@ -3,7 +3,7 @@
 
 // Modals
 // BSOD
-.backdrop_e4f2ae {
+.backdrop__78332 {
     background: var(--bsod-color, $bsod-color) !important;
     opacity: 1 !important;
 
@@ -19,11 +19,11 @@
 }
 
 // Modal item
-.layer_c9e2da {
+.layer_C_WHpX {
     align-items: flex-end;
     padding-right: 10vw;
 
-    .focusLock_f9a4c9 {
+    .focusLock__KoJTP {
         border: 2px solid $white;
         padding: 5px;
         background: var(--bsod-color, transparentize($bsod-color, 0.2));

@@ -3,21 +3,21 @@
 @use "../top/shortcutIcon" as ico;
 
 // Overall background
-.bg_d4b6c5 {
+.bg_Fd0FEH {
     background: var(--xp-background-color, $xp-background-color) var(--xp-background-image, $xp-background-image) center/cover;
 }
 
 // Transparency
-:is(.appMount_ea7e65, body, .app_a01fb1) {
+:is(.appMount_gEkNtR, body, .app_QbT-Jy) {
     background: transparent;
 }
 
 // Main view
-.container_a4d4d9 {
+.container_pog62O {
     // Channels sidebar and main chat
-    .base_a4d4d9 {
+    .base_pog62O {
         // Notice banner
-        .notice__5fd4c {
+        .notice_DI23at {
             top: $window-top;
             margin: 0 $window-right 0 $window-left;
             width: auto;
@@ -28,40 +28,40 @@
         }
 
         // Call banner (in DMs)
-        .wrapper_d880dc {
+        .wrapper_hbKzX7 {
             z-index: 0;
         }
 
-        .content_a7d72e::before {
+        .content_z_gUBg::before {
             z-index: 0;
         }
 
         // Top bar
-        .chat_a7d72e > .subtitleContainer_a7d72e > .title_a7d72e {
-            .toolbar_e44302 {
+        .chat_z_gUBg > .subtitleContainer_z_gUBg > .title_z_gUBg {
+            .toolbar_ybUK7Z {
                 // Move help icon
-                .anchor_af404b .iconWrapper_e44302:only-of-type {
-                    @include ico.makeIcon(50px, auto, ".icon_e44302");
+                .anchor_R6ReNl .iconWrapper_ybUK7Z:only-of-type {
+                    @include ico.makeIcon(50px, auto, ".icon_ybUK7Z");
                     top: $window-top + 90px;
                 }
 
                 // Move show/hide member list button
-                .iconWrapper_e44302:has([d^="M14 8.00598"]) {
-                    @include ico.makeIcon(auto, 50px, ".icon_e44302");
+                .iconWrapper_ybUK7Z:has([d^="M14 8.00598"]) {
+                    @include ico.makeIcon(auto, 50px, ".icon_ybUK7Z");
                 }
             }
         }
 
         // Main DM and friend list view
-        .container_c2739c,
+        .container_zrUwGA,
         // Explore servers view
         .pageWrapper_a3a4ce,
         // University hub
         .scroller_a39aa3,
         // Buy nitro page
-        .applicationStore_cecc86,
+        .applicationStore_6U3jXZ,
         // Main chat
-        .chat_a7d72e:not(.container_f1fd9c > .chat_a7d72e) {
+        .chat_z_gUBg:not(.container_xTP3zy > .chat_z_gUBg) {
             @include box.mainWindow;
         }
 
@@ -71,20 +71,20 @@
         }
 
         // Main chat and top bar
-        .chat_a7d72e:not(.container_f1fd9c > .chat_a7d72e) {
+        .chat_z_gUBg:not(.container_xTP3zy > .chat_z_gUBg) {
             // Main chat
-            .chatContent_a7d72e {
+            .chatContent_z_gUBg {
                 // Message box
-                .form_a7d72e {
+                .form_z_gUBg {
                     // Gift nitro button
-                    .buttons_d0696b > .button_dd4f85 {
-                        @include ico.makeIcon(50px, auto, ".buttonWrapper_cecf00");
+                    .buttons_2x8-Qn > .button_9OQtot {
+                        @include ico.makeIcon(50px, auto, ".buttonWrapper_hfM7yP");
                         top: $window-top;
 
-                        .button_d0696b {
+                        .button_2x8-Qn {
                             margin: 0;
 
-                            .buttonWrapper_cecf00 {
+                            .buttonWrapper_hfM7yP {
                                 padding: 0;
                                 margin: 0;
                                 display: flex;
@@ -95,23 +95,23 @@
                     }
 
                     // Autocompleter
-                    .autocomplete_f23da8 {
+                    .autocomplete_CAMiwx {
                         width: calc(100% - 150px);
                     }
                 }
             }
 
             // Forums
-            .headerRow_a6d69a,
-            .list_a6d69a > div:first-child {
+            .headerRow_BkGrJJ,
+            .list_BkGrJJ > div:first-child {
                 min-width: 0;
             }
-            .header_a6d69a {
+            .header_BkGrJJ {
                 z-index: 0;
             }
 
             // Members list
-            .membersWrap_cbd271 {
+            .membersWrap_86es0b {
                 @include box.startMenuList;
 
                 position: fixed;
@@ -121,22 +121,22 @@
                 max-height: calc(100vh - 400px);
                 @include box.windowHasPseudoTitle("Members");
 
-                .members_cbd271 {
+                .members_86es0b {
                     background: var(--xp-bg-color);
 
                     // Member group
-                    .membersGroup_cbd271:not(:nth-child(2)) {
+                    .membersGroup_86es0b:not(:nth-child(2)) {
                         position: relative;
                         @include box.startMenuDivider(7px);
                     }
 
                     // Member
-                    .member_cbd271,
-                    .member_a31c43 {
+                    .member_86es0b,
+                    .member_Iy0c7A {
                         background: var(--xp-bg-color);
 
-                        .container_e9f61e,
-                        .layout_e9f61e {
+                        .container_J1Adu_,
+                        .layout_J1Adu_ {
                             border-radius: 0;
                         }
                     }
@@ -144,25 +144,25 @@
             }
 
             // VC video
-            .video_d880dc {
+            .video_hbKzX7 {
                 z-index: 0;
             }
         }
 
         // With members list visible
-        &:has(.membersWrap_cbd271) {
+        &:has(.membersWrap_86es0b) {
             // VC video controls
-            .bottomControls_dd069c {
+            .bottomControls_rTsZa_ {
                 width: auto;
                 padding-right: 150px;
             }
 
             // Message
-            .message_d5deea {
+            .message_SY_P2T {
                 padding-right: 140px !important;
 
                 // Message actions
-                .container_a3b500 {
+                .container_V_VY9Q {
                     right: 130px;
                 }
             }
